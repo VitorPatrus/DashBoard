@@ -3847,11 +3847,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vitor.fernandessouza\\Desktop\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj",
       "projectName": "BI.Sistemas.UnitTests",
-      "projectPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj",
+      "projectPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj",
       "packagesPath": "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3873,8 +3873,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\vitor.fernandessouza\\Desktop\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj": {
-              "projectPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj"
+            "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj": {
+              "projectPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj"
             }
           }
         }

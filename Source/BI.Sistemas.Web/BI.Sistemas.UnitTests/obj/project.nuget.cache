@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U0LXG7otTgYx/uxForb+fJke/KzyKx9ItBTDMF6r+xt2lZhPF0zbc7vqejOpOXWiW3Loh9I+IVgLUJLchcF/mw==",
+  "dgSpecHash": "fkdMt7b9evfk9b5oetCNx0tcX+H/7Z1zVFStBA2w5CoZdmHJy/rm1GnQswryLQuM6DmTHaK/50N78vNMeHkWvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vitor.fernandessouza\\Desktop\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj",
+  "projectFilePath": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

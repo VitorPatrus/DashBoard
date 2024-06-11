@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ONk2IGaZJIvH8/q7DPYIICJf6Sdp59B3Om/QQzgKq6bBgv714dtdYJTBT8xOHpL9UEJZzvHL4CQ8erTzmg86KQ==",
+  "dgSpecHash": "D4VJf166X/lyrAM7uwvFCxjX32DN4VkEqrJgb29NCk6z2krr5okWPpPAbVBMGjZ2hr0SE4ZvYehDAiGpOOeptw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vitor.fernandessouza\\Desktop\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj",
+  "projectFilePath": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

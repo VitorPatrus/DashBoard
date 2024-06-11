@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sIdaR/C7OusqD8epgtmk8/mFUKjlxGdLwciPwCdUCIftsBEC/Iy+DYHFCcg7vLDMY6wS3cpfRZ0glW5bxCFpRA==",
+  "dgSpecHash": "wBG9m6HTUjmzDEWSHXun3f9y+g+itYNVQO7svlhRSf4uMV2l5WhNiNKF/eHvgIZfDtnETnwcy9QKQTbT9/SYzQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vitor.fernandessouza\\Desktop\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj",
+  "projectFilePath": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
