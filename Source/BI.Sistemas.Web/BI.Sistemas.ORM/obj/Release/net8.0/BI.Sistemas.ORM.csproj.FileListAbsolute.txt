@@ -1,0 +1,15 @@
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.ORM\bin\Release\net8.0\BI.Sistemas.ORM.deps.json
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.ORM\bin\Release\net8.0\BI.Sistemas.ORM.dll
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.ORM\bin\Release\net8.0\BI.Sistemas.ORM.pdb
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.ORM\bin\Release\net8.0\BI.Sistemas.Domain.dll
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.ORM\bin\Release\net8.0\BI.Sistemas.Domain.pdb
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.ORM\obj\Release\net8.0\BI.Sistemas.ORM.csproj.AssemblyReference.cache
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.ORM\obj\Release\net8.0\BI.Sistemas.ORM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.ORM\obj\Release\net8.0\BI.Sistemas.ORM.AssemblyInfoInputs.cache
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.ORM\obj\Release\net8.0\BI.Sistemas.ORM.AssemblyInfo.cs
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.ORM\obj\Release\net8.0\BI.Sistemas.ORM.csproj.CoreCompileInputs.cache
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.ORM\obj\Release\net8.0\BI.Siste.C6E808EA.Up2Date
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.ORM\obj\Release\net8.0\BI.Sistemas.ORM.dll
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.ORM\obj\Release\net8.0\refint\BI.Sistemas.ORM.dll
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.ORM\obj\Release\net8.0\BI.Sistemas.ORM.pdb
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.ORM\obj\Release\net8.0\ref\BI.Sistemas.ORM.dll

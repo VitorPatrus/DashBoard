@@ -1,0 +1,11 @@
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.Domain\bin\Release\net8.0\BI.Sistemas.Domain.deps.json
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.Domain\bin\Release\net8.0\BI.Sistemas.Domain.dll
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.Domain\bin\Release\net8.0\BI.Sistemas.Domain.pdb
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.Domain\obj\Release\net8.0\BI.Sistemas.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.Domain\obj\Release\net8.0\BI.Sistemas.Domain.AssemblyInfoInputs.cache
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.Domain\obj\Release\net8.0\BI.Sistemas.Domain.AssemblyInfo.cs
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.Domain\obj\Release\net8.0\BI.Sistemas.Domain.csproj.CoreCompileInputs.cache
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.Domain\obj\Release\net8.0\BI.Sistemas.Domain.dll
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.Domain\obj\Release\net8.0\refint\BI.Sistemas.Domain.dll
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.Domain\obj\Release\net8.0\BI.Sistemas.Domain.pdb
+C:\Users\vitor.fernandessouza\Desktop\BI.Sistemas.Web\BI.Sistemas.Domain\obj\Release\net8.0\ref\BI.Sistemas.Domain.dll
