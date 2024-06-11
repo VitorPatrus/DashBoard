@@ -501,7 +501,7 @@ namespace BI.Sistemas.API.Controllers
             return (int)Math.Round(hora / ponto * 100, 0);
 
         }
-        //teste
+        //teste 1213123123
         private string ListasGifs(List<string> gifs)
         {
             var random = new Random();
