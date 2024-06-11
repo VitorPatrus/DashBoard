@@ -50,11 +50,19 @@ namespace BI.Sistemas.API.Controllers
                 // Cria um objeto para armazenar as informações do painel do colaborador
                 var colaborador = new ColaboradorDashboardView();
 
+                // Obtém o diretório base onde o executável está rodando
+                string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                DirectoryInfo projectDirectory = null;
+                if (baseDirectory != null)
+                    projectDirectory = Directory.GetParent(baseDirectory).Parent.Parent.Parent.Parent.Parent.Parent;
+
+
+
                 // Define o nome, a foto e a foto do time do colaborador no objeto do painel
                 colaborador.Nome = pessoa.Nome;
                 colaborador.Email = pessoa.Email;
                 colaborador.FotoColaborador = Convert.ToBase64String(pessoa.Foto);
-                colaborador.FotoTime = Convert.ToBase64String(System.IO.File.ReadAllBytes($@"C:\Users\vitor.fernandessouza\Desktop\DashboardSistemas(VitorEdit)\DashboardSistemas(VitorEdit)\Content\Images\time-{pessoa.Time}.jpg"));
+                colaborador.FotoTime = Convert.ToBase64String(System.IO.File.ReadAllBytes($@"{projectDirectory}\UI\Content\Images\time-{pessoa.Time}.png"));
                 colaborador.Cargo = pessoa.Cargo;
                 colaborador.Time = $"Time {pessoa.Time}";
                 var periodoAtual = db.Periodos.OrderBy(x => x.Data).Last();

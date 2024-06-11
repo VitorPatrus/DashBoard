@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
               "ToolTip": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
               "RelativeToolTip": "BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAwOcBAAAJAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAEwDsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T14:26:14.369Z",
               "IsPinned": true,
@@ -62,10 +62,11 @@
               "RelativeDocumentMoniker": "BI.Sistemas.API\\View\\ColaboradorDashboardView.cs",
               "ToolTip": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\View\\ColaboradorDashboardView.cs",
               "RelativeToolTip": "BI.Sistemas.API\\View\\ColaboradorDashboardView.cs",
-              "ViewState": "AQIAAGoAAAAAAAAAAAAQwFsAAAAnAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA9wFsAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T17:23:07.11Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -75,10 +76,11 @@
               "RelativeDocumentMoniker": "BI.Sistemas.UnitTests\\StartedTests.cs",
               "ToolTip": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\StartedTests.cs",
               "RelativeToolTip": "BI.Sistemas.UnitTests\\StartedTests.cs",
-              "ViewState": "AQIAAK8AAAAAAAAAAADwv0kAAAAlAAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAgwB4AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-22T14:55:42.607Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -101,7 +103,8 @@
               "RelativeToolTip": "BI.Sistemas.API\\BI.Sistemas.API.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-20T18:00:24.464Z"
+              "WhenOpened": "2024-05-20T18:00:24.464Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -113,7 +116,8 @@
               "RelativeToolTip": "BI.Sistemas.Domain\\Colaborador.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T14:41:39.705Z"
+              "WhenOpened": "2024-05-20T14:41:39.705Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -125,7 +129,8 @@
               "RelativeToolTip": "BI.Sistemas.ORM\\BISistemasContext.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAYwCEAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T14:40:46.029Z"
+              "WhenOpened": "2024-05-20T14:40:46.029Z",
+              "EditorCaption": ""
             }
           ]
         }
