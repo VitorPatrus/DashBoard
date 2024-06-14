@@ -30,6 +30,21 @@ namespace BI.Sistemas.API.View
                    .Sum (a => a.Horas.TimeOfDay.TotalHours); // Soma das horas de todas as atividades.
             }
         }
+        public double DevOps
+        {
+            get
+            {
+                var atividadeDevOps = Atividades.Where(a => a.Tipo == "Bug" || a.Tipo == "Delivery" || a.Tipo == "Discovery");
+
+
+                return atividadeDevOps
+                    .Where(a => ! string.IsNullOrEmpty(a.Ticket))
+                    .Sum(a => a.Horas.TimeOfDay.TotalHours)/
+                    atividadeDevOps.Sum(a => a.Horas.TimeOfDay.TotalHours) * 100;
+            }
+        }
+        
+
 
         public ApropriacaoView[] ResumoApropriacao
         {
@@ -59,6 +74,7 @@ namespace BI.Sistemas.API.View
         {
             public string Tipo { get; set; }
             public double Valor { get; set; }
+            
             public string Color
             {
                 get
@@ -103,6 +119,7 @@ namespace BI.Sistemas.API.View
             public string? Tipo { get; set; }
             public string? Data { get; set; }
             public DateTime Horas { get; set; }
+            public double DevOps { get; set; }
         }
     }
 }

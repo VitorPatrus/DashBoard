@@ -13,8 +13,10 @@ namespace BI.Sistemas.Domain.Novo
             Delivery = 3,
             Ceremony = 4,
             Coaching = 5,
+            OutOfOffice = 6,
+            Management = 7,
 
-        }
+    }
     public class Atividades
     {
         public GeracaoColaborador Geracao { get; set; }

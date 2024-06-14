@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BI.Sistemas.ORM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e9b2edf43334ad69cfb9c24b221cbf744933c17")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c556ca220a22ba8d3b08a59cb12ac052fb5723b7")]
 [assembly: System.Reflection.AssemblyProductAttribute("BI.Sistemas.ORM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BI.Sistemas.ORM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

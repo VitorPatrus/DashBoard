@@ -186,8 +186,6 @@ namespace BI.Sistemas.UnitTests
                     Bug = 22,
                     LeadTime = 23,
                     CicleTime = 24,
-
-
                 });
 
                 geracao.Times.Add(new Domain.Novo.GeracaoTime()

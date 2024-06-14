@@ -84,6 +84,13 @@
 								</a>
 							</li>
 							<li>
+								<a class="dropdown-item" href="#"
+									onclick="clickColaboradorFuncao('87B833CD-7810-430-D722-08DC62DFD032')">
+									<img class="rounded-circle me-1" width="24" height="24"
+										src="./Content/Images/face-thiao.jpg" alt="">Petrônio Aleixo (TI MTZ)
+								</a>
+							</li>
+							<li>
 								<hr class="dropdown-divider">
 							</li>
 							<li>
@@ -122,7 +129,8 @@
 						</ul>
 					</li>
 				</ul>
-				<button id="sendMailButton" class="sendMailButton" role="button" style="float: right;">Enviar </button>
+				<button id="sendMailButton" class="sendMailButton" role="button" style="float: right; ">Enviar Ofical </button>
+				<button id="sendMailTeste" class="sendMailButton" role="button" style="float: right; margin-left:20px; background-color: blue !important;">Enviar Teste </button>
 			</div>
 		</div>
 	</nav>
@@ -311,6 +319,7 @@
 			}
 			document.engajamento = data.engajamento;
 			document.lista = data.atividades;
+			document.devOps = data.devOps;
 
 
 			$('#nome_colaborador').text(data.nome);
@@ -322,6 +331,7 @@
 			$('#valorEngajamento').text(data.engajamento + '%');
 			$('#txt_horas_individuais').text(data.hE_Individual+ 'h');
 			$('#txt_horasEquipe').text(data.hE_Equipe + 'h');
+			$('#devOps').text(data.devOps);
 			$('#tmetric').text(formatarHora(data.totalApropriado));
 			$('#trabalhado').text(formatarHora(data.totalPonto));
 			$('#pj').css("display", data.pj ? "" : "none");
@@ -350,14 +360,6 @@
 				columns.push([apropriacao.tipo, apropriacao.valor]);
 				colors[apropriacao.tipo] = apropriacao.color;
 			});
-
-			function trocaCor() {
-				var cor = getElementById("valorEngajamento").value;
-				if (data.engajamento > 100) {
-					document.getElementById("valorEngajamento").style.backgroundColor = red;
-				}
-			}
-
 
 			function trocaCor() {
 				var elemento = $('#valorEngajamento');
@@ -468,8 +470,33 @@
 				},
 				bindto: "#gaugeNeedle_1"
 			});
-
-
+// DevOps
+var chart = bb.generate({
+  data: {
+    columns: [
+	["DevOps x TMetric", data.devOps]
+    ],
+    type: "gauge", // for ESM specify as: gauge()
+    onclick: function(d, i) {
+	console.log("onclick", d, i);
+   }
+},
+  gauge: {},
+  color: {
+    pattern: [
+      "orange","#00b050"],
+    threshold: {
+      values: [
+        94.9
+      ]
+    }
+  },
+  
+  size: {
+    height: 140
+  },
+  bindto: "#gaugeChart"
+});
 
 			// Grafico Evolução
 			var listaEvolucao = [
@@ -515,6 +542,8 @@
 
 				chart.draw(view, options);
 			}
+
+			
 
 
 			// var top4Selecionados = top3.slice(0, 3);
@@ -588,11 +617,7 @@
 
 
 	//const nome = document.getElementById("nome_colaborador").innerText;
-
-	// Email
-	const btnGenerate = document.querySelector("#sendMailButton");
-
-	btnGenerate.addEventListener("click", () => {
+	var sendMail = (oficial) => {
 		const content = document.querySelector("#capture");
 		let id = document.idColaborador;
 		// Renderizar o conteúdo HTML como uma imagem de canvas
@@ -632,13 +657,25 @@
 					periodo: document.periodo,
 					lista: document.lista,
 					engajamento: document.engajamento,
+					devOps: document.devOps,
+					oficial: oficial
 				}),
 				'dataType': 'json',
 				'success': function (data) { }
 			});
 		});
 		alert("Email Enviado");
-	});
+	};
+	// Email
+	const btnGenerate = document.querySelector("#sendMailButton");
+	btnGenerate.addEventListener("click",() => {sendMail(true);});
+
+
+	const generateTeste = document.querySelector("#sendMailTeste");
+	generateTeste.addEventListener("click",() => {sendMail(false);});
+
+
+
 
 
 // // Define the value that is missing for data1 to reach 100%
@@ -672,31 +709,7 @@
 // });
 
 
-var chart = bb.generate({
-  data: {
-    columns: [
-	["DevOps x TMetric", 95]
-    ],
-    type: "gauge", // for ESM specify as: gauge()
-    onclick: function(d, i) {
-	console.log("onclick", d, i);
-   }
-},
-  gauge: {},
-  color: {
-    pattern: [
-      "orange","#00b050"],
-    threshold: {
-      values: [
-        94.9
-      ]
-    }
-  },
-  size: {
-    height: 140
-  },
-  bindto: "#gaugeChart"
-});
+
 
 </script>
 <style>
