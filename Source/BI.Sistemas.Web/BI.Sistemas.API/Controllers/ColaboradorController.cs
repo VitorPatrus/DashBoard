@@ -1,15 +1,4 @@
-﻿using BI.Sistemas.API.View;
-using BI.Sistemas.Context;
-using BI.Sistemas.Domain;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Net.Mail;
-using Outlook = Microsoft.Office.Interop.Outlook;
-using static BI.Sistemas.API.View.ColaboradorDashboardView;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.Text.RegularExpressions;
-using static System.Net.Mime.MediaTypeNames;
-using static System.Net.WebRequestMethods;
+﻿using Outlook = Microsoft.Office.Interop.Outlook;
 
 namespace BI.Sistemas.API.Controllers
 {
@@ -33,7 +22,11 @@ namespace BI.Sistemas.API.Controllers
             // Inicia uma instância do contexto do banco de dados
             using (var db = new BISistemasContext())
             {
-
+                /*
+                    Se o codigo não e mais ultilizado não tem necessidade de guardar ele 
+                    Isso polui a leitura 
+                
+                */
                 var pontosTodos = db.Pontos.ToList();
                 var tmetricTodos = db.TMetrics.Where(a =>
                 a.Usuario != "Petronio Faleixo" &&
@@ -49,8 +42,10 @@ namespace BI.Sistemas.API.Controllers
                 {
                     return NotFound($"Colaborador não encontrado (ID: {id})");
                 }
-
-
+                /*
+                     Isso daqui pode ser feito em um outro metodo 
+                     melhorar espaçamento inutil
+                */
                 // Cria um objeto para armazenar as informações do painel do colaborador
                 var colaborador = new ColaboradorDashboardView();
 
@@ -126,9 +121,18 @@ namespace BI.Sistemas.API.Controllers
                     var c = a + b;
                 }
 
+                /*
+                    Isso pode ser outro metodo 
+                    Tenta dividir as responsabilidades um metodo para horas outro para colaboradores
+                    e assim por diante o codigo vai ficar mais legivel, para quando vc mudar o arquivo vai
+                    te ajudar e facilitar mas agora tenta colocar em metodos privados e entender oque vc fez 
+                    e oque pode tentar melhorar
+                */
                 var HoraPonto = pontosTodos
                     .Where(he => he.PeriodoId.ToString().ToUpper() == HE.PeriodoId.ToString().ToUpper() && he.ColaboradorId.ToString().Equals(id, StringComparison.OrdinalIgnoreCase) /*he.ColaboradorId.ToString().ToUpper() == id.ToUpper()*/ && he.Tipo == TipoPonto.Normal)
                     .Select(C => C.Horas);
+
+
 
 
                 // Se houver registro de ponto normal, atualiza o total de pontos no objeto do painel
@@ -196,6 +200,14 @@ namespace BI.Sistemas.API.Controllers
                         // TicketLink = a.TicketLink.ToString(), // TicketLink no lugar de TicketLink
                     }).ToArray();
 
+
+
+                /*
+                    Isso daqui pode ser feito em um outro metodo 
+                    melhorar espaçamento inutil
+                    colocar em um #region se não for mais ultilizado 
+
+                */
 
 
                 colaborador.PJ = pessoa.CargaHoraria > 0;
@@ -475,7 +487,7 @@ namespace BI.Sistemas.API.Controllers
                         gif = ListasGifs(ListaGifs25);
                         mensagem = $@"Seu engajamento foi de <b>{dados.Engajamento}%</b>, essa semana não foi legal.<b><span style=""color:red;""> Atenção com os lançamentos ❌.</b></span>";
                     }
-                    
+
                     // Configuração do corpo do e-mail
                     mailItem.Subject = $@"[SISTEMAS] APURAÇÃO DE HORAS SEMANAL - {pessoa.Nome.ToUpper()} ";
                     mailItem.BodyFormat = Outlook.OlBodyFormat.olFormatHTML;
@@ -489,7 +501,7 @@ namespace BI.Sistemas.API.Controllers
                             <img src=""{gif}"" width=""80"" height=""80""/><br>
                             {mensagem}<br><br>
                             <img align=""baseline"" border=""1"" hspace=""0"" src=""{dados.Foto}"" width=""880"" 600="""" hold="" /> ""></img><br>
-                            <i>*** O novo percentual ({string.Format("{0:#.#,##}", Math.Round(dados.DevOps,1))}%) no dashboard é referente aos lançamentos de Discovery, Delivery e Bug com o card do Devops referenciado. O ideal é sempre iniciar uma tarefa destes tipos de apropriação diretamente do Azure Devops.</i>
+                            <i>*** O novo percentual ({string.Format("{0:#.#,##}", Math.Round(dados.DevOps, 1))}%) no dashboard é referente aos lançamentos de Discovery, Delivery e Bug com o card do Devops referenciado. O ideal é sempre iniciar uma tarefa destes tipos de apropriação diretamente do Azure Devops.</i>
                             <br><br>
                             Segue abaixo a tabela com os lançamentos individuais do TMETRIC:
                             <br><br><hr /><br>
