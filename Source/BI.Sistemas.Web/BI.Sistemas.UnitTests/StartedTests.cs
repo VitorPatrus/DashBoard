@@ -157,20 +157,6 @@ namespace BI.Sistemas.UnitTests
                         db.SaveChanges();
                     }
                 });
-
-                //foreach (var colaborador in db.Colaboradores)
-                //    {
-                //        db.Pontos.Add(new Ponto()
-                //        {
-                //            Colaborador = colaborador,
-                //            PeriodoId = periodo.Id,
-                //            Periodo = periodo,
-                //            Horas = periodo.Data.AddHours(Random.Shared.Next(10)),
-                //            Tipo = tipo,
-                //        });
-                //    }
-
-                //    db.SaveChanges();
             }
         }
 
@@ -212,7 +198,7 @@ namespace BI.Sistemas.UnitTests
                     }
                 });
         }
- 
+
 
         [TestMethod]
         public void SomaHora()
@@ -263,7 +249,6 @@ namespace BI.Sistemas.UnitTests
                     LeadTime = 73,
                     CicleTime = 4,
 
-
                 });
 
                 geracao.Times.Add(new Domain.Novo.GeracaoTime()
@@ -277,9 +262,7 @@ namespace BI.Sistemas.UnitTests
                     LeadTime = 32,
                     CicleTime = 45,
 
-
                 });
-
                 db.Add(geracao);
                 db.SaveChanges();
             }

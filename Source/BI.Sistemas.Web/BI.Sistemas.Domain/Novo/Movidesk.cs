@@ -29,16 +29,6 @@ namespace BI.Sistemas.Domain.Novo
 
         public static Movidesk FromCsv(string csvLine)
         {
-//            var aaab = '"';
-//            string pattern = string.Format(
-//@"{0}(?=(?:[^{1}]*{1}[^{1}]*{1})*(?![^{1}]*{1}))",
-//Regex.Escape(","),
-//Regex.Escape(aaab.ToString())
-//);
-//            //string[] values = csvLine.Split(',');
-//            string[] values = Regex.Split(csvLine, pattern);
-//            values = values.Select(s => s.Trim().Trim(aaab)).ToArray();
-
             string[] values = Regex.Split(csvLine, ";(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
             var result = new Movidesk();
             result.Numero = Convert.ToInt32(values[0]);
