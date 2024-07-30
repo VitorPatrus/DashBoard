@@ -1,5 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Configuration.AddJsonFile("econometrosettings.json");
 // Add services to the container.
 
 builder.Services.AddControllers();

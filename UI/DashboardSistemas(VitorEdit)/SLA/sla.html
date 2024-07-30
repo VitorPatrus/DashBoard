@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- D3.js -->
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+	<!-- Moment.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<!-- Billboard.js -->
+	<script src="billboard.min.js"></script>
+	<link rel="stylesheet" href="billboard.min.css">
+
+	<!-- Resources -->
+	<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+	<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+	<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+	<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+	<script src="https://cdn.amcharts.com/lib/5/themes/Kelly.js"></script>
+	<script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
+	<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- html2pdf.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+		integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+		integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha384-......" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<!-- <body style="background-color:#2e2e2e"> -->
+
+<body style="background-color:#c81238">
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<a href="/Devs/index.html">
+						<img src="/Content/Images/PatrusTech.png" width="40" height="40"
+							class="d-inline-block align-top" alt="" style="border-radius: 50%;">
+					</a>
+					&nbsp;
+					<li class="nav-item dropdown"></li>
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						Colaborador
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a class="dropdown-item" href="#"
+								onclick="clickColaboradorFuncao('52F14677-9C85-41D5-D723-08DC62DFD032')">
+								<img class="rounded-circle me-1" width="24" height="24"
+									src="/UI/Content/Images/face-rogerio.jpg" alt="">Joao Paulo (TI MTZ)
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#"
+								onclick="clickColaboradorFuncao('C44D7319-3318-43D4-D726-08DC62DFD032')">
+								<img class="rounded-circle me-1" width="24" height="24"
+									src="/UI/Content/Images/face-rogerio.jpg" alt="">Joel Junior (TI MTZ)
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#"
+								onclick="clickColaboradorFuncao('3F7E1A71-815A-4397-D725-08DC62DFD032')">
+								<img class="rounded-circle me-1" width="24" height="24"
+									src="/UI/Content/Images/face-rogerio.jpg" alt="">Junior Dias (TI MTZ)
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#"
+								onclick="clickColaboradorFuncao('C0D4394F-38EF-4F8B-D71E-08DC62DFD032')">
+								<img class="rounded-circle me-1" width="24" height="24"
+									src="/UI/Content/Images/face-rogerio.jpg" alt="">Paulo Silva (TI MTZ)
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#"
+								onclick="clickColaboradorFuncao('87B833CD-7810-430-D722-08DC62DFD032')">
+								<img class="rounded-circle me-1" width="24" height="24"
+									src="/UI/Content/Images/face-rogerio.jpg" alt="">Petrônio Aleixo (TI MTZ)
+							</a>
+						</li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li>
+							<a class="dropdown-item" href="#"
+								onclick="clickColaboradorFuncao('69DB13EF-89C0-4A6F-D71F-08DC62DFD032')">
+								<img class="rounded-circle me-1" width="24" height="24"
+									src="/UI/Content/Images/face-rogerio.jpg" alt="">Amanda Ferreira (TI MTZ)
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#"
+								onclick="clickColaboradorFuncao('BD984996-9C11-4095-D71D-08DC62DFD032')">
+								<img class="rounded-circle me-1" width="24" height="24"
+									src="/UI/Content/Images/face-rogerio.jpg" alt="">Fernanda Cassiano (TI MTZ)
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#"
+								onclick="clickColaboradorFuncao('0D6227A1-7B72-4DAC-D720-08DC62DFD032')">
+								<img class="rounded-circle me-1" width="24" height="24"
+									src="/UI/Content/Images/face-rogerio.jpg" alt="">Luiz Oliveira
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#"
+								onclick="clickColaboradorFuncao('87B833CD-7810-4030-D722-08DC62DFD032')">
+								<img class="rounded-circle me-1" width="24" height="24"
+									src="/UI/Content/Images/face-rogerio.jpg" alt="">Thiago Oliveira (TI MTZ)
+							</a>
+						</li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li>
+							<a class="dropdown-item" href="#"
+								onclick="clickColaboradorFuncao('87B833CD-7810-4030-D722-08DC62DFD032')">
+								<img class="rounded-circle me-1" width="24" height="24"
+									src="/UI/Content/Images/face-rogerio.jpg" alt="">Thiago Oliveira (TI MTZ)
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#"
+								onclick="clickColaboradorFuncao('87B833CD-7810-4030-D722-08DC62DFD032')">
+								<img class="rounded-circle me-1" width="24" height="24"
+									src="/UI/Content/Images/face-rogerio.jpg" alt="">Thiago Oliveira (TI MTZ)
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#"
+								onclick="clickColaboradorFuncao('87B833CD-7810-4030-D722-08DC62DFD032')">
+								<img class="rounded-circle me-1" width="24" height="24"
+									src="/UI/Content/Images/face-rogerio.jpg" alt="">Thiago Oliveira (TI MTZ)
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#"
+								onclick="clickColaboradorFuncao('87B833CD-7810-4030-D722-08DC62DFD032')">
+								<img class="rounded-circle me-1" width="24" height="24"
+									src="/UI/Content/Images/face-rogerio.jpg" alt="">Thiago Oliveira (TI MTZ)
+							</a>
+						</li>
+						<hr>
+						<li><a class="dropdown-item" href="/Devs/index.html">Dashboard DEV's</a></li>
+						<li><a class="dropdown-item" href="/Econômetro/index.html">Econômetro</a></li>
+					</ul>
+					</li>
+				</ul>
+				<button id="sendMailButton" class="sendMailButton" role="button" style="float: right; ">Enviar Ofical
+				</button>
+				<button id="sendMailTeste" class="sendMailButton" role="button"
+					style="float: right; margin-left:20px; background-color: blue !important;">Enviar Teste </button>
+			</div>
+		</div>
+	</nav>
+	<div id="content">
+		<div class="col-md-12" style="padding:20px; ">
+			<div class="row" id="capture">
+				<div class="col-md-3">
+					<div class="card text-center" style="min-height: 364px;">
+						<img src="/Content/Images/papapa.png" id="time_colaborador" height="165px" class="card-img-top"
+							alt="...">
+						<div class="d-flex justify-content-center" style="margin-top: -30px">
+							<img src="/Content/Images/face-rogerio.jpg" id="img_colaborador"
+								class="rounded-circle me-1 flex" width="60" height="60" alt="...">
+						</div>
+						<div class="card-body">
+							<b class="card-title" id="nome_colaborador">Nome Colaborador </b> <b class="card-title"
+								id="TIME"> </b><br>
+							<small class="card-text" id="email_colaborador">Email Colaborador</small><br>
+							<small class="card-text" id="cargo_colaborador">Cargo Colaborador</small>
+						</div>
+						<div class="card-footer text-body-secondary">
+							<center><small><i class="fa-solid fa-business-time"></i><span id="totalIndividual">
+										Engajamento</span></small>
+							</center>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card" style="max-height: 365.5px;">
+						<div class="card-body col-md-12">
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="row">
+											<!-- gráfico  -->
+											<div id="gaugeNeedle_2"></div>
+										</div>
+									</div>
+								</div>
+								<!-- Coluna gráfico -->
+								<hr>
+								<!-- Coluna lista e gráfico lado a lado -->
+								<div class="row">
+									<div class="col-md-12">
+										<div class="row">
+											<div class="col-md-8" style="font-weight: bolder;">
+												SLA da Equipe
+											</div>
+											<div class="col-md-4" style="font-weight: bolder;">
+												97%
+											</div>
+										</div>
+										<hr>
+										<div class="row">
+											<div class="col-md-2">
+												1.
+											</div>
+											<div class="col-md-6">
+												Vitor
+											</div>
+											<div class="col-md-4">
+												99%
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-2">
+												2.
+											</div>
+											<div class="col-md-6">
+												Vitor
+											</div>
+											<div class="col-md-4">
+												98%
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-2">
+												3.
+											</div>
+											<div class="col-md-6">
+												Vitor
+											</div>
+											<div class="col-md-4">
+												97%
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer text-center text-muted">
+							<span>TOP 3 SLA</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="row">
+						<div class=" col-md-6">
+							<div class="card" id="clt">
+								<center>
+									<div class="card-header text-muted">
+										<span style="font-size: large;">Total Chamado</span>
+									</div>
+								</center>
+								<div>
+									<div id="meugrafico" style="width: 100%; height: 145px; padding-top: 20px;"></div>
+								</div>
+								<hr />
+								<div class="row">
+									<div class="col-md-6" style="border-right: 1.6px solid #d2d2d2;">
+										<div style="padding-left: 20px;">
+											<div class="row text-center">
+												<span style="font-weight: bolder;">Chamados Abertos <i
+														class="fa-regular fa-folder-open"></i></span>
+											</div>
+											<br>
+											<div class="row">
+												<div class="col-md-2 text-center"">
+												<i class=" fa-solid fa-person-rays"></i>
+												</div>
+												<div class="col-md-7">
+													Pessoal
+												</div>
+												<div class="col-md-3">
+													35
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-2 text-center">
+													<i class=" fa-solid fa-people-line"></i>
+												</div>
+												<div class="col-md-7">
+													Setorial
+												</div>
+												<div class="col-md-3">
+													80
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-2 text-center"">
+												<i class=" fa-solid fa-globe"></i>
+												</div>
+												<div class="col-md-7">
+													Sistemas
+												</div>
+												<div class="col-md-3">
+													90
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="text-center">
+											<span style="font-weight: bolder;">Horas Extras <i
+													class="fa-regular fa-clock"></i></span>
+										</div><br>
+										<div class="row">
+											<div class="col-md-8 text-center"
+												style="font-size: 15px; color: green; padding-right: 43px;">
+												Compensável
+											</div>
+											<div class="col-md-4 text-center">
+												45h
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-8 text-center" style="font-size: 15px; color: #c81238;">
+												Não Compensável
+											</div>
+											<div class="col-md-4 text-center">
+												45h
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-8 text-center" style="padding-right: 47px;">
+												<b>Total Horas</b>
+											</div>
+											<div class="col-md-4 text-center">
+												<b>90h</b>
+											</div>
+										</div>
+									</div>
+								</div><br>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="card" style="min-height: 357px;">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="row">
+												<!-- grafico pizza -->
+												<div id="chartdiv"></div>
+												<!-- <div id="tooltipPosition_3"></div> -->
+											</div>
+										</div>
+										<div class="card-footer text-muted">
+											<div class="text-center">
+												Top 5 Nível Serviço
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="padding-top: 10px; margin-left: 5px;">
+			<div class="row" style="padding-top: 10px; margin-left: 5px;">
+				<div class="col-md-6">
+					<h4 style="color: white;">Chamados Fora do Prazo</h4>
+					<h5 id="date-placeholder" style="color: white !important;"> Quantidade de chamados Fora do prazo de
+						29/04 à 03/05 </h5>
+					<table class="table table-striped" id="atividades">
+						<thead>
+							<tr>
+								<th scope="col">ID</th>
+								<th scope="col">Atividade</th>
+								<th scope="col">Ticket</th>
+								<th scope="col">Tipo</th>
+								<th scope="col">Data</th>
+								<th scope="col">Horas</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Lorem ipsum dolor sit amet</td>
+								<td>Ticket 1</td>
+								<td>Lorem</td>
+								<td>01/05/2022</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Lorem ipsum dolor sit amet</td>
+								<td>Ticket 2</td>
+								<td>Lorem</td>
+								<td>02/05/2022</td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Lorem ipsum dolor sit amet</td>
+								<td>Ticket 3</td>
+								<td>Lorem</td>
+								<td>03/05/2022</td>
+								<td>4</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-12">
+							<h4 style="color: white;">Chamados Pendentes</h4>
+						</div>
+					</div>					
+					<h5 id="date-placeholder1" style="color: white !important;"> Quantidade de chamados Pendentes no
+						prazo de 29/04 à 03/05 </h5>
+					<table class="table table-striped" id="outra-lista">
+						<thead>
+							<tr>
+								<th scope="col">ID</th>
+								<th scope="col">Atividade</th>
+								<th scope="col">Ticket</th>
+								<th scope="col">Preço</th>
+								<th scope="col">Data</th>
+								<th scope="col">Hora</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Lorem ipsum dolor sit amet</td>
+								<td>Ticket 3</td>
+								<td>Lorem</td>
+								<td>03/05/2022</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Lorem ipsum dolor sit amet</td>
+								<td>Ticket 3</td>
+								<td>Lorem</td>
+								<td>03/05/2022</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Lorem ipsum dolor sit amet</td>
+								<td>Ticket 3</td>
+								<td>Lorem</td>
+								<td>03/05/2022</td>
+								<td>4</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		<script src="/inserirData.js"></script>
+		<script src="/SLA/sla.js"></script>
+</body>
+<html>

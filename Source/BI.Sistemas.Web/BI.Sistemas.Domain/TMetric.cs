@@ -54,6 +54,7 @@ namespace BI.Sistemas.Domain
             dailyValues.Atividade = values[2];
             dailyValues.DataCarga = dataCarga;
             dailyValues.Tipo = values[7];
+
             //if (values[7] == "Development")
             //{
             //    dailyValues.Tipo = "Delivery";

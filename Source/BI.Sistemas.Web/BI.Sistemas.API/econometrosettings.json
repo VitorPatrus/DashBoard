@@ -1,0 +1,100 @@
+{
+  "Econometro": {
+    "UserNameTMS": [
+      "Joel Martins Júnior",
+      "Paulo Rafael da Silva",
+      "Joao Paulo (JP TI)",
+      "Junior Dias",
+      "Petronio Faleixo",
+      "Marco Tulio Rodrigues"
+    ],
+    "UserNameERP": [
+      "Amanda Ferreira",
+      "Luiz Oliveira (TI MTZ)",
+      "Fernanda Cassiano Pereira dos Santos",
+      "Thiago Gomes",
+      "Marco Aurelio de Barros"
+    ],
+    "ValorHora": 185,
+    "TokenTmetric": "A06B6F625021E4046F46C107ECCF2B08CA33B4B16B55F9F279193D073C7EB03B",
+    "Valores": {
+      "ValorAnoAnterior": 2233520.62,
+      "Meta": 2500000.00,
+      "TotalAcumuladoPorTime": [
+        {
+          "Chave": "ERP",
+          "Valor": 448594.17
+        },
+        {
+          "Chave": "TMS",
+          "Valor": 473939.17
+        }
+      ],
+      "TotalAcumulado": [
+        {
+          "Chave": "01/2024",
+          "Valor": 112480.00
+
+        },
+        {
+          "Chave": "02/2024",
+          "Valor": 202020.00
+        },
+        {
+          "Chave": "03/2024",
+          "Valor": 56980.00
+        },
+        {
+          "Chave": "04/2024",
+          "Valor": 106930.00
+        },
+        {
+          "Chave": "05/2024",
+          "Valor": 218145.83
+        },
+        {
+          "Chave": "06/2024",
+          "Valor": 225977.50
+        }
+      ],
+      "TotalAreas": [
+        {
+          "Chave": "ADM",
+          "Valor": 138503.33
+        },
+        {
+          "Chave": "COM",
+          "Valor": 27811.67
+        },
+        {
+          "Chave": "COT",
+          "Valor": 34194.17
+        },
+        {
+          "Chave": "EDI",
+          "Valor": 6598.33
+        },
+        {
+          "Chave": "FIN",
+          "Valor": 129870.00
+        },
+        {
+          "Chave": "FIS",
+          "Valor": 4594.17
+        },
+        {
+          "Chave": "OPEX",
+          "Valor": 378633.33
+        },
+        {
+          "Chave": "RH",
+          "Valor": 123117.50
+        },
+        {
+          "Chave": "TI",
+          "Valor": 79210.83
+        }
+      ]
+    }
+  }
+}

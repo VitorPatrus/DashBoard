@@ -1,7 +1,9 @@
 ﻿using BI.Sistemas.Domain;
+using BI.Sistemas.Domain.Novo;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System.Reflection.Metadata;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace BI.Sistemas.Context
 {
@@ -9,6 +11,7 @@ namespace BI.Sistemas.Context
     {
         public DbSet<Colaborador> Colaboradores { get; set; }
         public DbSet<Periodo> Periodos { get; set; }
+        public DbSet<Movidesk> Movidesks { get; set; } // Desvio do fonte para o banco
         public DbSet<Ponto> Pontos { get; set; }
         public DbSet<TMetric> TMetrics { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -17,7 +20,7 @@ namespace BI.Sistemas.Context
             optionsBuilder.LogTo(Console.WriteLine);
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder) // Mapeamento!
         {
             modelBuilder.Entity<Colaborador>(entity =>
             {
@@ -239,6 +242,70 @@ namespace BI.Sistemas.Context
                 entity.HasOne(x => x.Geracao)
                     .WithMany(y => y.Times)
                     .HasForeignKey(c => c.GeracaoId);
+
+                //entity.HasOne(e => e.Time)
+                //     .WithOne()
+                //     .HasForeignKey<TMetric>(c => c.PeriodoId);
+
+            });
+
+            modelBuilder.Entity<BI.Sistemas.Domain.Novo.Movidesk>(entity =>
+            {
+
+                entity.ToTable("MOVIDESK");
+
+                entity.HasKey(e => e.Id)
+                    .HasName("ID");
+
+                entity.Property(e => e.IndicadorSLA)
+                    .HasColumnName("INDICADORSLA");
+
+                entity.Property(e => e.PeriodoId)
+                    .HasColumnName("PERIODO");
+
+                entity.HasOne(e => e.Periodo)
+                    .WithOne()
+                    .HasForeignKey<Movidesk>(c => c.PeriodoId);
+
+                entity.Property(e => e.Numero)
+                    .HasColumnName("NUMERO")
+                    .IsRequired();
+
+                entity.Property(e => e.DataAbertura)
+                    .HasColumnName("DATAABERTURA")
+                    .IsRequired();
+
+                entity.Property(e => e.DataFechamento)
+                    .HasColumnName("DATAFECHAMENTO");
+
+                entity.Property(e => e.DataVencimento)
+                    .HasColumnName("DATAVENCIMENTO");
+
+                entity.Property(e => e.Assunto)
+                    .HasColumnName("ASSUNTO");
+
+                entity.Property(e => e.Pessoa)
+                    .HasColumnName("PESSOA");
+
+                entity.Property(e => e.ResponsavelId)
+                    .HasColumnName("RESPONSAVEL");
+
+                entity.HasOne(e => e.Responsavel)
+                    .WithOne()
+                    .HasForeignKey<Movidesk>(c => c.ResponsavelId);
+
+                entity.Property(e => e.ResponsavelChamado)
+                    .HasColumnName("RESPONSAVELCHAMADO");
+
+                entity.Property(e => e.Servico)
+                    .HasColumnName("SERVICO");
+
+                entity.Property(e => e.Status)
+                    .HasColumnName("STATUS");
+
+                entity.Property(e => e.Time)
+                    .HasColumnName("TIME");
+
 
                 //entity.HasOne(e => e.Time)
                 //     .WithOne()

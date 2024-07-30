@@ -151,3 +151,4 @@ C:\Users\vitor.fernandessouza\Desktop\DashBoard\Source\BI.Sistemas.Web\BI.Sistem
 C:\Users\vitor.fernandessouza\Desktop\DashBoard\Source\BI.Sistemas.Web\BI.Sistemas.API\obj\Debug\net8.0\BI.Sistemas.API.pdb
 C:\Users\vitor.fernandessouza\Desktop\DashBoard\Source\BI.Sistemas.Web\BI.Sistemas.API\obj\Debug\net8.0\BI.Sistemas.API.genruntimeconfig.cache
 C:\Users\vitor.fernandessouza\Desktop\DashBoard\Source\BI.Sistemas.Web\BI.Sistemas.API\obj\Debug\net8.0\ref\BI.Sistemas.API.dll
+C:\Users\vitor.fernandessouza\Desktop\DashBoard\Source\BI.Sistemas.Web\BI.Sistemas.API\bin\Debug\net8.0\econometrosettings.json

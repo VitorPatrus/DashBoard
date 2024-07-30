@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- D3.js -->
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+	<!-- Moment.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<!-- Billboard.js -->
+	<script src="billboard.min.js"></script>
+	<link rel="stylesheet" href="billboard.min.css">
+	<!-- Google Charts -->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<!-- html2pdf.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+		integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+		integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha384-......" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Digital-7&display=swap">
+	<link href="https://fonts.googleapis.com/css2?family=Jersey+25+Charted&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap" rel="stylesheet">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color:#f4f2f0">
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<a href="/Devs/index.html">
+						<img src="/Content/Images/PatrusTech.png" width="40" height="40" class="d-inline-block align-top" alt=""
+							style="border-radius: 50%;">
+					</a>
+					&nbsp;
+					<li class="nav-item dropdown"></li>
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Colaborador
+						</a>
+					<ul class="dropdown-menu">
+							<li>
+								<a class="dropdown-item" href="#"
+									onclick="clickColaboradorFuncao('52F14677-9C85-41D5-D723-08DC62DFD032')">
+									<img class="rounded-circle me-1" width="24" height="24"
+										src="/Content/Images/face-jp.jpg" alt="">Joao Paulo (TI MTZ)
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#"
+									onclick="clickColaboradorFuncao('C44D7319-3318-43D4-D726-08DC62DFD032')">
+									<img class="rounded-circle me-1" width="24" height="24"
+										src="/Content/Images/face-joel.jpg" alt="">Joel Junior (TI MTZ)
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#"
+									onclick="clickColaboradorFuncao('3F7E1A71-815A-4397-D725-08DC62DFD032')">
+									<img class="rounded-circle me-1" width="24" height="24"
+										src="/Content/Images/face-junior.jpg" alt="">Junior Dias (TI MTZ)
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#"
+									onclick="clickColaboradorFuncao('C0D4394F-38EF-4F8B-D71E-08DC62DFD032')">
+									<img class="rounded-circle me-1" width="24" height="24"
+										src="/Content/Images/face-paulo.jpg" alt="">Paulo Silva (TI MTZ)
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#"
+									onclick="clickColaboradorFuncao('11B207E8-E5F6-44B6-32CA-08DC9125DFEC')">
+									<img class="rounded-circle me-1" width="24" height="24"
+										src="/Content/Images/face-petronio.jpg" alt="">Petrônio Aleixo (TI MTZ)
+								</a>
+							</li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li>
+								<a class="dropdown-item" href="#"
+									onclick="clickColaboradorFuncao('69DB13EF-89C0-4A6F-D71F-08DC62DFD032')">
+									<img class="rounded-circle me-1" width="24" height="24"
+										src="/Content/Images/face-amanda.jpg" alt="">Amanda Ferreira (TI MTZ)
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#"
+									onclick="clickColaboradorFuncao('BD984996-9C11-4095-D71D-08DC62DFD032')">
+									<img class="rounded-circle me-1" width="24" height="24"
+										src="/Content/Images/face-fernanda.jpg" alt="">Fernanda Cassiano (TI MTZ)
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#"
+									onclick="clickColaboradorFuncao('0D6227A1-7B72-4DAC-D720-08DC62DFD032')">
+									<img class="rounded-circle me-1" width="24" height="24"
+										src="/Content/Images/face-luiz.jpg" alt="">Luiz Oliveira
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#"
+									onclick="clickColaboradorFuncao('87B833CD-7810-4030-D722-08DC62DFD032')">
+									<img class="rounded-circle me-1" width="24" height="24"
+										src="/Content/Images/face-thiago.jpg" alt="">Thiago Oliveira (TI MTZ)
+								</a>
+							</li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="/SLA/sla.html">Dashboard SLA</a></li>
+							<li><a class="dropdown-item" href="/Econômetro/index.html">Econômetro</a></li>
+						</ul>
+					</li>
+				</ul>
+				<button id="sendMailButton" class="sendMailButton" role="button" style="float: right; ">Enviar Ofical
+				</button>
+				<button id="sendMailTeste" class="sendMailButton" role="button"
+					style="float: right; margin-left:20px; background-color: blue !important;">Enviar Teste </button>
+			</div>
+		</div>
+	</nav>
+	<div id="content">
+		<div class="col-md-12" style="padding:20px; ">
+			<div class="row" id="capture">
+				<div class="col-md-3">
+					<div class="card text-center" style="min-height: 352px;">
+						<img src="/Content/Images/time-tms.jpg" id="time_colaborador" height="165px" class="card-img-top"
+							alt="...">
+						<div class="d-flex justify-content-center" style="margin-top: -30px">
+							<img src="/Content/Images/face-junior.jpg" id="img_colaborador"
+								class="rounded-circle me-1 flex" width="60" height="60" alt="...">
+						</div>
+						<div class="card-body">
+							<b class="card-title" id="nome_colaborador">Nome Colaborador </b> / <b class="card-title"
+								id="TIME"> </b>
+							<br />
+							<small class="card-text" id="email_colaborador">EMAIL Colaborador </small>
+							<br />
+							<small class="card-text" id="cargo_colaborador">Cargo Colaborador</small>
+						</div>
+						<div class="card-footer text-body-secondary">
+							<center><small><i class="fa-solid fa-business-time"></i><span id="totalIndividual">
+										Engajamento</span></small>
+							</center>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card" style="max-height: 352px;">
+						<div class="card-body col-md-12">
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="row">
+											<!-- gráfico  -->
+											<span id="gaugeNeedle_1"></span>
+										</div>
+									</div>
+									<div class="col-md-3"></div>
+									<div class="col-md-3">
+										<div class="row">
+											<span id="valorEngajamento"
+												style="font-size: 23px; font-weight: bolder;">45%</span>
+											<span style="font-size: x-small;">TMETRIC</span>
+											<h3 id="tmetric" style="font-size: medium;">38:50h</h3>
+											<span style="font-size: x-small;">EXPEDIENTE</span>
+											<h3 id="trabalhado" style="font-size: medium;">41:02h</h3>
+										</div>
+									</div>
+								</div>
+								<!-- Coluna gráfico -->
+								<hr>
+								<!-- Coluna lista e gráfico lado a lado -->
+								<div class="row">
+									<div class="col-md-6">
+										<ol class="list-unstyled">
+											<li>
+												<a class="dropdown-item" id="primeiro" style="font-weight: bolder;"
+													href="#"></a>
+											</li>
+											<hr>
+											<h5>Top 3 de engajamento</h5>
+											<li>
+												<a class="dropdown-item" id="segundo" href="#"></a>
+											</li>
+											<li>
+												<a class="dropdown-item" id="terceiro" href="#"></a>
+											</li>
+											<li>
+												<a class="dropdown-item" id="quarto" href="#"></a>
+											</li>
+										</ol>
+									</div>
+									<div class="col-md-6 align-items-start">
+										<!-- gráfico donut -->
+										<!-- <div id="multilineTitle" style="padding-bottom: 180px; padding-left: 25px;" ></div> -->
+										<!-- Markup -->
+										<div id="gaugeChart">
+										</div>
+										<span style="font-size: xx-small; align-items: center;">💡Discovery, Delivery e
+											Bug comparados ao DevOps</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="row">
+						<div class=" col-md-6">
+							<div class="card" style="padding: 0; margin: 0;">
+								<!-- grafico evolução -->
+								<span id="curve_chart"></span>
+								<div class="card-footer" style="font-size: 14px; text-align: center;"><i
+										class="fa-solid fa-chart-line "></i></i> Evolução do Engajamento</div>
+							</div>
+							<div class="card" id="clt">
+								<div class="horas-card">
+									<div>
+										<span class="card-text">
+											<span style="font-size: large;">Colaborador</span>
+											<span class="meutexto" id="txt_horas_individuais"
+												style="font-size: 35px; color: red;  margin-top: 0;">ERRO</span>
+									</div>
+									<div>
+										<span style="font-size: large; margin-left: 23px;">Time</span>
+										<span class="meutexto" id="txt_horasEquipe"
+											style="font-size: 35px; color: red; margin-top: 0;">PONTO</span>
+									</div>
+								</div>
+								<div class="card-footer text-body-secondary">
+									<center>
+										<small><i class="fa-regular fa-clock"></i> Gestão de Horas Extras</small>
+									</center>
+								</div>
+							</div>
+							<div class="card" id="pj" style="height: 162px;">
+								<div class="card-body text-center">
+									<span class="card-text" style="margin-top: 10px;">
+										<span style="font-size: large;">Colaborador</span><br>
+										<span class="meutexto" id="horasPJ"
+											style=" font-size: 35px !important; color: green;">ERRO
+										</span>
+									</span>
+								</div>
+								<div class="card-footer text-body-secondary">
+									<center> <small><i class="fa-regular fa-clock"></i> Carga Horária</small>
+									</center>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="card" style="max-height: 350px;">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="row">
+												<!-- grafico pizza -->
+												<div id="piechart"></div>
+											</div>
+										</div>
+										<div class="card-footer text-muted">
+											<div class="text-center">
+												<i class="fa-solid fa-chart-pie"></i>
+												Resumo Apropriação
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div></div>
+		</div>
+		<div class="row" style="padding-top: 10px; margin-left: 5px;">
+			<h4>Atividades trabalhadas</h4>
+			<h5 id="date-placeholder-1"> Atividades trabalhadas durante o período 29/04 à 03/05 </h5>
+			<h5 id="date-placeholder-2" style="color: #f4f2f0 !important;"> </h5>
+			<table class="table table-striped" id="atividades">
+				<thead>
+					<tr>
+						<th scope="col">ID</th>
+						<th scope="col">Atividade</th>
+						<th scope="col">Ticket</th>
+						<th scope="col">Tipo</th>
+						<th scope="col">Data</th>
+						<th scope="col">Horas</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+	<script src="/inserirData.js"></script>
+
+</body>
+<html>
