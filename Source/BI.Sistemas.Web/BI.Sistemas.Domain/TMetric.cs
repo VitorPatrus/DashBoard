@@ -18,7 +18,6 @@ namespace BI.Sistemas.Domain
 
         public static TMetric FromCsv(DateTime dataCarga, string csvLine)
         {
-            //string[] values = csvLine.Split(',');
             string[] values = Regex.Split(csvLine, ";(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
 
             var data = Convert.ToDateTime(values[0]);
@@ -55,18 +54,6 @@ namespace BI.Sistemas.Domain
             dailyValues.DataCarga = dataCarga;
             dailyValues.Tipo = values[7];
 
-            //if (values[7] == "Development")
-            //{
-            //    dailyValues.Tipo = "Delivery";
-            //}
-            //else if (values[7] == "Design")
-            //{
-            //    dailyValues.Tipo = "Discovery";
-            //}
-            //else
-            //{
-            //    dailyValues.Tipo = "Cerimony";
-            //}
             return dailyValues;
         }
     }

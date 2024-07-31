@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj": {}
+    "C:\\Users\\vitor.fernandessouza\\Desktop\\C# POO\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj": {
+    "C:\\Users\\vitor.fernandessouza\\Desktop\\C# POO\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\vitor.fernandessouza\\Desktop\\C# POO\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj",
         "projectName": "BI.Sistemas.Domain",
-        "projectPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj",
+        "projectPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\C# POO\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj",
         "packagesPath": "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\obj\\",
+        "outputPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\C# POO\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vitor.fernandessouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj": {
+    "C:\\Users\\vitor.fernandessouza\\Desktop\\C# POO\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj",
+        "projectUniqueName": "C:\\Users\\vitor.fernandessouza\\Desktop\\C# POO\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj",
         "projectName": "BI.Sistemas.ORM",
-        "projectPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj",
+        "projectPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\C# POO\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj",
         "packagesPath": "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\obj\\",
+        "outputPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\C# POO\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vitor.fernandessouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -90,8 +90,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj": {
-                "projectPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj"
+              "C:\\Users\\vitor.fernandessouza\\Desktop\\C# POO\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj": {
+                "projectPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\C# POO\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj"
               }
             }
           }
@@ -140,14 +140,14 @@
         }
       }
     },
-    "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj": {
+    "C:\\Users\\vitor.fernandessouza\\Desktop\\C# POO\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj",
+        "projectUniqueName": "C:\\Users\\vitor.fernandessouza\\Desktop\\C# POO\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj",
         "projectName": "BI.Sistemas.UnitTests",
-        "projectPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj",
+        "projectPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\C# POO\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj",
         "packagesPath": "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\obj\\",
+        "outputPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\C# POO\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vitor.fernandessouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -165,8 +165,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj": {
-                "projectPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj"
+              "C:\\Users\\vitor.fernandessouza\\Desktop\\C# POO\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj": {
+                "projectPath": "C:\\Users\\vitor.fernandessouza\\Desktop\\C# POO\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj"
               }
             }
           }

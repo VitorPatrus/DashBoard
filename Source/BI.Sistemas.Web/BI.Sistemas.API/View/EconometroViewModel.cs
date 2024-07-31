@@ -9,10 +9,8 @@
             get
             {
                 if (ValorAnoAnterior > 0)
-                {
-
                     return Math.Truncate(Meta / ValorAnoAnterior * 100 - 100);
-                }
+                
                 return 0;
             }
         }
@@ -51,7 +49,6 @@
                     return media * 365;
                 }
                 return 0;
-
             }
         }
 
@@ -86,7 +83,6 @@
             Chave = chave;
             Valor = valor;
         }
-
         public string Chave { get; set; }
         public decimal Valor { get; set; }
     }

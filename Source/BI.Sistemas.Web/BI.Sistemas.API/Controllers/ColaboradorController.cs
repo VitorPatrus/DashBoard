@@ -2,6 +2,8 @@
 using BI.Sistemas.Context;
 using BI.Sistemas.Domain;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography;
 using static BI.Sistemas.API.View.ColaboradorDashboardView;
 using Outlook = Microsoft.Office.Interop.Outlook;
@@ -18,39 +20,26 @@ namespace BI.Sistemas.API.Controllers
         [Route("ColaboradorDashboard")]
         public ActionResult<ColaboradorDashboardView> GetColaboradorDashboard(string id)
         {
-            // Verifica se o ID está presente e não está vazio
-            if (string.IsNullOrWhiteSpace(id))
-            {
-                // Se o ID estiver faltando ou vazio, retorna um erro 400 indicando isso
+            //// Verifica se o ID está presente e não está vazio
+            if (id.IsNullOrEmpty())
                 return BadRequest("O ID do colaborador não foi fornecido!");
-            }
 
             // Inicia uma instância do contexto do banco de dados
             using (var db = new BISistemasContext())
             {
-                /*
-                    Se o codigo não e mais ultilizado não tem necessidade de guardar ele 
-                    Isso polui a leitura 
-                
-                */
                 var pontosTodos = db.Pontos.ToList();
                 var tmetricTodos = db.TMetrics.Where(a =>
                 a.Usuario != "Marco Aurelio de Barros" &&
                 a.Usuario != "Andre Costa (TI MTZ)" &&
                 a.Usuario != "Marco Tulio Rodrigues").ToList();
+
                 // Busca o colaborador no banco de dados com base no ID fornecido
                 var pessoa = db.Colaboradores.FirstOrDefault(c => c.Id.ToString() == id);
 
-
                 // Se o colaborador não for encontrado, retorna um erro 404 indicando isso
                 if (pessoa == null)
-                {
                     return NotFound($"Colaborador não encontrado (ID: {id})");
-                }
-                /*
-                     Isso daqui pode ser feito em um outro metodo 
-                     melhorar espaçamento inutil
-                */
+
                 // Cria um objeto para armazenar as informações do painel do colaborador
                 var colaborador = new ColaboradorDashboardView();
 
@@ -64,60 +53,18 @@ namespace BI.Sistemas.API.Controllers
                 colaborador.Nome = pessoa.Nome;
                 colaborador.Email = pessoa.Email;
                 colaborador.FotoColaborador = Convert.ToBase64String(pessoa.Foto);
-                colaborador.FotoTime = Convert.ToBase64String(System.IO.File.ReadAllBytes($@"{projectDirectory}\UI\Content\Images\time-{pessoa.Time}.jpg"));
                 colaborador.Cargo = pessoa.Cargo;
                 colaborador.Time = $"Time {pessoa.Time}";
                 var periodoAtual = db.Periodos.OrderBy(x => x.Data).Last();
+                colaborador.FotoTime = Convert.ToBase64String(System.IO.File
+                    .ReadAllBytes($@"{projectDirectory}\UI\Content\Images\time-{pessoa.Time}.jpg"));
+
                 var HE = pontosTodos
                 .Where(he => he.PeriodoId.ToString().ToUpper() == periodoAtual.Id.ToString().ToUpper())
                 .LastOrDefault();
 
-                // Busca o último registro de horas extras do colaborador no banco de dados
-                //var HE = db.Pontos
-                //    .Where(he => he.ColaboradorId.ToString() == id && he.Tipo == TipoPonto.HE)
-                //    .OrderBy(he => he.PeriodoId)
-                //    .LastOrDefault();
-
-                //// Se houver registro de horas extras, adiciona ao objeto do painel
-                //if (HE != null)
-                //{
-                //    colaborador.HE_Individual = HE.Horas.ToString("HH:mm");
-                //}
-
-                // Busca e formata as horas extras da equipe do colaborador
-                //var HE_Time = GetHoras(db.Pontos
-                //    .Where(he_time => he_time.PeriodoId.ToString() == HE.PeriodoId.ToString() && he_time.Tipo == TipoPonto.HE)
-                //    .ToList()
-                //    .Select(he => he.Horas)
-                //    );
-
-                // Se houver horas extras da equipe, adiciona ao objeto do painel
-                //if (HE_Time != null)
-                //{
-                //    colaborador.HE_Equipe = $"{HE_Time}:00";
-                //}
-
-                // Busca o último registro de ponto normal do colaborador no banco de dados
-
-
-                // Maneira de comparar strings como melhor performance 
-
                 var paulo = db.Colaboradores.ToList();
-                //"C0D4394F-38EF-4F8B-D71E-08DC62DFD032"
-                //"c0d4394f-38ef-4f8b-d71e-08dc62dfd032"
-
-
-                // string teste = paulo.Count > 0 ? paulo[1].Id.ToString() : "a";
-
-                string teste;
-                if (paulo.Count > 0)
-                {
-                    teste = paulo[1].Id.ToString();
-                }
-                else
-                {
-                    teste = "a";
-                }
+                string teste = paulo.Count > 0 ? paulo[1].Id.ToString() : "a";
 
                 if (teste.Equals(id, StringComparison.InvariantCultureIgnoreCase))
                 {
@@ -129,7 +76,6 @@ namespace BI.Sistemas.API.Controllers
                 var HoraPonto = pontosTodos
                     .Where(he => he.PeriodoId.ToString().ToUpper() == HE.PeriodoId.ToString().ToUpper() && he.ColaboradorId.ToString().Equals(id, StringComparison.OrdinalIgnoreCase) /*he.ColaboradorId.ToString().ToUpper() == id.ToUpper()*/ && he.Tipo == TipoPonto.Normal)
                     .Select(C => C.Horas);
-
 
                 // Se houver registro de ponto normal, atualiza o total de pontos no objeto do painel
                 if (HoraPonto != null && HoraPonto.Any())
@@ -153,7 +99,6 @@ namespace BI.Sistemas.API.Controllers
                 var pontos = pontosTodos
                     .Where(p => p.PeriodoId.ToString().ToUpper() == HE.PeriodoId.ToString().ToUpper() && p.Tipo == TipoPonto.Normal).ToList();
 
-
                 var excludes = new string[]
                 {
                     "010A52D3-D812-4DCE-D721-08DC62DFD032",
@@ -165,10 +110,11 @@ namespace BI.Sistemas.API.Controllers
                 foreach (var col in db.Colaboradores.ToList()
                     .Where(c => c.Time == "TMS" || c.Time == "ERP")
                     .Where(c => !excludes.Contains(c.Id.ToString().ToUpper()))
-
-                    .Where(c => c.CargaHoraria > 0 || pontos.Exists(p => p.ColaboradorId?.ToString().ToUpper() == c.Id.ToString().ToUpper()))
+                    .Where(c => c.CargaHoraria > 0 || pontos.Exists(p => p.ColaboradorId?
+                    .ToString().ToUpper() == c.Id.ToString().ToUpper()))
                     .ToList())
                     engajamentos.Add(col, CalcularEngajamento(metrics, pontos, col));
+
                 var engajamentoTime = engajamentos.Where(e => e.Key.Time == pessoa.Time).ToList();
 
                 // Definindo o engajamento do colaborador específico
@@ -183,7 +129,8 @@ namespace BI.Sistemas.API.Controllers
                         Nome = e.Key.Nome,
                         Foto = Convert.ToBase64String(e.Key.Foto),
                         Percentual = e.Value
-                    }).ToArray();
+                    })
+                    .ToArray();
 
                 // Pegando as atividades do colaborador específico e ordenando por data
                 colaborador.Atividades = metrics.Where(a => a.ColaboradorId.ToString().ToUpper() == pessoa.Id.ToString().ToUpper()).OrderBy(a => a.Data)
@@ -192,204 +139,119 @@ namespace BI.Sistemas.API.Controllers
                     {
                         Data = a.Data.ToString(), //data no lugar da data
                         Atividade = a.Atividade, // atividade no lugar de atividade
-                        Horas = a.Duracao,// horas no lugar de duração 
-                        Ticket = a.DevopsTask.ToString(),//ticket no lugar das tasks
-                        Tipo = a.Tipo// Tipo no lugar de tipo
-
-
-                        // TicketLink = a.TicketLink.ToString(), // TicketLink no lugar de TicketLink
-                    }).ToArray();
-
-                colaborador.PJ = pessoa.CargaHoraria > 0;
-                if (id == "BD984996-9C11-4095-D71D-08DC62DFD032") // Fernanda Cassiano ERP
-                {
-                    colaborador.HE_Individual = "44:00";
-                }
-                else if (id == "69DB13EF-89C0-4A6F-D71F-08DC62DFD032") // Amanda Ferreira ERP
-                {
-                    colaborador.HE_Individual = "01:43";
-
-                }
-                else if (id == "52F14677-9C85-41D5-D723-08DC62DFD032") // João Paulo TMS
-                {
-                    colaborador.HE_Individual = "44:00";
-
-                }
-                else if (id == "C44D7319-3318-43D4-D726-08DC62DFD032") // Joel Junior TMS
-                {
-                    colaborador.HE_Individual = "09:09";
-
-                }
-                else if (id == "3F7E1A71-815A-4397-D725-08DC62DFD032") // Junior Dias TMS
-                {
-                    colaborador.HE_Individual = "02:51";
-
-                }
-                else if (id == "0D6227A1-7B72-4DAC-D720-08DC62DFD032") // Luiz Oliveira ERP
-                {
-                    colaborador.HE_Individual = "35:00";
-
-                }
-                else if (id == "C0D4394F-38EF-4F8B-D71E-08DC62DFD032") // Paulo Silva TMS
-                {
-                    colaborador.HE_Individual = "00:01";
-
-                }
-                else if (id == "87B833CD-7810-4030-D722-08DC62DFD032") // Thiago Oliveira ERP
-                {
-                    colaborador.HE_Individual = "00:03";
-                }
-                else if (id == "11B207E8-E5F6-44B6-32CA-08DC9125DFEC") // Petrônio Faleixo TMS
-                {
-                    colaborador.HE_Individual = "03:39";
-                }
+                        Horas = a.Duracao, // horas no lugar de duração 
+                        Ticket = a.DevopsTask.ToString(), //ticket no lugar das tasks
+                        Tipo = a.Tipo // Tipo no lugar de tipo
+                    })
+                .ToArray();
 
                 var heTime = new Dictionary<string, string>
                 {
                     { "TMS", "15:40" },
                     { "ERP", "01:46" }
                 };
+
                 colaborador.HE_Equipe = heTime[pessoa.Time];
+                colaborador.PJ = pessoa.CargaHoraria > 0;
 
-
-
+                var anterior1 = 0;
+                var anterior2 = 0;
                 var anterior3 = 0;
-
-                if (id == "69DB13EF-89C0-4A6F-D71F-08DC62DFD032") // Amanda Ferreira ERP
-                    anterior3 = 96;
-                else if (id == "BD984996-9C11-4095-D71D-08DC62DFD032") // Fernanda Cassiano ERP
-                    anterior3 = 94;
-                else if (id == "52F14677-9C85-41D5-D723-08DC62DFD032") // João Paulo TMS
-                    anterior3 = 93;
-                else if (id == "C44D7319-3318-43D4-D726-08DC62DFD032") // Joel Junior TMS
-                    anterior3 = 94;
-                else if (id == "3F7E1A71-815A-4397-D725-08DC62DFD032") // Junior Dias TMS
-                    anterior3 = 97;
-                else if (id == "0D6227A1-7B72-4DAC-D720-08DC62DFD032") // Luiz Oliveira ERP
-                    anterior3 = 100;
-                else if (id == "C0D4394F-38EF-4F8B-D71E-08DC62DFD032") // Paulo Silva TMS
-                    anterior3 = 90;
-                else if (id == "87B833CD-7810-4030-D722-08DC62DFD032") // Thiago Oliveira ERP
-                    anterior3 = 99;
-
                 var anterior4 = 0;
-
-                if (id == "69DB13EF-89C0-4A6F-D71F-08DC62DFD032") // Amanda Ferreira ERP
-                    anterior4 = 97;
-                else if (id == "BD984996-9C11-4095-D71D-08DC62DFD032") // Fernanda Cassiano ERP
-                    anterior4 = 100;
-                else if (id == "52F14677-9C85-41D5-D723-08DC62DFD032") // João Paulo TMS
-                    anterior4 = 100;
-                else if (id == "C44D7319-3318-43D4-D726-08DC62DFD032") // Joel Junior TMS
-                    anterior4 = 95;
-                else if (id == "3F7E1A71-815A-4397-D725-08DC62DFD032") // Junior Dias TMS
-                    anterior4 = 97;
-                else if (id == "0D6227A1-7B72-4DAC-D720-08DC62DFD032") // Luiz Oliveira ERP
-                    anterior4 = 100;
-                else if (id == "C0D4394F-38EF-4F8B-D71E-08DC62DFD032") // Paulo Silva TMS
-                    anterior4 = 96;
-                else if (id == "87B833CD-7810-4030-D722-08DC62DFD032") // Thiago Oliveira ERP
-                    anterior4 = 96;
-
-
                 var anterior5 = 0;
 
-                if (id == "69DB13EF-89C0-4A6F-D71F-08DC62DFD032") // Amanda Ferreira ERP
-                    anterior5 = 99;
-                else if (id == "BD984996-9C11-4095-D71D-08DC62DFD032") // Fernanda Cassiano ERP
-                    anterior5 = 100;
-                else if (id == "52F14677-9C85-41D5-D723-08DC62DFD032") // João Paulo TMS
-                    anterior5 = 100;
-                else if (id == "C44D7319-3318-43D4-D726-08DC62DFD032") // Joel Junior TMS
-                    anterior5 = 71;
-                else if (id == "3F7E1A71-815A-4397-D725-08DC62DFD032") // Junior Dias TMS
-                    anterior5 = 95;
-                else if (id == "0D6227A1-7B72-4DAC-D720-08DC62DFD032") // Luiz Oliveira ERP
-                    anterior5 = 100;
-                else if (id == "C0D4394F-38EF-4F8B-D71E-08DC62DFD032") // Paulo Silva TMS
-                    anterior5 = 94;
-                else if (id == "87B833CD-7810-4030-D722-08DC62DFD032") // Thiago Oliveira ERP
-                    anterior5 = 96;
-                else if (id == "11B207E8-E5F6-44B6-32CA-08DC9125DFEC") // Petrônio Faleixo ERP
-                    anterior5 = 97;
+                switch (id)
+                {
+                    case "69DB13EF-89C0-4A6F-D71F-08DC62DFD032": // Amanda Ferreira
+                        colaborador.HE_Individual = "01:43";
+                        anterior1 = 99;
+                        anterior2 = 96;
+                        anterior3 = 97;
+                        anterior4 = 94;
+                        anterior5 = 0;
+                        break;
 
-                var anterior6 = 0;
+                    case "BD984996-9C11-4095-D71D-08DC62DFD032": // Fernanda Cassiano
+                        colaborador.HE_Individual = "44:00";
+                        anterior1 = 100;
+                        anterior2 = 92;
+                        anterior3 = 87;
+                        anterior4 = 93;
+                        anterior5 = 94;
+                        break;
 
-                if (id == "69DB13EF-89C0-4A6F-D71F-08DC62DFD032") // Amanda Ferreira ERP
-                    anterior6 = 96;
-                else if (id == "BD984996-9C11-4095-D71D-08DC62DFD032") // Fernanda Cassiano ERP
-                    anterior6 = 92;
-                else if (id == "52F14677-9C85-41D5-D723-08DC62DFD032") // João Paulo TMS
-                    anterior6 = 98;
-                else if (id == "C44D7319-3318-43D4-D726-08DC62DFD032") // Joel Junior TMS
-                    anterior6 = 91;
-                else if (id == "3F7E1A71-815A-4397-D725-08DC62DFD032") // Junior Dias TMS
-                    anterior6 = 99;
-                else if (id == "0D6227A1-7B72-4DAC-D720-08DC62DFD032") // Luiz Oliveira ERP
-                    anterior6 = 78;
-                else if (id == "C0D4394F-38EF-4F8B-D71E-08DC62DFD032") // Paulo Silva TMS
-                    anterior6 = 97;
-                else if (id == "87B833CD-7810-4030-D722-08DC62DFD032") // Thiago Oliveira ERP
-                    anterior6 = 95;
-                else if (id == "11B207E8-E5F6-44B6-32CA-08DC9125DFEC") // Petrônio Faleixo ERP
-                    anterior6 = 91;
+                    case "52F14677-9C85-41D5-D723-08DC62DFD032": // João Paulo
+                        colaborador.HE_Individual = "44:00";
+                        anterior1 = 100;
+                        anterior2 = 100;
+                        anterior3 = 98;
+                        anterior4 = 98;
+                        anterior5 = 91;
+                        break;
 
-                var anterior7 = 0;
+                    case "C44D7319-3318-43D4-D726-08DC62DFD032": // Joel Martins
+                        colaborador.HE_Individual = "09:09";
+                        anterior1 = 71;
+                        anterior2 = 91;
+                        anterior3 = 94;
+                        anterior4 = 94;
+                        anterior5 = 90;
+                        break;
 
-                if (id == "69DB13EF-89C0-4A6F-D71F-08DC62DFD032") // Amanda Ferreira ERP
-                    anterior7 = 97;
-                else if (id == "BD984996-9C11-4095-D71D-08DC62DFD032") // Fernanda Cassiano ERP
-                    anterior7 = 87;
-                else if (id == "52F14677-9C85-41D5-D723-08DC62DFD032") // João Paulo TMS
-                    anterior7 = 98;
-                else if (id == "C44D7319-3318-43D4-D726-08DC62DFD032") // Joel Junior TMS
-                    anterior7 = 94;
-                else if (id == "3F7E1A71-815A-4397-D725-08DC62DFD032") // Junior Dias TMS
-                    anterior7 = 104;
-                else if (id == "0D6227A1-7B72-4DAC-D720-08DC62DFD032") // Luiz Oliveira ERP
-                    anterior7 = 100;
-                else if (id == "C0D4394F-38EF-4F8B-D71E-08DC62DFD032") // Paulo Silva TMS
-                    anterior7 = 95;
-                else if (id == "87B833CD-7810-4030-D722-08DC62DFD032") // Thiago Oliveira ERP
-                    anterior7 = 95;
-                else if (id == "11B207E8-E5F6-44B6-32CA-08DC9125DFEC") // Petrônio Faleixo ERP
-                    anterior7 = 90;
+                    case "3F7E1A71-815A-4397-D725-08DC62DFD032": // Junior Dias
+                        colaborador.HE_Individual = "02:51";
+                        anterior1 = 97;
+                        anterior2 = 95;
+                        anterior3 = 99;
+                        anterior4 = 104;
+                        anterior5 = 86;
+                        break;
 
-                var anterior8 = 0;
+                    case "0D6227A1-7B72-4DAC-D720-08DC62DFD032": // Luiz Oliveira
+                        colaborador.HE_Individual = "44:00";
+                        anterior1 = 100;
+                        anterior2 = 78;
+                        anterior3 = 100;
+                        anterior4 = 60;
+                        anterior5 = 58;
+                        break;
 
-                if (id == "69DB13EF-89C0-4A6F-D71F-08DC62DFD032") // Amanda Ferreira ERP
-                    anterior8 = 97;
-                else if (id == "BD984996-9C11-4095-D71D-08DC62DFD032") // Fernanda Cassiano ERP
-                    anterior8 = 93;
-                else if (id == "52F14677-9C85-41D5-D723-08DC62DFD032") // João Paulo TMS
-                    anterior8 = 98;
-                else if (id == "C44D7319-3318-43D4-D726-08DC62DFD032") // Joel Junior TMS
-                    anterior8 = 94;
-                else if (id == "3F7E1A71-815A-4397-D725-08DC62DFD032") // Junior Dias TMS
-                    anterior8 = 94;
-                else if (id == "0D6227A1-7B72-4DAC-D720-08DC62DFD032") // Luiz Oliveira ERP
-                    anterior8 = 60;
-                else if (id == "C0D4394F-38EF-4F8B-D71E-08DC62DFD032") // Paulo Silva TMS
-                    anterior8 = 94;
-                else if (id == "87B833CD-7810-4030-D722-08DC62DFD032") // Thiago Oliveira ERP
-                    anterior8 = 94;
-                else if (id == "11B207E8-E5F6-44B6-32CA-08DC9125DFEC") // Petrônio Faleixo ERP
-                    anterior8 = 97;
+                    case "C0D4394F-38EF-4F8B-D71E-08DC62DFD032": // Paulo Silva
+                        colaborador.HE_Individual = "00:01";
+                        anterior1 = 94;
+                        anterior2 = 97;
+                        anterior3 = 95;
+                        anterior4 = 94;
+                        anterior5 = 95;
+                        break;
 
+                    case "87B833CD-7810-4030-D722-08DC62DFD032": // Thiago Oliveira
+                        colaborador.HE_Individual = "00:03";
+                        anterior1 = 96;
+                        anterior2 = 95;
+                        anterior3 = 95;
+                        anterior4 = 94;
+                        anterior5 = 94;
+                        break;
 
-
-
+                    case "11B207E8-E5F6-44B6-32CA-08DC9125DFEC": // Petrônio Aleixo
+                        colaborador.HE_Individual = "03:39";
+                        anterior1 = 97;
+                        anterior2 = 91;
+                        anterior3 = 90;
+                        anterior4 = 97;
+                        anterior5 = 93;
+                        break;
+                }
 
                 var lista = new List<EvolucaoEngajamentoView>();
 
+                lista.Add(new EvolucaoEngajamentoView() { Data = "17/06", Valor = anterior1 });
+                lista.Add(new EvolucaoEngajamentoView() { Data = "24/06", Valor = anterior2 });
+                lista.Add(new EvolucaoEngajamentoView() { Data = "01/07", Valor = anterior3 });
+                lista.Add(new EvolucaoEngajamentoView() { Data = "15/07", Valor = anterior4 });
+                lista.Add(new EvolucaoEngajamentoView() { Data = "08/07", Valor = anterior5 });
 
-
-                //lista.Add(new EvolucaoEngajamentoView() { Data = "03/06", Valor = anterior3 });
-                lista.Add(new EvolucaoEngajamentoView() { Data = "10/06", Valor = anterior4 });
-                lista.Add(new EvolucaoEngajamentoView() { Data = "17/06", Valor = anterior5 });
-                lista.Add(new EvolucaoEngajamentoView() { Data = "24/06", Valor = anterior6 });
-                lista.Add(new EvolucaoEngajamentoView() { Data = "01/07", Valor = anterior7 });
-                lista.Add(new EvolucaoEngajamentoView() { Data = "08/07", Valor = anterior8 });
                 DateTime dataAtual = DateTime.Now;
                 DayOfWeek diaAtual = dataAtual.DayOfWeek;
                 int diasParaSubtrair = (int)diaAtual + 6;
@@ -397,13 +259,10 @@ namespace BI.Sistemas.API.Controllers
                 string segundaFormatada = segundaFeiraPassada.ToString("dd/MM");
                 lista.Add(new EvolucaoEngajamentoView() { Data = segundaFormatada, Valor = colaborador.Engajamento });
 
-
                 colaborador.EvolucaoEngajamento = lista.ToArray();
                 return Ok(colaborador);
-
             }
         }
-
         public class EnviarEmailDados
         {
             public string Foto { get; set; }
@@ -423,9 +282,7 @@ namespace BI.Sistemas.API.Controllers
             {
                 var pessoa = db.Colaboradores.FirstOrDefault(p => p.Id.ToString() == dados.Id);
                 if (pessoa == null)
-                {
                     return NotFound("Arquivo não localizado ou duplicado");
-                }
 
                 try
                 {
@@ -493,8 +350,10 @@ namespace BI.Sistemas.API.Controllers
                     };
 
 
+
                     string gif = string.Empty;
                     string mensagem = string.Empty;
+
                     if (dados.Engajamento > 100)
                     {
                         gif = ListasGifs(ListaGifs50);
@@ -572,11 +431,9 @@ namespace BI.Sistemas.API.Controllers
             var hora = GetHoras(tmetrics.Where(c => c.ColaboradorId.ToString().ToUpper() == colaborador.Id.ToString().ToUpper()).Select(h => h.Duracao));
             var ponto = GetHoras(pontos.Where(p => p.ColaboradorId.ToString().ToUpper() == colaborador.Id.ToString().ToUpper()).Select(h => h.Horas));
             if (ponto == 0)
-            {
                 ponto = colaborador.CargaHoraria;
-                if (ponto < hora)
-                    ponto = hora;
-            }
+            if (ponto < hora)
+                ponto = hora;
 
             return (int)Math.Round(hora / ponto * 100, 0);
 
@@ -601,51 +458,6 @@ namespace BI.Sistemas.API.Controllers
             // Retorna o total de horas em formato de horas
             return total.TotalHours;
         }
-
-        //[Route("ListarFuncionarios")]
-        //[Route("ListarFuncionarios")]
-        //[HttpGet]
-        //public async Task<IActionResult> ListarFuncionario()
-        //{
-        //    using (var db = new BISistemasContext())
-        //    {
-        /*
-        var dados = db.Colaboradores;
-        var TMS = dados.Where(x => x.Time == "TMS").ToList();
-        var ERP = dados.Where(x => x.Time == "ERP");
-
-        var simples = TMS.Select(s => new
-        {
-            Nome = s.Nome,
-            Cargo = s.Cargo
-        }).ToList();
-
-        var dados = db.TMetrics;
-
-        var amanda = dados.Where(x => x.Usuario == "Amanda Ferreira" && x.DevopsTask == 15722).ToList();
-        */
-
-        //        var dados = db.TMetrics;
-        //        var amanda = dados.Where(x => x.Usuario == "Amanda Ferreira").ToList();
-
-
-        //        var dados1 = db.Colaboradores;
-        //        var amanda1 = dados1.Where(x => x.UserTMetric == "Amanda Ferreira").ToList();
-
-        //        var conjunto = new
-        //        {
-        //            TMS = amanda.Select(x => x.Usuario),
-        //            Colabi = amanda1.Select(x => x.Nome),
-        //        };
-
-
-
-        //    }
-
-
-
-        //    return null;
-        //}
-
     }
 }
+
