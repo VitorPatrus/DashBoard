@@ -42,55 +42,6 @@ var chart2 = bb.generate({
 });
 
 
- // Grafico de predio
-  
-// var chart3 = bb.generate({
-// 	data: {
-// 		columns: [
-// 			["Tab preço", 99],
-// 			["NF", 97],
-// 			["CTE", 96],
-// 			["GV", 94],
-// 			["SMP", 94]
-// 		],
-// 		type: "bar",
-// 		colors: {
-// 			"Tab preço": "orange",
-// 			NF: "blue",
-// 			CTE: "green",
-// 			GV: "red",
-// 			SMP: "purple"
-// 		}
-// 	},
-// 	size: {
-// 		height: 300,
-// 		width: 450
-// 	},
-// 	padding: {
-// 		right: 80
-// 	},
-// 	axis: {
-// 		rotated: true
-// 	},
-// 	tooltip: {
-// 		position: function(data, width, height, element, pos) {
-// 			const total = data.reduce((a, { value }) => a + value, 0);
-
-// 			return {
-// 				top: pos.xAxis - (height / 2),
-// 				left: pos.yAxis + 10
-// 			}
-// 		}
-// 	},
-// 	bindto: "#tooltipPosition_3",
-// 	legend: {
-// 		show: true,
-// 		contents: {
-// 			label: "Personalizado"
-// 		}
-// 	}
-// });
-
 // GRAFICO DE BARRAS
 am5.ready(function() {
   var rootBarChart = am5.Root.new("chartdiv");
@@ -242,8 +193,6 @@ am5.ready(function() {
   series.appear(1000);
   chart.appear(1000, 100);
 }); // end am5.ready()
-
-
 
 
 // GRAFICO PONTEIRO

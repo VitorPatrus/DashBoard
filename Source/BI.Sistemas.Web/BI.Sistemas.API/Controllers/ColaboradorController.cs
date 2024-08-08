@@ -164,65 +164,65 @@ namespace BI.Sistemas.API.Controllers
                 {
                     case "69DB13EF-89C0-4A6F-D71F-08DC62DFD032": // Amanda Ferreira
                         colaborador.HE_Individual = "01:43";
-                        anterior1 = 99;
                         anterior2 = 96;
                         anterior3 = 97;
                         anterior4 = 94;
                         anterior5 = 0;
+                        anterior1 = 0;
                         break;
 
                     case "BD984996-9C11-4095-D71D-08DC62DFD032": // Fernanda Cassiano
                         colaborador.HE_Individual = "44:00";
-                        anterior1 = 100;
-                        anterior2 = 92;
                         anterior3 = 87;
                         anterior4 = 93;
                         anterior5 = 94;
+                        anterior1 = 95;
+                        anterior2 = 95;
                         break;
 
                     case "52F14677-9C85-41D5-D723-08DC62DFD032": // João Paulo
                         colaborador.HE_Individual = "44:00";
-                        anterior1 = 100;
-                        anterior2 = 100;
                         anterior3 = 98;
                         anterior4 = 98;
                         anterior5 = 91;
+                        anterior1 = 99;
+                        anterior2 = 92;
                         break;
 
                     case "C44D7319-3318-43D4-D726-08DC62DFD032": // Joel Martins
                         colaborador.HE_Individual = "09:09";
-                        anterior1 = 71;
-                        anterior2 = 91;
                         anterior3 = 94;
                         anterior4 = 94;
                         anterior5 = 90;
+                        anterior1 = 91;
+                        anterior2 = 87;
                         break;
 
                     case "3F7E1A71-815A-4397-D725-08DC62DFD032": // Junior Dias
                         colaborador.HE_Individual = "02:51";
-                        anterior1 = 97;
-                        anterior2 = 95;
                         anterior3 = 99;
                         anterior4 = 104;
                         anterior5 = 86;
+                        anterior1 = 90;
+                        anterior2 = 100;
                         break;
 
                     case "0D6227A1-7B72-4DAC-D720-08DC62DFD032": // Luiz Oliveira
                         colaborador.HE_Individual = "44:00";
-                        anterior1 = 100;
-                        anterior2 = 78;
                         anterior3 = 100;
                         anterior4 = 60;
                         anterior5 = 58;
+                        anterior1 = 97;
+                        anterior2 = 100;
                         break;
 
                     case "C0D4394F-38EF-4F8B-D71E-08DC62DFD032": // Paulo Silva
                         colaborador.HE_Individual = "00:01";
-                        anterior1 = 94;
-                        anterior2 = 97;
                         anterior3 = 95;
                         anterior4 = 94;
                         anterior5 = 95;
+                        anterior1 = 97;
+                        anterior2 = 97;
                         break;
 
                     case "87B833CD-7810-4030-D722-08DC62DFD032": // Thiago Oliveira
@@ -236,21 +236,21 @@ namespace BI.Sistemas.API.Controllers
 
                     case "11B207E8-E5F6-44B6-32CA-08DC9125DFEC": // Petrônio Aleixo
                         colaborador.HE_Individual = "03:39";
-                        anterior1 = 97;
-                        anterior2 = 91;
                         anterior3 = 90;
                         anterior4 = 97;
                         anterior5 = 93;
+                        anterior1 = 91;
+                        anterior2 = 92;
                         break;
                 }
 
                 var lista = new List<EvolucaoEngajamentoView>();
 
-                lista.Add(new EvolucaoEngajamentoView() { Data = "17/06", Valor = anterior1 });
-                lista.Add(new EvolucaoEngajamentoView() { Data = "24/06", Valor = anterior2 });
                 lista.Add(new EvolucaoEngajamentoView() { Data = "01/07", Valor = anterior3 });
-                lista.Add(new EvolucaoEngajamentoView() { Data = "15/07", Valor = anterior4 });
-                lista.Add(new EvolucaoEngajamentoView() { Data = "08/07", Valor = anterior5 });
+                lista.Add(new EvolucaoEngajamentoView() { Data = "08/07", Valor = anterior4 });
+                lista.Add(new EvolucaoEngajamentoView() { Data = "15/07", Valor = anterior5 });
+                lista.Add(new EvolucaoEngajamentoView() { Data = "22/07", Valor = anterior1 });
+                lista.Add(new EvolucaoEngajamentoView() { Data = "29/07", Valor = anterior2 });
 
                 DateTime dataAtual = DateTime.Now;
                 DayOfWeek diaAtual = dataAtual.DayOfWeek;

@@ -348,36 +348,37 @@ var chart = bb.generate({
 	const generateTeste = document.querySelector("#sendMailTeste");
 	generateTeste.addEventListener("click",() => {sendMail(false);});
 
-
-
-
-
-// // Define the value that is missing for data1 to reach 100%
-// var data1Remaining = 20;
-// var data1Completed = 80; // This represents the completed portion
-
-// // Define the chart data
-// var chart = bb.generate({
-//   data: {
-//     columns: [
-//       ["data1_completed", data1Completed], 
-//       ["data1_remaining", data1Remaining] 
-//     ],
-//     type: "donut", // for ESM specify as: donut()
-//     colors: {
-//       data1_completed: "green", // Color for the completed portion (orange)
-//       data1_remaining: "#f4f2f0" // Color for the remaining portion (grey)
-//     }
-//   },
-//   legend: {
-//     show: false // Remove the legend
-//   },
-//   donut: {
-//     title: "DevOps", // Display the completion percentage in the center of the donut
-//     width: 45 // Adjust this width as needed
-//   },
-//   size: {
-//     width: 180
-//   },
-//   bindto: "#multilineTitle"
-// });
+// Gerar Data Automática
+	function getLastWeekDays() {
+		const today = new Date();
+		const currentDay = today.getDay();
+		const lastSunday = new Date(today);
+		lastSunday.setDate(today.getDate() - currentDay - 7);
+	
+		const lastMonday = new Date(lastSunday);
+		lastMonday.setDate(lastSunday.getDate() + 1);
+	
+		const lastFriday = new Date(lastSunday);
+		lastFriday.setDate(lastSunday.getDate() + 5);
+	
+		const formatDate = (date) => {
+			const day = String(date.getDate()).padStart(2, '0');
+			const month = String(date.getMonth() + 1).padStart(2, '0'); // Mês começa em 0
+			return `${day}/${month}`;
+		};
+	
+		return {
+			monday: formatDate(lastMonday),
+			friday: formatDate(lastFriday)
+		};
+	}
+	
+	function updateMessage(elementId) {
+		const lastWeekDays = getLastWeekDays();
+		const message = `Dados referentes aos dias ${lastWeekDays.monday} à ${lastWeekDays.friday}`;
+		document.getElementById(elementId).textContent = message;
+		document.periodo = `${lastWeekDays.monday} à ${lastWeekDays.friday}`
+	}
+	
+	updateMessage('message');
+	

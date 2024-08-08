@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0ybqp1c7wrg=",
+  "dgSpecHash": "ZQs3/4mDR5Y=",
   "success": true,
-  "projectFilePath": "C:\\Users\\vitor.fernandessouza\\Desktop\\C# POO\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\BI.Sistemas.API.csproj",
+  "projectFilePath": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\BI.Sistemas.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

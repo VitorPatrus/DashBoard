@@ -44,6 +44,8 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<link rel="stylesheet" href="style.css">
+	<script src="/Min/billboard.min.js"></script>
+	<link rel="stylesheet" href="/Min/billboard.min.css">
 </head>
 
 <!-- <body style="background-color:#2e2e2e"> -->
@@ -384,7 +386,7 @@
 			<div class="row" style="padding-top: 10px; margin-left: 5px;">
 				<div class="col-md-6">
 					<h4 style="color: white;">Chamados Fora do Prazo</h4>
-					<h5 id="date-placeholder" style="color: white !important;"> Quantidade de chamados Fora do prazo de
+					<h5 id="message1" style="color: white !important;"> Quantidade de chamados Fora do prazo de
 						29/04 à 03/05 </h5>
 					<table class="table table-striped" id="atividades">
 						<thead>
@@ -431,7 +433,7 @@
 							<h4 style="color: white;">Chamados Pendentes</h4>
 						</div>
 					</div>					
-					<h5 id="date-placeholder1" style="color: white !important;"> Quantidade de chamados Pendentes no
+					<h5 id="message2" style="color: white !important;"> Quantidade de chamados Pendentes no
 						prazo de 29/04 à 03/05 </h5>
 					<table class="table table-striped" id="outra-lista">
 						<thead>
@@ -473,7 +475,43 @@
 					</table>
 				</div>
 			</div>
-		<script src="/inserirData.js"></script>
-		<script src="/SLA/sla.js"></script>
+		<script src="/SLA/script.js"></script>
+		
+		<script>
+			function getLastWeekDays() {
+    const today = new Date();
+    const currentDay = today.getDay();
+    const lastSunday = new Date(today);
+    lastSunday.setDate(today.getDate() - currentDay - 7);
+
+    const lastMonday = new Date(lastSunday);
+    lastMonday.setDate(lastSunday.getDate() + 1);
+
+    const lastFriday = new Date(lastSunday);
+    lastFriday.setDate(lastSunday.getDate() + 5);
+
+    const formatDate = (date) => {
+        const day = String(date.getDate()).padStart(2, '0');
+        const month = String(date.getMonth() + 1).padStart(2, '0'); // Mês começa em 0
+        return `${day}/${month}`;
+    };
+
+    return {
+        monday: formatDate(lastMonday),
+        friday: formatDate(lastFriday)
+    };
+}
+
+function updateMessage(elementId) {
+    const lastWeekDays = getLastWeekDays();
+    const message = `Dados referentes aos dias ${lastWeekDays.monday} à ${lastWeekDays.friday}`;
+    document.getElementById(elementId).textContent = message;
+    document.periodo = `${lastWeekDays.monday} à ${lastWeekDays.friday}`
+}
+
+updateMessage('message1');
+updateMessage('message2');
+
+</script>
 </body>
 <html>
