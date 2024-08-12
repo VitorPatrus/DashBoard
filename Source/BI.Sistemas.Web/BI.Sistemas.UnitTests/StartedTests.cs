@@ -1,5 +1,6 @@
 using BI.Sistemas.Context;
 using BI.Sistemas.Domain;
+using BI.Sistemas.Domain.Entities.Enums;
 using BI.Sistemas.Domain.Novo;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
@@ -160,6 +161,7 @@ namespace BI.Sistemas.UnitTests
             }
         }
 
+        // SLA
         [TestMethod]
         public void CargaMovidesk()
         {
@@ -176,9 +178,10 @@ namespace BI.Sistemas.UnitTests
                     db.SaveChanges();
                 }
             }
+
             var dataCarga = DateTime.Now;
             File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\Movidesk - Base chamados TI - Semana Retroativa_novo.csv")
-                .Skip(1)
+                .Skip(1) // Já está com os dados de 29/07, só não tem carga no bd
                 .ToList()
                 .ForEach(v =>
                 {
@@ -199,7 +202,6 @@ namespace BI.Sistemas.UnitTests
                 });
         }
 
-
         [TestMethod]
         public void SomaHora()
         {
@@ -214,7 +216,6 @@ namespace BI.Sistemas.UnitTests
                 var perc = totalHours / 44;
             }
         }
-
 
         [TestMethod]
         public void CriarGeracaoNovo()
@@ -268,5 +269,4 @@ namespace BI.Sistemas.UnitTests
             }
         }
     }
-
 }

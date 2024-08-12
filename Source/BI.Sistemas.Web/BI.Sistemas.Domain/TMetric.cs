@@ -56,5 +56,25 @@ namespace BI.Sistemas.Domain
 
             return dailyValues;
         }
+        public double GetHoras(IEnumerable<DateTime> dates)
+        {
+            var total = new TimeSpan();
+
+            foreach (var item in dates.Select(c => c.TimeOfDay))
+                total = total.Add(item);
+
+            return total.TotalHours;
+        }
+        public int CalcularEngajamento(IEnumerable<TMetric> tmetrics, IEnumerable<Ponto> pontos, Colaborador colaborador)
+        {
+            var hora = GetHoras(tmetrics.Where(c => c.ColaboradorId.ToString().ToUpper() == colaborador.Id.ToString().ToUpper()).Select(h => h.Duracao));
+            var ponto = GetHoras(pontos.Where(p => p.ColaboradorId.ToString().ToUpper() == colaborador.Id.ToString().ToUpper()).Select(h => h.Horas));
+            if (ponto == 0)
+                ponto = colaborador.CargaHoraria;
+            if (ponto < hora)
+                ponto = hora;
+
+            return (int)Math.Round(hora / ponto * 100, 0);
+        }
     }
 }

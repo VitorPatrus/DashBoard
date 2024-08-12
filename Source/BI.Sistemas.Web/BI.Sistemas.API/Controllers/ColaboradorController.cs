@@ -1,30 +1,26 @@
 ﻿using BI.Sistemas.API.View;
 using BI.Sistemas.Context;
 using BI.Sistemas.Domain;
+using BI.Sistemas.Domain.Entities.Enums;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
-using System.Reflection.Metadata.Ecma335;
-using System.Security.Cryptography;
 using static BI.Sistemas.API.View.ColaboradorDashboardView;
 using Outlook = Microsoft.Office.Interop.Outlook;
 
 namespace BI.Sistemas.API.Controllers
 {
-    // Esta classe é responsável por lidar com as solicitações relacionadas aos colaboradores
     [ApiController]
     [Route("[controller]")]
     public class ColaboradorController : ControllerBase
     {
-        // Este método retorna o painel do colaborador com base no ID fornecido
         [HttpGet()]
         [Route("ColaboradorDashboard")]
         public ActionResult<ColaboradorDashboardView> GetColaboradorDashboard(string id)
         {
-            //// Verifica se o ID está presente e não está vazio
+            TMetric metricas = new TMetric();
             if (id.IsNullOrEmpty())
                 return BadRequest("O ID do colaborador não foi fornecido!");
 
-            // Inicia uma instância do contexto do banco de dados
             using (var db = new BISistemasContext())
             {
                 var pontosTodos = db.Pontos.ToList();
@@ -33,23 +29,18 @@ namespace BI.Sistemas.API.Controllers
                 a.Usuario != "Andre Costa (TI MTZ)" &&
                 a.Usuario != "Marco Tulio Rodrigues").ToList();
 
-                // Busca o colaborador no banco de dados com base no ID fornecido
                 var pessoa = db.Colaboradores.FirstOrDefault(c => c.Id.ToString() == id);
 
-                // Se o colaborador não for encontrado, retorna um erro 404 indicando isso
                 if (pessoa == null)
                     return NotFound($"Colaborador não encontrado (ID: {id})");
 
-                // Cria um objeto para armazenar as informações do painel do colaborador
                 var colaborador = new ColaboradorDashboardView();
 
-                // Obtém o diretório base onde o executável está rodando
                 string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
                 DirectoryInfo projectDirectory = null;
                 if (baseDirectory != null)
                     projectDirectory = Directory.GetParent(baseDirectory).Parent.Parent.Parent.Parent.Parent.Parent;
 
-                // Define o nome, a foto e a foto do time do colaborador no objeto do painel
                 colaborador.Nome = pessoa.Nome;
                 colaborador.Email = pessoa.Email;
                 colaborador.FotoColaborador = Convert.ToBase64String(pessoa.Foto);
@@ -77,25 +68,21 @@ namespace BI.Sistemas.API.Controllers
                     .Where(he => he.PeriodoId.ToString().ToUpper() == HE.PeriodoId.ToString().ToUpper() && he.ColaboradorId.ToString().Equals(id, StringComparison.OrdinalIgnoreCase) /*he.ColaboradorId.ToString().ToUpper() == id.ToUpper()*/ && he.Tipo == TipoPonto.Normal)
                     .Select(C => C.Horas);
 
-                // Se houver registro de ponto normal, atualiza o total de pontos no objeto do painel
                 if (HoraPonto != null && HoraPonto.Any())
                 {
-                    colaborador.TotalPonto = GetHoras(HoraPonto);
+                    colaborador.TotalPonto = metricas.GetHoras(HoraPonto);
                 }
                 else
                 {
                     colaborador.TotalPonto = pessoa.CargaHoraria;
                 }
 
-                // Busca e calcula o total de horas apropriadas com base nas métricas de tempo do colaborador
                 var horas = tmetricTodos
                     .Where(tm => tm.PeriodoId.ToString().ToUpper() == HE.PeriodoId.ToString().ToUpper() && tm.ColaboradorId.ToString().ToUpper() == id)
                     .ToList();
 
-                // Pegando as métricas do período do histórico de engajamento
                 var metrics = tmetricTodos.Where(m => m.PeriodoId.ToString().ToUpper() == HE.PeriodoId.ToString().ToUpper()).ToList();
 
-                // Pegando os pontos normais do mesmo período
                 var pontos = pontosTodos
                     .Where(p => p.PeriodoId.ToString().ToUpper() == HE.PeriodoId.ToString().ToUpper() && p.Tipo == TipoPonto.Normal).ToList();
 
@@ -113,15 +100,13 @@ namespace BI.Sistemas.API.Controllers
                     .Where(c => c.CargaHoraria > 0 || pontos.Exists(p => p.ColaboradorId?
                     .ToString().ToUpper() == c.Id.ToString().ToUpper()))
                     .ToList())
-                    engajamentos.Add(col, CalcularEngajamento(metrics, pontos, col));
+                    engajamentos.Add(col, metricas.CalcularEngajamento(metrics, pontos, col));
 
                 var engajamentoTime = engajamentos.Where(e => e.Key.Time == pessoa.Time).ToList();
 
-                // Definindo o engajamento do colaborador específico
                 colaborador.Engajamento = engajamentos.FirstOrDefault(e => e.Key.Id.ToString().ToUpper() == pessoa.Id.ToString().ToUpper()).Value;
                 colaborador.EngajamentoTime = engajamentoTime.Sum(t => t.Value) / engajamentoTime.Count();
 
-                // Listando os top 3 colaboradores mais engajados
                 colaborador.TopEngajamento = engajamentos.Where(x => x.Value <= 100).OrderByDescending(e => e.Value).Take(3)
                     .Select(e =>
                     new EngajamentoView()
@@ -132,134 +117,28 @@ namespace BI.Sistemas.API.Controllers
                     })
                     .ToArray();
 
-                // Pegando as atividades do colaborador específico e ordenando por data
                 colaborador.Atividades = metrics.Where(a => a.ColaboradorId.ToString().ToUpper() == pessoa.Id.ToString().ToUpper()).OrderBy(a => a.Data)
                 .Select(a =>
                     new AtividadeView()
                     {
-                        Data = a.Data.ToString(), //data no lugar da data
-                        Atividade = a.Atividade, // atividade no lugar de atividade
-                        Horas = a.Duracao, // horas no lugar de duração 
-                        Ticket = a.DevopsTask.ToString(), //ticket no lugar das tasks
-                        Tipo = a.Tipo // Tipo no lugar de tipo
+                        Data = a.Data.ToString(),
+                        Atividade = a.Atividade,
+                        Horas = a.Duracao,
+                        Ticket = a.DevopsTask.ToString(),
+                        Tipo = a.Tipo
                     })
                 .ToArray();
+
 
                 var heTime = new Dictionary<string, string>
                 {
                     { "TMS", "15:40" },
                     { "ERP", "01:46" }
                 };
-
                 colaborador.HE_Equipe = heTime[pessoa.Time];
                 colaborador.PJ = pessoa.CargaHoraria > 0;
 
-                var anterior1 = 0;
-                var anterior2 = 0;
-                var anterior3 = 0;
-                var anterior4 = 0;
-                var anterior5 = 0;
-
-                switch (id)
-                {
-                    case "69DB13EF-89C0-4A6F-D71F-08DC62DFD032": // Amanda Ferreira
-                        colaborador.HE_Individual = "01:43";
-                        anterior2 = 96;
-                        anterior3 = 97;
-                        anterior4 = 94;
-                        anterior5 = 0;
-                        anterior1 = 0;
-                        break;
-
-                    case "BD984996-9C11-4095-D71D-08DC62DFD032": // Fernanda Cassiano
-                        colaborador.HE_Individual = "44:00";
-                        anterior3 = 87;
-                        anterior4 = 93;
-                        anterior5 = 94;
-                        anterior1 = 95;
-                        anterior2 = 95;
-                        break;
-
-                    case "52F14677-9C85-41D5-D723-08DC62DFD032": // João Paulo
-                        colaborador.HE_Individual = "44:00";
-                        anterior3 = 98;
-                        anterior4 = 98;
-                        anterior5 = 91;
-                        anterior1 = 99;
-                        anterior2 = 92;
-                        break;
-
-                    case "C44D7319-3318-43D4-D726-08DC62DFD032": // Joel Martins
-                        colaborador.HE_Individual = "09:09";
-                        anterior3 = 94;
-                        anterior4 = 94;
-                        anterior5 = 90;
-                        anterior1 = 91;
-                        anterior2 = 87;
-                        break;
-
-                    case "3F7E1A71-815A-4397-D725-08DC62DFD032": // Junior Dias
-                        colaborador.HE_Individual = "02:51";
-                        anterior3 = 99;
-                        anterior4 = 104;
-                        anterior5 = 86;
-                        anterior1 = 90;
-                        anterior2 = 100;
-                        break;
-
-                    case "0D6227A1-7B72-4DAC-D720-08DC62DFD032": // Luiz Oliveira
-                        colaborador.HE_Individual = "44:00";
-                        anterior3 = 100;
-                        anterior4 = 60;
-                        anterior5 = 58;
-                        anterior1 = 97;
-                        anterior2 = 100;
-                        break;
-
-                    case "C0D4394F-38EF-4F8B-D71E-08DC62DFD032": // Paulo Silva
-                        colaborador.HE_Individual = "00:01";
-                        anterior3 = 95;
-                        anterior4 = 94;
-                        anterior5 = 95;
-                        anterior1 = 97;
-                        anterior2 = 97;
-                        break;
-
-                    case "87B833CD-7810-4030-D722-08DC62DFD032": // Thiago Oliveira
-                        colaborador.HE_Individual = "00:03";
-                        anterior1 = 96;
-                        anterior2 = 95;
-                        anterior3 = 95;
-                        anterior4 = 94;
-                        anterior5 = 94;
-                        break;
-
-                    case "11B207E8-E5F6-44B6-32CA-08DC9125DFEC": // Petrônio Aleixo
-                        colaborador.HE_Individual = "03:39";
-                        anterior3 = 90;
-                        anterior4 = 97;
-                        anterior5 = 93;
-                        anterior1 = 91;
-                        anterior2 = 92;
-                        break;
-                }
-
-                var lista = new List<EvolucaoEngajamentoView>();
-
-                lista.Add(new EvolucaoEngajamentoView() { Data = "01/07", Valor = anterior3 });
-                lista.Add(new EvolucaoEngajamentoView() { Data = "08/07", Valor = anterior4 });
-                lista.Add(new EvolucaoEngajamentoView() { Data = "15/07", Valor = anterior5 });
-                lista.Add(new EvolucaoEngajamentoView() { Data = "22/07", Valor = anterior1 });
-                lista.Add(new EvolucaoEngajamentoView() { Data = "29/07", Valor = anterior2 });
-
-                DateTime dataAtual = DateTime.Now;
-                DayOfWeek diaAtual = dataAtual.DayOfWeek;
-                int diasParaSubtrair = (int)diaAtual + 6;
-                DateTime segundaFeiraPassada = dataAtual.AddDays(-diasParaSubtrair);
-                string segundaFormatada = segundaFeiraPassada.ToString("dd/MM");
-                lista.Add(new EvolucaoEngajamentoView() { Data = segundaFormatada, Valor = colaborador.Engajamento });
-
-                colaborador.EvolucaoEngajamento = lista.ToArray();
+                AddEngajamento(id, colaborador);
                 return Ok(colaborador);
             }
         }
@@ -289,7 +168,6 @@ namespace BI.Sistemas.API.Controllers
                     Outlook.Application outlookApp = new Outlook.Application();
                     Outlook.MailItem mailItem = (Outlook.MailItem)outlookApp.CreateItem(Outlook.OlItemType.olMailItem);
 
-                    // Configuração do destinatário do e-mail
                     if (dados.Oficial)
                     {
                         var coordenador = pessoa.Time == "TMS" ? "tulio@patrus.com.br" : "marco.barros@patrus.com.br";
@@ -298,11 +176,9 @@ namespace BI.Sistemas.API.Controllers
                     }
                     else
                     {
-
                         mailItem.To = "vitor.fernandessouza@patrus.com.br";
                     }
 
-                    // Construção da tabela de atividades
                     var tabelaAtividade = @"
                     <table style='border-collapse: collapse; width: 100%;'>
                         <thead>
@@ -326,62 +202,38 @@ namespace BI.Sistemas.API.Controllers
                         </tbody>
                     </table>";
 
-                    // Configuração da mensagem do e-mail com base no engajamento
-                    var ListaGifs90 = new List<string>
-                    {
-                    "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHR2dzdndzZvOXZwbGl0bzAxeTQ4bWtjczE3Z3EyemtoMnJ3bTdhMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/130do0lQXXcsla/giphy.gif",
-                    "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTU5emNoeXZxOXRmMDRybjR1NjZ0MzdpNGZkaW1lbHJrYXBmMWRvYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT5LMHxhOfscxPfIfm/giphy.gif",
-                    "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWM1NWlld2hnZDA2ZThuMG9rdWJrNTFpajV6amxrbnNwNXQ0MzN3MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kEKcOWl8RMLde/giphy.gif",
-                    "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3N4ODI5NnR4MXV0bjFvcmNpdnp2bXFpZ3FwYTk4b2RkdmUyMHB6ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aQwvKKi4Lv3t63nZl9/giphy.gif"
-
-                    };
-                    var ListaGifs50 = new List<string>
-                    {
-                    "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDlpZWQxc3liNTExOTl4NjJiMWM2dWZjZGdqODNldHg4aTVhejUzYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eNTxLwTGW7E64/giphy.gif",
-                    "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjBkbGk5NjNza216OW93YWR6Z29neGZjeHMxYzdpYjdrenpwd29nNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H5C8CevNMbpBqNqFjl/giphy.gif",
-                    "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGFrZXdtbHMzZzRoYmYxcDZlaHFjcjI3ajhhdDRidnNmMWdwZDRvMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4pMX5rJ4PYAEM/giphy.gif",
-
-                    };
-                    var ListaGifs25 = new List<string>
-                    {
-                    "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGltMnVqYXp6MzlpanFnem80Z2k3dTJ4ZDRzNXRzZjg0cGN3ZWlnNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MF0QiCa9JPEI6HiaCK/giphy.gif",
-                    "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2tyZ2FnZTdraWRnY3B3YXcxandyeHkzcTVqa2JnNDNpYWM4eHp5ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yr7n0u3qzO9nG/giphy.gif",
-                    "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWk4MzVtOWYxY2l2NzB2aGVtZXlkMnJzN3QwZHB5dXkxbXl5MmJkMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UKF08uKqWch0Y/giphy.gif,",
-                    };
-
-
-
                     string gif = string.Empty;
                     string mensagem = string.Empty;
 
+                    Gifs gifs = new Gifs(null, null, null);
+
                     if (dados.Engajamento > 100)
                     {
-                        gif = ListasGifs(ListaGifs50);
+                        gif = gifs.ListasGifs(gifs.ListaGifs50);
                         mensagem = $@"Seu engajamento foi de <b>{dados.Engajamento}% e lançamentos pelo Devops de {string.Format("{0:#.#,##}", Math.Round(dados.DevOps, 1))}%. Você registrou um tempo de trabalho superior em relação ao ponto.</b> Atenção com os lançamentos.";
                     }
                     else if (dados.Engajamento >= 90 && dados.DevOps >= 95)
                     {
                         mensagem = $"Seus lançamentos estão excelentes, <b>parabéns</b>✅. <br> Seu engajamento foi de <b>{dados.Engajamento}%</b> e seu lançamento pelo Devops <b>{string.Format("{0:#.#,##}", Math.Round(dados.DevOps, 1))}%</b>.";
-                        gif = ListasGifs(ListaGifs90);
+                        gif = gifs.ListasGifs(gifs.ListaGifs90);
                     }
                     else if (dados.Engajamento >= 0 && dados.DevOps >= 95)
                     {
                         mensagem = $"<b>Atenção com os lançamentos no dia à dia</b>⚠️. <br> Seu engajamento foi de <b>{dados.Engajamento}%</b> e seu lançamento pelo Devops <b>{string.Format("{0:#.#,##}", Math.Round(dados.DevOps, 1))}%</b>.";
-                        gif = ListasGifs(ListaGifs50);
+                        gif = gifs.ListasGifs(gifs.ListaGifs50);
                     }
                     else if (dados.Engajamento >= 90 && dados.DevOps < 95)
                     {
                         mensagem = $"<b>Atenção com os lançamentos dentro das atividades do Devops</b>⚠️. <br> Seu engajamento foi de <b>{dados.Engajamento}%</b> e seu lançamento pelo Devops <b>{string.Format("{0:#.#,##}", Math.Round(dados.DevOps, 1))}%</b>.";
-                        gif = ListasGifs(ListaGifs50);
+                        gif = gifs.ListasGifs(gifs.ListaGifs50);
                     }
                     else if (dados.Engajamento < 90 && dados.DevOps < 95)
                     {
                         mensagem = $"<b>Seus lançamentos não estão legais</b>, mais atenção com os lançamentos do dia à dia e dentro das atividades do Devops ❌. <br> Seu engajamento foi de <b>{dados.Engajamento}%</b> e seu lançamento pelo Devops <b>{string.Format("{0:#.#,##}", Math.Round(dados.DevOps, 1))}%</b>.";
-                        gif = ListasGifs(ListaGifs25);
+                        gif = gifs.ListasGifs(gifs.ListaGifs25);
 
                     }
 
-                    // Configuração do corpo do e-mail
                     mailItem.Subject = $@"[SISTEMAS] APURAÇÃO DE HORAS SEMANAL - {pessoa.Nome.ToUpper()} ";
                     mailItem.BodyFormat = Outlook.OlBodyFormat.olFormatHTML;
                     string msgHTMLBody = $@"
@@ -389,7 +241,7 @@ namespace BI.Sistemas.API.Controllers
                         <head></head>
                         <body>
                             Boa Tarde, {pessoa.Nome},<br><br>
-                            Segue o dashboard com os lançamentos do período.<b>{dados.Periodo}.</b><br><br>
+                            Segue o dashboard com os lançamentos do período.<b> {dados.Periodo}.</b><br><br>
                             <div style=""min-width:600px!important;margin-left:auto;margin-right:auto; ""></div>
                             <img src=""{gif}"" width=""80"" height=""80""/><br>
                             {mensagem}<br><br>
@@ -408,9 +260,8 @@ namespace BI.Sistemas.API.Controllers
                             Vitor Fernandes.
                         </body>
                     </html>";
-                    mailItem.HTMLBody = msgHTMLBody;
 
-                    // Envio do e-mail
+                    mailItem.HTMLBody = msgHTMLBody;
                     mailItem.Send();
                     return Ok();
                 }
@@ -420,43 +271,113 @@ namespace BI.Sistemas.API.Controllers
                 }
             }
         }
-
         private void Where(Func<object, bool> value)
         {
             throw new NotImplementedException();
         }
 
-        private int CalcularEngajamento(IEnumerable<TMetric> tmetrics, IEnumerable<Ponto> pontos, Colaborador colaborador)
+        [HttpPost]
+        private List<EvolucaoEngajamentoView> AddEngajamento(string id, ColaboradorDashboardView colaborador)
         {
-            var hora = GetHoras(tmetrics.Where(c => c.ColaboradorId.ToString().ToUpper() == colaborador.Id.ToString().ToUpper()).Select(h => h.Duracao));
-            var ponto = GetHoras(pontos.Where(p => p.ColaboradorId.ToString().ToUpper() == colaborador.Id.ToString().ToUpper()).Select(h => h.Horas));
-            if (ponto == 0)
-                ponto = colaborador.CargaHoraria;
-            if (ponto < hora)
-                ponto = hora;
+            var anterior1 = 0; var anterior2 = 0; var anterior3 = 0; var anterior4 = 0; var anterior5 = 0;
 
-            return (int)Math.Round(hora / ponto * 100, 0);
+            switch (id)
+            {
+                case "69DB13EF-89C0-4A6F-D71F-08DC62DFD032": // Amanda Ferreira
+                    colaborador.HE_Individual = "01:43";
+                    anterior3 = 96;
+                    anterior4 = 97;
+                    anterior5 = 94;
+                    anterior2 = 0;
+                    anterior1 = 0;
+                    break;
 
-        }
-        private string ListasGifs(List<string> gifs)
-        {
-            var random = new Random();
-            int randomIndex = random.Next(0, gifs.Count);
-            return gifs[randomIndex];
-        }
+                case "BD984996-9C11-4095-D71D-08DC62DFD032": // Fernanda Cassiano
+                    colaborador.HE_Individual = "44:00";
+                    anterior3 = 87;
+                    anterior4 = 93;
+                    anterior5 = 94;
+                    anterior1 = 95;
+                    anterior2 = 95;
+                    break;
 
-        // Função privada para calcular o total de horas a partir de uma coleção de datas
-        private double GetHoras(IEnumerable<DateTime> dates)
-        {
-            // Inicializa o total de horas como zero
-            var total = new TimeSpan();
+                case "52F14677-9C85-41D5-D723-08DC62DFD032": // João Paulo
+                    colaborador.HE_Individual = "44:00";
+                    anterior3 = 98;
+                    anterior4 = 98;
+                    anterior5 = 91;
+                    anterior1 = 99;
+                    anterior2 = 92;
+                    break;
 
-            // Itera sobre as datas e soma as horas
-            foreach (var item in dates.Select(c => c.TimeOfDay))
-                total = total.Add(item);
+                case "C44D7319-3318-43D4-D726-08DC62DFD032": // Joel Martins
+                    colaborador.HE_Individual = "09:09";
+                    anterior3 = 94;
+                    anterior4 = 94;
+                    anterior5 = 90;
+                    anterior1 = 91;
+                    anterior2 = 87;
+                    break;
 
-            // Retorna o total de horas em formato de horas
-            return total.TotalHours;
+                case "3F7E1A71-815A-4397-D725-08DC62DFD032": // Junior Dias
+                    colaborador.HE_Individual = "02:51";
+                    anterior3 = 99;
+                    anterior4 = 104;
+                    anterior5 = 86;
+                    anterior1 = 90;
+                    anterior2 = 100;
+                    break;
+
+                case "0D6227A1-7B72-4DAC-D720-08DC62DFD032": // Luiz Oliveira
+                    colaborador.HE_Individual = "44:00";
+                    anterior3 = 100;
+                    anterior4 = 60;
+                    anterior5 = 58;
+                    anterior1 = 97;
+                    anterior2 = 100;
+                    break;
+
+                case "C0D4394F-38EF-4F8B-D71E-08DC62DFD032": // Paulo Silva
+                    colaborador.HE_Individual = "00:01";
+                    anterior3 = 95;
+                    anterior4 = 94;
+                    anterior5 = 95;
+                    anterior1 = 97;
+                    anterior2 = 97;
+                    break;
+
+                case "87B833CD-7810-4030-D722-08DC62DFD032": // Thiago Oliveira
+                    colaborador.HE_Individual = "00:03";
+                    anterior3 = 96;
+                    anterior4 = 95;
+                    anterior5 = 95;
+                    anterior1 = 94;
+                    anterior2 = 94;
+                    break;
+
+                case "11B207E8-E5F6-44B6-32CA-08DC9125DFEC": // Petrônio Aleixo
+                    colaborador.HE_Individual = "03:39";
+                    anterior3 = 90;
+                    anterior4 = 97;
+                    anterior5 = 93;
+                    anterior1 = 91;
+                    anterior2 = 92;
+                    break;
+            }
+
+            var lista = new List<EvolucaoEngajamentoView>();
+            Periodo data = new Periodo();
+
+            lista.Add(new EvolucaoEngajamentoView() { Data = "01/07", Valor = anterior3 });
+            lista.Add(new EvolucaoEngajamentoView() { Data = "08/07", Valor = anterior4 });
+            lista.Add(new EvolucaoEngajamentoView() { Data = "15/07", Valor = anterior5 });
+            lista.Add(new EvolucaoEngajamentoView() { Data = "22/07", Valor = anterior1 });
+            lista.Add(new EvolucaoEngajamentoView() { Data = "29/07", Valor = anterior2 });
+            lista.Add(new EvolucaoEngajamentoView() { Data = data.SegundaPassada(), Valor = colaborador.Engajamento });
+
+            colaborador.EvolucaoEngajamento = lista.ToArray();
+
+            return lista;
         }
     }
 }

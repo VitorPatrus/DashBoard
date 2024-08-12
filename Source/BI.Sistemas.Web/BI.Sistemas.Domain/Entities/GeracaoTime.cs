@@ -20,6 +20,9 @@ namespace BI.Sistemas.Domain.Novo
         public int Bug { get; set; }
         public int LeadTime { get; set; }
         public int CicleTime { get; set; }
+
+        public GeracaoTime() { }
+
         public int GetId()
         {
             return Geracao.Id;

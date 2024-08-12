@@ -11,5 +11,9 @@
         public string Time { get; set; }
         public byte[]? Foto { get; set; }
         public string UserTMetric { get; set; }
-    }
+
+        public Colaborador() { }
+
+         
+}
 }

@@ -23,11 +23,10 @@ namespace BI.Sistemas.API.View
 
         public double TotalApropriado
         {
-            // Propriedade que calcula o total de horas apropriadas para todas as atividades.
             get
             {
                 return Atividades
-                   .Sum (a => a.Horas.TimeOfDay.TotalHours); // Soma das horas de todas as atividades.
+                   .Sum (a => a.Horas.TimeOfDay.TotalHours);
             }
         }
         public double DevOps
@@ -48,13 +47,12 @@ namespace BI.Sistemas.API.View
 
         public ApropriacaoView[] ResumoApropriacao
         {
-            // Propriedade que gera um resumo das horas apropriadas agrupadas por tipo de atividade.
             get
             {
                 return Atividades
-                    .GroupBy(a => a.Tipo) // Agrupa as atividades pelo tipo.
-                    .Select(a => new ApropriacaoView() { Tipo = a.Key, Valor = a.Sum(a => a.Horas.TimeOfDay.TotalHours) }) // Para cada grupo, cria uma nova instância de ApropriacaoView com o tipo e o total de horas apropriadas.
-                    .ToArray(); // Converte a sequência de resultados em uma matriz.
+                    .GroupBy(a => a.Tipo)
+                    .Select(a => new ApropriacaoView() { Tipo = a.Key, Valor = a.Sum(a => a.Horas.TimeOfDay.TotalHours) }) 
+                    .ToArray(); 
             }
         }
 

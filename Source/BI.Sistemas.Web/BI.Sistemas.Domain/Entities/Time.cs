@@ -10,6 +10,8 @@ namespace BI.Sistemas.Domain.Novo
     {
         public string Nome { get; set; }
         public string Foto { get; set; }
+
+        public Time() { }
     }
 
 }

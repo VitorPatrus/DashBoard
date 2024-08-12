@@ -7,44 +7,20 @@
       "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.domain\\novo\\geracaotime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|solutionrelative:bi.sistemas.domain\\novo\\geracaotime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\controllers\\econometrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\controllers\\econometrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\view\\econometroviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\view\\econometroviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.domain\\novo\\movidesk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|solutionrelative:bi.sistemas.domain\\novo\\movidesk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED062B93-9D42-4A94-996B-A9A7DC44F7B9}|BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.orm\\bisistemascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED062B93-9D42-4A94-996B-A9A7DC44F7B9}|BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj|solutionrelative:bi.sistemas.orm\\bisistemascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}|BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.unittests\\sources\\createdbnovo.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}|BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj|solutionrelative:bi.sistemas.unittests\\sources\\createdbnovo.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.domain\\tmetric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|solutionrelative:bi.sistemas.domain\\tmetric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}|BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.unittests\\startedtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}|BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj|solutionrelative:bi.sistemas.unittests\\startedtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.domain\\colaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|solutionrelative:bi.sistemas.domain\\colaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.domain\\novo\\atividades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|solutionrelative:bi.sistemas.domain\\novo\\atividades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}|BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.unittests\\startedtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}|BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj|solutionrelative:bi.sistemas.unittests\\startedtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.domain\\ponto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|solutionrelative:bi.sistemas.domain\\ponto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -64,7 +40,7 @@
               "RelativeDocumentMoniker": "BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
               "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
               "RelativeToolTip": "BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
-              "ViewState": "AQIAAOIAAAAAAAAAAAAiwPwAAABHAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAM4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T14:37:27.016Z",
               "IsPinned": true,
@@ -72,16 +48,17 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "StartedTests.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\StartedTests.cs",
               "RelativeDocumentMoniker": "BI.Sistemas.UnitTests\\StartedTests.cs",
               "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\StartedTests.cs",
               "RelativeToolTip": "BI.Sistemas.UnitTests\\StartedTests.cs",
-              "ViewState": "AQIAAAIBAAAAAAAAAAAIwAgBAAATAAAA",
+              "ViewState": "AQIAAHkAAAAAAAAAAAAQwHsAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T15:00:28.911Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -90,109 +67,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GeracaoTime.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Novo\\GeracaoTime.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.Domain\\Novo\\GeracaoTime.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Novo\\GeracaoTime.cs",
-              "RelativeToolTip": "BI.Sistemas.Domain\\Novo\\GeracaoTime.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T14:25:48.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Atividades.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Novo\\Atividades.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.Domain\\Novo\\Atividades.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Novo\\Atividades.cs",
-              "RelativeToolTip": "BI.Sistemas.Domain\\Novo\\Atividades.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAA1wAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T14:25:29.73Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Colaborador.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Colaborador.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.Domain\\Colaborador.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Colaborador.cs",
-              "RelativeToolTip": "BI.Sistemas.Domain\\Colaborador.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T12:47:21.223Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "TMetric.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\TMetric.cs",
               "RelativeDocumentMoniker": "BI.Sistemas.Domain\\TMetric.cs",
               "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\TMetric.cs",
               "RelativeToolTip": "BI.Sistemas.Domain\\TMetric.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAiwDcAAAAAAAAA",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAYwE0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T14:56:59.558Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateDBNovo.sql",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\Sources\\CreateDBNovo.sql",
-              "RelativeDocumentMoniker": "BI.Sistemas.UnitTests\\Sources\\CreateDBNovo.sql",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\Sources\\CreateDBNovo.sql",
-              "RelativeToolTip": "BI.Sistemas.UnitTests\\Sources\\CreateDBNovo.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-07-25T14:08:15.083Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BISistemasContext.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BISistemasContext.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.ORM\\BISistemasContext.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BISistemasContext.cs",
-              "RelativeToolTip": "BI.Sistemas.ORM\\BISistemasContext.cs",
-              "ViewState": "AQIAAOwAAAAAAAAAAAAtwCoBAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T12:49:22.184Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Movidesk.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Novo\\Movidesk.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.Domain\\Novo\\Movidesk.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Novo\\Movidesk.cs",
-              "RelativeToolTip": "BI.Sistemas.Domain\\Novo\\Movidesk.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAAAB4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T11:57:10.21Z"
+              "WhenOpened": "2024-08-12T15:34:50.795Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "EconometroViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\View\\EconometroViewModel.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.API\\View\\EconometroViewModel.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\View\\EconometroViewModel.cs",
-              "RelativeToolTip": "BI.Sistemas.API\\View\\EconometroViewModel.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAqwE4AAAApAAAA",
+              "Title": "Colaborador.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Colaborador.cs",
+              "RelativeDocumentMoniker": "BI.Sistemas.Domain\\Colaborador.cs",
+              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Colaborador.cs",
+              "RelativeToolTip": "BI.Sistemas.Domain\\Colaborador.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T18:33:17.178Z"
+              "WhenOpened": "2024-08-12T14:54:06.488Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EconometroController.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\EconometroController.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.API\\Controllers\\EconometroController.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\EconometroController.cs",
-              "RelativeToolTip": "BI.Sistemas.API\\Controllers\\EconometroController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwA0AAAA2AAAA",
+              "DocumentIndex": 4,
+              "Title": "Ponto.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Ponto.cs",
+              "RelativeDocumentMoniker": "BI.Sistemas.Domain\\Ponto.cs",
+              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Ponto.cs",
+              "RelativeToolTip": "BI.Sistemas.Domain\\Ponto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T14:37:07.924Z"
+              "WhenOpened": "2024-08-12T14:33:38.157Z",
+              "EditorCaption": ""
             }
           ]
         }

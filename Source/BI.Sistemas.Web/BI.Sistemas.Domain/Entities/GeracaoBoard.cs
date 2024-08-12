@@ -11,5 +11,14 @@ namespace BI.Sistemas.Domain.Novo
         public DateTime Data;
         public DateTime DataInicio;
         public DateTime DataFim;
+
+        public GeracaoBoard() { }
+
+        public GeracaoBoard(DateTime data, DateTime dataInicio, DateTime dataFim)
+        {
+            Data = data;
+            DataInicio = dataInicio;
+            DataFim = dataFim;
+        }
     }
 }

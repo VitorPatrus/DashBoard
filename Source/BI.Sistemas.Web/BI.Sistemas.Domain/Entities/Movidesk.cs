@@ -25,6 +25,7 @@ namespace BI.Sistemas.Domain.Novo
         public string Status { get; set; }
         public string Time { get; set; }
 
+        public Movidesk() { }
 
 
         public static Movidesk FromCsv(string csvLine)
@@ -43,7 +44,7 @@ namespace BI.Sistemas.Domain.Novo
             result.ResponsavelChamado = values[8];
             result.Servico = values[9];
             result.Status = values[10];
-            result.Time = 
+            result.Time =
 
                 result.ResponsavelEquipe.Equals("TI - EDI", StringComparison.InvariantCultureIgnoreCase) ? "EDI" :
                 result.ResponsavelEquipe.Equals("TI - Sistemas CRM", StringComparison.InvariantCultureIgnoreCase) ? "CRM" :

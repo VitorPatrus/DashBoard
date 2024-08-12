@@ -1,4 +1,5 @@
 ﻿using System.Text.RegularExpressions;
+using BI.Sistemas.Domain.Entities.Enums;
 
 namespace BI.Sistemas.Domain
 {
@@ -8,7 +9,6 @@ namespace BI.Sistemas.Domain
         public Guid? ColaboradorId { get; set; }
         public virtual Colaborador Colaborador { get; set; }
         public TipoPonto Tipo { get; set; }
-
         public static Ponto FromCsv(IEnumerable<Colaborador> colaboradores, string csvLine)
         {
             string[] values = Regex.Split(csvLine, ";(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
@@ -18,10 +18,5 @@ namespace BI.Sistemas.Domain
             ponto.Horas= Convert.ToDateTime(values[5]);
             return ponto;
         }
-    }
-    public enum TipoPonto
-    {
-        Normal = 1,
-        HE = 2,
     }
 }
