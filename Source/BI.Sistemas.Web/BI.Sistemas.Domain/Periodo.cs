@@ -6,16 +6,24 @@
         public DateTime Inicio { get; set; }
         public DateTime Termino { get; set; }
 
-        public string SegundaPassada()
+        public static string SegundaFeiraPassada(int diasParaInicioSemana, int diasVoltarAteSegunda)
         {
             DateTime dataAtual = DateTime.Now;
             DayOfWeek diaAtual = dataAtual.DayOfWeek;
-            int diasParaSubtrair = (int)diaAtual + 6;
-            DateTime segundaFeiraPassada = dataAtual.AddDays(-diasParaSubtrair);
-            string segundaFormatada = segundaFeiraPassada.ToString("dd/MM");
+
+            int diasParaSubtrair;
+            if (diaAtual == DayOfWeek.Monday)
+                diasParaSubtrair = diasParaInicioSemana;
+
+            else
+                diasParaSubtrair = (int)diaAtual + diasVoltarAteSegunda;
+
+
+            DateTime segundaFeiraRetrasada = dataAtual.AddDays(-diasParaSubtrair);
+            string segundaFormatada = segundaFeiraRetrasada.ToString("dd/MM");
 
             return segundaFormatada;
-
         }
+
     }
 }

@@ -16,7 +16,7 @@ namespace BI.Sistemas.Context
         public DbSet<TMetric> TMetrics { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=con-snote725;Database=BI_SISTEMAS;Trusted_Connection=True;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer(@"Server=con-snote725;Database=BI_SISTEMASDEVS;Trusted_Connection=True;TrustServerCertificate=True;");
             optionsBuilder.LogTo(Console.WriteLine);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder) // Mapeamento!

@@ -6,12 +6,15 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
 using Microsoft.VisualBasic;
 using System.Linq.Expressions;
+using System.Security.Cryptography;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace BI.Sistemas.UnitTests
 {
     [TestClass]
     public class StartedTests
     {
+
         [TestMethod]
         public void CriarColaboradores()
         {
@@ -19,38 +22,38 @@ namespace BI.Sistemas.UnitTests
             {
                 var colaboradores = db.Colaboradores.AsQueryable().ToList();
 
-                AddColaborador(db, colaboradores, "Fernanda Cassiano", "Analista de Negócios", "ERP", "Fernanda Cassiano Pereira dos Santos", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-fernanda.jpg");
-                AddColaborador(db, colaboradores, "Paulo Silva", "Analista de Negócios", "TMS", "Paulo Rafael da Silva", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-paulo.jpg");
-                AddColaborador(db, colaboradores, "Amanda Ferreira", "Analista de Negócios", "ERP", "Amanda Ferreira", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-amanda.jpg");
-                AddColaborador(db, colaboradores, "Luiz Oliveira", "Analista de Sistemas", "ERP", "Luiz Oliveira (TI MTZ)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-luiz.jpg");
-                AddColaborador(db, colaboradores, "Marco Tulio Rodrigues", "Coordenador de Sistemas", "TMS", "Marco Tulio Rodrigues", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-tulio.png");
-                AddColaborador(db, colaboradores, "Thiago Oliveira", "Analista de Sistemas", "ERP", "Thiago Gomes", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-thiago.jpg");
-                AddColaborador(db, colaboradores, "João Paulo", "Analista de Negócios", "TMS", "Joao Paulo (JP TI)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-jp.jpg");
-                AddColaborador(db, colaboradores, "Rogério Simões de Oliveira", "Especialista de Sistemas", "Sistemas", "Rogério Simões de Oliveira", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-rogerio.jpg");
-                AddColaborador(db, colaboradores, "Junior Dias", "Analista de Sistemas", "TMS", "Junior Dias", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-junior.jpg");
-                AddColaborador(db, colaboradores, "Joel Junior", "Analista de Negócios", "TMS", "Joel Martins Júnior", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-joel.jpg");
-                AddColaborador(db, colaboradores, "Marco Aurelio Barros", "Coordenador de Sistemas", "ERP", "Marco Aurelio (COORD TI ERP)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-marco.jpg");
-                AddColaborador(db, colaboradores, "Petronio Faleixo", "Analista de Sistemas", "TMS", "Petronio Faleixo", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-petronio.jpg");
+                AddColaborador(db, colaboradores, "Fernanda Cassiano", "Analista de Negócios", "ERP", "Fernanda Cassiano Pereira dos Santos", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-fernanda.jpg");
+                AddColaborador(db, colaboradores, "Paulo Silva", "Analista de Negócios", "TMS", "Paulo Rafael da Silva", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-paulo.jpg");
+                AddColaborador(db, colaboradores, "Amanda Ferreira", "Analista de Negócios", "ERP", "Amanda Ferreira", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-amanda.jpg");
+                AddColaborador(db, colaboradores, "Luiz Oliveira", "Analista de Sistemas", "ERP", "Luiz Oliveira (TI MTZ)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-luiz.jpg");
+                AddColaborador(db, colaboradores, "Marco Tulio Rodrigues", "Coordenador de Sistemas", "TMS", "Marco Tulio Rodrigues", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-tulio.png");
+                AddColaborador(db, colaboradores, "Thiago Oliveira", "Analista de Sistemas", "ERP", "Thiago Gomes", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-thiago.jpg");
+                AddColaborador(db, colaboradores, "João Paulo", "Analista de Negócios", "TMS", "Joao Paulo (JP TI)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-jp.jpg");
+                AddColaborador(db, colaboradores, "Rogério Simões de Oliveira", "Especialista de Sistemas", "Sistemas", "Rogério Simões de Oliveira", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-rogerio.jpg");
+                AddColaborador(db, colaboradores, "Junior Dias", "Analista de Sistemas", "TMS", "Junior Dias", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-junior.jpg");
+                AddColaborador(db, colaboradores, "Joel Junior", "Analista de Negócios", "TMS", "Joel Martins Júnior", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-joel.jpg");
+                AddColaborador(db, colaboradores, "Marco Aurelio Barros", "Coordenador de Sistemas", "ERP", "Marco Aurelio (COORD TI ERP)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-marco.jpg");
+                AddColaborador(db, colaboradores, "Petronio Faleixo", "Analista de Sistemas", "TMS", "Petronio Faleixo", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-petronio.jpg");
 
 
-                AddColaborador(db, colaboradores, "Giovanni de Souza Campos", "Analista de Sistemas SR", "Suporte ERP", "Giovanni Campos (TI MTZ)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-giovanni.jpg");
-                AddColaborador(db, colaboradores, "Mateus de Oliveira Menezes Aquino", "Analista de Suporte JR", "Suporte TMS", "Mateus Menezes (TI MTZ)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-mateus.jpg");
-                AddColaborador(db, colaboradores, "Isaias Oliveira Guimaraes", "Analista de Suporte PL", "Suporte TMS", "Isaias Oliveira (TI MTZ)   ", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-isaias.jpg");
-                AddColaborador(db, colaboradores, "Vitor dos Santos Gomes", "Analista de Suporte JR", "Suporte TMS", "Vitor Gomes (TI MTZ)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-vitinho.jpg");
-                AddColaborador(db, colaboradores, "Euller Neviton Vieira", "Analista EDI PL", "EDI", "Euller Vieira (TI MTZ)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-euller.jpg");
-                AddColaborador(db, colaboradores, "Paulo Junior Souza Ramos", "Analista de Suporte PL", "Suporte TMS", "Paulo Souza  (TI MTZ)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-paulinho.jpg");
-                AddColaborador(db, colaboradores, "Anna Paula Gomes da Silva", "Assistente de Sistemas", "Suporte TMS", "Anna Silva (TI MTZ)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-anna.jpg");
-                AddColaborador(db, colaboradores, "Joao Pedro Martins dos Santos", "Assistente de Sistemas", "Suporte TMS", "João Santos (TI MTZ)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-joao-santos.jpg");
-                AddColaborador(db, colaboradores, "Ricardo Rodrigues dos Santos", "Analista de Sistemas SR", "CRM", "Ricardo Santos (TI MTZ)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-ricardo.jpg");
-                AddColaborador(db, colaboradores, "Samuel Rodrigo Lopes Ferreira", "Auxiliar Help Desk", "Suporte ERP", "Samuel Rodrigo Ferreira (Auxiliar TI MTZ)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-samuel.jpg");
-                AddColaborador(db, colaboradores, "Barbara Barros", "Estagiário CRM", "CRM", "Barbara Barros (EST-TECH TI MTZ)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-barbara.jpg");
-                AddColaborador(db, colaboradores, "Arthur Abreu", "Estagiário ERP", "Suporte ERP", "Arthur Abreu (EST-TECH TI MTZ)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-arthur.jpg");
-                AddColaborador(db, colaboradores, "Vitor Fernandes", "Estagiário TMS", "TMS", "Vitor Souza (EST-TECH TI MTZ)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-vitor.jpg");
-                AddColaborador(db, colaboradores, "Kleverson Salles", "Analista de Sistemas SR", "Suporte ERP", "Kleverson Salles (TI MTZ)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-kleverson.jpg");
-                AddColaborador(db, colaboradores, "Natalia Caroline", "Supervisor de EDI", "EDI", "Natalia Caroline (TI MTZ)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-natalia.jpg");
-                AddColaborador(db, colaboradores, "Marcus Vinícius", "Supervisor de Suporte", "Suporte TMS", "Marcus Vinícius (TI MTZ)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-marcus.jpg");
-                AddColaborador(db, colaboradores, "Marcus Ethur", "Supervisor de Suporte", "Suporte ERP", "Marcus Ethur (TI MTZ)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-ethur.jpg");
-                AddColaborador(db, colaboradores, "Joselito Almeida", "Analista de Sistemas SR", "Suporte ERP", "Joselito Almeida (TI MTZ)", @"C:\Users\vitor.fernandessouza\Desktop\DashBoard\UI\Content\Images\face-joselito.jpg");
+                AddColaborador(db, colaboradores, "Giovanni de Souza Campos", "Analista de Sistemas SR", "Suporte ERP", "Giovanni Campos (TI MTZ)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-giovanni.jpg");
+                AddColaborador(db, colaboradores, "Mateus de Oliveira Menezes Aquino", "Analista de Suporte JR", "Suporte TMS", "Mateus Menezes (TI MTZ)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-mateus.jpg");
+                AddColaborador(db, colaboradores, "Isaias Oliveira Guimaraes", "Analista de Suporte PL", "Suporte TMS", "Isaias Oliveira (TI MTZ)   ", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-isaias.jpg");
+                AddColaborador(db, colaboradores, "Vitor dos Santos Gomes", "Analista de Suporte JR", "Suporte TMS", "Vitor Gomes (TI MTZ)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-vitinho.jpg");
+                AddColaborador(db, colaboradores, "Euller Neviton Vieira", "Analista EDI PL", "EDI", "Euller Vieira (TI MTZ)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-euller.jpg");
+                AddColaborador(db, colaboradores, "Paulo Junior Souza Ramos", "Analista de Suporte PL", "Suporte TMS", "Paulo Souza  (TI MTZ)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-paulinho.jpg");
+                AddColaborador(db, colaboradores, "Anna Paula Gomes da Silva", "Assistente de Sistemas", "Suporte TMS", "Anna Silva (TI MTZ)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-anna.jpg");
+                AddColaborador(db, colaboradores, "Joao Pedro Martins dos Santos", "Assistente de Sistemas", "Suporte TMS", "João Santos (TI MTZ)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-joao-santos.jpg");
+                AddColaborador(db, colaboradores, "Ricardo Rodrigues dos Santos", "Analista de Sistemas SR", "CRM", "Ricardo Santos (TI MTZ)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-ricardo.jpg");
+                AddColaborador(db, colaboradores, "Samuel Rodrigo Lopes Ferreira", "Auxiliar Help Desk", "Suporte ERP", "Samuel Rodrigo Ferreira (Auxiliar TI MTZ)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-samuel.jpg");
+                AddColaborador(db, colaboradores, "Barbara Barros", "Estagiário CRM", "CRM", "Barbara Barros (EST-TECH TI MTZ)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-barbara.jpg");
+                AddColaborador(db, colaboradores, "Arthur Abreu", "Estagiário ERP", "Suporte ERP", "Arthur Abreu (EST-TECH TI MTZ)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-arthur.jpg");
+                AddColaborador(db, colaboradores, "Vitor Fernandes", "Estagiário TMS", "TMS", "Vitor Souza (EST-TECH TI MTZ)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-vitor.jpg");
+                AddColaborador(db, colaboradores, "Kleverson Salles", "Analista de Sistemas SR", "Suporte ERP", "Kleverson Salles (TI MTZ)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-kleverson.jpg");
+                AddColaborador(db, colaboradores, "Natalia Caroline", "Supervisor de EDI", "EDI", "Natalia Caroline (TI MTZ)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-natalia.jpg");
+                AddColaborador(db, colaboradores, "Marcus Vinícius", "Supervisor de Suporte", "Suporte TMS", "Marcus Vinícius (TI MTZ)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-marcus.jpg");
+                AddColaborador(db, colaboradores, "Marcus Ethur", "Supervisor de Suporte", "Suporte ERP", "Marcus Ethur (TI MTZ)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-ethur.jpg");
+                AddColaborador(db, colaboradores, "Joselito Almeida", "Analista de Sistemas SR", "Suporte ERP", "Joselito Almeida (TI MTZ)", @"C:\Users\vitor.fernandessouza\Documents\DashBoard\UI\Content\Images\face-joselito.jpg");
 
                 db.SaveChanges();
             }
@@ -86,20 +89,21 @@ namespace BI.Sistemas.UnitTests
         [TestMethod]
         public void CargaTMetric()
         {
+            var data = DateTime.Now;
             using (var db = new BISistemasContext())
             {
-                var periodo = db.Periodos.FirstOrDefault(c => c.Data == DateTime.Today);
+                var periodo = db.Periodos.FirstOrDefault(c => c.Data == data);
                 if (periodo == null)
                 {
                     periodo = new Periodo();
-                    periodo.Data = DateTime.Today;
+                    periodo.Data = data;
                     periodo.Inicio = new DateTime(2024, 4, 15);
                     periodo.Termino = new DateTime(2024, 4, 19);
                     db.Periodos.Add(periodo);
                     db.SaveChanges();
                 }
             }
-            var dataCarga = DateTime.Now;
+            //var dataCarga = DateTime.Now;
             File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\detailed_report_20240415_20240421 (5).csv")
                 .Skip(1)
                 .ToList()
@@ -107,8 +111,9 @@ namespace BI.Sistemas.UnitTests
                 {
                     using (var db = new BISistemasContext())
                     {
-                        var periodo = db.Periodos.FirstOrDefault(c => c.Data == DateTime.Today);
-                        var metric = TMetric.FromCsv(dataCarga, v);
+
+                        var periodo = db.Periodos.FirstOrDefault(c => c.Data == data);
+                        var metric = TMetric.FromCsv(data, v);
                         var colaborador = db.Colaboradores.FirstOrDefault(c => c.UserTMetric.ToUpper() == metric.Usuario.ToUpper());
                         metric.Colaborador = colaborador;
                         metric.Periodo = periodo;
@@ -131,16 +136,18 @@ namespace BI.Sistemas.UnitTests
 
         private static void CargaPonto(TipoPonto tipo)
         {
+            var data = DateTime.Now; //  ANO MÊS DIA
             using (var db = new BISistemasContext())
             {
-                var periodo = db.Set<Periodo>().FirstOrDefault(c => c.Data == DateTime.Today);
+                var periodo = db.Set<Periodo>().FirstOrDefault(c => c.Data == data);
                 if (periodo == null)
                 {
                     periodo = new Periodo();
-                    periodo.Data = DateTime.Today;
+                    periodo.Data = data;
                     periodo.Inicio = new DateTime(2024, 4, 15);
                     periodo.Termino = new DateTime(2024, 4, 19);
                     db.Periodos.Add(periodo);
+                    db.SaveChanges();
 
                 }
                 File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\PontoCLT.csv")
@@ -150,7 +157,7 @@ namespace BI.Sistemas.UnitTests
                 {
                     using (var db = new BISistemasContext())
                     {
-                        var periodo = db.Periodos.FirstOrDefault(c => c.Data == DateTime.Today);
+                        var periodo = db.Periodos.FirstOrDefault(c => c.Data == data);
                         var colaboradores = db.Colaboradores.ToList();
                         var ponto = Ponto.FromCsv(colaboradores, v);
                         ponto.Periodo = periodo;
@@ -165,13 +172,15 @@ namespace BI.Sistemas.UnitTests
         [TestMethod]
         public void CargaMovidesk()
         {
+            var data = DateTime.Now; //  ANO MÊS DIA
+
             using (var db = new BISistemasContext())
             {
-                var periodo = db.Periodos.FirstOrDefault(c => c.Data == DateTime.Today);
+                var periodo = db.Periodos.FirstOrDefault(c => c.Data == data);
                 if (periodo == null)
                 {
                     periodo = new Periodo();
-                    periodo.Data = DateTime.Today;
+                    periodo.Data = data;
                     periodo.Inicio = new DateTime(2024, 4, 15);
                     periodo.Termino = new DateTime(2024, 4, 19);
                     db.Periodos.Add(periodo);
@@ -179,7 +188,7 @@ namespace BI.Sistemas.UnitTests
                 }
             }
 
-            var dataCarga = DateTime.Now;
+            var dataCarga = data;
             File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\Movidesk - Base chamados TI - Semana Retroativa_novo.csv")
                 .Skip(1) // Já está com os dados de 29/07, só não tem carga no bd
                 .ToList()
@@ -187,7 +196,7 @@ namespace BI.Sistemas.UnitTests
                 {
                     using (var db = new BISistemasContext())
                     {
-                        var periodo = db.Periodos.FirstOrDefault(c => c.Data == DateTime.Today);
+                        var periodo = db.Periodos.FirstOrDefault(c => c.Data == data);
                         var movidesk = Movidesk.FromCsv(v);
                         movidesk.Periodo = periodo;
 
@@ -222,12 +231,13 @@ namespace BI.Sistemas.UnitTests
         {
             using (var db = new BISistemasContext())
             {
-                var geracao = new BI.Sistemas.Domain.Novo.Geracao();
-                geracao.Data = DateTime.Today.AddDays(-1);
-                geracao.DataFim = DateTime.Today.AddDays(3);
-                geracao.DataInicio = DateTime.Today.AddDays(23);
+                var data = DateTime.Now;
+                var geracao = new Geracao();
+                geracao.Data = data.AddDays(-1);
+                geracao.DataFim = data.AddDays(3);
+                geracao.DataInicio = data.AddDays(23);
 
-                geracao.Times.Add(new Domain.Novo.GeracaoTime()
+                geracao.Times.Add(new GeracaoTime
                 {
                     ConclusaoCards = 10,
                     SpEntregues = 7,
@@ -239,7 +249,7 @@ namespace BI.Sistemas.UnitTests
                     CicleTime = 24,
                 });
 
-                geracao.Times.Add(new Domain.Novo.GeracaoTime()
+                geracao.Times.Add(new GeracaoTime
                 {
                     ConclusaoCards = 30,
                     SpEntregues = 47,
@@ -252,7 +262,7 @@ namespace BI.Sistemas.UnitTests
 
                 });
 
-                geracao.Times.Add(new Domain.Novo.GeracaoTime()
+                geracao.Times.Add(new GeracaoTime
                 {
                     ConclusaoCards = 1,
                     SpEntregues = 5,

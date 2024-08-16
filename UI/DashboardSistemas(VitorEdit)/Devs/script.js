@@ -197,6 +197,9 @@ function clickColaboradorFuncao(id) {
 		google.charts.load('current', { 'packages': ['corechart'] });
 		google.charts.setOnLoadCallback(drawChart);
 
+		
+
+		
 		function drawChart() {
 			var data = google.visualization.arrayToDataTable(listaEvolucao);
 
@@ -223,12 +226,9 @@ function clickColaboradorFuncao(id) {
 					}
 				}
 			};
-
-
 			var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 			chart.draw(view, options);
 		}
-
 		$('#primeiro').html('<img class="rounded-circle me-1" width="24" height="24" src="data:image/jpeg;base64,' + data.fotoTime + '" alt="rounded-circle me-1 flex">' + data.time + ' ' + data.engajamentoTime + '%');
 		data.topEngajamento.forEach(function (colaborador, indice) {
 			var elemento = '#segundo';
@@ -241,8 +241,9 @@ function clickColaboradorFuncao(id) {
 			}
 			$(elemento).html('<img class="rounded-circle me-1" width="24" height="24" src="data:image/jpeg;base64,' + colaborador.foto + '" alt="rounded-circle me-1 flex">' + colaborador.nome + ' ' + colaborador.percentual + '%');
 		});
+		
 	});
-
+	
 }
 function colaboradorFuncao(nomeColaborador, cargoColaborador, imagemColaborador, imagemTime, valorEngajamento, txt_horas_individuais, horasDaEquipe, totalIndividual, totalPonto, lancamentoPorTipo) {
 	// $('#nome_colaborador').text(nomeColaborador);
@@ -267,8 +268,7 @@ function colaboradorFuncao(nomeColaborador, cargoColaborador, imagemColaborador,
 	});
 }
 
-clickColaboradorFuncao('C44D7319-3318-43D4-D726-08DC62DFD032');
-
+clickColaboradorFuncao('69DB13EF-89C0-4A6F-D71F-08DC62DFD032');
 
 //const nome = document.getElementById("nome_colaborador").innerText;
 var sendMail = (oficial) => {

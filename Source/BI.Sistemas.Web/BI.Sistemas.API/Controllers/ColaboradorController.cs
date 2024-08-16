@@ -17,6 +17,7 @@ namespace BI.Sistemas.API.Controllers
         [Route("ColaboradorDashboard")]
         public ActionResult<ColaboradorDashboardView> GetColaboradorDashboard(string id)
         {
+            
             TMetric metricas = new TMetric();
             if (id.IsNullOrEmpty())
                 return BadRequest("O ID do colaborador não foi fornecido!");
@@ -41,14 +42,15 @@ namespace BI.Sistemas.API.Controllers
                 if (baseDirectory != null)
                     projectDirectory = Directory.GetParent(baseDirectory).Parent.Parent.Parent.Parent.Parent.Parent;
 
+
                 colaborador.Nome = pessoa.Nome;
                 colaborador.Email = pessoa.Email;
                 colaborador.FotoColaborador = Convert.ToBase64String(pessoa.Foto);
                 colaborador.Cargo = pessoa.Cargo;
                 colaborador.Time = $"Time {pessoa.Time}";
                 var periodoAtual = db.Periodos.OrderBy(x => x.Data).Last();
-                colaborador.FotoTime = Convert.ToBase64String(System.IO.File
-                    .ReadAllBytes($@"{projectDirectory}\UI\Content\Images\time-{pessoa.Time}.jpg"));
+                 colaborador.FotoTime = Convert.ToBase64String(System.IO.File
+                    .ReadAllBytes($@"{projectDirectory}\UI\Content\Images\time-{pessoa.Time}.png"));
 
                 var HE = pontosTodos
                 .Where(he => he.PeriodoId.ToString().ToUpper() == periodoAtual.Id.ToString().ToUpper())
@@ -132,8 +134,8 @@ namespace BI.Sistemas.API.Controllers
 
                 var heTime = new Dictionary<string, string>
                 {
-                    { "TMS", "15:40" },
-                    { "ERP", "01:46" }
+                    { "TMS", "00:03" },
+                    { "ERP", "00:13" }
                 };
                 colaborador.HE_Equipe = heTime[pessoa.Time];
                 colaborador.PJ = pessoa.CargaHoraria > 0;
@@ -142,21 +144,13 @@ namespace BI.Sistemas.API.Controllers
                 return Ok(colaborador);
             }
         }
-        public class EnviarEmailDados
-        {
-            public string Foto { get; set; }
-            public string Id { get; set; }
-            public string Periodo { get; set; }
-            public int Engajamento { get; set; }
-            public double DevOps { get; set; }
-            public bool Oficial { get; set; }
-            public AtividadeView[] Lista { get; set; }
-        }
 
         [HttpPost]
         [Route("SendEmail")]
         public async Task<IActionResult> SendEmail(EnviarEmailDados dados)
         {
+            EnviarEmailDados email = new EnviarEmailDados();
+
             using (var db = new BISistemasContext())
             {
                 var pessoa = db.Colaboradores.FirstOrDefault(p => p.Id.ToString() == dados.Id);
@@ -204,43 +198,39 @@ namespace BI.Sistemas.API.Controllers
 
                     string gif = string.Empty;
                     string mensagem = string.Empty;
-
-                    Gifs gifs = new Gifs(null, null, null);
-
+                    var engajamentoDevOps = dados.DevOps == 0 ? "0,0" : string.Format("{0:#.#,##}", Math.Round(dados.DevOps, 1));
                     if (dados.Engajamento > 100)
                     {
-                        gif = gifs.ListasGifs(gifs.ListaGifs50);
-                        mensagem = $@"Seu engajamento foi de <b>{dados.Engajamento}% e lançamentos pelo Devops de {string.Format("{0:#.#,##}", Math.Round(dados.DevOps, 1))}%. Você registrou um tempo de trabalho superior em relação ao ponto.</b> Atenção com os lançamentos.";
+                        gif = Gifs.ListasGifs(NivelGif.Cinquenta);
+                        mensagem = $@"Seu engajamento foi de <b>{dados.Engajamento}% e lançamentos pelo Devops de {engajamentoDevOps}%. Você registrou um tempo de trabalho superior em relação ao ponto.</b> Atenção com os lançamentos.";
                     }
                     else if (dados.Engajamento >= 90 && dados.DevOps >= 95)
                     {
-                        mensagem = $"Seus lançamentos estão excelentes, <b>parabéns</b>✅. <br> Seu engajamento foi de <b>{dados.Engajamento}%</b> e seu lançamento pelo Devops <b>{string.Format("{0:#.#,##}", Math.Round(dados.DevOps, 1))}%</b>.";
-                        gif = gifs.ListasGifs(gifs.ListaGifs90);
+                        mensagem = $"Seus lançamentos estão excelentes, <b>parabéns</b>✅. <br> Seu engajamento foi de <b>{dados.Engajamento}%</b> e seu lançamento pelo Devops <b>{engajamentoDevOps}%</b>.";
+                        gif = Gifs.ListasGifs(NivelGif.Noventa);
                     }
                     else if (dados.Engajamento >= 0 && dados.DevOps >= 95)
                     {
-                        mensagem = $"<b>Atenção com os lançamentos no dia à dia</b>⚠️. <br> Seu engajamento foi de <b>{dados.Engajamento}%</b> e seu lançamento pelo Devops <b>{string.Format("{0:#.#,##}", Math.Round(dados.DevOps, 1))}%</b>.";
-                        gif = gifs.ListasGifs(gifs.ListaGifs50);
+                        mensagem = $"<b>Atenção com os lançamentos no dia à dia</b>⚠️. <br> Seu engajamento foi de <b>{dados.Engajamento}%</b> e seu lançamento pelo Devops <b>{engajamentoDevOps}%</b>.";
+                        gif = Gifs.ListasGifs(NivelGif.Cinquenta);
                     }
                     else if (dados.Engajamento >= 90 && dados.DevOps < 95)
                     {
-                        mensagem = $"<b>Atenção com os lançamentos dentro das atividades do Devops</b>⚠️. <br> Seu engajamento foi de <b>{dados.Engajamento}%</b> e seu lançamento pelo Devops <b>{string.Format("{0:#.#,##}", Math.Round(dados.DevOps, 1))}%</b>.";
-                        gif = gifs.ListasGifs(gifs.ListaGifs50);
+                        mensagem = $"<b>Atenção com os lançamentos dentro das atividades do Devops</b>⚠️. <br> Seu engajamento foi de <b>{dados.Engajamento}%</b> e seu lançamento pelo Devops <b>{engajamentoDevOps}%</b>.";
+                        gif = Gifs.ListasGifs(NivelGif.Cinquenta);
                     }
                     else if (dados.Engajamento < 90 && dados.DevOps < 95)
                     {
-                        mensagem = $"<b>Seus lançamentos não estão legais</b>, mais atenção com os lançamentos do dia à dia e dentro das atividades do Devops ❌. <br> Seu engajamento foi de <b>{dados.Engajamento}%</b> e seu lançamento pelo Devops <b>{string.Format("{0:#.#,##}", Math.Round(dados.DevOps, 1))}%</b>.";
-                        gif = gifs.ListasGifs(gifs.ListaGifs25);
-
+                        mensagem = $"<b>Seus lançamentos não estão legais</b>, mais atenção com os lançamentos do dia à dia e dentro das atividades do Devops ❌. <br> Seu engajamento foi de <b>{dados.Engajamento}%</b> e seu lançamento pelo Devops <b>{engajamentoDevOps}%</b>.";
+                        gif = Gifs.ListasGifs(NivelGif.VinteCinco);
                     }
-
                     mailItem.Subject = $@"[SISTEMAS] APURAÇÃO DE HORAS SEMANAL - {pessoa.Nome.ToUpper()} ";
                     mailItem.BodyFormat = Outlook.OlBodyFormat.olFormatHTML;
                     string msgHTMLBody = $@"
                      <html>
                         <head></head>
                         <body>
-                            Boa Tarde, {pessoa.Nome},<br><br>
+                            {email.MensagemInicial()}, {pessoa.Nome},<br><br>
                             Segue o dashboard com os lançamentos do período.<b> {dados.Periodo}.</b><br><br>
                             <div style=""min-width:600px!important;margin-left:auto;margin-right:auto; ""></div>
                             <img src=""{gif}"" width=""80"" height=""80""/><br>
@@ -284,16 +274,16 @@ namespace BI.Sistemas.API.Controllers
             switch (id)
             {
                 case "69DB13EF-89C0-4A6F-D71F-08DC62DFD032": // Amanda Ferreira
-                    colaborador.HE_Individual = "01:43";
+                    colaborador.HE_Individual = "00:11";
                     anterior3 = 96;
                     anterior4 = 97;
                     anterior5 = 94;
-                    anterior2 = 0;
                     anterior1 = 0;
+                    anterior2 = 0;  
                     break;
 
                 case "BD984996-9C11-4095-D71D-08DC62DFD032": // Fernanda Cassiano
-                    colaborador.HE_Individual = "44:00";
+                    colaborador.HE_Individual = colaborador.TotalPonto.ToString();
                     anterior3 = 87;
                     anterior4 = 93;
                     anterior5 = 94;
@@ -302,7 +292,7 @@ namespace BI.Sistemas.API.Controllers
                     break;
 
                 case "52F14677-9C85-41D5-D723-08DC62DFD032": // João Paulo
-                    colaborador.HE_Individual = "44:00";
+                    colaborador.HE_Individual = colaborador.TotalPonto.ToString();
                     anterior3 = 98;
                     anterior4 = 98;
                     anterior5 = 91;
@@ -311,7 +301,7 @@ namespace BI.Sistemas.API.Controllers
                     break;
 
                 case "C44D7319-3318-43D4-D726-08DC62DFD032": // Joel Martins
-                    colaborador.HE_Individual = "09:09";
+                    colaborador.HE_Individual = "-00:02";
                     anterior3 = 94;
                     anterior4 = 94;
                     anterior5 = 90;
@@ -320,7 +310,7 @@ namespace BI.Sistemas.API.Controllers
                     break;
 
                 case "3F7E1A71-815A-4397-D725-08DC62DFD032": // Junior Dias
-                    colaborador.HE_Individual = "02:51";
+                    colaborador.HE_Individual = "00:02";
                     anterior3 = 99;
                     anterior4 = 104;
                     anterior5 = 86;
@@ -329,7 +319,7 @@ namespace BI.Sistemas.API.Controllers
                     break;
 
                 case "0D6227A1-7B72-4DAC-D720-08DC62DFD032": // Luiz Oliveira
-                    colaborador.HE_Individual = "44:00";
+                    colaborador.HE_Individual = colaborador.TotalPonto.ToString();
                     anterior3 = 100;
                     anterior4 = 60;
                     anterior5 = 58;
@@ -338,7 +328,7 @@ namespace BI.Sistemas.API.Controllers
                     break;
 
                 case "C0D4394F-38EF-4F8B-D71E-08DC62DFD032": // Paulo Silva
-                    colaborador.HE_Individual = "00:01";
+                    colaborador.HE_Individual = "-00:01";
                     anterior3 = 95;
                     anterior4 = 94;
                     anterior5 = 95;
@@ -347,7 +337,7 @@ namespace BI.Sistemas.API.Controllers
                     break;
 
                 case "87B833CD-7810-4030-D722-08DC62DFD032": // Thiago Oliveira
-                    colaborador.HE_Individual = "00:03";
+                    colaborador.HE_Individual = "00:02";
                     anterior3 = 96;
                     anterior4 = 95;
                     anterior5 = 95;
@@ -356,7 +346,7 @@ namespace BI.Sistemas.API.Controllers
                     break;
 
                 case "11B207E8-E5F6-44B6-32CA-08DC9125DFEC": // Petrônio Aleixo
-                    colaborador.HE_Individual = "03:39";
+                    colaborador.HE_Individual = "00:04";
                     anterior3 = 90;
                     anterior4 = 97;
                     anterior5 = 93;
@@ -366,14 +356,13 @@ namespace BI.Sistemas.API.Controllers
             }
 
             var lista = new List<EvolucaoEngajamentoView>();
-            Periodo data = new Periodo();
 
-            lista.Add(new EvolucaoEngajamentoView() { Data = "01/07", Valor = anterior3 });
-            lista.Add(new EvolucaoEngajamentoView() { Data = "08/07", Valor = anterior4 });
-            lista.Add(new EvolucaoEngajamentoView() { Data = "15/07", Valor = anterior5 });
-            lista.Add(new EvolucaoEngajamentoView() { Data = "22/07", Valor = anterior1 });
-            lista.Add(new EvolucaoEngajamentoView() { Data = "29/07", Valor = anterior2 });
-            lista.Add(new EvolucaoEngajamentoView() { Data = data.SegundaPassada(), Valor = colaborador.Engajamento });
+            lista.Add(new EvolucaoEngajamentoView() { Data = Periodo.SegundaFeiraPassada(42,41), Valor = anterior3 });
+            lista.Add(new EvolucaoEngajamentoView() { Data = Periodo.SegundaFeiraPassada(35,34), Valor = anterior4 });
+            lista.Add(new EvolucaoEngajamentoView() { Data = Periodo.SegundaFeiraPassada(28,27), Valor = anterior5 });
+            lista.Add(new EvolucaoEngajamentoView() { Data = Periodo.SegundaFeiraPassada(21,20), Valor = anterior1 });
+            lista.Add(new EvolucaoEngajamentoView() { Data = Periodo.SegundaFeiraPassada(14,13), Valor = anterior2 });
+            lista.Add(new EvolucaoEngajamentoView() { Data = Periodo.SegundaFeiraPassada(7,6),   Valor = colaborador.Engajamento });
 
             colaborador.EvolucaoEngajamento = lista.ToArray();
 

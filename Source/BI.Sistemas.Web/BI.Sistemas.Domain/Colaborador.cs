@@ -1,6 +1,6 @@
 ﻿namespace BI.Sistemas.Domain
 {
-    public class Colaborador: Entity
+    public class Colaborador : Entity
     {
         public string Nome { get; set; }
         public string Cargo { get; set; }
@@ -14,6 +14,6 @@
 
         public Colaborador() { }
 
-         
-}
+
+    }
 }

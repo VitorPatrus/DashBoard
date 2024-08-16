@@ -14,14 +14,11 @@ namespace BI.Sistemas.Domain.Novo
         public int ConclusaoCards { get; set; }
         public int SpEntregues { get; set; }
         public int BacklogTotal { get; set; }
-
         public int BacklogNovo { get; set; }
         public int Wip { get; set; }
         public int Bug { get; set; }
         public int LeadTime { get; set; }
         public int CicleTime { get; set; }
-
-        public GeracaoTime() { }
 
         public int GetId()
         {
