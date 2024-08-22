@@ -3,27 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.domain\\periodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|solutionrelative:bi.sistemas.domain\\periodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vitor.fernandessouza\\AppData\\Local\\SourceServer\\a06dfbe75e08c94ed2d87ca6d3a330cf8d9472901431b9a2ebbe6a937a00e443\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.domain\\entities\\geracaotime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|solutionrelative:bi.sistemas.domain\\entities\\geracaotime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\controllers\\colaboradorslacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\controllers\\colaboradorslacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}|BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.unittests\\startedtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}|BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj|solutionrelative:bi.sistemas.unittests\\startedtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.domain\\entities\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|solutionrelative:bi.sistemas.domain\\entities\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.domain\\entities\\movidesk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,20 +19,20 @@
       "RelativeMoniker": "D:0:0:{ED062B93-9D42-4A94-996B-A9A7DC44F7B9}|BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj|solutionrelative:bi.sistemas.orm\\bisistemascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.domain\\entities\\geracaocolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|solutionrelative:bi.sistemas.domain\\entities\\geracaocolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.domain\\entities\\atividades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|solutionrelative:bi.sistemas.domain\\entities\\atividades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.domain\\gifs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|solutionrelative:bi.sistemas.domain\\gifs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.domain\\colaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|solutionrelative:bi.sistemas.domain\\colaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.domain\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|solutionrelative:bi.sistemas.domain\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\view\\colaboradorsladashboardview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\view\\colaboradorsladashboardview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,41 +47,56 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ColaboradorController.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
-              "RelativeToolTip": "BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
-              "ViewState": "AQIAAEsBAAAAAAAAAAAkwBcBAAAjAAAA",
+              "Title": "ColaboradorSLAController.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorSLAController.cs",
+              "RelativeDocumentMoniker": "BI.Sistemas.API\\Controllers\\ColaboradorSLAController.cs",
+              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorSLAController.cs",
+              "RelativeToolTip": "BI.Sistemas.API\\Controllers\\ColaboradorSLAController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAUwEcAAABsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T14:37:27.016Z",
+              "WhenOpened": "2024-08-19T14:22:25.87Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StartedTests.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\StartedTests.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.UnitTests\\StartedTests.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\StartedTests.cs",
-              "RelativeToolTip": "BI.Sistemas.UnitTests\\StartedTests.cs",
-              "ViewState": "AQIAAPsAAAAAAAAAAAAqwAgBAAAtAAAA",
+              "DocumentIndex": 7,
+              "Title": "ColaboradorController.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
+              "RelativeDocumentMoniker": "BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
+              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
+              "RelativeToolTip": "BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGUAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T15:00:28.911Z",
-              "IsPinned": true
+              "WhenOpened": "2024-08-19T17:56:51.942Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Periodo.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Periodo.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.Domain\\Periodo.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Periodo.cs",
-              "RelativeToolTip": "BI.Sistemas.Domain\\Periodo.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAYwBAAAAAAAAAA",
+              "DocumentIndex": 6,
+              "Title": "ColaboradorSLADashboardView.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\View\\ColaboradorSLADashboardView.cs",
+              "RelativeDocumentMoniker": "BI.Sistemas.API\\View\\ColaboradorSLADashboardView.cs",
+              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\View\\ColaboradorSLADashboardView.cs",
+              "RelativeToolTip": "BI.Sistemas.API\\View\\ColaboradorSLADashboardView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T19:19:34.975Z",
+              "WhenOpened": "2024-08-19T18:00:13.362Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BISistemasContext.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BISistemasContext.cs",
+              "RelativeDocumentMoniker": "BI.Sistemas.ORM\\BISistemasContext.cs",
+              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BISistemasContext.cs",
+              "RelativeToolTip": "BI.Sistemas.ORM\\BISistemasContext.cs",
+              "ViewState": "AQIAABsBAAAAAAAAAAArwCgBAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T17:58:30.382Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -106,112 +106,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ColaboradorController.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\AppData\\Local\\SourceServer\\a06dfbe75e08c94ed2d87ca6d3a330cf8d9472901431b9a2ebbe6a937a00e443\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\a06dfbe75e08c94ed2d87ca6d3a330cf8d9472901431b9a2ebbe6a937a00e443\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\AppData\\Local\\SourceServer\\a06dfbe75e08c94ed2d87ca6d3a330cf8d9472901431b9a2ebbe6a937a00e443\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorController.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\a06dfbe75e08c94ed2d87ca6d3a330cf8d9472901431b9a2ebbe6a937a00e443\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorController.cs [Read Only]",
-              "ViewState": "AQIAACcAAAAAAAAAAAAqwDMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T15:04:46.501Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GeracaoTime.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Entities\\GeracaoTime.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.Domain\\Entities\\GeracaoTime.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Entities\\GeracaoTime.cs",
-              "RelativeToolTip": "BI.Sistemas.Domain\\Entities\\GeracaoTime.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAADwvw8AAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T20:05:38.718Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Movidesk.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Entities\\Movidesk.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.Domain\\Entities\\Movidesk.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Entities\\Movidesk.cs",
-              "RelativeToolTip": "BI.Sistemas.Domain\\Entities\\Movidesk.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T20:05:33.902Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Time.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Entities\\Time.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.Domain\\Entities\\Time.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Entities\\Time.cs",
-              "RelativeToolTip": "BI.Sistemas.Domain\\Entities\\Time.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T20:05:02.495Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Atividades.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Entities\\Atividades.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.Domain\\Entities\\Atividades.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Entities\\Atividades.cs",
-              "RelativeToolTip": "BI.Sistemas.Domain\\Entities\\Atividades.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAA1wAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T20:04:02.493Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GeracaoColaborador.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Entities\\GeracaoColaborador.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.Domain\\Entities\\GeracaoColaborador.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Entities\\GeracaoColaborador.cs",
-              "RelativeToolTip": "BI.Sistemas.Domain\\Entities\\GeracaoColaborador.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAA4wAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T20:03:55.014Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Gifs.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Gifs.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.Domain\\Gifs.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Gifs.cs",
-              "RelativeToolTip": "BI.Sistemas.Domain\\Gifs.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T20:03:49.903Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BISistemasContext.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BISistemasContext.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.ORM\\BISistemasContext.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BISistemasContext.cs",
-              "RelativeToolTip": "BI.Sistemas.ORM\\BISistemasContext.cs",
-              "ViewState": "AQIAALsAAAAAAAAAAAAqwMgAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T19:23:51.811Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "Colaborador.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Colaborador.cs",
               "RelativeDocumentMoniker": "BI.Sistemas.Domain\\Colaborador.cs",
               "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Colaborador.cs",
               "RelativeToolTip": "BI.Sistemas.Domain\\Colaborador.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T15:32:07.142Z"
+              "WhenOpened": "2024-08-22T12:54:08.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Entity.cs",
+              "RelativeDocumentMoniker": "BI.Sistemas.Domain\\Entity.cs",
+              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Entity.cs",
+              "RelativeToolTip": "BI.Sistemas.Domain\\Entity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T18:36:23.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StartedTests.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\StartedTests.cs",
+              "RelativeDocumentMoniker": "BI.Sistemas.UnitTests\\StartedTests.cs",
+              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\StartedTests.cs",
+              "RelativeToolTip": "BI.Sistemas.UnitTests\\StartedTests.cs",
+              "ViewState": "AQIAAJwAAAAAAAAAAAAnwKcAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T18:10:13.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Movidesk.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Entities\\Movidesk.cs",
+              "RelativeDocumentMoniker": "BI.Sistemas.Domain\\Entities\\Movidesk.cs",
+              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Entities\\Movidesk.cs",
+              "RelativeToolTip": "BI.Sistemas.Domain\\Entities\\Movidesk.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAkwDIAAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T18:01:47.465Z",
+              "EditorCaption": ""
             }
           ]
         }

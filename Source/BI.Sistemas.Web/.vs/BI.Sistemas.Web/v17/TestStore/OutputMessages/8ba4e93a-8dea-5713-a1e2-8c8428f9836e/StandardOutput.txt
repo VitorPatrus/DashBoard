@@ -1,9 +1,9 @@
-dbug: 14/08/2024 10:51:09.993 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+dbug: 19/08/2024 14:52:35.894 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
       Entity Framework Core 8.0.3 initialized 'BISistemasContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
-dbug: 14/08/2024 10:51:10.072 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+dbug: 19/08/2024 14:52:35.989 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
       Compiling query expression: 
       'DbSet<Colaborador>()'
-dbug: 14/08/2024 10:51:10.376 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+dbug: 19/08/2024 14:52:36.087 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
       Generated query execution expression: 
       'queryContext => new SingleQueryingEnumerable<Colaborador>(
           (RelationalQueryContext)queryContext, 
@@ -19,245 +19,141 @@ dbug: 14/08/2024 10:51:10.376 CoreEventId.QueryExecutionPlanned[10107] (Microsof
           False, 
           True
       )'
-dbug: 14/08/2024 10:51:10.427 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+dbug: 19/08/2024 14:52:36.099 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Creating DbConnection.
-dbug: 14/08/2024 10:51:10.468 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Created DbConnection. (36ms).
-dbug: 14/08/2024 10:51:10.472 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Opening connection to database 'BI_SISTEMAS_TESTE' on server 'con-snote725'.
-dbug: 14/08/2024 10:51:14.773 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Opened connection to database 'BI_SISTEMAS_TESTE' on server 'con-snote725'.
-dbug: 14/08/2024 10:51:14.780 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 19/08/2024 14:52:36.113 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (12ms).
+dbug: 19/08/2024 14:52:36.114 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 19/08/2024 14:52:36.728 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 19/08/2024 14:52:36.730 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
       Creating DbCommand for 'ExecuteReader'.
-dbug: 14/08/2024 10:51:14.785 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteReader' (7ms).
-dbug: 14/08/2024 10:51:14.787 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteReader' (11ms).
-dbug: 14/08/2024 10:51:14.793 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 19/08/2024 14:52:36.733 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (2ms).
+dbug: 19/08/2024 14:52:36.734 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (5ms).
+dbug: 19/08/2024 14:52:36.737 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
       Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
       SELECT [c].[Id], [c].[CARGAHORARIA], [c].[CARGO], [c].[EMAIL], [c].[FOTO], [c].[INICIO], [c].[NOME], [c].[TERMINO], [c].[TIME], [c].[USER_TMETRIC]
       FROM [COLABORADOR] AS [c]
-info: 14/08/2024 10:51:14.837 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (38ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+info: 19/08/2024 14:52:36.754 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
       SELECT [c].[Id], [c].[CARGAHORARIA], [c].[CARGO], [c].[EMAIL], [c].[FOTO], [c].[INICIO], [c].[NOME], [c].[TERMINO], [c].[TIME], [c].[USER_TMETRIC]
       FROM [COLABORADOR] AS [c]
-dbug: 14/08/2024 10:51:14.918 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+dbug: 19/08/2024 14:52:36.778 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
       Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:14.966 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+dbug: 19/08/2024 14:52:36.813 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
       Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:14.967 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+dbug: 19/08/2024 14:52:36.813 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
       Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:14.967 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+dbug: 19/08/2024 14:52:36.813 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
       Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:14.977 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+dbug: 19/08/2024 14:52:36.820 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
       Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:14.978 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+dbug: 19/08/2024 14:52:36.820 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
       Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:14.978 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+dbug: 19/08/2024 14:52:36.820 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
       Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:14.980 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+dbug: 19/08/2024 14:52:36.822 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
       Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:14.980 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+dbug: 19/08/2024 14:52:36.822 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
       Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:14.980 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+dbug: 19/08/2024 14:52:36.823 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
       Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:14.981 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+dbug: 19/08/2024 14:52:36.824 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
       Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:14.997 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+dbug: 19/08/2024 14:52:36.838 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
       Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.004 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Closing data reader to 'BI_SISTEMAS_TESTE' on server 'con-snote725'.
-dbug: 14/08/2024 10:51:15.013 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
-      A data reader for 'BI_SISTEMAS_TESTE' on server 'con-snote725' is being disposed after spending 169ms reading results.
-dbug: 14/08/2024 10:51:15.016 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Closing connection to database 'BI_SISTEMAS_TESTE' on server 'con-snote725'.
-dbug: 14/08/2024 10:51:15.021 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Closed connection to database 'BI_SISTEMAS_TESTE' on server 'con-snote725' (5ms).
-dbug: 14/08/2024 10:51:15.064 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+dbug: 19/08/2024 14:52:36.838 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19/08/2024 14:52:36.839 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19/08/2024 14:52:36.839 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19/08/2024 14:52:36.839 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19/08/2024 14:52:36.839 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19/08/2024 14:52:36.839 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19/08/2024 14:52:36.839 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19/08/2024 14:52:36.839 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19/08/2024 14:52:36.839 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19/08/2024 14:52:36.839 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19/08/2024 14:52:36.839 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19/08/2024 14:52:36.840 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19/08/2024 14:52:36.840 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19/08/2024 14:52:36.840 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19/08/2024 14:52:36.840 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19/08/2024 14:52:36.840 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19/08/2024 14:52:36.840 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 19/08/2024 14:52:36.842 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 19/08/2024 14:52:36.846 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'BI_SISTEMASDEVS' on server 'con-snote725' is being disposed after spending 89ms reading results.
+dbug: 19/08/2024 14:52:36.847 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 19/08/2024 14:52:36.851 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'BI_SISTEMASDEVS' on server 'con-snote725' (3ms).
+dbug: 19/08/2024 14:52:36.865 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
       'BISistemasContext' generated a value for the property 'Colaborador.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.086 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+dbug: 19/08/2024 14:52:36.872 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
       Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.091 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      'BISistemasContext' generated a value for the property 'Colaborador.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.091 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.093 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      'BISistemasContext' generated a value for the property 'Colaborador.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.093 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.095 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      'BISistemasContext' generated a value for the property 'Colaborador.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.095 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.097 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      'BISistemasContext' generated a value for the property 'Colaborador.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.097 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.101 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      'BISistemasContext' generated a value for the property 'Colaborador.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.101 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.103 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      'BISistemasContext' generated a value for the property 'Colaborador.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.103 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.106 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      'BISistemasContext' generated a value for the property 'Colaborador.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.106 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.107 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      'BISistemasContext' generated a value for the property 'Colaborador.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.108 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.110 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      'BISistemasContext' generated a value for the property 'Colaborador.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.110 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.112 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      'BISistemasContext' generated a value for the property 'Colaborador.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.112 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.114 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      'BISistemasContext' generated a value for the property 'Colaborador.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.114 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.116 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      'BISistemasContext' generated a value for the property 'Colaborador.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.116 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.118 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      'BISistemasContext' generated a value for the property 'Colaborador.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.118 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.119 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      'BISistemasContext' generated a value for the property 'Colaborador.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.119 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.121 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      'BISistemasContext' generated a value for the property 'Colaborador.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.121 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.123 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      'BISistemasContext' generated a value for the property 'Colaborador.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.123 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.125 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      'BISistemasContext' generated a value for the property 'Colaborador.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.125 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.132 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+dbug: 19/08/2024 14:52:36.874 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
       SaveChanges starting for 'BISistemasContext'.
-dbug: 14/08/2024 10:51:15.139 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+dbug: 19/08/2024 14:52:36.875 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
       DetectChanges starting for 'BISistemasContext'.
-dbug: 14/08/2024 10:51:15.211 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+dbug: 19/08/2024 14:52:36.895 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
       DetectChanges completed for 'BISistemasContext'.
-dbug: 14/08/2024 10:51:15.366 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
-      Executing 18 update commands as a batch.
-dbug: 14/08/2024 10:51:15.375 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Opening connection to database 'BI_SISTEMAS_TESTE' on server 'con-snote725'.
-dbug: 14/08/2024 10:51:15.376 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Opened connection to database 'BI_SISTEMAS_TESTE' on server 'con-snote725'.
-dbug: 14/08/2024 10:51:15.377 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 19/08/2024 14:52:36.945 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 19/08/2024 14:52:36.951 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 19/08/2024 14:52:36.952 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
       Creating DbCommand for 'ExecuteReader'.
-dbug: 14/08/2024 10:51:15.377 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 19/08/2024 14:52:36.952 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
       Created DbCommand for 'ExecuteReader' (0ms).
-dbug: 14/08/2024 10:51:15.381 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteReader' (4ms).
-dbug: 14/08/2024 10:51:15.385 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 255), @p3='?' (Size = 300), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (DbType = DateTime2), @p6='?' (Size = 255), @p7='?' (DbType = DateTime2), @p8='?' (Size = 100), @p9='?' (Size = 255), @p10='?' (DbType = Guid), @p11='?' (DbType = Int32), @p12='?' (Size = 255), @p13='?' (Size = 300), @p14='?' (Size = -1) (DbType = Binary), @p15='?' (DbType = DateTime2), @p16='?' (Size = 255), @p17='?' (DbType = DateTime2), @p18='?' (Size = 100), @p19='?' (Size = 255), @p20='?' (DbType = Guid), @p21='?' (DbType = Int32), @p22='?' (Size = 255), @p23='?' (Size = 300), @p24='?' (Size = -1) (DbType = Binary), @p25='?' (DbType = DateTime2), @p26='?' (Size = 255), @p27='?' (DbType = DateTime2), @p28='?' (Size = 100), @p29='?' (Size = 255), @p30='?' (DbType = Guid), @p31='?' (DbType = Int32), @p32='?' (Size = 255), @p33='?' (Size = 300), @p34='?' (Size = -1) (DbType = Binary), @p35='?' (DbType = DateTime2), @p36='?' (Size = 255), @p37='?' (DbType = DateTime2), @p38='?' (Size = 100), @p39='?' (Size = 255), @p40='?' (DbType = Guid), @p41='?' (DbType = Int32), @p42='?' (Size = 255), @p43='?' (Size = 300), @p44='?' (Size = -1) (DbType = Binary), @p45='?' (DbType = DateTime2), @p46='?' (Size = 255), @p47='?' (DbType = DateTime2), @p48='?' (Size = 100), @p49='?' (Size = 255), @p50='?' (DbType = Guid), @p51='?' (DbType = Int32), @p52='?' (Size = 255), @p53='?' (Size = 300), @p54='?' (Size = -1) (DbType = Binary), @p55='?' (DbType = DateTime2), @p56='?' (Size = 255), @p57='?' (DbType = DateTime2), @p58='?' (Size = 100), @p59='?' (Size = 255), @p60='?' (DbType = Guid), @p61='?' (DbType = Int32), @p62='?' (Size = 255), @p63='?' (Size = 300), @p64='?' (Size = -1) (DbType = Binary), @p65='?' (DbType = DateTime2), @p66='?' (Size = 255), @p67='?' (DbType = DateTime2), @p68='?' (Size = 100), @p69='?' (Size = 255), @p70='?' (DbType = Guid), @p71='?' (DbType = Int32), @p72='?' (Size = 255), @p73='?' (Size = 300), @p74='?' (Size = -1) (DbType = Binary), @p75='?' (DbType = DateTime2), @p76='?' (Size = 255), @p77='?' (DbType = DateTime2), @p78='?' (Size = 100), @p79='?' (Size = 255), @p80='?' (DbType = Guid), @p81='?' (DbType = Int32), @p82='?' (Size = 255), @p83='?' (Size = 300), @p84='?' (Size = 8000) (DbType = Binary), @p85='?' (DbType = DateTime2), @p86='?' (Size = 255), @p87='?' (DbType = DateTime2), @p88='?' (Size = 100), @p89='?' (Size = 255), @p90='?' (DbType = Guid), @p91='?' (DbType = Int32), @p92='?' (Size = 255), @p93='?' (Size = 300), @p94='?' (Size = -1) (DbType = Binary), @p95='?' (DbType = DateTime2), @p96='?' (Size = 255), @p97='?' (DbType = DateTime2), @p98='?' (Size = 100), @p99='?' (Size = 255), @p100='?' (DbType = Guid), @p101='?' (DbType = Int32), @p102='?' (Size = 255), @p103='?' (Size = 300), @p104='?' (Size = 8000) (DbType = Binary), @p105='?' (DbType = DateTime2), @p106='?' (Size = 255), @p107='?' (DbType = DateTime2), @p108='?' (Size = 100), @p109='?' (Size = 255), @p110='?' (DbType = Guid), @p111='?' (DbType = Int32), @p112='?' (Size = 255), @p113='?' (Size = 300), @p114='?' (Size = 8000) (DbType = Binary), @p115='?' (DbType = DateTime2), @p116='?' (Size = 255), @p117='?' (DbType = DateTime2), @p118='?' (Size = 100), @p119='?' (Size = 255), @p120='?' (DbType = Guid), @p121='?' (DbType = Int32), @p122='?' (Size = 255), @p123='?' (Size = 300), @p124='?' (Size = 8000) (DbType = Binary), @p125='?' (DbType = DateTime2), @p126='?' (Size = 255), @p127='?' (DbType = DateTime2), @p128='?' (Size = 100), @p129='?' (Size = 255), @p130='?' (DbType = Guid), @p131='?' (DbType = Int32), @p132='?' (Size = 255), @p133='?' (Size = 300), @p134='?' (Size = -1) (DbType = Binary), @p135='?' (DbType = DateTime2), @p136='?' (Size = 255), @p137='?' (DbType = DateTime2), @p138='?' (Size = 100), @p139='?' (Size = 255), @p140='?' (DbType = Guid), @p141='?' (DbType = Int32), @p142='?' (Size = 255), @p143='?' (Size = 300), @p144='?' (Size = -1) (DbType = Binary), @p145='?' (DbType = DateTime2), @p146='?' (Size = 255), @p147='?' (DbType = DateTime2), @p148='?' (Size = 100), @p149='?' (Size = 255), @p150='?' (DbType = Guid), @p151='?' (DbType = Int32), @p152='?' (Size = 255), @p153='?' (Size = 300), @p154='?' (Size = -1) (DbType = Binary), @p155='?' (DbType = DateTime2), @p156='?' (Size = 255), @p157='?' (DbType = DateTime2), @p158='?' (Size = 100), @p159='?' (Size = 255), @p160='?' (DbType = Guid), @p161='?' (DbType = Int32), @p162='?' (Size = 255), @p163='?' (Size = 300), @p164='?' (Size = -1) (DbType = Binary), @p165='?' (DbType = DateTime2), @p166='?' (Size = 255), @p167='?' (DbType = DateTime2), @p168='?' (Size = 100), @p169='?' (Size = 255), @p170='?' (DbType = Guid), @p171='?' (DbType = Int32), @p172='?' (Size = 255), @p173='?' (Size = 300), @p174='?' (Size = 8000) (DbType = Binary), @p175='?' (DbType = DateTime2), @p176='?' (Size = 255), @p177='?' (DbType = DateTime2), @p178='?' (Size = 100), @p179='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+dbug: 19/08/2024 14:52:36.954 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (2ms).
+dbug: 19/08/2024 14:52:36.956 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 255), @p3='?' (Size = 300), @p4='?' (Size = -1) (DbType = Binary), @p5='?' (DbType = DateTime2), @p6='?' (Size = 255), @p7='?' (DbType = DateTime2), @p8='?' (Size = 100), @p9='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
       SET IMPLICIT_TRANSACTIONS OFF;
       SET NOCOUNT ON;
       INSERT INTO [COLABORADOR] ([Id], [CARGAHORARIA], [CARGO], [EMAIL], [FOTO], [INICIO], [NOME], [TERMINO], [TIME], [USER_TMETRIC])
-      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9),
-      (@p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19),
-      (@p20, @p21, @p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29),
-      (@p30, @p31, @p32, @p33, @p34, @p35, @p36, @p37, @p38, @p39),
-      (@p40, @p41, @p42, @p43, @p44, @p45, @p46, @p47, @p48, @p49),
-      (@p50, @p51, @p52, @p53, @p54, @p55, @p56, @p57, @p58, @p59),
-      (@p60, @p61, @p62, @p63, @p64, @p65, @p66, @p67, @p68, @p69),
-      (@p70, @p71, @p72, @p73, @p74, @p75, @p76, @p77, @p78, @p79),
-      (@p80, @p81, @p82, @p83, @p84, @p85, @p86, @p87, @p88, @p89),
-      (@p90, @p91, @p92, @p93, @p94, @p95, @p96, @p97, @p98, @p99),
-      (@p100, @p101, @p102, @p103, @p104, @p105, @p106, @p107, @p108, @p109),
-      (@p110, @p111, @p112, @p113, @p114, @p115, @p116, @p117, @p118, @p119),
-      (@p120, @p121, @p122, @p123, @p124, @p125, @p126, @p127, @p128, @p129),
-      (@p130, @p131, @p132, @p133, @p134, @p135, @p136, @p137, @p138, @p139),
-      (@p140, @p141, @p142, @p143, @p144, @p145, @p146, @p147, @p148, @p149),
-      (@p150, @p151, @p152, @p153, @p154, @p155, @p156, @p157, @p158, @p159),
-      (@p160, @p161, @p162, @p163, @p164, @p165, @p166, @p167, @p168, @p169),
-      (@p170, @p171, @p172, @p173, @p174, @p175, @p176, @p177, @p178, @p179);
-info: 14/08/2024 10:51:15.463 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (82ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 255), @p3='?' (Size = 300), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (DbType = DateTime2), @p6='?' (Size = 255), @p7='?' (DbType = DateTime2), @p8='?' (Size = 100), @p9='?' (Size = 255), @p10='?' (DbType = Guid), @p11='?' (DbType = Int32), @p12='?' (Size = 255), @p13='?' (Size = 300), @p14='?' (Size = -1) (DbType = Binary), @p15='?' (DbType = DateTime2), @p16='?' (Size = 255), @p17='?' (DbType = DateTime2), @p18='?' (Size = 100), @p19='?' (Size = 255), @p20='?' (DbType = Guid), @p21='?' (DbType = Int32), @p22='?' (Size = 255), @p23='?' (Size = 300), @p24='?' (Size = -1) (DbType = Binary), @p25='?' (DbType = DateTime2), @p26='?' (Size = 255), @p27='?' (DbType = DateTime2), @p28='?' (Size = 100), @p29='?' (Size = 255), @p30='?' (DbType = Guid), @p31='?' (DbType = Int32), @p32='?' (Size = 255), @p33='?' (Size = 300), @p34='?' (Size = -1) (DbType = Binary), @p35='?' (DbType = DateTime2), @p36='?' (Size = 255), @p37='?' (DbType = DateTime2), @p38='?' (Size = 100), @p39='?' (Size = 255), @p40='?' (DbType = Guid), @p41='?' (DbType = Int32), @p42='?' (Size = 255), @p43='?' (Size = 300), @p44='?' (Size = -1) (DbType = Binary), @p45='?' (DbType = DateTime2), @p46='?' (Size = 255), @p47='?' (DbType = DateTime2), @p48='?' (Size = 100), @p49='?' (Size = 255), @p50='?' (DbType = Guid), @p51='?' (DbType = Int32), @p52='?' (Size = 255), @p53='?' (Size = 300), @p54='?' (Size = -1) (DbType = Binary), @p55='?' (DbType = DateTime2), @p56='?' (Size = 255), @p57='?' (DbType = DateTime2), @p58='?' (Size = 100), @p59='?' (Size = 255), @p60='?' (DbType = Guid), @p61='?' (DbType = Int32), @p62='?' (Size = 255), @p63='?' (Size = 300), @p64='?' (Size = -1) (DbType = Binary), @p65='?' (DbType = DateTime2), @p66='?' (Size = 255), @p67='?' (DbType = DateTime2), @p68='?' (Size = 100), @p69='?' (Size = 255), @p70='?' (DbType = Guid), @p71='?' (DbType = Int32), @p72='?' (Size = 255), @p73='?' (Size = 300), @p74='?' (Size = -1) (DbType = Binary), @p75='?' (DbType = DateTime2), @p76='?' (Size = 255), @p77='?' (DbType = DateTime2), @p78='?' (Size = 100), @p79='?' (Size = 255), @p80='?' (DbType = Guid), @p81='?' (DbType = Int32), @p82='?' (Size = 255), @p83='?' (Size = 300), @p84='?' (Size = 8000) (DbType = Binary), @p85='?' (DbType = DateTime2), @p86='?' (Size = 255), @p87='?' (DbType = DateTime2), @p88='?' (Size = 100), @p89='?' (Size = 255), @p90='?' (DbType = Guid), @p91='?' (DbType = Int32), @p92='?' (Size = 255), @p93='?' (Size = 300), @p94='?' (Size = -1) (DbType = Binary), @p95='?' (DbType = DateTime2), @p96='?' (Size = 255), @p97='?' (DbType = DateTime2), @p98='?' (Size = 100), @p99='?' (Size = 255), @p100='?' (DbType = Guid), @p101='?' (DbType = Int32), @p102='?' (Size = 255), @p103='?' (Size = 300), @p104='?' (Size = 8000) (DbType = Binary), @p105='?' (DbType = DateTime2), @p106='?' (Size = 255), @p107='?' (DbType = DateTime2), @p108='?' (Size = 100), @p109='?' (Size = 255), @p110='?' (DbType = Guid), @p111='?' (DbType = Int32), @p112='?' (Size = 255), @p113='?' (Size = 300), @p114='?' (Size = 8000) (DbType = Binary), @p115='?' (DbType = DateTime2), @p116='?' (Size = 255), @p117='?' (DbType = DateTime2), @p118='?' (Size = 100), @p119='?' (Size = 255), @p120='?' (DbType = Guid), @p121='?' (DbType = Int32), @p122='?' (Size = 255), @p123='?' (Size = 300), @p124='?' (Size = 8000) (DbType = Binary), @p125='?' (DbType = DateTime2), @p126='?' (Size = 255), @p127='?' (DbType = DateTime2), @p128='?' (Size = 100), @p129='?' (Size = 255), @p130='?' (DbType = Guid), @p131='?' (DbType = Int32), @p132='?' (Size = 255), @p133='?' (Size = 300), @p134='?' (Size = -1) (DbType = Binary), @p135='?' (DbType = DateTime2), @p136='?' (Size = 255), @p137='?' (DbType = DateTime2), @p138='?' (Size = 100), @p139='?' (Size = 255), @p140='?' (DbType = Guid), @p141='?' (DbType = Int32), @p142='?' (Size = 255), @p143='?' (Size = 300), @p144='?' (Size = -1) (DbType = Binary), @p145='?' (DbType = DateTime2), @p146='?' (Size = 255), @p147='?' (DbType = DateTime2), @p148='?' (Size = 100), @p149='?' (Size = 255), @p150='?' (DbType = Guid), @p151='?' (DbType = Int32), @p152='?' (Size = 255), @p153='?' (Size = 300), @p154='?' (Size = -1) (DbType = Binary), @p155='?' (DbType = DateTime2), @p156='?' (Size = 255), @p157='?' (DbType = DateTime2), @p158='?' (Size = 100), @p159='?' (Size = 255), @p160='?' (DbType = Guid), @p161='?' (DbType = Int32), @p162='?' (Size = 255), @p163='?' (Size = 300), @p164='?' (Size = -1) (DbType = Binary), @p165='?' (DbType = DateTime2), @p166='?' (Size = 255), @p167='?' (DbType = DateTime2), @p168='?' (Size = 100), @p169='?' (Size = 255), @p170='?' (DbType = Guid), @p171='?' (DbType = Int32), @p172='?' (Size = 255), @p173='?' (Size = 300), @p174='?' (Size = 8000) (DbType = Binary), @p175='?' (DbType = DateTime2), @p176='?' (Size = 255), @p177='?' (DbType = DateTime2), @p178='?' (Size = 100), @p179='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+info: 19/08/2024 14:52:37.022 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (68ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 255), @p3='?' (Size = 300), @p4='?' (Size = -1) (DbType = Binary), @p5='?' (DbType = DateTime2), @p6='?' (Size = 255), @p7='?' (DbType = DateTime2), @p8='?' (Size = 100), @p9='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
       SET IMPLICIT_TRANSACTIONS OFF;
       SET NOCOUNT ON;
       INSERT INTO [COLABORADOR] ([Id], [CARGAHORARIA], [CARGO], [EMAIL], [FOTO], [INICIO], [NOME], [TERMINO], [TIME], [USER_TMETRIC])
-      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9),
-      (@p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19),
-      (@p20, @p21, @p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29),
-      (@p30, @p31, @p32, @p33, @p34, @p35, @p36, @p37, @p38, @p39),
-      (@p40, @p41, @p42, @p43, @p44, @p45, @p46, @p47, @p48, @p49),
-      (@p50, @p51, @p52, @p53, @p54, @p55, @p56, @p57, @p58, @p59),
-      (@p60, @p61, @p62, @p63, @p64, @p65, @p66, @p67, @p68, @p69),
-      (@p70, @p71, @p72, @p73, @p74, @p75, @p76, @p77, @p78, @p79),
-      (@p80, @p81, @p82, @p83, @p84, @p85, @p86, @p87, @p88, @p89),
-      (@p90, @p91, @p92, @p93, @p94, @p95, @p96, @p97, @p98, @p99),
-      (@p100, @p101, @p102, @p103, @p104, @p105, @p106, @p107, @p108, @p109),
-      (@p110, @p111, @p112, @p113, @p114, @p115, @p116, @p117, @p118, @p119),
-      (@p120, @p121, @p122, @p123, @p124, @p125, @p126, @p127, @p128, @p129),
-      (@p130, @p131, @p132, @p133, @p134, @p135, @p136, @p137, @p138, @p139),
-      (@p140, @p141, @p142, @p143, @p144, @p145, @p146, @p147, @p148, @p149),
-      (@p150, @p151, @p152, @p153, @p154, @p155, @p156, @p157, @p158, @p159),
-      (@p160, @p161, @p162, @p163, @p164, @p165, @p166, @p167, @p168, @p169),
-      (@p170, @p171, @p172, @p173, @p174, @p175, @p176, @p177, @p178, @p179);
-dbug: 14/08/2024 10:51:15.466 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Closing data reader to 'BI_SISTEMAS_TESTE' on server 'con-snote725'.
-dbug: 14/08/2024 10:51:15.466 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
-      A data reader for 'BI_SISTEMAS_TESTE' on server 'con-snote725' is being disposed after spending 2ms reading results.
-dbug: 14/08/2024 10:51:15.467 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Closing connection to database 'BI_SISTEMAS_TESTE' on server 'con-snote725'.
-dbug: 14/08/2024 10:51:15.467 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Closed connection to database 'BI_SISTEMAS_TESTE' on server 'con-snote725' (0ms).
-dbug: 14/08/2024 10:51:15.479 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+dbug: 19/08/2024 14:52:37.023 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 19/08/2024 14:52:37.023 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'BI_SISTEMASDEVS' on server 'con-snote725' is being disposed after spending 0ms reading results.
+dbug: 19/08/2024 14:52:37.023 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 19/08/2024 14:52:37.023 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'BI_SISTEMASDEVS' on server 'con-snote725' (0ms).
+dbug: 19/08/2024 14:52:37.028 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
       An entity of type 'Colaborador' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.480 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      An entity of type 'Colaborador' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.480 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      An entity of type 'Colaborador' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.480 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      An entity of type 'Colaborador' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.480 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      An entity of type 'Colaborador' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.480 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      An entity of type 'Colaborador' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.480 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      An entity of type 'Colaborador' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.480 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      An entity of type 'Colaborador' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.480 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      An entity of type 'Colaborador' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.480 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      An entity of type 'Colaborador' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.480 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      An entity of type 'Colaborador' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.480 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      An entity of type 'Colaborador' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.480 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      An entity of type 'Colaborador' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.480 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      An entity of type 'Colaborador' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.480 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      An entity of type 'Colaborador' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.480 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      An entity of type 'Colaborador' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.480 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      An entity of type 'Colaborador' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.480 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
-      An entity of type 'Colaborador' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
-dbug: 14/08/2024 10:51:15.482 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
-      SaveChanges completed for 'BISistemasContext' with 18 entities written to the database.
-dbug: 14/08/2024 10:51:15.484 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+dbug: 19/08/2024 14:52:37.028 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'BISistemasContext' with 1 entities written to the database.
+dbug: 19/08/2024 14:52:37.029 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
       'BISistemasContext' disposed.
-dbug: 14/08/2024 10:51:15.486 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Disposing connection to database 'BI_SISTEMAS_TESTE' on server 'con-snote725'.
-dbug: 14/08/2024 10:51:15.488 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Disposed connection to database '' on server '' (1ms).
+dbug: 19/08/2024 14:52:37.030 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 19/08/2024 14:52:37.031 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).

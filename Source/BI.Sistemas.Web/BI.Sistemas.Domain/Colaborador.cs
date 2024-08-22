@@ -1,4 +1,6 @@
-﻿namespace BI.Sistemas.Domain
+﻿using BI.Sistemas.Domain.Novo;
+
+namespace BI.Sistemas.Domain
 {
     public class Colaborador : Entity
     {

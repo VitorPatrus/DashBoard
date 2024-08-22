@@ -14,7 +14,7 @@ namespace BI.Sistemas.UnitTests
     [TestClass]
     public class StartedTests
     {
-
+        
         [TestMethod]
         public void CriarColaboradores()
         {
@@ -60,10 +60,10 @@ namespace BI.Sistemas.UnitTests
         }
 
         private void AddColaborador(BISistemasContext db,
-            IEnumerable<Colaborador> colaboradores,
-            string nome, string cargo, string time,
-            string userTMetric,
-            string? fileNameFoto = null)
+           IEnumerable<Colaborador> colaboradores,
+           string nome, string cargo, string time,
+           string userTMetric,
+           string? fileNameFoto = null)
         {
             if (!colaboradores.Any(c => c.Nome == nome))
             {
@@ -89,21 +89,20 @@ namespace BI.Sistemas.UnitTests
         [TestMethod]
         public void CargaTMetric()
         {
-            var data = DateTime.Now;
             using (var db = new BISistemasContext())
             {
-                var periodo = db.Periodos.FirstOrDefault(c => c.Data == data);
+                var periodo = db.Periodos.FirstOrDefault(c => c.Data == DateTime.Today);
                 if (periodo == null)
                 {
                     periodo = new Periodo();
-                    periodo.Data = data;
+                    periodo.Data = DateTime.Today;
                     periodo.Inicio = new DateTime(2024, 4, 15);
                     periodo.Termino = new DateTime(2024, 4, 19);
                     db.Periodos.Add(periodo);
                     db.SaveChanges();
                 }
             }
-            //var dataCarga = DateTime.Now;
+            var dataCarga = DateTime.Now;
             File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\detailed_report_20240415_20240421 (5).csv")
                 .Skip(1)
                 .ToList()
@@ -111,9 +110,8 @@ namespace BI.Sistemas.UnitTests
                 {
                     using (var db = new BISistemasContext())
                     {
-
-                        var periodo = db.Periodos.FirstOrDefault(c => c.Data == data);
-                        var metric = TMetric.FromCsv(data, v);
+                        var periodo = db.Periodos.FirstOrDefault(c => c.Data == DateTime.Today);
+                        var metric = TMetric.FromCsv(dataCarga, v);
                         var colaborador = db.Colaboradores.FirstOrDefault(c => c.UserTMetric.ToUpper() == metric.Usuario.ToUpper());
                         metric.Colaborador = colaborador;
                         metric.Periodo = periodo;
@@ -136,18 +134,16 @@ namespace BI.Sistemas.UnitTests
 
         private static void CargaPonto(TipoPonto tipo)
         {
-            var data = DateTime.Now; //  ANO MÊS DIA
             using (var db = new BISistemasContext())
             {
-                var periodo = db.Set<Periodo>().FirstOrDefault(c => c.Data == data);
+                var periodo = db.Set<Periodo>().FirstOrDefault(c => c.Data == DateTime.Today);
                 if (periodo == null)
                 {
                     periodo = new Periodo();
-                    periodo.Data = data;
+                    periodo.Data = DateTime.Today;
                     periodo.Inicio = new DateTime(2024, 4, 15);
                     periodo.Termino = new DateTime(2024, 4, 19);
                     db.Periodos.Add(periodo);
-                    db.SaveChanges();
 
                 }
                 File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\PontoCLT.csv")
@@ -157,7 +153,7 @@ namespace BI.Sistemas.UnitTests
                 {
                     using (var db = new BISistemasContext())
                     {
-                        var periodo = db.Periodos.FirstOrDefault(c => c.Data == data);
+                        var periodo = db.Periodos.FirstOrDefault(c => c.Data == DateTime.Today);
                         var colaboradores = db.Colaboradores.ToList();
                         var ponto = Ponto.FromCsv(colaboradores, v);
                         ponto.Periodo = periodo;
@@ -167,12 +163,11 @@ namespace BI.Sistemas.UnitTests
                 });
             }
         }
-
         // SLA
         [TestMethod]
         public void CargaMovidesk()
         {
-            var data = DateTime.Now; //  ANO MÊS DIA
+            var data = DateTime.Today; //  ANO MÊS DIA
 
             using (var db = new BISistemasContext())
             {
@@ -189,8 +184,8 @@ namespace BI.Sistemas.UnitTests
             }
 
             var dataCarga = data;
-            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\Movidesk - Base chamados TI - Semana Retroativa_novo.csv")
-                .Skip(1) // Já está com os dados de 29/07, só não tem carga no bd
+            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesSemanaAnterior (3).csv")
+                .Skip(1) 
                 .ToList()
                 .ForEach(v =>
                 {

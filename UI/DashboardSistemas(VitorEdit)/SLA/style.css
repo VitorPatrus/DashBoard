@@ -1,4 +1,14 @@
 
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+}
+.nav-item.dropdown:hover .nav-link {
+    background-color: #c81238;
+    color:#fff;
+    border-radius: 10px;
+}
+
 #valorEngajamento {
     font-size: 23px;
     font-weight: bolder;

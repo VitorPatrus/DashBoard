@@ -10,8 +10,8 @@ namespace BI.Sistemas.Domain.Novo
 {
     public class Movidesk : EntityPeriodo
     {
-        public int Numero { get; set; }
-        public DateTime DataAbertura { get; set; }
+        public int? Numero { get; set; }
+        public DateTime? DataAbertura { get; set; }
         public DateTime? DataFechamento { get; set; }
         public DateTime? DataVencimento { get; set; }
         public string Pessoa { get; set; }
@@ -34,9 +34,9 @@ namespace BI.Sistemas.Domain.Novo
             var result = new Movidesk();
             result.Numero = Convert.ToInt32(values[0]);
             //var cultureInfo = new CultureInfo("en-US");
-            result.DataAbertura = Convert.ToDateTime(values[1]);
-            result.DataFechamento = string.IsNullOrEmpty(values[2]) ? default(DateTime?) : Convert.ToDateTime(values[2]);
-            result.DataVencimento = string.IsNullOrEmpty(values[3]) || values[3].Equals("Em pausa", StringComparison.InvariantCultureIgnoreCase) ? default(DateTime?) : Convert.ToDateTime(values[3]);
+            result.DataAbertura = DateTime.Parse(values[1], CultureInfo.InvariantCulture);
+            result.DataFechamento = string.IsNullOrEmpty(values[2]) ? default(DateTime?) : DateTime.Parse(values[2], CultureInfo.InvariantCulture);
+            result.DataVencimento = string.IsNullOrEmpty(values[3]) || values[3].Equals("Em pausa", StringComparison.InvariantCultureIgnoreCase) ? default(DateTime?) : DateTime.Parse(values[3], CultureInfo.InvariantCulture);
             result.IndicadorSLA = values[4];
             result.Assunto = values[5];
             result.Pessoa = values[6];
@@ -46,8 +46,9 @@ namespace BI.Sistemas.Domain.Novo
             result.Status = values[10];
             result.Time =
 
-                result.ResponsavelEquipe.Equals("TI - EDI", StringComparison.InvariantCultureIgnoreCase) ? "EDI" :
-                result.ResponsavelEquipe.Equals("TI - Sistemas CRM", StringComparison.InvariantCultureIgnoreCase) ? "CRM" :
+                result.ResponsavelEquipe.Equals("EDI", StringComparison.InvariantCultureIgnoreCase) ? "EDI" :
+                result.ResponsavelEquipe.Equals("CRM", StringComparison.InvariantCultureIgnoreCase) ? "CRM" :
+                result.ResponsavelEquipe.Equals("STI", StringComparison.InvariantCultureIgnoreCase) ? "STI" :
 
                 result.ResponsavelEquipe.Contains("TMS", StringComparison.InvariantCultureIgnoreCase) ? "Suporte TMS" :
                 result.ResponsavelEquipe.Contains("ERP", StringComparison.InvariantCultureIgnoreCase) ? "Suporte ERP" :

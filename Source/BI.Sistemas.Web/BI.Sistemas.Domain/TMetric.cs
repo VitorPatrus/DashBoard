@@ -67,14 +67,19 @@ namespace BI.Sistemas.Domain
         }
         public int CalcularEngajamento(IEnumerable<TMetric> tmetrics, IEnumerable<Ponto> pontos, Colaborador colaborador)
         {
-            var hora = GetHoras(tmetrics.Where(c => c.ColaboradorId.ToString().ToUpper() == colaborador.Id.ToString().ToUpper()).Select(h => h.Duracao));
-            var ponto = GetHoras(pontos.Where(p => p.ColaboradorId.ToString().ToUpper() == colaborador.Id.ToString().ToUpper()).Select(h => h.Horas));
-            if (ponto == 0)
-                ponto = colaborador.CargaHoraria;
-            if (ponto < hora)
-                ponto = hora;
+            var hora = GetHoras(tmetrics.Where(c => c.ColaboradorId.ToString().ToUpper() == colaborador.Id.ToString()
+            .ToUpper()).Select(h => h.Duracao));
+            var ponto = GetHoras(pontos.Where(p => p.ColaboradorId.ToString().ToUpper() == colaborador.Id.ToString()
+            .ToUpper()).Select(h => h.Horas));
 
-            return (int)Math.Round(hora / ponto * 100, 0);
+            if (ponto == 0 && colaborador.CargaHoraria > 0)
+            {
+                ponto = colaborador.CargaHoraria;
+                if (ponto < hora)
+                    ponto = hora;
+            }
+            return ponto == 0 ? 0 : (int)Math.Round(hora / ponto * 100, 0);
+            
         }
     }
 }

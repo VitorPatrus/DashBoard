@@ -67,7 +67,8 @@ namespace BI.Sistemas.API.Controllers
                 }
 
                 var HoraPonto = pontosTodos
-                    .Where(he => he.PeriodoId.ToString().ToUpper() == HE.PeriodoId.ToString().ToUpper() && he.ColaboradorId.ToString().Equals(id, StringComparison.OrdinalIgnoreCase) /*he.ColaboradorId.ToString().ToUpper() == id.ToUpper()*/ && he.Tipo == TipoPonto.Normal)
+                    .Where(he => he.PeriodoId.ToString().ToUpper() == HE.PeriodoId.ToString().ToUpper() && he.ColaboradorId
+                    .ToString().Equals(id, StringComparison.OrdinalIgnoreCase) && he.Tipo == TipoPonto.Normal)
                     .Select(C => C.Horas);
 
                 if (HoraPonto != null && HoraPonto.Any())
@@ -80,19 +81,22 @@ namespace BI.Sistemas.API.Controllers
                 }
 
                 var horas = tmetricTodos
-                    .Where(tm => tm.PeriodoId.ToString().ToUpper() == HE.PeriodoId.ToString().ToUpper() && tm.ColaboradorId.ToString().ToUpper() == id)
+                    .Where(tm => tm.PeriodoId.ToString().ToUpper() == HE.PeriodoId.ToString()
+                    .ToUpper() && tm.ColaboradorId.ToString().ToUpper() == id)
                     .ToList();
 
                 var metrics = tmetricTodos.Where(m => m.PeriodoId.ToString().ToUpper() == HE.PeriodoId.ToString().ToUpper()).ToList();
 
                 var pontos = pontosTodos
-                    .Where(p => p.PeriodoId.ToString().ToUpper() == HE.PeriodoId.ToString().ToUpper() && p.Tipo == TipoPonto.Normal).ToList();
+                    .Where(p => p.PeriodoId.ToString().ToUpper() == HE.PeriodoId.ToString()
+                    .ToUpper() && p.Tipo == TipoPonto.Normal).ToList();
 
                 var excludes = new string[]
                 {
                     "010A52D3-D812-4DCE-D721-08DC62DFD032",
                     "D2E3452C-E900-4573-D724-08DC62DFD032",
-                    "22654802-4100-4CF7-D727-08DC62DFD032"
+                    "22654802-4100-4CF7-D727-08DC62DFD032",
+                    "7B71C413-0E95-409B-D7DB-08DCC077B61A"
                 };
 
                 var engajamentos = new Dictionary<Colaborador, int>();
@@ -106,7 +110,8 @@ namespace BI.Sistemas.API.Controllers
 
                 var engajamentoTime = engajamentos.Where(e => e.Key.Time == pessoa.Time).ToList();
 
-                colaborador.Engajamento = engajamentos.FirstOrDefault(e => e.Key.Id.ToString().ToUpper() == pessoa.Id.ToString().ToUpper()).Value;
+                colaborador.Engajamento = engajamentos.FirstOrDefault(e => e.Key.Id.ToString().ToUpper() == pessoa.Id
+                .ToString().ToUpper()).Value;
                 colaborador.EngajamentoTime = engajamentoTime.Sum(t => t.Value) / engajamentoTime.Count();
 
                 colaborador.TopEngajamento = engajamentos.Where(x => x.Value <= 100).OrderByDescending(e => e.Value).Take(3)
@@ -131,11 +136,10 @@ namespace BI.Sistemas.API.Controllers
                     })
                 .ToArray();
 
-
                 var heTime = new Dictionary<string, string>
                 {
-                    { "TMS", "00:03" },
-                    { "ERP", "00:13" }
+                    { "TMS", "04:28" },
+                    { "ERP", "02:06" }
                 };
                 colaborador.HE_Equipe = heTime[pessoa.Time];
                 colaborador.PJ = pessoa.CargaHoraria > 0;
@@ -274,94 +278,94 @@ namespace BI.Sistemas.API.Controllers
             switch (id)
             {
                 case "69DB13EF-89C0-4A6F-D71F-08DC62DFD032": // Amanda Ferreira
-                    colaborador.HE_Individual = "00:11";
-                    anterior3 = 96;
+                    colaborador.HE_Individual = "00:12";
                     anterior4 = 97;
                     anterior5 = 94;
                     anterior1 = 0;
                     anterior2 = 0;  
+                    anterior3 = 99;
                     break;
 
                 case "BD984996-9C11-4095-D71D-08DC62DFD032": // Fernanda Cassiano
                     colaborador.HE_Individual = colaborador.TotalPonto.ToString();
-                    anterior3 = 87;
                     anterior4 = 93;
                     anterior5 = 94;
                     anterior1 = 95;
                     anterior2 = 95;
+                    anterior3 = 78;
                     break;
 
                 case "52F14677-9C85-41D5-D723-08DC62DFD032": // João Paulo
                     colaborador.HE_Individual = colaborador.TotalPonto.ToString();
-                    anterior3 = 98;
                     anterior4 = 98;
                     anterior5 = 91;
                     anterior1 = 99;
                     anterior2 = 92;
+                    anterior3 = 100;
                     break;
 
                 case "C44D7319-3318-43D4-D726-08DC62DFD032": // Joel Martins
-                    colaborador.HE_Individual = "-00:02";
-                    anterior3 = 94;
+                    colaborador.HE_Individual = "00:55";
                     anterior4 = 94;
                     anterior5 = 90;
                     anterior1 = 91;
                     anterior2 = 87;
+                    anterior3 = 94;
                     break;
 
                 case "3F7E1A71-815A-4397-D725-08DC62DFD032": // Junior Dias
-                    colaborador.HE_Individual = "00:02";
-                    anterior3 = 99;
+                    colaborador.HE_Individual = "00:28";
                     anterior4 = 104;
                     anterior5 = 86;
                     anterior1 = 90;
                     anterior2 = 100;
+                    anterior3 = 79;
                     break;
 
                 case "0D6227A1-7B72-4DAC-D720-08DC62DFD032": // Luiz Oliveira
                     colaborador.HE_Individual = colaborador.TotalPonto.ToString();
-                    anterior3 = 100;
                     anterior4 = 60;
                     anterior5 = 58;
                     anterior1 = 97;
                     anterior2 = 100;
+                    anterior3 = 75;
                     break;
 
                 case "C0D4394F-38EF-4F8B-D71E-08DC62DFD032": // Paulo Silva
-                    colaborador.HE_Individual = "-00:01";
-                    anterior3 = 95;
+                    colaborador.HE_Individual = "02:43";
                     anterior4 = 94;
                     anterior5 = 95;
                     anterior1 = 97;
                     anterior2 = 97;
+                    anterior3 = 98;
                     break;
 
                 case "87B833CD-7810-4030-D722-08DC62DFD032": // Thiago Oliveira
-                    colaborador.HE_Individual = "00:02";
-                    anterior3 = 96;
+                    colaborador.HE_Individual = "01:54";
                     anterior4 = 95;
                     anterior5 = 95;
                     anterior1 = 94;
                     anterior2 = 94;
+                    anterior3 = 100;
                     break;
 
                 case "11B207E8-E5F6-44B6-32CA-08DC9125DFEC": // Petrônio Aleixo
-                    colaborador.HE_Individual = "00:04";
-                    anterior3 = 90;
+                    colaborador.HE_Individual = "00:22";
                     anterior4 = 97;
                     anterior5 = 93;
                     anterior1 = 91;
                     anterior2 = 92;
+                    anterior3 = 90;
                     break;
             }
 
             var lista = new List<EvolucaoEngajamentoView>();
 
-            lista.Add(new EvolucaoEngajamentoView() { Data = Periodo.SegundaFeiraPassada(42,41), Valor = anterior3 });
-            lista.Add(new EvolucaoEngajamentoView() { Data = Periodo.SegundaFeiraPassada(35,34), Valor = anterior4 });
-            lista.Add(new EvolucaoEngajamentoView() { Data = Periodo.SegundaFeiraPassada(28,27), Valor = anterior5 });
-            lista.Add(new EvolucaoEngajamentoView() { Data = Periodo.SegundaFeiraPassada(21,20), Valor = anterior1 });
-            lista.Add(new EvolucaoEngajamentoView() { Data = Periodo.SegundaFeiraPassada(14,13), Valor = anterior2 });
+            lista.Add(new EvolucaoEngajamentoView() { Data = Periodo.SegundaFeiraPassada(42,41), Valor = anterior4 });
+            lista.Add(new EvolucaoEngajamentoView() { Data = Periodo.SegundaFeiraPassada(35,34), Valor = anterior5 });
+            lista.Add(new EvolucaoEngajamentoView() { Data = Periodo.SegundaFeiraPassada(28,27), Valor = anterior1 });
+            lista.Add(new EvolucaoEngajamentoView() { Data = Periodo.SegundaFeiraPassada(21,20), Valor = anterior2 });
+            lista.Add(new EvolucaoEngajamentoView() { Data = Periodo.SegundaFeiraPassada(14,13), Valor = anterior3 });
             lista.Add(new EvolucaoEngajamentoView() { Data = Periodo.SegundaFeiraPassada(7,6),   Valor = colaborador.Engajamento });
 
             colaborador.EvolucaoEngajamento = lista.ToArray();
