@@ -19,6 +19,8 @@ namespace BI.Sistemas.API.View
         public EngajamentoView[] TopEngajamento { get; set; }
         public AtividadeView[] Atividades { get; set; }
         public EvolucaoEngajamentoView[] EvolucaoEngajamento { get; set; }
+        public int Parents { get; set; }
+        public string Menssagem { get; set; }
 
 
         public double TotalApropriado
