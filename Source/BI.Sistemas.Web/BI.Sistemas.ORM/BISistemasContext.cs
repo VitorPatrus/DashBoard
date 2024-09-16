@@ -16,10 +16,9 @@ namespace BI.Sistemas.Context
         public DbSet<TMetric> TMetrics { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=con-snote725;Database=BI_SISTEMAS;Trusted_Connection=True;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer(@"Server=con-snote725;Database=BI_SISTEMASDEVS;Trusted_Connection=True;TrustServerCertificate=True;");
             optionsBuilder.LogTo(Console.WriteLine);
         }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder) // Mapeamento!
         {
             modelBuilder.Entity<Colaborador>(entity =>
@@ -117,7 +116,6 @@ namespace BI.Sistemas.Context
                     .HasColumnName("TIPO")
                     .HasMaxLength(100);
 
-
             });
 
             modelBuilder.Entity<Periodo>(entity =>
@@ -165,9 +163,6 @@ namespace BI.Sistemas.Context
                 entity.Property(e => e.PeriodoId)
                     .HasColumnName("PERIODO");
 
-                //entity.HasOne(e => e.Periodo)
-                //    .WithOne()
-                //    .HasForeignKey<HE>(c => c.PeriodoId);
             });
 
             CreateNovoModulo(modelBuilder);
@@ -243,10 +238,6 @@ namespace BI.Sistemas.Context
                     .WithMany(y => y.Times)
                     .HasForeignKey(c => c.GeracaoId);
 
-                //entity.HasOne(e => e.Time)
-                //     .WithOne()
-                //     .HasForeignKey<TMetric>(c => c.PeriodoId);
-
             });
 
             modelBuilder.Entity<BI.Sistemas.Domain.Novo.Movidesk>(entity =>
@@ -305,12 +296,6 @@ namespace BI.Sistemas.Context
 
                 entity.Property(e => e.Time)
                     .HasColumnName("TIME");
-
-
-                //entity.HasOne(e => e.Time)
-                //     .WithOne()
-                //     .HasForeignKey<TMetric>(c => c.PeriodoId);
-
 
             });
         }

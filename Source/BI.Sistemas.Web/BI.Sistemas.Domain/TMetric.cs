@@ -18,7 +18,6 @@ namespace BI.Sistemas.Domain
 
         public static TMetric FromCsv(DateTime dataCarga, string csvLine)
         {
-            //string[] values = csvLine.Split(',');
             string[] values = Regex.Split(csvLine, ";(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
 
             var data = Convert.ToDateTime(values[0]);
@@ -55,19 +54,32 @@ namespace BI.Sistemas.Domain
             dailyValues.DataCarga = dataCarga;
             dailyValues.Tipo = values[7];
 
-            //if (values[7] == "Development")
-            //{
-            //    dailyValues.Tipo = "Delivery";
-            //}
-            //else if (values[7] == "Design")
-            //{
-            //    dailyValues.Tipo = "Discovery";
-            //}
-            //else
-            //{
-            //    dailyValues.Tipo = "Cerimony";
-            //}
             return dailyValues;
+        }
+        public double GetHoras(IEnumerable<DateTime> dates)
+        {
+            var total = new TimeSpan();
+
+            foreach (var item in dates.Select(c => c.TimeOfDay))
+                total = total.Add(item);
+
+            return total.TotalHours;
+        }
+        public int CalcularEngajamento(IEnumerable<TMetric> tmetrics, IEnumerable<Ponto> pontos, Colaborador colaborador)
+        {
+            var hora = GetHoras(tmetrics.Where(c => c.ColaboradorId.ToString().ToUpper() == colaborador.Id.ToString()
+            .ToUpper()).Select(h => h.Duracao));
+            var ponto = GetHoras(pontos.Where(p => p.ColaboradorId.ToString().ToUpper() == colaborador.Id.ToString()
+            .ToUpper()).Select(h => h.Horas));
+
+            if (ponto == 0 && colaborador.CargaHoraria > 0)
+            {
+                ponto = colaborador.CargaHoraria;
+                if (ponto < hora)
+                    ponto = hora;
+            }
+            return ponto == 0 ? 0 : (int)Math.Round(hora / ponto * 100, 0);
+            
         }
     }
 }

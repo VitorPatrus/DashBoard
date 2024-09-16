@@ -8,6 +8,6 @@
     public abstract class EntityPeriodo: Entity
     {
         public Guid? PeriodoId { get; set; }
-        public virtual Periodo Periodo { get; set; }
+        public virtual Periodo? Periodo { get; set; }
     }
 }

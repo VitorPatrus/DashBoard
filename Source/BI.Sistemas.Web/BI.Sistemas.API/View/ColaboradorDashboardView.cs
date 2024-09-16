@@ -19,15 +19,16 @@ namespace BI.Sistemas.API.View
         public EngajamentoView[] TopEngajamento { get; set; }
         public AtividadeView[] Atividades { get; set; }
         public EvolucaoEngajamentoView[] EvolucaoEngajamento { get; set; }
+        public int Parents { get; set; }
+        public string Menssagem { get; set; }
 
 
         public double TotalApropriado
         {
-            // Propriedade que calcula o total de horas apropriadas para todas as atividades.
             get
             {
                 return Atividades
-                   .Sum (a => a.Horas.TimeOfDay.TotalHours); // Soma das horas de todas as atividades.
+                   .Sum(a => a.Horas.TimeOfDay.TotalHours);
             }
         }
         public double DevOps
@@ -38,23 +39,22 @@ namespace BI.Sistemas.API.View
 
 
                 return atividadeDevOps
-                    .Where(a => ! string.IsNullOrEmpty(a.Ticket))
-                    .Sum(a => a.Horas.TimeOfDay.TotalHours)/
+                    .Where(a => !string.IsNullOrEmpty(a.Ticket))
+                    .Sum(a => a.Horas.TimeOfDay.TotalHours) /
                     atividadeDevOps.Sum(a => a.Horas.TimeOfDay.TotalHours) * 100;
             }
         }
-        
+
 
 
         public ApropriacaoView[] ResumoApropriacao
         {
-            // Propriedade que gera um resumo das horas apropriadas agrupadas por tipo de atividade.
             get
             {
                 return Atividades
-                    .GroupBy(a => a.Tipo) // Agrupa as atividades pelo tipo.
-                    .Select(a => new ApropriacaoView() { Tipo = a.Key, Valor = a.Sum(a => a.Horas.TimeOfDay.TotalHours) }) // Para cada grupo, cria uma nova instância de ApropriacaoView com o tipo e o total de horas apropriadas.
-                    .ToArray(); // Converte a sequência de resultados em uma matriz.
+                    .GroupBy(a => a.Tipo)
+                    .Select(a => new ApropriacaoView() { Tipo = a.Key, Valor = a.Sum(a => a.Horas.TimeOfDay.TotalHours) })
+                    .ToArray();
             }
         }
 
@@ -74,7 +74,7 @@ namespace BI.Sistemas.API.View
         {
             public string Tipo { get; set; }
             public double Valor { get; set; }
-            
+
             public string Color
             {
                 get
