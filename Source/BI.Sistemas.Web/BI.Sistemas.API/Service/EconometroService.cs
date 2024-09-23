@@ -44,7 +44,6 @@ namespace BI.Sistemas.API.Service
                     {
                         foreach (var hora in horasPorTime)
                         {
-                            //Soma todos os lançamentos com workitem do Devops para os dias anteriores
                             if (item.day < DateTime.Today || item.endTime <= hora.Hora.AddHours(-3))
                             {
                                 hora.HorasTotal = hora.HorasTotal.AddMilliseconds(item.duration);
@@ -97,10 +96,10 @@ namespace BI.Sistemas.API.Service
             while (model.Atualizacoes.Count() < 12)
                 model.Atualizacoes.Add(model.Atualizacoes.Last());
 
-
             // não ficar atualizando a cada 5 segundos
-            model.Atualizacoes.Clear();
-            model.Atualizacoes.Add(new EconometroAtualizacaoViewModel());
+            //model.Atualizacoes.Clear();
+            //model.Atualizacoes.Add(new EconometroAtualizacaoViewModel());
+
             while (model.Atualizacoes.Count() < 12)
                 model.Atualizacoes.Add(model.Atualizacoes.Last());
 

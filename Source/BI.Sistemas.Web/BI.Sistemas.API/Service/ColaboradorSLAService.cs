@@ -29,7 +29,7 @@ public class ColaboradorSLAService : IColaboradorSLAService
                 throw new Exception($"Colaborador não encontrado (ID: {id})");
 
             var periodo = _colaboradorRepository.GetPeriodo();
-            var colaboradoresSuporte = _colaboradorRepository.GetListaColaboradoresSuporte();
+            var colaboradoresSuporte = _colaboradorRepository.GetListaColaboradores().Where(x => x.Suporte).ToList();
             var chamados = _colaboradorRepository.GetChamados(periodo);
             var chamadosDaPessoa = chamados.Where(x => pessoa.UserTMetric.Trim().Equals(x.ResponsavelChamado.Trim(), StringComparison.CurrentCultureIgnoreCase)).ToList();
             var chamadosEquipe = chamados.Where(x => x.Time.Equals(pessoa.Time, StringComparison.CurrentCultureIgnoreCase)).ToList();
@@ -53,11 +53,9 @@ public class ColaboradorSLAService : IColaboradorSLAService
             //colaborador.LeadTimeEquipe = CalcularPercentual(chamadosEquipe.Sum(x => x.LeadTime ?? 0), chamadosEquipe.Where(x => x.LeadTime.HasValue).Count());
             //colaborador.LeadTimeSistemas = CalcularPercentual(chamados.Sum(x => x.LeadTime ?? 0), chamados.Where(x => x.LeadTime.HasValue).Count());
 
-
             colaborador.LeadTime = CalcularLeadTime(colaborador, chamadosDaPessoa);
             colaborador.LeadTimeEquipe = CalcularLeadTime(colaborador, chamadosEquipe);
             colaborador.LeadTimeSistemas = CalcularLeadTime(colaborador, chamados);
-
 
             var tabelaForaPrazo = chamadosDaPessoa.Where(x => x.IndicadorSLA == "Fora do Prazo").ToList();
             colaborador.TabelaForaPrazo = tabelaForaPrazo
@@ -155,11 +153,10 @@ public class ColaboradorSLAService : IColaboradorSLAService
             throw new Exception("Divisão por 0");
         }
         catch (Exception ex)
-        {
+            {
             throw new Exception(ex.Message);
         }
     }
-
     private string CalcularLeadTime(ColaboradorSLADashboardView colaborador, List<Movidesk> chamados)
     {
         double soma = 0;
@@ -282,11 +279,6 @@ public class ColaboradorSLAService : IColaboradorSLAService
 
         var lista = new List<EvolucaoSLAView>();
 
-        //lista.Add(new EvolucaoSLAView() { Data = Periodo.SegundaFeiraPassada(28, 27), Valor = anterior1 });
-        //lista.Add(new EvolucaoSLAView() { Data = Periodo.SegundaFeiraPassada(21, 20), Valor = anterior2 });
-        //lista.Add(new EvolucaoSLAView() { Data = Periodo.SegundaFeiraPassada(14, 13), Valor = anterior3 });
-
-        // Exemplo de como adicionar dados à lista
         for (int i = 0; i < colaborador.EvolucaoChamadosAbertos.Length; i++)
         {
             lista.Add(new EvolucaoSLAView()
@@ -296,17 +288,17 @@ public class ColaboradorSLAService : IColaboradorSLAService
             });
             lista.Add(new EvolucaoSLAView()
             {
-                Data = Periodo.SegundaFeiraPassada(14, 13), // Ajuste conforme a necessidade
+                Data = Periodo.SegundaFeiraPassada(14, 13), 
                 Valor = colaborador.EvolucaoChamadosFechados[i]
             });
             lista.Add(new EvolucaoSLAView()
             {
-                Data = Periodo.SegundaFeiraPassada(21, 20), // Ajuste conforme a necessidade
+                Data = Periodo.SegundaFeiraPassada(21, 20), 
                 Valor = colaborador.EvolucaoChamadosFechados[i]
             });
             lista.Add(new EvolucaoSLAView()
             {
-                Data = Periodo.SegundaFeiraPassada(28, 27), // Ajuste conforme a necessidade
+                Data = Periodo.SegundaFeiraPassada(28, 27), 
                 Valor = colaborador.EvolucaoChamadosFechados[i]
             });
         }
@@ -317,9 +309,5 @@ public class ColaboradorSLAService : IColaboradorSLAService
     {
         if (total <= 0) return 0;
         return (int)Math.Round((double)valor / total * 100);
-    }
-    private void Where(Func<object, bool> value)
-    {
-        throw new NotImplementedException();
     }
 }

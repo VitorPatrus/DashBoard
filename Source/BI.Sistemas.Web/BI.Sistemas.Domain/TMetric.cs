@@ -1,4 +1,6 @@
-﻿using System.Text.RegularExpressions;
+﻿using BI.Sistemas.Domain.Entities.Enums;
+using System.Text.RegularExpressions;
+
 
 namespace BI.Sistemas.Domain
 {
@@ -15,6 +17,8 @@ namespace BI.Sistemas.Domain
         public virtual Colaborador Colaborador { get; set; }
         public DateTime DataCarga { get; set; }
         public string? Tipo { get; set; }
+        public string? ParentType{ get; set; }
+        public string? ParentTitulo { get; set; }
 
         public static TMetric FromCsv(DateTime dataCarga, string csvLine)
         {
@@ -53,6 +57,8 @@ namespace BI.Sistemas.Domain
             dailyValues.Atividade = values[2];
             dailyValues.DataCarga = dataCarga;
             dailyValues.Tipo = values[7];
+            dailyValues.ParentType = string.IsNullOrWhiteSpace(values[13]) ? default(string?) : values[13];
+            dailyValues.ParentTitulo = string.IsNullOrWhiteSpace(values[14]) ? default(string?) : values[14];
 
             return dailyValues;
         }

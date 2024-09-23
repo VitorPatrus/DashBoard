@@ -1,11 +1,30 @@
+.card {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 375px;
+}
 
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0; 
+    margin-top: 0;
 }
+
+element.style {
+    background: green;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.elemento:hover {
+    background-color: #c81238;
+    color: white;
+}
+
 .nav-item.dropdown:hover .nav-link {
     background-color: #c81238;
-    color:#fff;
+    color: #fff;
     border-radius: 10px;
 }
 
@@ -13,19 +32,21 @@
     font-size: 23px;
     font-weight: bolder;
 }
+
 #chartdiv {
     width: 90%;
     height: 325px;
-  }
+}
 
-  .table {
+.table {
     border-collapse: separate;
     border-spacing: 0;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.table th, .table td {
+.table th,
+.table td {
     padding: 10px;
     border: 1px solid #ddd;
 }
@@ -45,6 +66,7 @@
 .table tbody tr:last-child td:last-child {
     border-bottom-right-radius: 10px;
 }
+
 #timeseriesChart .bb-region.discovery {
     fill: blue;
     font-family: Castellar;
@@ -181,12 +203,3 @@ span.meutexto {
     height: 100%;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card .row {
-    flex-grow: 1;
-}

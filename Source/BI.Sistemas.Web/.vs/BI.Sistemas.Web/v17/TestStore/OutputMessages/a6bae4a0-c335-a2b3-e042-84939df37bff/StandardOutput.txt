@@ -1,0 +1,588 @@
+warn: 20/09/2024 14:16:45.156 SqlServerEventId.DecimalTypeDefaultWarning[30000] (Microsoft.EntityFrameworkCore.Model.Validation) 
+      No store type was specified for the decimal property 'Horas' on entity type 'HE'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+dbug: 20/09/2024 14:16:45.227 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.3 initialized 'BISistemasContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+dbug: 20/09/2024 14:16:45.263 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<Colaborador>()
+          .FirstOrDefault(c => c.UserTMetric == __record_Colaborador_0)'
+dbug: 20/09/2024 14:16:45.357 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<Colaborador>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Colaborador.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Colaborador.CargaHoraria (int) Required, 1], [Property: Colaborador.Cargo (string) Required MaxLength(255), 2], [Property: Colaborador.Email (string) Required MaxLength(300), 3], [Property: Colaborador.Foto (byte[]), 4], [Property: Colaborador.Inicio (DateTime?), 5], [Property: Colaborador.Nome (string) Required MaxLength(255), 6], [Property: Colaborador.Termino (DateTime?), 7], [Property: Colaborador.Time (string) Required MaxLength(100), 8], [Property: Colaborador.UserTMetric (string) Required MaxLength(255), 9] }
+              SELECT TOP(1) c.Id, c.CARGAHORARIA, c.CARGO, c.EMAIL, c.FOTO, c.INICIO, c.NOME, c.TERMINO, c.TIME, c.USER_TMETRIC
+              FROM COLABORADOR AS c
+              WHERE c.USER_TMETRIC == @__record_Colaborador_0), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Colaborador>, 
+          BI.Sistemas.Context.BISistemasContext, 
+          False, 
+          False, 
+          True
+      )
+          .SingleOrDefault()'
+dbug: 20/09/2024 14:16:45.371 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 20/09/2024 14:16:45.384 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (11ms).
+dbug: 20/09/2024 14:16:45.385 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:16:45.849 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:16:45.851 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20/09/2024 14:16:45.853 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (2ms).
+dbug: 20/09/2024 14:16:45.857 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (6ms).
+dbug: 20/09/2024 14:16:45.860 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@__record_Colaborador_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [c].[Id], [c].[CARGAHORARIA], [c].[CARGO], [c].[EMAIL], [c].[FOTO], [c].[INICIO], [c].[NOME], [c].[TERMINO], [c].[TIME], [c].[USER_TMETRIC]
+      FROM [COLABORADOR] AS [c]
+      WHERE [c].[USER_TMETRIC] = @__record_Colaborador_0
+info: 20/09/2024 14:16:45.904 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (44ms) [Parameters=[@__record_Colaborador_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [c].[Id], [c].[CARGAHORARIA], [c].[CARGO], [c].[EMAIL], [c].[FOTO], [c].[INICIO], [c].[NOME], [c].[TERMINO], [c].[TIME], [c].[USER_TMETRIC]
+      FROM [COLABORADOR] AS [c]
+      WHERE [c].[USER_TMETRIC] = @__record_Colaborador_0
+dbug: 20/09/2024 14:16:45.927 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:16:45.944 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:16:45.948 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'BI_SISTEMASDEVS' on server 'con-snote725' is being disposed after spending 41ms reading results.
+dbug: 20/09/2024 14:16:45.949 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:16:45.951 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'BI_SISTEMASDEVS' on server 'con-snote725' (2ms).
+dbug: 20/09/2024 14:16:52.433 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.3 initialized 'BISistemasContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+dbug: 20/09/2024 14:16:52.434 CoreEventId.QueryCompilationStarting[10111] (Microsoft.EntityFrameworkCore.Query) 
+      Compiling query expression: 
+      'DbSet<Periodo>()
+          .FirstOrDefault(c => c.Data == DateTime.Today.AddDays(-3))'
+dbug: 20/09/2024 14:16:52.445 CoreEventId.QueryExecutionPlanned[10107] (Microsoft.EntityFrameworkCore.Query) 
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<Periodo>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Projection Mapping:
+                  EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Periodo.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Periodo.Data (DateTime) Required, 1], [Property: Periodo.Inicio (DateTime) Required, 2], [Property: Periodo.Termino (DateTime) Required, 3] }
+              SELECT TOP(1) p.Id, p.DATA, p.DATAINICIO, p.DATATERMINO
+              FROM PERIODO AS p
+              WHERE p.DATA == DATEADD(day, CAST(-3.0E0 AS int), CONVERT(date, GETDATE()))), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Periodo>, 
+          BI.Sistemas.Context.BISistemasContext, 
+          False, 
+          False, 
+          True
+      )
+          .SingleOrDefault()'
+dbug: 20/09/2024 14:16:52.449 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 20/09/2024 14:16:52.449 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 20/09/2024 14:16:52.449 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:16:52.449 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:16:52.449 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20/09/2024 14:16:52.449 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:16:52.449 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:16:52.449 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[Id], [p].[DATA], [p].[DATAINICIO], [p].[DATATERMINO]
+      FROM [PERIODO] AS [p]
+      WHERE [p].[DATA] = DATEADD(day, CAST(-3.0E0 AS int), CONVERT(date, GETDATE()))
+info: 20/09/2024 14:16:52.454 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[Id], [p].[DATA], [p].[DATAINICIO], [p].[DATATERMINO]
+      FROM [PERIODO] AS [p]
+      WHERE [p].[DATA] = DATEADD(day, CAST(-3.0E0 AS int), CONVERT(date, GETDATE()))
+dbug: 20/09/2024 14:16:52.460 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Periodo' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:16:52.463 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:16:52.463 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'BI_SISTEMASDEVS' on server 'con-snote725' is being disposed after spending 8ms reading results.
+dbug: 20/09/2024 14:16:52.463 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:16:52.463 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'BI_SISTEMASDEVS' on server 'con-snote725' (0ms).
+dbug: 20/09/2024 14:16:52.464 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'BISistemasContext' disposed.
+dbug: 20/09/2024 14:16:52.465 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:16:52.465 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 20/09/2024 14:17:12.031 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'BISistemasContext' generated a value for the property 'HE.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:12.041 CoreEventId.ReferenceChangeDetected[10805] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The navigation 'HE.Colaborador' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:12.043 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'HE' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:16.896 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:16.896 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:16.896 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20/09/2024 14:17:16.896 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:16.896 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:16.896 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@__record_Colaborador_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [c].[Id], [c].[CARGAHORARIA], [c].[CARGO], [c].[EMAIL], [c].[FOTO], [c].[INICIO], [c].[NOME], [c].[TERMINO], [c].[TIME], [c].[USER_TMETRIC]
+      FROM [COLABORADOR] AS [c]
+      WHERE [c].[USER_TMETRIC] = @__record_Colaborador_0
+info: 20/09/2024 14:17:16.897 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[@__record_Colaborador_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [c].[Id], [c].[CARGAHORARIA], [c].[CARGO], [c].[EMAIL], [c].[FOTO], [c].[INICIO], [c].[NOME], [c].[TERMINO], [c].[TIME], [c].[USER_TMETRIC]
+      FROM [COLABORADOR] AS [c]
+      WHERE [c].[USER_TMETRIC] = @__record_Colaborador_0
+dbug: 20/09/2024 14:17:16.898 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:16.899 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:16.899 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'BI_SISTEMASDEVS' on server 'con-snote725' is being disposed after spending 1ms reading results.
+dbug: 20/09/2024 14:17:16.899 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:16.899 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'BI_SISTEMASDEVS' on server 'con-snote725' (0ms).
+dbug: 20/09/2024 14:17:17.817 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.3 initialized 'BISistemasContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+dbug: 20/09/2024 14:17:17.818 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 20/09/2024 14:17:17.818 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 20/09/2024 14:17:17.818 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.818 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.818 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20/09/2024 14:17:17.818 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.818 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.818 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[Id], [p].[DATA], [p].[DATAINICIO], [p].[DATATERMINO]
+      FROM [PERIODO] AS [p]
+      WHERE [p].[DATA] = DATEADD(day, CAST(-3.0E0 AS int), CONVERT(date, GETDATE()))
+info: 20/09/2024 14:17:17.819 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[Id], [p].[DATA], [p].[DATAINICIO], [p].[DATATERMINO]
+      FROM [PERIODO] AS [p]
+      WHERE [p].[DATA] = DATEADD(day, CAST(-3.0E0 AS int), CONVERT(date, GETDATE()))
+dbug: 20/09/2024 14:17:17.819 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Periodo' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.819 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.819 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'BI_SISTEMASDEVS' on server 'con-snote725' is being disposed after spending 0ms reading results.
+dbug: 20/09/2024 14:17:17.819 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.819 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'BI_SISTEMASDEVS' on server 'con-snote725' (0ms).
+dbug: 20/09/2024 14:17:17.820 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'BISistemasContext' disposed.
+dbug: 20/09/2024 14:17:17.820 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.820 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 20/09/2024 14:17:17.821 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'BISistemasContext' generated a value for the property 'HE.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.821 CoreEventId.ReferenceChangeDetected[10805] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The navigation 'HE.Colaborador' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.821 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'HE' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.821 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.821 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.821 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20/09/2024 14:17:17.821 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.821 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.821 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@__record_Colaborador_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [c].[Id], [c].[CARGAHORARIA], [c].[CARGO], [c].[EMAIL], [c].[FOTO], [c].[INICIO], [c].[NOME], [c].[TERMINO], [c].[TIME], [c].[USER_TMETRIC]
+      FROM [COLABORADOR] AS [c]
+      WHERE [c].[USER_TMETRIC] = @__record_Colaborador_0
+info: 20/09/2024 14:17:17.822 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[@__record_Colaborador_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [c].[Id], [c].[CARGAHORARIA], [c].[CARGO], [c].[EMAIL], [c].[FOTO], [c].[INICIO], [c].[NOME], [c].[TERMINO], [c].[TIME], [c].[USER_TMETRIC]
+      FROM [COLABORADOR] AS [c]
+      WHERE [c].[USER_TMETRIC] = @__record_Colaborador_0
+dbug: 20/09/2024 14:17:17.822 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.822 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.822 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'BI_SISTEMASDEVS' on server 'con-snote725' is being disposed after spending 0ms reading results.
+dbug: 20/09/2024 14:17:17.822 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.822 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'BI_SISTEMASDEVS' on server 'con-snote725' (0ms).
+dbug: 20/09/2024 14:17:17.823 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.3 initialized 'BISistemasContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+dbug: 20/09/2024 14:17:17.823 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 20/09/2024 14:17:17.823 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 20/09/2024 14:17:17.823 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.823 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.823 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20/09/2024 14:17:17.823 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.823 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.823 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[Id], [p].[DATA], [p].[DATAINICIO], [p].[DATATERMINO]
+      FROM [PERIODO] AS [p]
+      WHERE [p].[DATA] = DATEADD(day, CAST(-3.0E0 AS int), CONVERT(date, GETDATE()))
+info: 20/09/2024 14:17:17.824 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[Id], [p].[DATA], [p].[DATAINICIO], [p].[DATATERMINO]
+      FROM [PERIODO] AS [p]
+      WHERE [p].[DATA] = DATEADD(day, CAST(-3.0E0 AS int), CONVERT(date, GETDATE()))
+dbug: 20/09/2024 14:17:17.824 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Periodo' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.824 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.824 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'BI_SISTEMASDEVS' on server 'con-snote725' is being disposed after spending 0ms reading results.
+dbug: 20/09/2024 14:17:17.824 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.824 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'BI_SISTEMASDEVS' on server 'con-snote725' (0ms).
+dbug: 20/09/2024 14:17:17.824 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'BISistemasContext' disposed.
+dbug: 20/09/2024 14:17:17.824 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.824 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 20/09/2024 14:17:17.824 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'BISistemasContext' generated a value for the property 'HE.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.824 CoreEventId.ReferenceChangeDetected[10805] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The navigation 'HE.Colaborador' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.824 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'HE' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.824 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.824 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.824 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20/09/2024 14:17:17.824 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.824 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.824 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@__record_Colaborador_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [c].[Id], [c].[CARGAHORARIA], [c].[CARGO], [c].[EMAIL], [c].[FOTO], [c].[INICIO], [c].[NOME], [c].[TERMINO], [c].[TIME], [c].[USER_TMETRIC]
+      FROM [COLABORADOR] AS [c]
+      WHERE [c].[USER_TMETRIC] = @__record_Colaborador_0
+info: 20/09/2024 14:17:17.825 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[@__record_Colaborador_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [c].[Id], [c].[CARGAHORARIA], [c].[CARGO], [c].[EMAIL], [c].[FOTO], [c].[INICIO], [c].[NOME], [c].[TERMINO], [c].[TIME], [c].[USER_TMETRIC]
+      FROM [COLABORADOR] AS [c]
+      WHERE [c].[USER_TMETRIC] = @__record_Colaborador_0
+dbug: 20/09/2024 14:17:17.825 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.826 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.826 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'BI_SISTEMASDEVS' on server 'con-snote725' is being disposed after spending 0ms reading results.
+dbug: 20/09/2024 14:17:17.826 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.826 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'BI_SISTEMASDEVS' on server 'con-snote725' (0ms).
+dbug: 20/09/2024 14:17:17.827 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.3 initialized 'BISistemasContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+dbug: 20/09/2024 14:17:17.827 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 20/09/2024 14:17:17.827 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 20/09/2024 14:17:17.827 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.827 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.827 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20/09/2024 14:17:17.827 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.827 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.827 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[Id], [p].[DATA], [p].[DATAINICIO], [p].[DATATERMINO]
+      FROM [PERIODO] AS [p]
+      WHERE [p].[DATA] = DATEADD(day, CAST(-3.0E0 AS int), CONVERT(date, GETDATE()))
+info: 20/09/2024 14:17:17.828 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[Id], [p].[DATA], [p].[DATAINICIO], [p].[DATATERMINO]
+      FROM [PERIODO] AS [p]
+      WHERE [p].[DATA] = DATEADD(day, CAST(-3.0E0 AS int), CONVERT(date, GETDATE()))
+dbug: 20/09/2024 14:17:17.828 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Periodo' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.828 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.828 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'BI_SISTEMASDEVS' on server 'con-snote725' is being disposed after spending 0ms reading results.
+dbug: 20/09/2024 14:17:17.828 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.828 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'BI_SISTEMASDEVS' on server 'con-snote725' (0ms).
+dbug: 20/09/2024 14:17:17.828 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'BISistemasContext' disposed.
+dbug: 20/09/2024 14:17:17.828 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.828 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 20/09/2024 14:17:17.828 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'BISistemasContext' generated a value for the property 'HE.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.828 CoreEventId.ReferenceChangeDetected[10805] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The navigation 'HE.Colaborador' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.828 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'HE' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.828 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.828 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.828 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20/09/2024 14:17:17.828 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.828 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.828 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@__record_Colaborador_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [c].[Id], [c].[CARGAHORARIA], [c].[CARGO], [c].[EMAIL], [c].[FOTO], [c].[INICIO], [c].[NOME], [c].[TERMINO], [c].[TIME], [c].[USER_TMETRIC]
+      FROM [COLABORADOR] AS [c]
+      WHERE [c].[USER_TMETRIC] = @__record_Colaborador_0
+info: 20/09/2024 14:17:17.829 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[@__record_Colaborador_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [c].[Id], [c].[CARGAHORARIA], [c].[CARGO], [c].[EMAIL], [c].[FOTO], [c].[INICIO], [c].[NOME], [c].[TERMINO], [c].[TIME], [c].[USER_TMETRIC]
+      FROM [COLABORADOR] AS [c]
+      WHERE [c].[USER_TMETRIC] = @__record_Colaborador_0
+dbug: 20/09/2024 14:17:17.831 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.831 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.831 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'BI_SISTEMASDEVS' on server 'con-snote725' is being disposed after spending 2ms reading results.
+dbug: 20/09/2024 14:17:17.831 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.831 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'BI_SISTEMASDEVS' on server 'con-snote725' (0ms).
+dbug: 20/09/2024 14:17:17.832 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.3 initialized 'BISistemasContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+dbug: 20/09/2024 14:17:17.832 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 20/09/2024 14:17:17.832 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 20/09/2024 14:17:17.832 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.832 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.832 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20/09/2024 14:17:17.832 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.832 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.832 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[Id], [p].[DATA], [p].[DATAINICIO], [p].[DATATERMINO]
+      FROM [PERIODO] AS [p]
+      WHERE [p].[DATA] = DATEADD(day, CAST(-3.0E0 AS int), CONVERT(date, GETDATE()))
+info: 20/09/2024 14:17:17.833 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[Id], [p].[DATA], [p].[DATAINICIO], [p].[DATATERMINO]
+      FROM [PERIODO] AS [p]
+      WHERE [p].[DATA] = DATEADD(day, CAST(-3.0E0 AS int), CONVERT(date, GETDATE()))
+dbug: 20/09/2024 14:17:17.833 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Periodo' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.833 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.833 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'BI_SISTEMASDEVS' on server 'con-snote725' is being disposed after spending 0ms reading results.
+dbug: 20/09/2024 14:17:17.833 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.833 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'BI_SISTEMASDEVS' on server 'con-snote725' (0ms).
+dbug: 20/09/2024 14:17:17.833 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'BISistemasContext' disposed.
+dbug: 20/09/2024 14:17:17.833 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.833 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 20/09/2024 14:17:17.833 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'BISistemasContext' generated a value for the property 'HE.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.833 CoreEventId.ReferenceChangeDetected[10805] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The navigation 'HE.Colaborador' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.833 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'HE' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.833 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.833 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.833 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20/09/2024 14:17:17.833 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.833 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.833 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@__record_Colaborador_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [c].[Id], [c].[CARGAHORARIA], [c].[CARGO], [c].[EMAIL], [c].[FOTO], [c].[INICIO], [c].[NOME], [c].[TERMINO], [c].[TIME], [c].[USER_TMETRIC]
+      FROM [COLABORADOR] AS [c]
+      WHERE [c].[USER_TMETRIC] = @__record_Colaborador_0
+info: 20/09/2024 14:17:17.834 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[@__record_Colaborador_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [c].[Id], [c].[CARGAHORARIA], [c].[CARGO], [c].[EMAIL], [c].[FOTO], [c].[INICIO], [c].[NOME], [c].[TERMINO], [c].[TIME], [c].[USER_TMETRIC]
+      FROM [COLABORADOR] AS [c]
+      WHERE [c].[USER_TMETRIC] = @__record_Colaborador_0
+dbug: 20/09/2024 14:17:17.834 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Colaborador' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.834 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.834 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'BI_SISTEMASDEVS' on server 'con-snote725' is being disposed after spending 0ms reading results.
+dbug: 20/09/2024 14:17:17.834 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.834 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'BI_SISTEMASDEVS' on server 'con-snote725' (0ms).
+dbug: 20/09/2024 14:17:17.835 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 8.0.3 initialized 'BISistemasContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.3' with options: None
+dbug: 20/09/2024 14:17:17.835 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Creating DbConnection.
+dbug: 20/09/2024 14:17:17.835 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (0ms).
+dbug: 20/09/2024 14:17:17.835 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.835 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.835 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20/09/2024 14:17:17.835 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.835 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.835 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[Id], [p].[DATA], [p].[DATAINICIO], [p].[DATATERMINO]
+      FROM [PERIODO] AS [p]
+      WHERE [p].[DATA] = DATEADD(day, CAST(-3.0E0 AS int), CONVERT(date, GETDATE()))
+info: 20/09/2024 14:17:17.835 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[Id], [p].[DATA], [p].[DATAINICIO], [p].[DATATERMINO]
+      FROM [PERIODO] AS [p]
+      WHERE [p].[DATA] = DATEADD(day, CAST(-3.0E0 AS int), CONVERT(date, GETDATE()))
+dbug: 20/09/2024 14:17:17.835 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'Periodo' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.835 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.835 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'BI_SISTEMASDEVS' on server 'con-snote725' is being disposed after spending 0ms reading results.
+dbug: 20/09/2024 14:17:17.835 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.835 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'BI_SISTEMASDEVS' on server 'con-snote725' (0ms).
+dbug: 20/09/2024 14:17:17.835 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'BISistemasContext' disposed.
+dbug: 20/09/2024 14:17:17.835 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.835 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).
+dbug: 20/09/2024 14:17:17.835 CoreEventId.ValueGenerated[10808] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      'BISistemasContext' generated a value for the property 'HE.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.836 CoreEventId.ReferenceChangeDetected[10805] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      The navigation 'HE.Colaborador' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.836 CoreEventId.StartedTracking[10806] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      Context 'BISistemasContext' started tracking 'HE' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.837 CoreEventId.SaveChangesStarting[10004] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges starting for 'BISistemasContext'.
+dbug: 20/09/2024 14:17:17.837 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'BISistemasContext'.
+dbug: 20/09/2024 14:17:17.852 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'BISistemasContext'.
+dbug: 20/09/2024 14:17:17.880 RelationalEventId.BatchReadyForExecution[20700] (Microsoft.EntityFrameworkCore.Update) 
+      Executing 6 update commands as a batch.
+dbug: 20/09/2024 14:17:17.883 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.883 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.884 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 20/09/2024 14:17:17.884 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.885 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 20/09/2024 14:17:17.885 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = DateTime2), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Guid), @p5='?' (DbType = Guid), @p6='?' (DbType = Guid), @p7='?' (DbType = DateTime2), @p8='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p9='?' (DbType = Guid), @p10='?' (DbType = Guid), @p11='?' (DbType = Guid), @p12='?' (DbType = DateTime2), @p13='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p14='?' (DbType = Guid), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = DateTime2), @p18='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p19='?' (DbType = Guid), @p20='?' (DbType = Guid), @p21='?' (DbType = Guid), @p22='?' (DbType = DateTime2), @p23='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p24='?' (DbType = Guid), @p25='?' (DbType = Guid), @p26='?' (DbType = Guid), @p27='?' (DbType = DateTime2), @p28='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p29='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [HE] ([Id], [COLABORADOR], [DATA], [HORAS], [PERIODO])
+      VALUES (@p0, @p1, @p2, @p3, @p4),
+      (@p5, @p6, @p7, @p8, @p9),
+      (@p10, @p11, @p12, @p13, @p14),
+      (@p15, @p16, @p17, @p18, @p19),
+      (@p20, @p21, @p22, @p23, @p24),
+      (@p25, @p26, @p27, @p28, @p29);
+info: 20/09/2024 14:17:17.900 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = DateTime2), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Guid), @p5='?' (DbType = Guid), @p6='?' (DbType = Guid), @p7='?' (DbType = DateTime2), @p8='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p9='?' (DbType = Guid), @p10='?' (DbType = Guid), @p11='?' (DbType = Guid), @p12='?' (DbType = DateTime2), @p13='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p14='?' (DbType = Guid), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = DateTime2), @p18='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p19='?' (DbType = Guid), @p20='?' (DbType = Guid), @p21='?' (DbType = Guid), @p22='?' (DbType = DateTime2), @p23='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p24='?' (DbType = Guid), @p25='?' (DbType = Guid), @p26='?' (DbType = Guid), @p27='?' (DbType = DateTime2), @p28='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p29='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [HE] ([Id], [COLABORADOR], [DATA], [HORAS], [PERIODO])
+      VALUES (@p0, @p1, @p2, @p3, @p4),
+      (@p5, @p6, @p7, @p8, @p9),
+      (@p10, @p11, @p12, @p13, @p14),
+      (@p15, @p16, @p17, @p18, @p19),
+      (@p20, @p21, @p22, @p23, @p24),
+      (@p25, @p26, @p27, @p28, @p29);
+dbug: 20/09/2024 14:17:17.901 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Closing data reader to 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.901 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'BI_SISTEMASDEVS' on server 'con-snote725' is being disposed after spending 0ms reading results.
+dbug: 20/09/2024 14:17:17.901 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.901 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'BI_SISTEMASDEVS' on server 'con-snote725' (0ms).
+dbug: 20/09/2024 14:17:17.904 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'HE' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.904 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'HE' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.904 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'HE' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.904 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'HE' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.904 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'HE' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.904 CoreEventId.StateChanged[10807] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      An entity of type 'HE' tracked by 'BISistemasContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: 20/09/2024 14:17:17.904 CoreEventId.SaveChangesCompleted[10005] (Microsoft.EntityFrameworkCore.Update) 
+      SaveChanges completed for 'BISistemasContext' with 6 entities written to the database.
+dbug: 20/09/2024 14:17:17.904 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'BISistemasContext' disposed.
+dbug: 20/09/2024 14:17:17.904 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposing connection to database 'BI_SISTEMASDEVS' on server 'con-snote725'.
+dbug: 20/09/2024 14:17:17.904 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database '' on server '' (0ms).

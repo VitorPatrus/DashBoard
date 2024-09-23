@@ -1,17 +1,15 @@
+let pieChartRoot;
 
-// Chamando a API
 function clickColaboradorFuncao(id) {
   var apiUrl = 'https://localhost:7052/ColaboradorSLA/ColaboradorSLADashboard?id=' + id;
+
   $.get(apiUrl, function (responseData) {
-
-    function formatarHora(str) {
-      return String(Math.trunc(str)).padStart(2, '0') + ':' + String(Math.trunc(60 * (str - Math.trunc(str)))).padStart(2, '0');
-    }
-
+    // Atualização de informações do colaborador
     $('#nome_colaborador').text(responseData.nome);
     $('#email_colaborador').text(responseData.email);
     $('#img_colaborador').attr('src', 'data:image/jpeg;base64,' + responseData.fotoColaborador);
     $('#time_colaborador').attr('src', 'data:image/jpeg;base64,' + responseData.fotoTime);
+    $('#time_colaborador img').attr('src', 'data:image/jpeg;base64,' + responseData.fotoTime);
     $('#TIME').text(responseData.time);
     $('#cargo_colaborador').text(responseData.cargo);
     $('#time_SLA').text(responseData.slA_Time + '%');
@@ -21,22 +19,29 @@ function clickColaboradorFuncao(id) {
     $('#setorial').text(responseData.setorial);
     $('#sistemas').text(responseData.sistemas);
 
+    $('#fechadosPessoal').text(responseData.fechadosPessoal);
+    $('#fechadosEquipe').text(responseData.fechadosEquipe);
+    $('#fechadosSistema').text(responseData.fechadosSistemas);
+    $('#aguardando').text('Aguardando usuário: ' + responseData.aguardando);
+    $('#total').text('Total de Chamados: ' + (responseData.pessoal + responseData.fechadosPessoal));
+
     $('#compensavel').text(responseData.hE_Compensavel + 'h');
     $('#nao_compensavel').text(responseData.hE_NaoCompensavel + 'h');
     $('#total_Horas').text(responseData.totalHoras + 'h');
 
-		$('#primeiroNome').text(responseData.topSLA[0].nome);
-		$('#primeiro').text(responseData.topSLA[0].percentual + '%');
-
+    $('#primeiroNome').text(responseData.topSLA[0].nome);
+    $('#primeiro').text(responseData.topSLA[0].percentual + '%');
     $('#segundoNome').text(responseData.topSLA[1].nome);
-		$('#segundo').text(responseData.topSLA[1].percentual + '%');
-
+    $('#segundo').text(responseData.topSLA[1].percentual + '%');
     $('#terceiroNome').text(responseData.topSLA[2].nome);
-		$('#terceiro').text(responseData.topSLA[2].percentual + '%');
-	
+    $('#terceiro').text(responseData.topSLA[2].percentual + '%');
+
+    $('#leadTimePessoal').text(responseData.leadTime + ' dias');
+    $('#leadTimeSistemas').text(responseData.leadTimeSistemas + ' dias');
+    $('#leadTimeEquipe').text(responseData.leadTimeEquipe + ' dias');
 
 
-    var chart2 = bb.generate({
+    var nivelSLA = bb.generate({
       data: {
         columns: [
           ["SLA", responseData.slA_Individual]
@@ -44,8 +49,8 @@ function clickColaboradorFuncao(id) {
         type: "gauge"
       },
       size: {
-        height: 130,
-        width: 300
+        height: 160,
+        width: 160
       },
       color: {
         pattern: ["red", "#f7e911", "#13ec00"],
@@ -75,256 +80,329 @@ function clickColaboradorFuncao(id) {
           }
         }
       },
-      bindto: "#gaugeNeedle_2"
+      bindto: "#graficoSLA"
     });
-// GRAFICO DE PIZZA
+
+    preencherTabela(responseData.tabelaForaPrazo);
+    preencherTabela2(responseData.tabelaPendentes);
+    preencherTabelaServicos(responseData.servicos);
+    
+    var evolucaoAbertos = ["Abertos"].concat(responseData.evolucaoChamadosAbertos);
+    var evolucaoFechados = ["Fechados"].concat(responseData.evolucaoChamadosFechados);
+
+bb.generate({
+  data: {
+    columns: [
+      evolucaoAbertos,
+      evolucaoFechados
+    ],
+    type: "line",
+    colors: {
+      Abertos: "#ff0000",
+      Fechados: "#13ec00" 
+    },
+    labels: {
+      backgroundColors: {
+        Abertos: "white",
+        Fechados: "white"
+      },
+      colors: {
+        Abertos: "black",
+        Fechados: "black"
+      }
+    }
+  },
+  axis: {
+    x: {
+      type: "category",
+      categories: lastMondays
+    },
+    y: {
+      min: Math.min(...evolucaoAbertos),
+      max: Math.max(...evolucaoAbertos)
+    }
+  },
+  bindto: "#dataLabelColors_2"
+});
+
+    
+
+    var header = document.getElementById('card-header-evolucao');
+    var penultimoValor = responseData.evolucaoChamadosAbertos[responseData.evolucaoChamadosAbertos[1]];
+    var ultimoValor = responseData.evolucaoChamadosAbertos[responseData.evolucaoChamadosAbertos[0]];
+
+    if (ultimoValor > penultimoValor) {
+      header.style.backgroundColor = 'red';
+    } else {
+      header.style.backgroundColor = 'green';
+    }
+
+    // Atualizando o gráfico de pizza
     am5.ready(function () {
-      var rootPieChart = am5.Root.new("meugrafico");
-    
-      rootPieChart.setThemes([
-        am5themes_Animated.new(rootPieChart)
-      ]);
-    
-      var chart = rootPieChart.container.children.push(
-        am5percent.PieChart.new(rootPieChart, {
-          endAngle: 270,
-          layout: rootPieChart.verticalLayout,
-        })
-      );
-    
-      var series = chart.series.push(
-        am5percent.PieSeries.new(rootPieChart, {
-          valueField: "value",
-          categoryField: "category",
-          endAngle: 270
-        })
-      );
-      series.set("colors", am5.ColorSet.new(rootPieChart, {
-        colors: [
-          am5.color(0x00ff00),  // Verde
-          am5.color(0xff0000),  // Vermelho
-          am5.color(0xffa500)   // Laranja
-        ]
-      }));
-    
-      var gradient = am5.RadialGradient.new(rootPieChart, {
-        stops: [
-          { color: am5.color(0x00ff00) },  // Verde
-          { color: am5.color(0xff0000) },  // Vermelho
-          { color: am5.color(0xffa500) }   // Laranja
-        ]
-      });
-    
-      series.slices.template.setAll({
-        strokeWidth: 2,
-        stroke: am5.color(0xffffff),
-        cornerRadius: 10,
-        shadowOpacity: 0.1,
-        shadowOffsetX: 2,
-        shadowOffsetY: 2,
-        shadowColor: am5.color(0x000000),
-        fillPattern: am5.GrainPattern.new(rootPieChart, {
-          maxOpacity: 0.2,
-          density: 0.5,
+      if (pieChartRoot) {
+        pieChartRoot.container.children.each(function (child) {
+          if (child instanceof am5percent.PieChart) {
+            var series = child.series.getIndex(0);
+            series.data.setAll([
+              { category: "Dentro", value: responseData.dentroPrazo },
+              { category: "Fora", value: responseData.foraPrazo }
+            ]);
+          }
+        });
+      } else {
+        pieChartRoot = am5.Root.new("meugrafico");
+
+        pieChartRoot.setThemes([
+          am5themes_Animated.new(pieChartRoot)
+        ]);
+
+        var chart = pieChartRoot.container.children.push(
+          am5percent.PieChart.new(pieChartRoot, {
+            endAngle: 270,
+            layout: pieChartRoot.verticalLayout,
+          })
+        );
+
+        var series = chart.series.push(
+          am5percent.PieSeries.new(pieChartRoot, {
+            valueField: "value",
+            categoryField: "category",
+            endAngle: 270,
+          })
+        );
+
+
+        series.set("colors", am5.ColorSet.new(pieChartRoot, {
           colors: [
-            am5.color(0x00ff00),  // Verde
-            am5.color(0xff0000),  // Vermelho
-            am5.color(0xffa500)   // Laranja
+            am5.color(0x00ff00),
+            am5.color(0xff0000),
+            am5.color(0xffa500)
           ]
-        })
-      });
-    
-      series.slices.template.states.create("hover", {
-        shadowOpacity: 1,
-        shadowBlur: 10
-      });
-    
-      series.ticks.template.setAll({
-        strokeOpacity: 0.4,
-        strokeDasharray: [2, 2]
-      });
-    
-      series.states.create("hidden", {
-        endAngle: -90
-      });
-    
-      series.data.setAll([
-        { category: "Dentro", value: responseData.dentroPrazo },
-        { category: "Fora", value: responseData.foraPrazo }
-      ]);
-    
-      var legend = chart.children.push(am5.Legend.new(rootPieChart, {
-        centerX: am5.percent(0),
-        x: am5.percent(0),
-        marginTop: 15,
-        marginBottom: 15
-      }));
-      legend.markerRectangles.template.adapters.add("fillGradient", function () {
-        return undefined;
-      });
-    
-      series.appear(1000, 100);
-    }); // end am5.ready()
-    
-  })
+        }));
+
+        series.slices.template.setAll({
+          strokeWidth: 2,
+          stroke: am5.color(0xf2f2f2),
+          cornerRadius: 10,
+          shadowOpacity: 0.2,
+          shadowOffsetX: 2,
+          shadowOffsetY: 2,
+          shadowColor: am5.color(0x00ff00)
+        });
+        series.data.setAll([
+          { category: "Dentro", value: responseData.dentroPrazo },
+          { category: "Fora", value: responseData.foraPrazo }
+        ]);
+
+        var legend = chart.children.push(am5.Legend.new(pieChartRoot, {
+          centerX: am5.percent(0),
+          x: am5.percent(0),
+          marginTop: 15,
+          marginBottom: 15,
+        }));
+
+        series.appear(1000, 100);
+      }
+    });
+  });
+}
+
+function preencherTabelaServicos(servicos) {
+  var tbody = document.getElementById('servicos');
+  tbody.innerHTML = '';
+
+  servicos.forEach(function (servico) {
+    var tr = document.createElement('tr');
+    var tdServico = document.createElement('td');
+    tdServico.textContent = servico.servico || 'N/A';
+    tr.appendChild(tdServico);
+
+    var tdNumero = document.createElement('td');
+    tdNumero.textContent = servico.quantidade;
+    tr.appendChild(tdNumero);
+
+    tbody.appendChild(tr);
+  });
 }
 
 
+function preencherTabela(tabelaForaPrazo) {
 
+  var tbody = document.getElementById('atividades');
+  tbody.innerHTML = '';
 
+  tabelaForaPrazo.forEach(function (chamado) {
+    var tr = document.createElement('tr');
 
-// GRAFICO DE BARRAS
-am5.ready(function () {
-  var rootBarChart = am5.Root.new("chartdiv");
+    var tdTicket = document.createElement('td');
+    tdTicket.textContent = '#' + chamado.numero;
+    tr.appendChild(tdTicket);
 
-  var myTheme = am5.Theme.new(rootBarChart);
-  myTheme.rule("Grid", ["base"]).setAll({
-    strokeOpacity: 0.1
+    var solicitante = document.createElement('td');
+    solicitante.textContent = chamado.solicitante;
+    tr.appendChild(solicitante);
+
+    var tdAtividade = document.createElement('td');
+    tdAtividade.textContent = chamado.assunto;
+    tr.appendChild(tdAtividade);
+
+    var tdTipo = document.createElement('td');
+    tdTipo.textContent = chamado.servico;
+    tr.appendChild(tdTipo);
+
+    var tdData = document.createElement('td');
+    tdData.textContent = chamado.dataAbertura;
+    tr.appendChild(tdData);
+
+    var tdHoras = document.createElement('td');
+    tdHoras.textContent = chamado.dataFechamento;
+    tr.appendChild(tdHoras);
+
+    tbody.appendChild(tr);
   });
+}
 
-  rootBarChart.setThemes([
-    am5themes_Animated.new(rootBarChart),
-    myTheme
-  ]);
+function preencherTabela2(tabelaPendentes) {
 
-  var chart = rootBarChart.container.children.push(
-    am5xy.XYChart.new(rootBarChart, {
-      panX: false,
-      panY: false,
-      wheelX: "none",
-      wheelY: "none",
-      paddingLeft: 0
-    })
-  );
+  var tbody = document.getElementById('pendentes');
+  tbody.innerHTML = '';
 
-  var yRenderer = am5xy.AxisRendererY.new(rootBarChart, {
-    minGridDistance: 30,
-    minorGridEnabled: true
+  tabelaPendentes.forEach(function (chamado) {
+    var tr = document.createElement('tr');
+
+    var tdTicket = document.createElement('td');
+    tdTicket.textContent = '#' + chamado.numero;
+    tr.appendChild(tdTicket);
+
+    var solicitante = document.createElement('td');
+    solicitante.textContent = chamado.solicitante;
+    tr.appendChild(solicitante);
+
+    var tdAtividade = document.createElement('td');
+    tdAtividade.textContent = chamado.assunto;
+    tr.appendChild(tdAtividade);
+
+    var tdTipo = document.createElement('td');
+    tdTipo.textContent = chamado.servico;
+    tr.appendChild(tdTipo);
+
+    var tdData = document.createElement('td');
+    tdData.textContent = chamado.dataAbertura;
+    tr.appendChild(tdData);
+
+    tbody.appendChild(tr);
   });
-  yRenderer.grid.template.set("location", 1);
+}
 
-  var yAxis = chart.yAxes.push(
-    am5xy.CategoryAxis.new(rootBarChart, {
-      maxDeviation: 0,
-      categoryField: "country",
-      renderer: yRenderer
-    })
-  );
+function getLastWeekDays() {
+  const today = new Date();
+  const currentDay = today.getDay();
+  const lastSunday = new Date(today);
+  lastSunday.setDate(today.getDate() - currentDay - 7);
 
-  var xAxis = chart.xAxes.push(
-    am5xy.ValueAxis.new(rootBarChart, {
-      maxDeviation: 0,
-      min: 0,
-      renderer: am5xy.AxisRendererX.new(rootBarChart, {
-        visible: true,
-        strokeOpacity: 0.1,
-        minGridDistance: 80
-      })
-    })
-  );
+  const lastMonday = new Date(lastSunday);
+  lastMonday.setDate(lastSunday.getDate() + 1);
 
-  var series = chart.series.push(
-    am5xy.ColumnSeries.new(rootBarChart, {
-      name: "Series 1",
-      xAxis: xAxis,
-      yAxis: yAxis,
-      valueXField: "value",
-      sequencedInterpolation: true,
-      categoryYField: "country"
-    })
-  );
+  const lastFriday = new Date(lastSunday);
+  lastFriday.setDate(lastSunday.getDate() + 5);
+  const formatDate = (date) => {
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = String(date.getMonth() + 1).padStart(2, '0'); // Mês começa em 0
+    return `${day}/${month}`;
+  };
+  return {
+    monday: formatDate(lastMonday),
+    friday: formatDate(lastFriday)
+  };
+}
+function updateMessage(elementId) {
+  const lastWeekDays = getLastWeekDays();
+  const message = `Dados referentes aos dias ${lastWeekDays.monday} à ${lastWeekDays.friday}`;
+  document.getElementById(elementId).textContent = message;
+  document.periodo = `${lastWeekDays.monday} à ${lastWeekDays.friday}`
+}
+updateMessage('message1');
+updateMessage('message2');
 
-  var columnTemplate = series.columns.template;
-
-  columnTemplate.setAll({
-    draggable: true,
-    cursorOverStyle: "pointer",
-    tooltipText: "arraste para reposicionar",
-    cornerRadiusBR: 10,
-    cornerRadiusTR: 10,
-    strokeOpacity: 0
-  });
-  columnTemplate.adapters.add("fill", (fill, target) => {
-    return chart.get("colors").getIndex(series.columns.indexOf(target));
-  });
-
-  columnTemplate.adapters.add("stroke", (stroke, target) => {
-    return chart.get("colors").getIndex(series.columns.indexOf(target));
-  });
-
-  columnTemplate.events.on("dragstop", () => {
-    sortCategoryAxis();
-  });
-
-  function getSeriesItem(category) {
-    for (var i = 0; i < series.dataItems.length; i++) {
-      var dataItem = series.dataItems[i];
-      if (dataItem.get("categoryY") == category) {
-        return dataItem;
+window.onload = function () {
+  fetch('https://localhost:7052/ColaboradorSLA/GetColaboradores')
+    .then(response => response.json())
+    .then(data => {
+      if (data && data.nomeColab) {
+        $('#nome').text(data.nomeColab);
       }
-    }
+      preencherSup(data);
+
+      function preencherSup(data) {
+        var timeSup = document.getElementById('timeSup');
+        timeSup.innerHTML = '';
+
+        data.sup.forEach(colaborador => {
+          var listItem = document.createElement('li');
+          listItem.style.borderRadius = '5px';
+          listItem.addEventListener('mouseover', function () {
+            listItem.style.border = '4px solid #c81238';
+            listItem.style.backgroundColor = "#c81238";
+            listItem.style.color = "#fff";
+          });
+          listItem.addEventListener('mouseout', function () {
+            listItem.style.backgroundColor = "";
+            listItem.style.color = "";
+            listItem.style.border = '';
+          });
+          listItem.style.display = 'flex';
+          listItem.style.alignItems = 'center';
+          listItem.style.marginBottom = '10px';
+
+          var img = document.createElement('img');
+          img.src = 'data:image/jpeg;base64,' + colaborador.fotoColab;
+          img.alt = colaborador.nomeColab;
+          img.style.width = '30px';
+          img.style.height = '30px';
+          img.style.borderRadius = '50%';
+          img.style.marginRight = '5px';
+          img.style.cursor = 'pointer';
+
+          var text = document.createElement('span');
+          text.textContent = colaborador.nomeColab;
+          text.style.cursor = 'pointer';
+
+          listItem.appendChild(img);
+          listItem.appendChild(text);
+
+          listItem.onclick = function () {
+            clickColaboradorFuncao(colaborador.idColaborador);
+          };
+
+          timeSup.appendChild(listItem);
+        });
+      }
+    })
+    .catch(error => console.error('Erro ao carregar colaboradores:', error));
+  clickColaboradorFuncao('4D143095-82BC-42C5-EFFE-08DCBC682A35');
+
+}
+function getLastMonday(date) {
+  const day = date.getDay();
+  const diff = (day === 0 ? -6 : 1) - day; 
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate() + diff);
+}
+
+function getLastMondays(count) {
+  const mondays = [];
+  const today = new Date();
+  let monday = getLastMonday(new Date(today));
+
+  if (today.getDate() <= monday.getDate()) {
+    monday.setDate(monday.getDate() - 7);
   }
 
-  function sortCategoryAxis() {
-    series.dataItems.sort(function (x, y) {
-      return y.get("graphics").y() - x.get("graphics").y();
-    });
-
-    var easing = am5.ease.out(am5.ease.cubic);
-
-    am5.array.each(yAxis.dataItems, function (dataItem) {
-      var seriesDataItem = getSeriesItem(dataItem.get("category"));
-
-      if (seriesDataItem) {
-        var index = series.dataItems.indexOf(seriesDataItem);
-        var column = seriesDataItem.get("graphics");
-
-        var fy =
-          yRenderer.positionToCoordinate(yAxis.indexToPosition(index)) -
-          column.height() / 2;
-
-        if (index != dataItem.get("index")) {
-          dataItem.set("index", index);
-
-          var x = column.x();
-          var y = column.y();
-
-          column.set("dy", -(fy - y));
-          column.set("dx", x);
-
-          column.animate({ key: "dy", to: 0, duration: 600, easing: easing });
-          column.animate({ key: "dx", to: 0, duration: 600, easing: easing });
-        } else {
-          column.animate({ key: "y", to: fy, duration: 600, easing: easing });
-          column.animate({ key: "x", to: 0, duration: 600, easing: easing });
-        }
-      }
-    });
-
-    yAxis.dataItems.sort(function (x, y) {
-      return x.get("index") - y.get("index");
-    });
+  for (let i = 0; i < count; i++) {
+    mondays.push(monday.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })); 
+    monday.setDate(monday.getDate() - 7); 
   }
 
-  var data = [
-    { country: "Gestão Vol", value: 99 },
-    { country: "CTE", value: 89 },
-    { country: "Nota Fiscal", value: 92 },
-    { country: "Tab Preço", value: 90 },
-    { country: "SMP", value: 97 }
-  ];
-
-  data.sort(function (a, b) {
-    return a.value - b.value;
-  });
-
-  yAxis.data.setAll(data);
-  series.data.setAll(data);
-
-  series.appear(1000);
-  chart.appear(1000, 100);
-}); // end am5.ready()
-
-
-// GRAFICO PONTEIRO
-
+  return mondays.reverse(); 
+}
+const lastMondays = getLastMondays(4);
+console.log(lastMondays);

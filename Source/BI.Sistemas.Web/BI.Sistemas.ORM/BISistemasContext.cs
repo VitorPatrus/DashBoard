@@ -9,17 +9,31 @@ namespace BI.Sistemas.Context
 {
     public class BISistemasContext : DbContext
     {
+        private readonly string _connectionString = @"Server=con-snote725;Database=BI_SISTEMASDEVS;Trusted_Connection=True;TrustServerCertificate=True;";
+
+        public BISistemasContext(DbContextOptions<BISistemasContext> options)
+        : base(options) { }
+
+        public BISistemasContext() { }
+
+        public BISistemasContext(string connectionString)
+        {
+            _connectionString = connectionString;
+        }
+        
         public DbSet<Colaborador> Colaboradores { get; set; }
         public DbSet<Periodo> Periodos { get; set; }
-        public DbSet<Movidesk> Movidesks { get; set; } // Desvio do fonte para o banco
+        public DbSet<Movidesk> Movidesks { get; set; }
         public DbSet<Ponto> Pontos { get; set; }
         public DbSet<TMetric> TMetrics { get; set; }
+        public DbSet<HE> HorasExtras { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=con-snote725;Database=BI_SISTEMASDEVS;Trusted_Connection=True;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer(_connectionString);
             optionsBuilder.LogTo(Console.WriteLine);
         }
-        protected override void OnModelCreating(ModelBuilder modelBuilder) // Mapeamento!
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Colaborador>(entity =>
             {
@@ -116,6 +130,14 @@ namespace BI.Sistemas.Context
                     .HasColumnName("TIPO")
                     .HasMaxLength(100);
 
+                entity.Property(e => e.ParentType)
+                    .HasMaxLength(25)
+                    .HasColumnName("PARENT_TYPE");
+
+                entity.Property(e => e.ParentTitulo)
+                    .HasColumnName("PARENT_TITULO")
+                    .HasMaxLength(1000);
+
             });
 
             modelBuilder.Entity<Periodo>(entity =>
@@ -163,6 +185,38 @@ namespace BI.Sistemas.Context
                 entity.Property(e => e.PeriodoId)
                     .HasColumnName("PERIODO");
 
+            });
+
+            modelBuilder.Entity<HE>(entity =>
+            {
+                entity.ToTable("HE");
+
+                entity.HasKey(e => e.Id)
+                    .HasName("ID");
+
+                entity.Property(e => e.ColaboradorId)
+                .HasColumnName("COLABORADOR")
+                    .IsRequired();
+
+                entity.HasOne(e => e.Colaborador)
+                    .WithMany()
+                    .HasForeignKey(e => e.ColaboradorId);
+
+                entity.Property(e => e.Horas)
+                    .HasColumnName("HORAS")
+                    .IsRequired();
+
+                entity.Property(e => e.Data)
+                    .HasColumnName("DATA")
+                    .IsRequired();
+
+                entity.Property(e => e.PeriodoId)
+                .HasColumnName("PERIODO")
+                    .IsRequired();
+
+                entity.HasOne(e => e.Periodo)
+                    .WithMany()
+                    .HasForeignKey(e => e.PeriodoId);
             });
 
             CreateNovoModulo(modelBuilder);
@@ -242,7 +296,6 @@ namespace BI.Sistemas.Context
 
             modelBuilder.Entity<BI.Sistemas.Domain.Novo.Movidesk>(entity =>
             {
-
                 entity.ToTable("MOVIDESK");
 
                 entity.HasKey(e => e.Id)
@@ -296,6 +349,9 @@ namespace BI.Sistemas.Context
 
                 entity.Property(e => e.Time)
                     .HasColumnName("TIME");
+
+                entity.Navigation(c => c.Periodo).AutoInclude();
+                entity.Navigation(c => c.Responsavel).AutoInclude();
 
             });
         }
