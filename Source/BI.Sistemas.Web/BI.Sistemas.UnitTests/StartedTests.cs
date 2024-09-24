@@ -189,7 +189,7 @@ namespace BI.Sistemas.UnitTests
                 }
             }
 
-            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesAbertas (8).csv")
+            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesAbertas (9).csv")
               .Skip(1)
               .Where(x => !string.IsNullOrWhiteSpace(x))
               .ToList()
@@ -213,7 +213,7 @@ namespace BI.Sistemas.UnitTests
                   }
               });
 
-            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesSemanaAnterior (8).csv")
+            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesSemanaAnterior (9).csv")
                 .Skip(1)
                 .Where(x => !string.IsNullOrWhiteSpace(x))
                 .ToList()
@@ -355,7 +355,7 @@ namespace BI.Sistemas.UnitTests
         {
             using (var db = new BISistemasContext())
             {
-                var periodo = db.Periodos.FirstOrDefault(c => c.Data == DateTime.Today.AddDays(-3));
+                var periodo = db.Periodos.FirstOrDefault(c => c.Data == DateTime.Today);
                 if (periodo == null)
                 {
                     periodo = new Periodo
@@ -368,26 +368,6 @@ namespace BI.Sistemas.UnitTests
                     db.SaveChanges();
                 }
                 return periodo.Id;
-            }
-        }
-        static Guid Porcaria(string x)
-        {
-            switch (x)
-            {
-                case "Thiago Gomes":
-                    return new Guid("87B833CD-7810-4030-D722-08DC62DFD032");
-                case "Junior Dias":
-                    return new Guid("3F7E1A71-815A-4397-D725-08DC62DFD032");
-                case "Joel Martins Júnior":
-                    return new Guid("C44D7319-3318-43D4-D726-08DC62DFD032");
-                case "Amanda Ferreira":
-                    return new Guid("69DB13EF-89C0-4A6F-D71F-08DC62DFD032");
-                case "Paulo Rafael da Silva":
-                    return new Guid("C0D4394F-38EF-4F8B-D71E-08DC62DFD032");
-                case "Petronio Faleixo":
-                    return new Guid("11B207E8-E5F6-44B6-32CA-08DC9125DFEC");
-                default:
-                    return new Guid("");
             }
         }
     }

@@ -307,7 +307,7 @@ function getLastWeekDays() {
   lastFriday.setDate(lastSunday.getDate() + 5);
   const formatDate = (date) => {
     const day = String(date.getDate()).padStart(2, '0');
-    const month = String(date.getMonth() + 1).padStart(2, '0'); // Mês começa em 0
+    const month = String(date.getMonth() + 1).padStart(2, '0'); 
     return `${day}/${month}`;
   };
   return {
@@ -401,8 +401,7 @@ function getLastMondays(count) {
     mondays.push(monday.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })); 
     monday.setDate(monday.getDate() - 7); 
   }
-
   return mondays.reverse(); 
 }
-const lastMondays = getLastMondays(4);
+const lastMondays = getLastMondays(5);
 console.log(lastMondays);

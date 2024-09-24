@@ -27,6 +27,7 @@ namespace BI.Sistemas.Context
         public DbSet<Ponto> Pontos { get; set; }
         public DbSet<TMetric> TMetrics { get; set; }
         public DbSet<HE> HorasExtras { get; set; }
+        public DbSet<EvolucaoSLA> EvolucaoSLA { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -204,6 +205,42 @@ namespace BI.Sistemas.Context
 
                 entity.Property(e => e.Horas)
                     .HasColumnName("HORAS")
+                    .IsRequired();
+
+                entity.Property(e => e.Data)
+                    .HasColumnName("DATA")
+                    .IsRequired();
+
+                entity.Property(e => e.PeriodoId)
+                .HasColumnName("PERIODO")
+                    .IsRequired();
+
+                entity.HasOne(e => e.Periodo)
+                    .WithMany()
+                    .HasForeignKey(e => e.PeriodoId);
+            });
+
+            modelBuilder.Entity<EvolucaoSLA>(entity =>
+            {
+                entity.ToTable("EVOLUCAO_SLA");
+
+                entity.HasKey(e => e.Id)
+                    .HasName("ID");
+
+                entity.Property(e => e.ColaboradorId)
+                .HasColumnName("COLABORADOR")
+                    .IsRequired();
+
+                entity.HasOne(e => e.Colaborador)
+                    .WithMany()
+                    .HasForeignKey(e => e.ColaboradorId);
+
+                entity.Property(e => e.DentroDoPrazo)
+                    .HasColumnName("NoPrazo")
+                    .IsRequired();
+
+                entity.Property(e => e.ForaDoPrazo)
+                    .HasColumnName("ForaDoPrazo")
                     .IsRequired();
 
                 entity.Property(e => e.Data)
