@@ -1,314 +1,199 @@
-
-// Chamando a API
+// Função principal chamada ao clicar em um colaborador
 function clickColaboradorFuncao(id) {
 	document.idColaborador = id;
-	var apiUrl = 'https://localhost:7052/Colaborador/ColaboradorDashboard?id=' + id;
+	const apiUrl = `https://localhost:7052/Colaborador/ColaboradorDashboard?id=${id}`;
+
 	$.get(apiUrl, function (data) {
-
+		
+		
 		function formatarHora(str) {
-			return String(Math.trunc(str)).padStart(2, '0') + ':' + String(Math.trunc(60 * (str - Math.trunc(str)))).padStart(2, '0');
+			const negativo = str < 0; 
+			str = Math.abs(str);
+		
+			const horas = String(Math.trunc(str)).padStart(2, '0');
+			const minutos = String(Math.trunc(60 * (str - Math.trunc(str)))).padStart(2, '0');
+		
+			return (negativo ? '-' : '') + `${horas}:${minutos}`;
 		}
-		document.engajamento = data.engajamento;
-		document.lista = data.atividades;
-		document.devOps = data.devOps;
-
-
-		$('#nome_colaborador').text(data.nome);
-		$('#email_colaborador').text(data.email);
-		$('#img_colaborador').attr('src', 'data:image/jpeg;base64,' + data.fotoColaborador);
-		$('#time_colaborador').attr('src', 'data:image/jpeg;base64,' + data.fotoTime);
-		$('#TIME').text(data.time);
-		$('#cargo_colaborador').text(data.cargo);
-		$('#valorEngajamento').text(data.engajamento + '%');
-		$('#txt_horas_individuais').text(data.hE_Individual + 'h');
-		$('#txt_horasEquipe').text(data.hE_Equipe + 'h');
-		$('#devOps').text(data.devOps);
-		$('#tmetric').text(formatarHora(data.totalApropriado));
-		$('#trabalhado').text(formatarHora(data.totalPonto));
-		$('#pj').css("display", data.pj ? "" : "none");
-		$('#clt').css("display", data.pj ? "none" : "");
-		$('#horasPJ').text(data.hE_Individual + "h ");
-
-
-		// Obtendo os valores das strings dos elementos HTML
-		var valorHorasIndividuaisString = document.getElementById("txt_horas_individuais").innerText;
-		var valorHorasEquipeString = document.getElementById("txt_horasEquipe").innerText;
-
-		var corHorasIndividuais = valorHorasIndividuaisString.startsWith('-') ? 'red' : 'green';
-		var corHorasEquipe = valorHorasEquipeString.startsWith('-') ? 'red' : 'green';
-
-		document.getElementById("txt_horas_individuais").style.color = corHorasIndividuais;
-		document.getElementById("txt_horasEquipe").style.color = corHorasEquipe;
-
-
-		// Grafico apropriação
-		// Assume data.resumoApropriacao is available and contains the necessary data
-		var columns = [];
-		var colors = {};
-
-		// Itera sobre data.resumoApropriacao e popula as colunas e cores
-		$.each(data.resumoApropriacao, function (index, apropriacao) {
-			columns.push([apropriacao.tipo, apropriacao.valor]);
-			colors[apropriacao.tipo] = apropriacao.color;
-		});
-
+		
 		function trocaCor() {
-			var elemento = $('#valorEngajamento');
-			var valor = parseInt(elemento.text().replace('%', ''));
+			const elemento = $('#valorEngajamento');
+			const valor = parseInt(elemento.text().replace('%', ''));
 
-			if (valor > 100) {
-				elemento.css('color', 'red');
-			}
-			else {
-				elemento.css('color', 'black');
+			elemento.css('color', valor > 100 ? 'red' : 'black');
+		}
+
+		function getIcone(tipo) {
+			switch (tipo) {
+				case 'Feature': return '<i class="fas fa-trophy" style="color: #800080;"></i>';
+				case 'Task': return '<i class="fas fa-clipboard-check" style="color: #FFD700;"></i>';
+				case 'Bug': return '<i class="fas fa-bug" style="color: #FF0000;"></i>';
+				case 'UserStory': return '<i class="fas fa-book-open" style="color: #0000FF;"></i>';
+				case 'Epic': return '<i class="fas fa-crown" style="color: #FFA500;"></i>';
+				case 'Change': return '<i class="fa-solid fa-droplet fa-flip-vertical" style="color: #339947;"></i>';
+				default: return 'Erro';
 			}
 		}
 
-		trocaCor();
-
-		// Gera o gráfico
-		function renderChart() {
-			var chart = bb.generate({
-				size: {
-					width: document.getElementById("piechart").offsetWidth,
-					height: 310 // Defina uma altura adequada para o gráfico
-				},
+		function renderChart(columns, colors) {
+			return bb.generate({
+				size: { width: $('#piechart').width(), height: 310 },
 				data: {
 					columns: columns,
 					type: "pie",
-					onclick: function (d, i) {
-						console.log("onclick", d, i);
-					},
-					onover: function (d, i) {
-						console.log("onover", d, i);
-					},
-					onout: function (d, i) {
-						console.log("onout", d, i);
-					},
-					colors: colors
+					colors: colors,
 				},
 				bindto: "#piechart"
 			});
-			return chart;
 		}
 
-		// Renderiza o gráfico inicialmente
-		var chart = renderChart();
-
-		// Atualiza o tamanho do gráfico quando a janela é redimensionada
-		window.addEventListener("resize", function () {
-			chart.resize({
-				width: document.getElementById("piechart").offsetWidth,
-				height: 310
+		function gerarGraficoDevOps(bindtoId, devOps) {
+			bb.generate({
+				data: { columns: [["DevOps x TMetric", devOps]], type: "gauge" },
+				gauge: {},
+				color: {
+					pattern: ["orange", "#00b050"],
+					threshold: { values: [94.9] }
+				},
+				size: { height: 140 },
+				bindto: bindtoId
 			});
-		});
-
-
-		// DESENHA A TABELA
-		var trs = document.getElementById("atividades").getElementsByTagName("tr");
-
-		// Remove all rows
-		while (trs.length > 0) {
-			trs[0].parentNode.removeChild(trs[0]);
 		}
 
-		$('#atividades').append('<tr><th scope="col">ID</th><th scope="col">Atividade</th><th scope="col">Ticket</th><th scope="col">Tipo</th><th scope="col">Data</th><th scope="col">Horas</th></tr>');
-		var indice = 1;
-		$.each(data.atividades, function (index, chapter) {
-			$('#atividades').append('<tr><th scope="row">' + indice++ + '</th><td>' + chapter.atividade + '</td><td>' + chapter.ticket + '</td><td>' + chapter.tipo + '</td><td>' + chapter.data.substr(0, 10) + '</td><td>' + moment(chapter.horas).format("HH:mm") + '</td></tr>');
-		});
+		function renderTabelaAtividades(atividades) {
+			const $atividades = $('#atividades');
+			$atividades.empty().append('<tr><th scope="col">ID</th><th scope="col">Atividade</th><th scope="col">Ticket</th><th scope="col">Tipo</th><th scope="col">Data</th><th scope="col">Horas</th></tr>');
 
+			let indice = 1;
+			atividades.forEach(chapter => {
+				$atividades.append(`<tr><th scope="row">${indice++}</th><td>${chapter.atividade}</td><td>${chapter.ticket}</td><td>${chapter.tipo}</td><td>${chapter.data.substr(0, 10)}</td><td>${moment(chapter.horas).format("HH:mm")}</td></tr>`);
+			});
+		}
+
+		function renderTabelaParents(parents, teto = 10) {
+			const $parents = $('#parents');
+			$parents.empty();
+
+			let count = 0;
+			parents.forEach(chapter => {
+				if (count < teto) {
+					$parents.append(`<tr><th scope="row">${getIcone(chapter.tipo)}</th><td>${chapter.titulo}</td><td>${formatarHora(chapter.horas)}</td></tr>`);
+					count++;
+				}
+			});
+		}
+
+		// Atualiza informações do colaborador
+		$('#nome_colaborador').text(data.nome);
+		$('#email_colaborador').text(data.email);
+		$('#img_colaborador').attr('src', `data:image/jpeg;base64,${data.fotoColaborador}`);
+		$('#time_colaborador').attr('src', `data:image/jpeg;base64,${data.fotoTime}`);
+		$('#TIME').text(data.time);
+		$('#cargo_colaborador').text(data.cargo);
+		$('#valorEngajamento').text(`${data.engajamento}%`);
+		$('#devOps').text(data.devOps);
+		$('#menssage').text(data.menssagem);
+		$('#tmetric').text(formatarHora(data.totalApropriado));
+		$('#trabalhado').text(formatarHora(data.totalPonto));
+		$('#horasPJ').text(data.hE_Individual);
+		$('#lbl_horas_individuais').text(data.pj ? "Carga Horaria: " : "Horas Extras: ");
+		$('#txt_horas_individuais').text(formatarHora(data.hE_Individual) + 'h');
+		$('#horasPJ').text(`${data.hE_Individual}h`);
+
+		document.lista = data.atividades;
+		document.engajamento = data.engajamento;
+		document.devOps = data.devOps;
+
+		// Define a cor do texto de horas individuais
+		const valorHorasIndividuaisString = $('#txt_horas_individuais').text();
+		const corHorasIndividuais = valorHorasIndividuaisString.startsWith('-') ? 'red' : 'green';
+		$('#txt_horas_individuais').css('color', corHorasIndividuais);
+
+		// Colunas e cores para o gráfico
+		const columns = data.resumoApropriacao.map(apropriacao => [`${apropriacao.tipo} (${apropriacao.horas}h)`, apropriacao.valor]);
+
+		// Gráfico Pizza
+		const colors = data.resumoApropriacao.reduce((acc, apropriacao) => {
+			acc[`${apropriacao.tipo} (${apropriacao.horas})`] = apropriacao.color;
+			return acc;
+		}, {});
+
+		renderChart(columns, colors);
+
+		const chart = renderChart(columns, colors);
+		gerarGraficoDevOps("#gaugeChart1", data.devOps);
+
+		window.addEventListener("resize", () => chart.resize({
+			width: $('#piechart').width(),
+			height: 310
+		}));
+		renderTabelaAtividades(data.atividades);
+		renderTabelaParents(data.parents);
+
+		$('#primeiro').html(`<img class="rounded-circle me-1" width="24" height="24" src="data:image/jpeg;base64,${data.fotoTime}" alt="rounded-circle me-1 flex">${data.time} ${data.engajamentoTime}%`);
+
+		data.topEngajamento.forEach((colaborador, indice) => {
+			const elemento = ['#segundo', '#terceiro', '#quarto', '#quinto'][indice] || '#primeiro';
+			$(elemento).html(`<img class="rounded-circle me-1" width="24" height="24" src="data:image/jpeg;base64,${colaborador.foto}" alt="rounded-circle me-1 flex">${colaborador.nome} ${colaborador.percentual}%`);
+		});
 
 		// Gráfico de ponteiro
-		var chart2 = bb.generate({
-			data: {
-				columns: [
-					["Péssimo", 50],
-					["Ruim", 40],
-					["Excelente", 10]
-				],
-				type: "gauge", // for ESM specify as: gauge()
-			},
-			size: {
-				height: 120
-
-			},
-			interaction: {
-				enabled: false
-			},
-			legend: {
-				show: false
-			},
+		bb.generate({
+			data: { columns: [["Péssimo", 50], ["Ruim", 40], ["Excelente", 10]], type: "gauge" },
+			size: { height: 120 },
+			interaction: { enabled: false },
+			legend: { show: false },
 			gauge: {
 				width: 40,
-				//title: "\n\n\n\n\n{=NEEDLE_VALUE}%",
-				label: {
-					format: function (value, ratio, id) { return ""; }
-				}
+				label: { format: () => "" }
 			},
 			arc: {
-				needle: {
-					show: true,
-					value: data.engajamento
-				}
+				needle: { show: true, value: data.engajamento }
 			},
 			color: {
-				pattern: [
-					"#FF0000",
-					"#FFFF00",
-					"#008000"
-				]
+				pattern: ["#FF0000", "#FFFF00", "#008000"]
 			},
 			bindto: "#gaugeNeedle_1"
 		});
-		// DevOps
-		var chart = bb.generate({
-			data: {
-				columns: [
-					["DevOps x TMetric", data.devOps]
-				],
-				type: "gauge", // for ESM specify as: gauge()
-				onclick: function (d, i) {
-					console.log("onclick", d, i);
-				}
-			},
-			gauge: {},
-			color: {
-				pattern: [
-					"orange", "#00b050"],
-				threshold: {
-					values: [
-						94.9
-					]
-				}
-			},
-			size: {
-				height: 140
-			},
-			bindto: "#gaugeChart"
-		});
-
-		// Grafico Evolução
-		var listaEvolucao = [
-			['Year', 'Engajamento']];
-		$.each(data.evolucaoEngajamento, function (index, evolucao) {
-			listaEvolucao.push([evolucao.data, evolucao.valor]);
-		});
-		google.charts.load('current', { 'packages': ['corechart'] });
-		google.charts.setOnLoadCallback(drawChart);
-
-		
-
-		
-		function drawChart() {
-			var data = google.visualization.arrayToDataTable(listaEvolucao);
-
-			var view = new google.visualization.DataView(data);
-			view.setColumns([0, 1, {
-				calc: 'stringify',
-				sourceColumn: 1,
-				type: 'string',
-				role: 'annotation',
-			}]);
-			var options = {
-				height: 150,
-				width: 300,
-				title: '',
-				curveType: 'function',
-				legend: { position: 'none' },
-				backgroundColor: 'transparent',
-				hAxis: { gridlines: { count: 0 } },
-				vAxis: { gridlines: { count: 0 }, textPosition: 'none' },
-				annotations: {
-					textStyle: {
-						fontSize: 14,
-						bold: true
-					}
-				}
-			};
-			var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-			chart.draw(view, options);
-		}
-		$('#primeiro').html('<img class="rounded-circle me-1" width="24" height="24" src="data:image/jpeg;base64,' + data.fotoTime + '" alt="rounded-circle me-1 flex">' + data.time + ' ' + data.engajamentoTime + '%');
-		data.topEngajamento.forEach(function (colaborador, indice) {
-			var elemento = '#segundo';
-			if (indice == 1) {
-				elemento = '#terceiro';
-			} else if (indice == 2) {
-				elemento = '#quarto';
-			} else if (indice == 3) {
-				elemento = '#quinto';
-			}
-			$(elemento).html('<img class="rounded-circle me-1" width="24" height="24" src="data:image/jpeg;base64,' + colaborador.foto + '" alt="rounded-circle me-1 flex">' + colaborador.nome + ' ' + colaborador.percentual + '%');
-		});
-		
-	});
-	
-}
-function colaboradorFuncao(nomeColaborador, cargoColaborador, imagemColaborador, imagemTime, valorEngajamento, txt_horas_individuais, horasDaEquipe, totalIndividual, totalPonto, lancamentoPorTipo) {
-	// $('#nome_colaborador').text(nomeColaborador);
-	$('#cargo_colaborador').text(cargoColaborador);
-	$('#img_colaborador').attr('src', imagemColaborador);
-	$('#time_colaborador').attr('src', imagemTime);
-	$('#valorEngajamento').text(valorEngajamento + '%');
-	$('#txt_horas_individuais').text(txt_horas_individuais);
-	$('#txt_horasEquipe').text(horasDaEquipe);
-	$('#totalIndividual').text(' Engajamento: ' + totalIndividual + 'h / ' + totalPonto + 'h');
-
-	// DESENHA A TABELA
-	var trs = document.getElementById("atividades").getElementsByTagName("tr");
-
-	while (trs.length > 0) {
-		trs[0].parentNode.removeChild(trs[0]);
-	}
-	var a = listaAtividade.filter(function (obj) { return obj.nomeColaborador == nomeColaborador; });
-	var indice = 1;
-	$.each(a, function (index, chapter) {
-		$('#atividades').append('<tr><th scope="row">' + indice++ + '</th><td>' + chapter.atividade + '</td><td>' + chapter.ticket + '</td><td>' + chapter.tipo + '</td><td>' + chapter.data + '</td><td>' + chapter.horas + '</td></tr>');
 	});
 }
 
-clickColaboradorFuncao('69DB13EF-89C0-4A6F-D71F-08DC62DFD032');
-
-//const nome = document.getElementById("nome_colaborador").innerText;
-var sendMail = (oficial) => {
+// Função para enviar email
+function sendMail(oficial) {
 	const content = document.querySelector("#capture");
-	let id = document.idColaborador;
-	// Renderizar o conteúdo HTML como uma imagem de canvas
-	html2canvas(content, {
-		scale: 2, // Define a escala para melhor qualidade (opcional)
-		logging: false // Desativa os logs para evitar excesso de mensagens no console (opcional)
-	}).then(canvas => {
-		// Converta o canvas para uma URL de dados no formato JPG
-		const jpgDataUrl = canvas.toDataURL("image/jpeg");
-		var apiUrl = 'https://localhost:7052/Colaborador/SendEmail';
+	const id = document.idColaborador;
+	debugger;
+	console.log(document);
 
-		jQuery.ajax({
-			'type': 'POST',
-			'url': apiUrl,
-			'contentType': 'application/json',
-			'data': JSON.stringify({
+	html2canvas(content, {
+		scale: 2,
+		logging: false
+	}).then(canvas => {
+		const jpgDataUrl = canvas.toDataURL("image/jpeg");
+		const apiUrl = 'https://localhost:7052/Colaborador/SendEmail';
+
+		$.ajax({
+			type: 'POST',
+			url: apiUrl,
+			contentType: 'application/json',
+			data: JSON.stringify({
 				foto: jpgDataUrl,
-				id: document.idColaborador,
+				id: id,
 				periodo: document.periodo,
 				lista: document.lista,
 				engajamento: document.engajamento,
 				devOps: document.devOps,
 				oficial: oficial
 			}),
-			'dataType': 'json',
-			'success': function (data) { }
+			dataType: 'json',
 		});
 	});
-	alert("Email Enviado");
-};
-// Email
-const btnGenerate = document.querySelector("#sendMailButton");
-btnGenerate.addEventListener("click", () => { sendMail(true); });
+}
 
 
-const generateTeste = document.querySelector("#sendMailTeste");
-generateTeste.addEventListener("click", () => { sendMail(false); });
+// Event listeners para envio de email
+$("#sendMailButton").click(() => sendMail(true));
+$("#sendMailTeste").click(() => sendMail(false));
 
 // Gerar Data Automática
 function getLastWeekDays() {

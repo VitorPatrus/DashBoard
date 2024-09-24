@@ -79,94 +79,186 @@ var getDados = async function () {
             OPEX: "#e70432",  // Magenta
             RH: "#FFA500",    // Laranja
             TI: "#FF1493"     // Rosa-Intenso
-        }
-        
+          }
+
         },
         pie: {
           label: {
-        format: function (value, ratio, id) {
-          if (Math.abs(value) >= 1e6) {
-            return (value / 1e6).toFixed(1) + 'M';
-          }
-          if (Math.abs(value) >= 1e3) {
-            return (value / 1e3).toFixed(1) + 'k';
-          }
-          return value;
-        },
-        ratio: 1.3,
+            format: function (value, ratio, id) {
+              if (Math.abs(value) >= 1e6) {
+                return (value / 1e6).toFixed(1) + 'M';
+              }
+              if (Math.abs(value) >= 1e3) {
+                return (value / 1e3).toFixed(1) + 'k';
+              }
+              return value;
+            },
+            ratio: 1.3,
           },
         },
         bindto: "#cornerRadius_1"
       });
 
 
-      // chart 2
-      var chart2 = bb.generate({
-        size: {
-            width: 450,
-            height: 220
-        },
+      //   // chart 2
+      //   var chart2 = bb.generate({
+      //     size: {
+      //         width: 450,
+      //         height: 220
+      //     },
+      //     data: {
+      //         columns: acumulaPorMes,
+      //         type: "bar",
+      //         color: function (color, d) {
+      //             return "#268fff";
+      //         },
+      //         arc: {
+      //             radius: 110
+      //         },
+      //         labels: {
+      //             colors: "#fff",
+      //             format: function (valor) {
+      //                 function formatarNumero(valor) {
+      //                     const sufixos = ['', 'k', 'M', 'B'];
+      //                     const magnitude = Math.floor(Math.log10(Math.abs(valor)) / 3);
+      //                     const scaled = valor / Math.pow(10, magnitude * 3);
+      //                     const formatted = scaled.toFixed(1);
+      //                     return formatted + sufixos[magnitude];
+      //                 }
+      //                 if (isNaN(valor) || valor === null || valor === undefined) {
+      //                     return "";
+      //                 } else {
+      //                     return formatarNumero(valor);
+      //                 }
+      //             }
+      //         }
+      //     },
+      //     bar: {
+      //         width: {
+      //             ratio: 0.9
+      //         },
+      //         indices: {
+      //             removeNull: false
+      //         }
+      //     },
+      //     bindto: "#barIndices_2",
+      //     legend: {
+      //         hide: true
+      //     },
+      //     axis: {
+      //         x: {
+      //             type: "category",
+      //             categories: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
+      //         },
+      //         y: {
+      //             tick: {
+      //                 format: function (valor) {
+      //                     function formatarNumero(valor) {
+      //                         const sufixos = ['', 'k', 'M', 'B', 'T'];
+      //                         const magnitude = Math.floor(Math.log10(Math.abs(valor)) / 3);
+      //                         const scaled = valor / Math.pow(10, magnitude * 3);
+      //                         const formatted = scaled.toFixed(1);
+      //                         return formatted + sufixos[magnitude];
+      //                     }
+      //                     return formatarNumero(valor);
+      //                 }
+      //             }
+      //         }
+      //     },
+
+      // });
+
+      // chart 3
+      Chart.register(ChartDataLabels);
+
+      const labels = data.totalAcumulado.map(item => item.chave);
+      const valores = data.totalAcumulado.map(item => item.valor);
+
+      const ctx = document.getElementById('myChart').getContext('2d');
+
+      const myBarChart = new Chart(ctx, {
+        type: 'bar',
         data: {
-            columns: acumulaPorMes,
-            type: "bar",
-            color: function (color, d) {
-                return "#268fff";
-            },
-            arc: {
-                radius: 110
-            },
-            labels: {
-                colors: "#fff",
-                format: function (valor) {
-                    function formatarNumero(valor) {
-                        const sufixos = ['', 'k', 'M', 'B'];
-                        const magnitude = Math.floor(Math.log10(Math.abs(valor)) / 3);
-                        const scaled = valor / Math.pow(10, magnitude * 3);
-                        const formatted = scaled.toFixed(1);
-                        return formatted + sufixos[magnitude];
-                    }
-                    if (isNaN(valor) || valor === null || valor === undefined) {
-                        return "";
-                    } else {
-                        return formatarNumero(valor);
-                    }
-                }
+          labels: labels, // Pega as chaves do JSON como labels
+          datasets: [
+            {
+              label: "Total Acumulado",
+              backgroundColor: "rgba(75,192,192,0.5)",
+              borderColor: "rgba(75,192,192,1)",
+              borderWidth: 1,
+              hoverBackgroundColor: "rgba(75,192,192,0.75)",
+              hoverBorderColor: "rgba(75,192,192,1)",
+              data: valores
             }
+          ]
         },
-        bar: {
-            width: {
-                ratio: 0.9
-            },
-            indices: {
-                removeNull: false
-            }
-        },
-        bindto: "#barIndices_2",
-        legend: {
-            hide: true
-        },
-        axis: {
+        options: {
+          responsive: true,
+          scales: {
             x: {
-                type: "category",
-                categories: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
+              ticks: {
+                color: '#fff'
+              },
+              grid: {
+                color: '#414042'
+              }
             },
             y: {
-                tick: {
-                    format: function (valor) {
-                        function formatarNumero(valor) {
-                            const sufixos = ['', 'k', 'M', 'B', 'T'];
-                            const magnitude = Math.floor(Math.log10(Math.abs(valor)) / 3);
-                            const scaled = valor / Math.pow(10, magnitude * 3);
-                            const formatted = scaled.toFixed(1);
-                            return formatted + sufixos[magnitude];
-                        }
-                        return formatarNumero(valor);
-                    }
+              beginAtZero: true,
+              ticks: {
+                color: '#fff',
+                callback: function (value) {
+                  return 'R$' + value.toLocaleString();
                 }
+              },
+              grid: {
+                color: '#414042'
+              }
             }
-        },
-      
-    });
+          },
+          plugins: {
+            legend: {
+              display: false
+            },
+            tooltip: {
+              callbacks: {
+                label: function (tooltipItem) {
+                  return 'R$' + tooltipItem.raw.toLocaleString();
+                }
+              }
+            },
+            datalabels: {
+              font: {
+                size: 9 ,
+              },
+              color: '#fff',
+              anchor: 'end',
+              align: 'start',
+              offset: 5,
+              formatter: function (value) {
+                return formatNumber(value);
+              },
+              
+              display: function (context) {
+                return context.dataset.data[context.dataIndex] !== null;
+              }
+            }
+          }
+        }
+      });
+
+      console.log(data);
+      // Função para formatar números com abreviação
+      function formatNumber(value) {
+        if (value >= 1000000) {
+          return (value / 1000000).toFixed(0) + 'Mi';
+        } else if (value >= 1000) {
+          return (value / 1000).toFixed(0) + ' mil';
+        } else {
+          return value;
+        }
+      }
+
     })
     .catch(error => {
       // Trata erros de requisição
@@ -261,29 +353,56 @@ setInterval(function () {
   atualizar();
 }, 5000);
 
-
-
 // Relógio
 
-const showTimeNow = () =>{
-  //Selecinando a tag de destino
-    const clockTag = document.querySelector('time');
-    
-  //Instanciando a classe Date
-    let dateNow = new Date();
-  //pegando os valores desejados
-    let hh = dateNow.getHours();
-    let mm = dateNow.getMinutes();
-    let ss = dateNow.getSeconds();
-    
-  //validando a necessidade de adicionar zero na exibição
-    hh = hh < 10 ? '0'+ hh : hh; 
-    mm = mm < 10 ? '0'+ mm : mm; 
-    ss = ss < 10 ? '0'+ ss : ss; 
-     
-  // atribuindo os valores e montando o formato da hora a ser exibido
-    clockTag.innerText = hh +':'+ mm +':'+ ss;
+const showTimeNow = () => {
+  // Selecionando a tag de destino
+  const clockTag = document.querySelector('time');
+
+  // Instanciando a classe Date
+  let dateNow = new Date();
+  // Pegando os valores desejados
+  let hh = dateNow.getHours();
+  let mm = dateNow.getMinutes();
+  let ss = dateNow.getSeconds();
+
+  // Validando a necessidade de adicionar zero na exibição
+  hh = hh < 10 ? '0' + hh : hh;
+  mm = mm < 10 ? '0' + mm : mm;
+  ss = ss < 10 ? '0' + ss : ss;
+
+  // Atribuindo os valores e montando o formato da hora a ser exibido
+  clockTag.innerText = hh + ':' + mm + ':' + ss;
+}
+
+// Executando a função a cada 1 segundo
+showTimeNow();
+setInterval(showTimeNow, 1000);
+
+// Corrigindo a condição e o evento de animação de confetes
+const checkTimeAndAnimate = () => {
+  let dateNow = new Date();
+  let currentTime = dateNow.toTimeString().split(' ')[0]; // Formato HH:MM:SS
+
+  if (currentTime === '18:00:00') {
+    let params = {
+      particleCount: 1000, // Quantidade de confetes
+      spread: 100, // O quanto eles se espalham
+      startVelocity: 80, // Velocidade inicial
+      origin: { x: 0, y: 0.5 }, // Posição inicial na tela
+      angle: 45 // Ângulo em que os confetes serão lançados
+    };
+
+    // Joga confetes da esquerda pra direita
+    confetti(params);
+
+    // Joga confetes da direita para a esquerda
+    params.origin.x = 1;
+    params.angle = 135;
+    confetti(params);
   }
-  //executando a funcao a cada 1 segundo
-  showTimeNow()
-  setInterval(showTimeNow, 1000);
+}
+
+// Verificando a hora a cada segundo para animar os confetes
+setInterval(checkTimeAndAnimate, 1000);
+

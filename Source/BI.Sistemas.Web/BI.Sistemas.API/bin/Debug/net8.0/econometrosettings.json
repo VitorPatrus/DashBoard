@@ -19,15 +19,15 @@
     "TokenTmetric": "A06B6F625021E4046F46C107ECCF2B08CA33B4B16B55F9F279193D073C7EB03B",
     "Valores": {
       "ValorAnoAnterior": 2233520.62,
-      "Meta": 2500000.00,
+      "Meta": 2000000.00,
       "TotalAcumuladoPorTime": [
         {
           "Chave": "ERP",
-          "Valor": 448594.17
+          "Valor": 636646.67
         },
         {
           "Chave": "TMS",
-          "Valor": 473939.17
+          "Valor": 757482.50
         }
       ],
       "TotalAcumulado": [
@@ -55,6 +55,14 @@
         {
           "Chave": "06/2024",
           "Valor": 225977.50
+        },
+        {
+          "Chave": "07/2024",
+          "Valor": 228721.67
+        },
+        {
+          "Chave": "08/2024",
+          "Valor": 242874.67
         }
       ],
       "TotalAreas": [
@@ -64,35 +72,39 @@
         },
         {
           "Chave": "COM",
-          "Valor": 27811.67
+          "Valor": 52755.83
         },
         {
           "Chave": "COT",
-          "Valor": 34194.17
+          "Valor": 109119.17
         },
         {
           "Chave": "EDI",
-          "Valor": 6598.33
+          "Valor": 10791.67
         },
         {
           "Chave": "FIN",
-          "Valor": 129870.00
+          "Valor": 171772.50
         },
         {
           "Chave": "FIS",
-          "Valor": 4594.17
+          "Valor": 5241.67
+        },
+        {
+          "Chave": "JUR",
+          "Valor": 1911.67
         },
         {
           "Chave": "OPEX",
-          "Valor": 378633.33
+          "Valor": 633285.83
         },
         {
           "Chave": "RH",
-          "Valor": 123117.50
+          "Valor": 176428.33
         },
         {
           "Chave": "TI",
-          "Valor": 79210.83
+          "Valor": 94319.17
         }
       ]
     }

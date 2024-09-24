@@ -1,4 +1,6 @@
-﻿namespace BI.Sistemas.Domain
+﻿using System.Diagnostics;
+
+namespace BI.Sistemas.Domain
 {
     public class Periodo : Entity
     {
@@ -17,7 +19,6 @@
 
             else
                 diasParaSubtrair = (int)diaAtual + diasVoltarAteSegunda;
-
 
             DateTime segundaFeiraRetrasada = dataAtual.AddDays(-diasParaSubtrair);
             string segundaFormatada = segundaFeiraRetrasada.ToString("dd/MM");

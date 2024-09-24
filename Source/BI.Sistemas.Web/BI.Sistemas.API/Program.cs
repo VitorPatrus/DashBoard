@@ -1,10 +1,19 @@
+using BI.Sistemas.API.Interfaces;
+using BI.Sistemas.API.Repository;
+using BI.Sistemas.API.Service;
+using BI.Sistemas.Context;
+using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
+using Microsoft.Data.SqlClient;
+using OfficeOpenXml;
+
 var builder = WebApplication.CreateBuilder(args);
 
+// Adicionar arquivos de configuração
 builder.Configuration.AddJsonFile("econometrosettings.json");
-// Add services to the container.
 
+// Adicionar serviços ao contêiner
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options =>
@@ -12,25 +21,34 @@ builder.Services.AddCors(options =>
     options.AddDefaultPolicy(
         builder =>
         {
-
-            //you can configure your custom policy
+            // Configura a política CORS
             builder.AllowAnyOrigin()
-                                .AllowAnyHeader()
-                                .AllowAnyMethod();
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
         });
 });
 
+builder.Services.AddEntityFrameworkSqlServer()
+    .AddDbContext<BISistemasContext>();
+
+builder.Services.AddScoped<IColaboradorSLAService, ColaboradorSLAService>();
+builder.Services.AddScoped<IColaboradorService, ColaboradorService>();
+builder.Services.AddScoped<IEconometroService, EconometroService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<IColaboradorRepository, ColaboradorRepository>();
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+
+// Configurar o pipeline de requisições HTTP
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
 app.UseCors();
 

@@ -13,9 +13,15 @@ namespace BI.Sistemas.Domain
         public string Time { get; set; }
         public byte[]? Foto { get; set; }
         public string UserTMetric { get; set; }
+        public bool Suporte
+        {
+            get
+            {
+                var suporteTime = new string[] { "CRM", "EDI", "Suporte ERP", "Suporte TMS" };
+                return suporteTime.Any(x => x.Equals(Time, StringComparison.InvariantCultureIgnoreCase));
 
-        public Colaborador() { }
-
+            }
+        }
 
     }
 }

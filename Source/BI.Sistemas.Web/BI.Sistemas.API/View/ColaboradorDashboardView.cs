@@ -1,4 +1,6 @@
-﻿using System.Text.RegularExpressions;
+﻿using BI.Sistemas.Domain;
+using BI.Sistemas.Domain.Entities.Enums;
+using System.Text.RegularExpressions;
 
 namespace BI.Sistemas.API.View
 {
@@ -12,16 +14,15 @@ namespace BI.Sistemas.API.View
         public string Time { get; set; }
         public int Engajamento { get; set; }
         public int EngajamentoTime { get; set; }
-        public string HE_Individual { get; set; }
+        public decimal HE_Individual { get; set; }
         public string HE_Equipe { get; set; }
         public bool PJ { get; set; }
         public double TotalPonto { get; set; }
         public EngajamentoView[] TopEngajamento { get; set; }
         public AtividadeView[] Atividades { get; set; }
         public EvolucaoEngajamentoView[] EvolucaoEngajamento { get; set; }
-        public int Parents { get; set; }
+        public ParentItemView[] Parents { get; set; }
         public string Menssagem { get; set; }
-
 
         public double TotalApropriado
         {
@@ -45,17 +46,20 @@ namespace BI.Sistemas.API.View
             }
         }
 
-
-
         public ApropriacaoView[] ResumoApropriacao
         {
             get
             {
                 return Atividades
                     .GroupBy(a => a.Tipo)
-                    .Select(a => new ApropriacaoView() { Tipo = a.Key, Valor = a.Sum(a => a.Horas.TimeOfDay.TotalHours) })
-                    .ToArray();
+                    .Select(a => new ApropriacaoView()
+                    {
+                        Tipo = a.Key,
+                        Valor = (int)Math.Ceiling(a.Sum(a => a.Horas.TimeOfDay.TotalHours)),
+                        Horas = (int)Math.Ceiling(a.Sum(a => a.Horas.TimeOfDay.TotalHours)),
+                    }).ToArray();
             }
+
         }
 
         public class EngajamentoView
@@ -74,40 +78,43 @@ namespace BI.Sistemas.API.View
         {
             public string Tipo { get; set; }
             public double Valor { get; set; }
+            public double Horas { get; set; }
 
             public string Color
             {
                 get
                 {
-                    if (Tipo == "Delivery")
+                    string cor;
+
+                    switch (Tipo)
                     {
-                        return "#00b050";
+                        case "Delivery":
+                            cor = "#00b050"; // Verde
+                            break;
+                        case "Bug":
+                            cor = "#ff0000"; // Vermelho
+                            break;
+                        case "Ceremony":
+                            cor = "#e49edd"; // Rosa
+                            break;
+                        case "Discovery":
+                            cor = "#00b0f0"; // Azul
+                            break;
+                        case "Coaching":
+                            cor = "#782170"; // Roxo
+                            break;
+                        case "Out Of Office":
+                            cor = "#ffc000"; // Laranja
+                            break;
+                        case "Management":
+                            cor = "#f6a700"; // Amarelo
+                            break;
+                        default:
+                            cor = string.Empty;
+                            break;
                     }
-                    else if (Tipo == "Bug")
-                    {
-                        return "#ff0000";
-                    }
-                    else if (Tipo == "Ceremony")
-                    {
-                        return "#e49edd";
-                    }
-                    else if (Tipo == "Discovery")
-                    {
-                        return "#00b0f0";
-                    }
-                    else if (Tipo == "Coaching")
-                    {
-                        return "#782170";
-                    }
-                    else if (Tipo == "Out Of Office")
-                    {
-                        return "#ffc000";
-                    }
-                    else if (Tipo == "Management")
-                    {
-                        return "#f6a700";
-                    }
-                    return string.Empty;
+
+                    return cor;
                 }
             }
         }

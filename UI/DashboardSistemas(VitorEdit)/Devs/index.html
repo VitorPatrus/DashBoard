@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 	<!-- jQuery -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- D3.js -->
@@ -33,6 +32,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,13 +44,14 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
 		rel="stylesheet">
+		<link href="https://fonts.cdnfonts.com/css/soccer-scoreboard" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<script src="/Min/billboard.min.js"></script>
 	<link rel="stylesheet" href="/Min/billboard.min.css">
 </head>
 
 <body style="background-color:#f4f2f0">
-	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+	<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #0076d4 !important;">
 		<div class="container-fluid">
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -61,7 +62,7 @@
 					&nbsp;
 					<li class="nav-item dropdown"></li>
 					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-						aria-expanded="false">
+						aria-expanded="false" style="color: #ffff;">
 						Colaborador
 					</a>
 					<ul class="dropdown-menu">
@@ -142,38 +143,39 @@
 				<button id="sendMailButton" class="sendMailButton" role="button" style="float: right; ">Enviar Ofical
 				</button>
 				<button id="sendMailTeste" class="sendMailButton" role="button"
-					style="float: right; margin-left:10px; background-color: blue !important;">Enviar Teste </button>
+					style="float: right; margin-left:10px; background-color: orange !important; ">Enviar Teste </button>
 			</div>
 		</div>
 	</nav>
 	<div id="content">
 		<div class="col-md-12" style="padding-left: 15px; padding-right: 25px; padding-top: 10px;">
 			<div class="row" id="capture">
-				<div class="col-md-3">
-					<div class="card text-center" style="min-height: 352px;">
-						<img src="/Content/Images/time-tms.jpg" id="time_colaborador" height="165px"
+				<div class="col-md-2">
+					<div class="card text-center" style="min-height: 362px;">
+						<img src="/Content/Images/time-tms.jpg" id="time_colaborador" height="145px"
 							class="card-img-top" alt="...">
 						<div class="d-flex justify-content-center" style="margin-top: -30px">
 							<img src="/Content/Images/face-junior.jpg" id="img_colaborador"
 								class="rounded-circle me-1 flex" width="60" height="60" alt="...">
 						</div>
 						<div class="card-body">
-							<b class="card-title" id="nome_colaborador">Nome Colaborador </b> / <b class="card-title"
-								id="TIME"> </b>
-							<br />
-							<small class="card-text" id="email_colaborador">EMAIL Colaborador </small>
+							<b class="card-title" id="nome_colaborador">Nome Colaborador </b>
 							<br />
 							<small class="card-text" id="cargo_colaborador">Cargo Colaborador</small>
+							<span class="card-text">
+								<hr>
+								<span style="font-size: medium;" id="lbl_horas_individuais">Horas Extras</span><br>
+								<span class="meutexto" id="txt_horas_individuais" style="font-family: 'Soccer Scoreboard', sans-serif;">ERRO</span>
 						</div>
-						<div class="card-footer text-body-secondary">
+						<!-- <div class="card-footer text-body-secondary">
 							<center><small><i class="fa-solid fa-business-time"></i><span id="totalIndividual">
 										Engajamento</span></small>
 							</center>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="card" style="max-height: 352px;">
+					<div class="card" style="max-height: 362px;">
 						<div class="card-body col-md-12">
 							<div class="col-md-12">
 								<div class="row">
@@ -183,8 +185,7 @@
 											<span id="gaugeNeedle_1"></span>
 										</div>
 									</div>
-									<div class="col-md-3"></div>
-									<div class="col-md-3">
+									<div class="col-md-6" style="text-align: end;">
 										<div class="row">
 											<span id="valorEngajamento"
 												style="font-size: 23px; font-weight: bolder;">45%</span>
@@ -222,7 +223,7 @@
 										<!-- gráfico donut -->
 										<!-- <div id="multilineTitle" style="padding-bottom: 180px; padding-left: 25px;" ></div> -->
 										<!-- Markup -->
-										<div id="gaugeChart">
+										<div id="gaugeChart1">
 										</div>
 										<span style="font-size: xx-small; align-items: center;">💡Discovery, Delivery e
 											Bug comparados ao DevOps</span>
@@ -232,65 +233,120 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-6">
 					<div class="row">
-						<div class=" col-md-6">
-							<div class="card" style="padding: 0; margin: 0;">
-								<!-- grafico evolução -->
-								<span id="curve_chart"></span>
-								<div class="card-footer" style="font-size: 14px; text-align: center;"><i
-										class="fa-solid fa-chart-line "></i></i> Evolução do Engajamento</div>
-							</div>
-							<div class="card" id="clt">
-								<div class="horas-card">
-									<div>
-										<span class="card-text">
-											<span style="font-size: large;">Colaborador</span>
-											<span class="meutexto" id="txt_horas_individuais"
-												style="font-size: 35px; color: red;  margin-top: 0;">ERRO</span>
-									</div>
-									<div>
-										<span style="font-size: large; margin-left: 23px;">Time</span>
-										<span class="meutexto" id="txt_horasEquipe"
-											style="font-size: 35px; color: red; margin-top: 0;">PONTO</span>
-									</div>
+						<div class=" col-md-7">
+							<div class="card" style="padding: 0; margin: 0; min-height: 364px;">
+								<table class="table table-purple">
+									<thead>
+										<tr>
+											<th scope="col" style="color: #f4f2f0;">#</th>
+											<th scope="col" style="color: #f4f2f0;">Titulo</th>
+											<th scope="col" style="color: #f4f2f0;">Horas</th>
+										</tr>
+									</thead>
+									<tbody id="parents">
+										<tr>
+											<th scope="row" <i class="fas fa-trophy" style="color: #800080;"></i>
+											</th>
+											<td>Inclusão de Informações em Medidas Dimensionador de Cargas </td>
+											<td>28h</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<i class="fas fa-clipboard-check" style="color: #FFD700;"></i>
+											</th>
+											<td> Inclusão de Informações em Medidas Dimensionador de Cargas</td>
+											<td>25h</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<i class="fas fa-crown" style="color: #FFA500;"></i>
+											</th>
+											<td> Inclusão de Informações em Medidas Dimensionador de Cargas</td>
+											<td>30h</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<i class="fas fa-bug" style="color: #2b21e3;"></i>
+											</th>
+											<td>Inclusão de Informações em Medidas Dimensionador de Cargas</td>
+											<td>30h</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<i class="fas fa-book-open" style="color: #0000FF;"></i>
+											</th>
+											<td>Inclusão de Informações em Medidas Dimensionador de Cargas</td>
+											<td>30</td>
+										</tr>
+									</tbody>
 								</div>
-								<div class="card-footer text-body-secondary">
+							</table>
+							<div class="card-footer text-body-secondary">
+								<small id='menssage'></small>
+							</div>
+						</div>
+						<!-- HORAS CLT  -->
+						<!-- <div class="card" id="clt">
+								<div class="row">
+									<div class="col-md-4" style="margin-left: 15px; margin-top: 7px; ">
+										
+									</div> -->
+						<!-- <div class="col-md-7" style="margin-left: -50px; margin-top: -10px;">
+										<span id="curve_chart1"></span>
+									</div> -->
+						<!-- </div> -->
+						<!-- <div class="card-footer text-body-secondary">
+									<center>
+										<small><i class="fa-regular fa-clock"></i> Gestão de Horas Extras</small>
+									</center>
+								</div> -->
+						<!-- </div> -->
+						<!-- HORAS PJ -->
+						<!-- <div class="card" id="pj">
+								<div class="row">
+									<div class="col-md-4" style="margin-left: 15px; margin-top: 40px; ">
+										<div class="horas-card">
+											<div>
+												<span class="card-text">
+													<span style="font-size: large;">Colaborador</span>
+													<span class="meutexto" id="horasPJ"
+														style=" color: green; margin-top: 0;">ERRO</span>
+												</span>
+											</div>
+										</div>
+									</div> -->
+						<!-- <div class="col-md-7" style="margin-left: -50px; margin-top: -10px;">
+										<span id="curve_chart2"></span>
+									</div> -->
+						<!-- </div> -->
+
+						<!-- <div class="card-footer text-body-secondary">
 									<center>
 										<small><i class="fa-regular fa-clock"></i> Gestão de Horas Extras</small>
 									</center>
 								</div>
-							</div>
-							<div class="card" id="pj" style="height: 162px;">
-								<div class="card-body text-center">
-									<span class="card-text" style="margin-top: 10px;">
-										<span style="font-size: large;">Colaborador</span><br>
-										<span class="meutexto" id="horasPJ"
-											style=" font-size: 35px !important; color: green;">ERRO
-										</span>
-									</span>
-								</div>
-								<div class="card-footer text-body-secondary">
-									<center> <small><i class="fa-regular fa-clock"></i> Carga Horária</small>
-									</center>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="row">
-								<div class="card" style="min-height: 354.5px;">
-									<div class="row">
-										<div class="col-md-12">
-											<div class="row">
-												<!-- grafico pizza -->
-												<div id="piechart"></div>
-											</div>
+							</div> -->
+						<!-- RESUMO APROPRIAÇÃO -->
+					</div>
+					<div class="col-md-5">
+						<div class="row">
+							<div class="card" style="min-height: 364px;">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="row">
+											<!-- grafico pizza -->
+											<div id="piechart" style="height: 300px;"></div>
 										</div>
-										<div class="card-footer text-muted">
-											<div class="text-center">
-												<i class="fa-solid fa-chart-pie"></i>
-												Resumo Apropriação
-											</div>
+										<i class="text-left" style="font-size: xx-small;">
+											Aproximadamente*
+										</i>
+									</div>
+									<div class="card-footer text-muted">
+										<div class="text-center">
+											<i class="fa-solid fa-chart-pie"></i>
+											Resumo Apropriação
 										</div>
 									</div>
 								</div>
@@ -300,6 +356,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 	<div class="row" style="padding-top: 10px; margin-left: 5px;">
 		<h4>Atividades trabalhadas</h4>

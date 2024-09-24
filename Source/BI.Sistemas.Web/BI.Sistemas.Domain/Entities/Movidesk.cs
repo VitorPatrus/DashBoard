@@ -25,14 +25,35 @@ namespace BI.Sistemas.Domain.Novo
         public string Status { get; set; }
         public string Time { get; set; }
 
-        public Movidesk() { }
+        public bool EstaFechado
+        {
+            get
+            {
+                var statusFechado = new string[] { "Fechado", "Resolvido" };
+                return statusFechado.Contains(Status);
+            }
+        }
+        public int? LeadTime
+        {
+            get
+            {
+
+                if (DataFechamento.HasValue && DataAbertura.HasValue && EstaFechado)
+                {
+                    return (DataFechamento.Value - DataAbertura.Value).Days;
+                }
+                return null;
+
+
+            }
+        }
 
 
         public static Movidesk FromCsv(string csvLine)
         {
-            string[] values = Regex.Split(csvLine, ";(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+            string[] values = Regex.Split(csvLine, ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
             var result = new Movidesk();
-            result.Numero = Convert.ToInt32(values[0]);
+            result.Numero = Convert.ToInt32(values[0], CultureInfo.InvariantCulture);
             //var cultureInfo = new CultureInfo("en-US");
             result.DataAbertura = DateTime.Parse(values[1], CultureInfo.InvariantCulture);
             result.DataFechamento = string.IsNullOrEmpty(values[2]) ? default(DateTime?) : DateTime.Parse(values[2], CultureInfo.InvariantCulture);

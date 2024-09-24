@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+WQ7A2x9O7M=",
+  "dgSpecHash": "9Kh6S5/EbrY=",
   "success": true,
   "projectFilePath": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
