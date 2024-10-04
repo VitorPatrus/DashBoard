@@ -28,6 +28,7 @@ namespace BI.Sistemas.API.View
         public int Chamados_SLA_Individual { get; set; }
         public double SLA_Individual { get; set; }
         public double SLA_Time { get; set; }
+        public double SLA_Sistemas { get; set; }
 
         public List<SLAView> TopSLA { get; set; }
         public List<ChamadoView> TabelaForaPrazo { get; set; }

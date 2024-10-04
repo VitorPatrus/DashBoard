@@ -140,7 +140,7 @@ namespace BI.Sistemas.UnitTests
         {
             using (var db = new BISistemasContext())
             {
-                var periodo = db.Set<Periodo>().FirstOrDefault(c => c.Data == DateTime.Today.AddDays(-2));
+                var periodo = db.Set<Periodo>().FirstOrDefault(c => c.Data == DateTime.Today);
                 if (periodo == null)
                 {
                     periodo = new Periodo();
@@ -157,7 +157,7 @@ namespace BI.Sistemas.UnitTests
                 {
                     using (var db = new BISistemasContext())
                     {
-                        var periodo = db.Periodos.FirstOrDefault(c => c.Data == DateTime.Today.AddDays(-2));
+                        var periodo = db.Periodos.FirstOrDefault(c => c.Data == DateTime.Today);
                         var colaboradores = db.Colaboradores.ToList();
                         var ponto = Ponto.FromCsv(colaboradores, v);
                         ponto.Periodo = periodo;
@@ -197,10 +197,11 @@ namespace BI.Sistemas.UnitTests
               {
                   using (var db = new BISistemasContext())
                   {
-                      var movidesk = Movidesk.FromCsv(v);
-                      if (db.Movidesks.Any(c => c.Numero == movidesk.Numero))
-                          return;
                       var periodo = db.Periodos.FirstOrDefault(c => c.Data == data1);
+                      var movidesk = Movidesk.FromCsv(v);
+                      
+                      if (movidesk.Time != "STI" && db.Movidesks.Any(c => c.Numero == movidesk.Numero && c.PeriodoId.ToString().ToUpper() == periodo.ToString().ToUpper()))
+                          return;
                       movidesk.Periodo = periodo;
 
                       var colaborador = db.Colaboradores.FirstOrDefault(c => c.UserTMetric
@@ -221,10 +222,12 @@ namespace BI.Sistemas.UnitTests
                 {
                     using (var db = new BISistemasContext())
                     {
-                        var movidesk = Movidesk.FromCsv(v);
-                        if (db.Movidesks.Any(c => c.Numero == movidesk.Numero))
-                            return;
                         var periodo = db.Periodos.FirstOrDefault(c => c.Data == data1);
+
+                        var movidesk = Movidesk.FromCsv(v);
+                        
+                        if (movidesk.Time != "STI" && db.Movidesks.Any(c => c.Numero == movidesk.Numero && c.PeriodoId.ToString().ToUpper() == periodo.ToString().ToUpper()))
+                            return;
                         movidesk.Periodo = periodo;
 
                         var colaborador = db.Colaboradores.FirstOrDefault(c => c.UserTMetric
@@ -310,9 +313,9 @@ namespace BI.Sistemas.UnitTests
         public void CargaHE()
         {
             string csvFilePath = @"C:\Users\vitor.fernandessouza\Downloads\HE.csv";
-            ReadCsvAndInsertToDatabase(csvFilePath);
+            InserirBancoDeDados(csvFilePath);
         }
-        static void ReadCsvAndInsertToDatabase(string csvFilePath)
+        static void InserirBancoDeDados(string csvFilePath)
         {
             var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {

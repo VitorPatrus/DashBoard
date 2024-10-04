@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}|BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.unittests\\startedtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}|BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj|solutionrelative:bi.sistemas.unittests\\startedtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\service\\colaboradorslaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\service\\colaboradorslaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\service\\colaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\service\\colaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\view\\colaboradorsladashboardview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\view\\colaboradorsladashboardview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.domain\\entities\\movidesk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|solutionrelative:bi.sistemas.domain\\entities\\movidesk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ED062B93-9D42-4A94-996B-A9A7DC44F7B9}|BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.orm\\bisistemascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED062B93-9D42-4A94-996B-A9A7DC44F7B9}|BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj|solutionrelative:bi.sistemas.orm\\bisistemascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}|BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.unittests\\startedtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}|BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj|solutionrelative:bi.sistemas.unittests\\startedtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ED062B93-9D42-4A94-996B-A9A7DC44F7B9}|BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.orm\\evolucaosla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED062B93-9D42-4A94-996B-A9A7DC44F7B9}|BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj|solutionrelative:bi.sistemas.orm\\evolucaosla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\documents\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\service\\colaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\service\\colaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vitor.fernandessouza\\AppData\\Local\\SourceServer\\4b7d435b56f4d26a6ac1ba91d0e4cc4244b35cf9a9eeeaf7d68fcf1ace527141\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\ColaboradorSLAService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -41,17 +45,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 312,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ColaboradorSLAService.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\ColaboradorSLAService.cs",
               "RelativeDocumentMoniker": "BI.Sistemas.API\\Service\\ColaboradorSLAService.cs",
               "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\ColaboradorSLAService.cs",
               "RelativeToolTip": "BI.Sistemas.API\\Service\\ColaboradorSLAService.cs",
-              "ViewState": "AQIAALcAAAAAAAAAAAAcwNQAAAANAAAA",
+              "ViewState": "AQIAAO8AAAAAAAAAAAAAAPsAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T16:57:48.954Z",
               "IsPinned": true,
@@ -83,7 +87,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
+              "Title": "Movidesk.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Entities\\Movidesk.cs",
+              "RelativeDocumentMoniker": "BI.Sistemas.Domain\\Entities\\Movidesk.cs",
+              "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\Entities\\Movidesk.cs",
+              "RelativeToolTip": "BI.Sistemas.Domain\\Entities\\Movidesk.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAEwDMAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T13:26:05.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ColaboradorSLAService.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\AppData\\Local\\SourceServer\\4b7d435b56f4d26a6ac1ba91d0e4cc4244b35cf9a9eeeaf7d68fcf1ace527141\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\ColaboradorSLAService.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\4b7d435b56f4d26a6ac1ba91d0e4cc4244b35cf9a9eeeaf7d68fcf1ace527141\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\ColaboradorSLAService.cs",
@@ -96,45 +112,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ColaboradorSLADashboardView.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\View\\ColaboradorSLADashboardView.cs",
               "RelativeDocumentMoniker": "BI.Sistemas.API\\View\\ColaboradorSLADashboardView.cs",
               "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\View\\ColaboradorSLADashboardView.cs",
               "RelativeToolTip": "BI.Sistemas.API\\View\\ColaboradorSLADashboardView.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAA9wBQAAAAhAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAIA7wB4AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T17:27:19.603Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-23T17:27:19.603Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "StartedTests.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\StartedTests.cs",
               "RelativeDocumentMoniker": "BI.Sistemas.UnitTests\\StartedTests.cs",
               "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\StartedTests.cs",
               "RelativeToolTip": "BI.Sistemas.UnitTests\\StartedTests.cs",
-              "ViewState": "AQIAAO4AAAAAAAAAAAAAAO4AAAAJAAAA",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAMwGIAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T17:21:57.286Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "ColaboradorService.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\ColaboradorService.cs",
               "RelativeDocumentMoniker": "BI.Sistemas.API\\Service\\ColaboradorService.cs",
               "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\ColaboradorService.cs",
               "RelativeToolTip": "BI.Sistemas.API\\Service\\ColaboradorService.cs",
-              "ViewState": "AQIAAJcAAAAAAAAAAAAYwKUAAAA1AAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAADwvzwAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T17:15:42.675Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "EvolucaoSLA.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\EvolucaoSLA.cs",
               "RelativeDocumentMoniker": "BI.Sistemas.ORM\\EvolucaoSLA.cs",
@@ -146,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "HE.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\HE.cs",
               "RelativeDocumentMoniker": "BI.Sistemas.ORM\\HE.cs",
@@ -158,16 +173,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "BISistemasContext.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BISistemasContext.cs",
               "RelativeDocumentMoniker": "BI.Sistemas.ORM\\BISistemasContext.cs",
               "ToolTip": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BISistemasContext.cs",
               "RelativeToolTip": "BI.Sistemas.ORM\\BISistemasContext.cs",
-              "ViewState": "AQIAAOYAAAAAAAAAAAAWwPIAAAAvAAAA",
+              "ViewState": "AQIAAG8BAAAAAAAAAAAjwIIBAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T17:07:10.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-23T17:07:10.334Z"
             }
           ]
         },

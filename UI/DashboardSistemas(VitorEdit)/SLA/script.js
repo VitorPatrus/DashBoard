@@ -1,4 +1,5 @@
 let pieChartRoot;
+let barChartRoot;
 
 function clickColaboradorFuncao(id) {
   var apiUrl = 'https://localhost:7052/ColaboradorSLA/ColaboradorSLADashboard?id=' + id;
@@ -12,8 +13,9 @@ function clickColaboradorFuncao(id) {
     $('#time_colaborador img').attr('src', 'data:image/jpeg;base64,' + responseData.fotoTime);
     $('#TIME').text(responseData.time);
     $('#cargo_colaborador').text(responseData.cargo);
-    $('#time_SLA').text(responseData.slA_Time + '%');
     $('#individual_SLA').text(responseData.slA_Individual + '%');
+    $('#time_SLA').text('Time: ' + responseData.slA_Time + '%');
+    $('#sistemas_SLA').text('Sistemas: ' + responseData.slA_Sistemas + '%');
 
     $('#pessoal').text(responseData.pessoal);
     $('#setorial').text(responseData.setorial);
@@ -39,7 +41,6 @@ function clickColaboradorFuncao(id) {
     $('#leadTimePessoal').text(responseData.leadTime + ' dias');
     $('#leadTimeSistemas').text(responseData.leadTimeSistemas + ' dias');
     $('#leadTimeEquipe').text(responseData.leadTimeEquipe + ' dias');
-
 
     var nivelSLA = bb.generate({
       data: {
@@ -86,46 +87,44 @@ function clickColaboradorFuncao(id) {
     preencherTabela(responseData.tabelaForaPrazo);
     preencherTabela2(responseData.tabelaPendentes);
     preencherTabelaServicos(responseData.servicos);
-    
+
     var evolucaoAbertos = ["Abertos"].concat(responseData.evolucaoChamadosAbertos);
     var evolucaoFechados = ["Fechados"].concat(responseData.evolucaoChamadosFechados);
 
-bb.generate({
-  data: {
-    columns: [
-      evolucaoAbertos,
-      evolucaoFechados
-    ],
-    type: "line",
-    colors: {
-      Abertos: "#ff0000",
-      Fechados: "#13ec00" 
-    },
-    labels: {
-      backgroundColors: {
-        Abertos: "white",
-        Fechados: "white"
-      },
-      colors: {
-        Abertos: "black",
-        Fechados: "black"
-      }
-    }
-  },
-  axis: {
-    x: {
-      type: "category",
-      categories: lastMondays
-    },
-    y: {
-      min: Math.min(...evolucaoAbertos),
-      max: Math.max(...evolucaoAbertos)
-    }
-  },
-  bindto: "#dataLabelColors_2"
-});
-
-    
+    // bb.generate({
+    //   data: {
+    //     columns: [
+    //       evolucaoAbertos,
+    //       evolucaoFechados
+    //     ],
+    //     type: "line",
+    //     colors: {
+    //       Abertos: "#ff0000",
+    //       Fechados: "#13ec00"
+    //     },
+    //     labels: {
+    //       backgroundColors: {
+    //         Abertos: "white",
+    //         Fechados: "white"
+    //       },
+    //       colors: {
+    //         Abertos: "black",
+    //         Fechados: "black"
+    //       }
+    //     }
+    //   },
+    //   axis: {
+    //     x: {
+    //       type: "category",
+    //       categories: lastMondays
+    //     },
+    //     y: {
+    //       min: Math.min(...evolucaoAbertos),
+    //       max: Math.max(...evolucaoAbertos)
+    //     }
+    //   },
+    //   bindto: "#dataLabelColors_2"
+    // });
 
     var header = document.getElementById('card-header-evolucao');
     var penultimoValor = responseData.evolucaoChamadosAbertos[responseData.evolucaoChamadosAbertos[1]];
@@ -136,13 +135,12 @@ bb.generate({
     } else {
       header.style.backgroundColor = 'green';
     }
-
-    // Atualizando o gráfico de pizza
-    am5.ready(function () {
+    //am5.ready(function () {
+      // Atualizando o gráfico de pizza
       if (pieChartRoot) {
         pieChartRoot.container.children.each(function (child) {
           if (child instanceof am5percent.PieChart) {
-            var series = child.series.getIndex(0);
+            const series = child.series.getIndex(0);
             series.data.setAll([
               { category: "Dentro", value: responseData.dentroPrazo },
               { category: "Fora", value: responseData.foraPrazo }
@@ -151,19 +149,17 @@ bb.generate({
         });
       } else {
         pieChartRoot = am5.Root.new("meugrafico");
+        pieChartRoot.setThemes([am5themes_Animated.new(pieChartRoot)]);
 
-        pieChartRoot.setThemes([
-          am5themes_Animated.new(pieChartRoot)
-        ]);
 
-        var chart = pieChartRoot.container.children.push(
+        const pieChart = pieChartRoot.container.children.push(
           am5percent.PieChart.new(pieChartRoot, {
             endAngle: 270,
             layout: pieChartRoot.verticalLayout,
           })
         );
 
-        var series = chart.series.push(
+        const pieSeries = pieChart.series.push(
           am5percent.PieSeries.new(pieChartRoot, {
             valueField: "value",
             categoryField: "category",
@@ -171,8 +167,7 @@ bb.generate({
           })
         );
 
-
-        series.set("colors", am5.ColorSet.new(pieChartRoot, {
+        pieSeries.set("colors", am5.ColorSet.new(pieChartRoot, {
           colors: [
             am5.color(0x00ff00),
             am5.color(0xff0000),
@@ -180,7 +175,7 @@ bb.generate({
           ]
         }));
 
-        series.slices.template.setAll({
+        pieSeries.slices.template.setAll({
           strokeWidth: 2,
           stroke: am5.color(0xf2f2f2),
           cornerRadius: 10,
@@ -189,23 +184,204 @@ bb.generate({
           shadowOffsetY: 2,
           shadowColor: am5.color(0x00ff00)
         });
-        series.data.setAll([
+
+        pieSeries.data.setAll([
           { category: "Dentro", value: responseData.dentroPrazo },
           { category: "Fora", value: responseData.foraPrazo }
         ]);
 
-        var legend = chart.children.push(am5.Legend.new(pieChartRoot, {
+        const legend = pieChart.children.push(am5.Legend.new(pieChartRoot, {
           centerX: am5.percent(0),
           x: am5.percent(0),
           marginTop: 15,
           marginBottom: 15,
         }));
-
-        series.appear(1000, 100);
+        pieSeries.appear(1000, 100);
       }
-    });
+
+      // Configurando o gráfico XY
+      const processedMondays = lastMondays.slice(1).map(function (date) {
+        const parts = date.split("/");
+        return `2023-${parts[1]}-${parts[0]}`;
+      });
+
+      const openEvolutionData = evolucaoAbertos.slice(1).map(Number);
+      const closedEvolutionData = evolucaoFechados.slice(1).map(Number);
+
+      const chartData = processedMondays.map(function (date, index) {
+        return {
+          date: date,
+          abertos: openEvolutionData[index],
+          fechados: closedEvolutionData[index],
+          total: openEvolutionData[index] + closedEvolutionData[index],
+        };
+      });
+
+      barChartRoot = barChartRoot ?? am5.Root.new("chartdiv");
+      const root = barChartRoot;
+      root.setThemes([am5themes_Animated.new(root)]);
+      root.dateFormatter.setAll({
+        dateFormat: "yyyy-MM-dd",
+        dateFields: ["valueX"]
+      });
+
+      root.container.children.clear();
+      const xyChart = root.container.children.push(
+        am5xy.XYChart.new(root, {
+          panX: false,
+          panY: false,
+          wheelX: "panX",
+          wheelY: "zoomX",
+          layout: root.verticalLayout
+        })
+      );
+
+      // Adicionar cursor
+      const chartCursor = xyChart.set("cursor", am5xy.XYCursor.new(root, {
+        behavior: "zoomX"
+      }));
+      chartCursor.lineY.set("visible", false);
+
+      // Criar eixos
+      xyChart.xAxes.clear();
+      const xAxis = xyChart.xAxes.push(
+        am5xy.DateAxis.new(root, {
+          baseInterval: { timeUnit: "week", count: 1 },
+          renderer: am5xy.AxisRendererX.new(root, {
+            minorGridEnabled: true
+          }),
+          tooltip: am5.Tooltip.new(root, {}),
+          tooltipDateFormat: "yyyy-MM-dd"
+        })
+      );
+
+      xyChart.yAxes.clear();
+      const primaryYAxis = xyChart.yAxes.push(
+        am5xy.ValueAxis.new(root, {
+          renderer: am5xy.AxisRendererY.new(root, {
+            pan: "zoom"
+          })
+        })
+      );
+
+      const secondaryYAxisRenderer = am5xy.AxisRendererY.new(root, {
+        opposite: true
+      });
+      secondaryYAxisRenderer.grid.template.set("forceHidden", true);
+
+      const secondaryYAxis = xyChart.yAxes.push(
+        am5xy.ValueAxis.new(root, {
+          renderer: secondaryYAxisRenderer,
+          syncWithAxis: primaryYAxis
+        })
+      );
+
+      // Adicionar séries de dados
+      const closedSeries = xyChart.series.push(
+        am5xy.ColumnSeries.new(root, {
+          name: "Total",
+          xAxis: xAxis,
+          yAxis: primaryYAxis,
+          valueYField: "total",
+          valueXField: "date",
+          clustered: false,
+          tooltip: am5.Tooltip.new(root, {
+            pointerOrientation: "horizontal",
+            labelText: "{name}: {valueY}"
+          })
+        })
+      );
+
+      closedSeries.columns.template.setAll({
+        width: am5.percent(60),
+        fillOpacity: 0.5,
+        strokeOpacity: 0
+      });
+
+      closedSeries.data.processor = am5.DataProcessor.new(root, {
+        dateFields: ["date"],
+        dateFormat: "yyyy-MM-dd"
+      });
+
+      const openSeries = xyChart.series.push(
+        am5xy.ColumnSeries.new(root, {
+          name: "Fechados",
+          xAxis: xAxis,
+          yAxis: primaryYAxis,
+          valueYField: "fechados",
+          valueXField: "date",
+          clustered: false,
+          tooltip: am5.Tooltip.new(root, {
+            pointerOrientation: "horizontal",
+            labelText: "{name}: {valueY}"
+          })
+        })
+      );
+
+      openSeries.columns.template.set("width", am5.percent(40));
+      const totalCallsSeries = xyChart.series.push(
+        am5xy.SmoothedXLineSeries.new(root, {
+          name: "Abertos",
+          xAxis: xAxis,
+          yAxis: primaryYAxis,
+          valueYField: "abertos",
+          valueXField: "date",
+          tooltip: am5.Tooltip.new(root, {
+            pointerOrientation: "horizontal",
+            labelText: "{name}: {valueY}"
+          })
+        })
+      );
+
+      totalCallsSeries.strokes.template.setAll({
+        strokeWidth: 2,
+        stroke: am5.color(0xFF0000) // Cor vermelha
+      });
+
+      // Definir cores para a série de vendas abertas
+      openSeries.columns.template.setAll({
+        width: am5.percent(40),
+        fill: am5.color(0x33FF57), // Cor verde
+        strokeOpacity: 0
+      });
+
+      totalCallsSeries.strokes.template.setAll({
+        strokeWidth: 2
+      });
+
+      totalCallsSeries.bullets.push(function () {
+        return am5.Bullet.new(root, {
+          sprite: am5.Circle.new(root, {
+            stroke: totalCallsSeries.get("fill"),
+            strokeWidth: 2,
+            fill: root.interfaceColors.get("background"),
+            radius: 5
+          })
+        });
+      });
+      const legend = xyChart.children.push(
+        am5.Legend.new(root, {
+          x: am5.p50,
+          centerX: am5.p50,
+          width: am5.percent(80),
+          marginBottom: -20,
+          layout: root.horizontalLayout // Define o layout para horizontal
+        })
+      );
+      
+      legend.data.setAll(xyChart.series.values);
+      
+      // Definir os dados para as séries
+      closedSeries.data.setAll(chartData);
+      openSeries.data.setAll(chartData);
+      totalCallsSeries.data.setAll(chartData);
+
+      // Animação de carregamento
+      totalCallsSeries.appear(1000);
+      xyChart.appear(1000, 100);
+    //}); // fim de am5.ready()
   });
-}
+} 
 
 function preencherTabelaServicos(servicos) {
   var tbody = document.getElementById('servicos');
@@ -224,7 +400,6 @@ function preencherTabelaServicos(servicos) {
     tbody.appendChild(tr);
   });
 }
-
 
 function preencherTabela(tabelaForaPrazo) {
 
@@ -307,7 +482,7 @@ function getLastWeekDays() {
   lastFriday.setDate(lastSunday.getDate() + 5);
   const formatDate = (date) => {
     const day = String(date.getDate()).padStart(2, '0');
-    const month = String(date.getMonth() + 1).padStart(2, '0'); 
+    const month = String(date.getMonth() + 1).padStart(2, '0');
     return `${day}/${month}`;
   };
   return {
@@ -372,19 +547,18 @@ window.onload = function () {
 
           listItem.onclick = function () {
             clickColaboradorFuncao(colaborador.idColaborador);
-          };
-
+        };
           timeSup.appendChild(listItem);
         });
       }
     })
     .catch(error => console.error('Erro ao carregar colaboradores:', error));
-  clickColaboradorFuncao('4D143095-82BC-42C5-EFFE-08DCBC682A35');
+   clickColaboradorFuncao('4D143095-82BC-42C5-EFFE-08DCBC682A35');
 
 }
 function getLastMonday(date) {
   const day = date.getDay();
-  const diff = (day === 0 ? -6 : 1) - day; 
+  const diff = (day === 0 ? -6 : 1) - day;
   return new Date(date.getFullYear(), date.getMonth(), date.getDate() + diff);
 }
 
@@ -398,10 +572,9 @@ function getLastMondays(count) {
   }
 
   for (let i = 0; i < count; i++) {
-    mondays.push(monday.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })); 
-    monday.setDate(monday.getDate() - 7); 
+    mondays.push(monday.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' }));
+    monday.setDate(monday.getDate() - 7);
   }
-  return mondays.reverse(); 
+  return mondays.reverse();
 }
 const lastMondays = getLastMondays(5);
-console.log(lastMondays);

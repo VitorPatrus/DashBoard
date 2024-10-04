@@ -71,8 +71,10 @@ namespace BI.Sistemas.Domain.Novo
                 result.ResponsavelEquipe.Equals("CRM", StringComparison.InvariantCultureIgnoreCase) ? "CRM" :
                 result.ResponsavelEquipe.Equals("STI", StringComparison.InvariantCultureIgnoreCase) ? "STI" :
 
+
                 result.ResponsavelEquipe.Contains("TMS", StringComparison.InvariantCultureIgnoreCase) ? "Suporte TMS" :
                 result.ResponsavelEquipe.Contains("ERP", StringComparison.InvariantCultureIgnoreCase) ? "Suporte ERP" :
+                result.ResponsavelEquipe.Equals("ERP e Senior", StringComparison.InvariantCultureIgnoreCase) ? "Suporte ERP" :
                 "Equipe não identificada. ";
 
             return result;

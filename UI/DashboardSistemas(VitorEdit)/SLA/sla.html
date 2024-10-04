@@ -55,10 +55,16 @@
 		<div class="container-fluid">
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<a href="/Devs/index.html">
-						<img src="/Content/Images/PatrusTech.png" width="40" height="40"
-							class="d-inline-block align-top" alt="" style="border-radius: 50%;">
-					</a>
+					<div class="dropdown">
+						<a href="/Devs/index.html">
+							<img src="/Content/Images/PatrusTech.png" width="40" height="40"
+								class="d-inline-block align-top" alt="" style="border-radius: 50%;">
+						</a>
+						<div class="dropdown-content">
+							<a href="/Devs/index.html">Dashboard Dev's</a>
+							<a href="/Econômetro/index.html">Econômetro</a>
+						</div>
+					</div>
 					&nbsp;
 					&nbsp;
 					<!-- Menu para Equipe 1 -->
@@ -97,19 +103,18 @@
 										class="card-title"> </b><br>
 									<small class="card-text" id="cargo_colaborador">Cargo Colaborador</small><br>
 									<span class="card-text">
-										<hr><br>
-										<span style="font-size: medium;" id="lbl_horas_individuais">Horas Extras</span>
+										<hr>
+										<span class="HE" id="lbl_horas_individuais">Horas Extras</span>
 										<i class="fa-duotone fa-regular fa-clock"></i><br>
-										<span class="meutexto" id="txt_horas_individuais"
-											style=" color: red; margin-top: 0; font-size: medium;">00:00</span>
 									</span>
+									<span class="meutexto" id="txt_horas_individuais">00:00</span>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-7">
 							<div class="row">
 								<div class="card-title">
-									<div class="card col-md-12" style="max-height: 410px;">
+									<div class="card col-md-12" style="min-height: 410px;">
 										<div class="card-body">
 											<div class="col-md-6 offset-md-9" style="align-items: end;">
 												<table class="table table-sm mb-0"
@@ -117,7 +122,8 @@
 													<thead class="d" style="font-size: small;">
 														<tr>
 															<th colspan="2"
-																style="text-align: center; white-space: nowrap; font-size: medium;"> Lead
+																style="text-align: center; white-space: nowrap; font-size: medium;">
+																Lead
 																Time</th>
 														</tr>
 													</thead>
@@ -157,21 +163,23 @@
 													<div id="graficoSLA" style="margin-top: -175px; margin-left: 30px;">
 													</div>
 												</div>
+												<hr>
+												<div class="align-items"
+													style="margin-left: 10px; margin-top: -15px; margin-bottom: 10px; margin-left:115px; font-style: italic; font-size: small;">
+													Porcentagem SLA</div>
 											</div>
 										</div>
-										<hr>
 										<div class="row">
 											<div class="col-md-12">
 												<div class="row">
 													<div class="col-md-7" style="font-weight: bolder;">
-														<div class="d-flex justify-content-start" id="time_colaborador">
-															<img src="" class="rounded-circle me-1 flex" width="25"
-																height="25" alt="..." style="margin-left: 15px;"> SLA da
-															Equipe
+														<div class="d-flex justify-content-start" id="time_SLA"
+															style="margin-left: 20px;">
+															Time
 														</div>
 													</div>
-													<div class="col-md-5" id="time_SLA"
-														style="font-weight: bolder; text-align: right; margin-left: -55px;">
+													<div class="col-md-5" id="sistemas_SLA"
+														style="font-weight: bolder; text-align: right; margin-left: -25px;">
 														Erro
 													</div>
 												</div>
@@ -180,27 +188,27 @@
 													<div class="col-md-1"
 														style="font-weight: bolder; margin-left: 10px;">
 														🥇</div>
-													<div class="col-md-7" id="primeiroNome"
+													<div class="col-md-8" id="primeiroNome"
 														style="font-size: 13.5px; font-weight: bold;">Erro</div>
-													<div class="col-md-3" id="primeiro"
+													<div class="col-md-2" id="primeiro"
 														style="font-size: 13.5px; font-weight: bold;">Erro</div>
 												</div>
 												<div class="row" style="margin-bottom: 3px;">
 													<div class="col-md-1"
 														style="font-weight: bolder; margin-left: 10px;">
 														🥈</div>
-													<div class="col-md-7" id="segundoNome"
+													<div class="col-md-8" id="segundoNome"
 														style="font-size: 13.5px; font-weight: bold;">Erro</div>
-													<div class="col-md-3" id="segundo"
+													<div class="col-md-2" id="segundo"
 														style="font-size: 13.5px; font-weight: bold;">Erro</div>
 												</div>
 												<div class="row" style="margin-bottom: 3px;">
 													<div class="col-md-1"
 														style="font-weight: bolder; margin-left: 10px;">
 														🥉</div>
-													<div class="col-md-7" id="terceiroNome"
+													<div class="col-md-8" id="terceiroNome"
 														style="font-size: 13.5px; font-weight: bold;">Erro</div>
-													<div class="col-md-3" id="terceiro"
+													<div class="col-md-2" id="terceiro"
 														style="font-size: 13.5px; font-weight: bold;">Erro</div>
 												</div>
 											</div>
@@ -353,7 +361,9 @@
 										style="background-color: green; color: white; font-weight: bold;">
 										Evolução Pessoal - Total de Chamados
 									</div>
-									<div id="dataLabelColors_2" style="width: 95%; height: 170px;"></div>
+									<!-- <div id="dataLabelColors_2" style="width: 95%; height: 170px;"></div> -->
+									<div id="chartdiv"style="width: 110%; height: 180px; margin-left:-20px;" ></div>
+									<img src="/SLA/image.png" alt="Smiley face" style="margin-top: -20px;">
 								</div>
 								<div class="row flex-grow-1">
 									<div class="col-md-12">
@@ -376,7 +386,7 @@
 			</div>
 		</div>
 	</div>
-	</div>
+</div>
 	<div class="row">
 		<div class="row" style="padding-top: 10px; padding-left: 30px;">
 			<div class="col-md-6">
