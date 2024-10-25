@@ -12,6 +12,7 @@ namespace BI.Sistemas.Domain.Entities.Enums
         Task,
         Bug,
         Epic,
-        UserStory
+        UserStory,
+        TechnicalDebt
     }
 }

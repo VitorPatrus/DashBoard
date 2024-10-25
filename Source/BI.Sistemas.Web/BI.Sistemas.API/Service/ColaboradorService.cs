@@ -39,7 +39,6 @@ namespace BI.Sistemas.API.Service
             if (baseDirectory != null)
                 projectDirectory = Directory.GetParent(baseDirectory).Parent.Parent.Parent.Parent.Parent.Parent;
 
-
             colaborador.Nome = pessoa.Nome;
             colaborador.Email = pessoa.Email;
             colaborador.FotoColaborador = Convert.ToBase64String(pessoa.Foto);
@@ -132,7 +131,7 @@ namespace BI.Sistemas.API.Service
                 .Select(a => new ParentItemView()
                 {
                     Tipo = a.Key.ParentType,
-                    Titulo = a.Key.ParentTitulo,
+                    Titulo = a.Key.ParentTitulo.Length > 60 ? $"{a.Key.ParentTitulo.Substring(0, 60)} ..." : a.Key.ParentTitulo,
                     Horas = metricas.GetHoras(a.Select(c => c.Duracao))
                 })
                 .OrderByDescending(a => a.Horas)
@@ -159,7 +158,7 @@ namespace BI.Sistemas.API.Service
         }
         private List<EvolucaoEngajamentoView> AddEngajamento(string id, ColaboradorDashboardView colaborador, HE? he)
         {
-            
+
             if (!colaborador.PJ && he != null)
             {
                 _colaboradorRepository.GetPessoa(id);

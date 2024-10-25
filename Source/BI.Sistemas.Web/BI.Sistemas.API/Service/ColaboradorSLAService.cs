@@ -114,7 +114,7 @@ public class ColaboradorSLAService : IColaboradorSLAService
             int equipeNoPrazo = chamadosEquipe.Count(x => x.IndicadorSLA == "No Prazo");
             int equipeForaPrazo = chamadosEquipe.Count(x => x.IndicadorSLA == "Fora do Prazo");
 
-            int sistemasForaPrazo = chamados.Count(x => x.IndicadorSLA == "Fora do Prazo"); 
+            int sistemasForaPrazo = chamados.Count(x => x.IndicadorSLA == "Fora do Prazo");
             int sistemasNoPrazo = chamados.Count(x => x.IndicadorSLA == "No Prazo");
 
             double porcentagemSistems = chamados.Count() > 0 ? CalcularPercentual(sistemasNoPrazo, sistemasNoPrazo + sistemasForaPrazo) : 0;
@@ -146,6 +146,9 @@ public class ColaboradorSLAService : IColaboradorSLAService
              })
              .Take(3)
             .ToList();
+
+            var he = _colaboradorRepository.GetHE(pessoa, periodoAtual);
+            colaborador.HE = he;
 
             AddEngajamento(id, colaborador);
 
@@ -207,7 +210,7 @@ public class ColaboradorSLAService : IColaboradorSLAService
         evolucaoSLA.Length > 3 ? evolucaoSLA[2].DentroDoPrazo : 0,
         evolucaoSLA.Length > 2 ? evolucaoSLA[1].DentroDoPrazo : 0,
         evolucaoSLA.Length > 1 ? evolucaoSLA[0].DentroDoPrazo : 0,
-        colaborador.Pessoal 
+        colaborador.Pessoal
         };
 
         colaborador.EvolucaoChamadosFechados = new int[]

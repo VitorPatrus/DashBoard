@@ -1,4 +1,5 @@
-﻿using BI.Sistemas.Domain;
+﻿using BI.Sistemas.Context;
+using BI.Sistemas.Domain;
 using System.Reflection.Metadata.Ecma335;
 using System.Text.RegularExpressions;
 using static BI.Sistemas.API.View.ColaboradorDashboardView;
@@ -12,7 +13,7 @@ namespace BI.Sistemas.API.View
         public int Pessoal { get; set; }
         public int Setorial { get; set; }
         public int Sistemas { get; set; }
-        public int HE { get; set; }
+        public HE? HE { get; set; }
         public int FechadosPessoal { get; set; }
         public int FechadosEquipe { get; set; }
         public int FechadosSistemas { get; set; }

@@ -13,6 +13,7 @@ namespace BI.Sistemas.Domain
         public string Time { get; set; }
         public byte[]? Foto { get; set; }
         public string UserTMetric { get; set; }
+        public int Matricula { get; set; }
         public bool Suporte
         {
             get
