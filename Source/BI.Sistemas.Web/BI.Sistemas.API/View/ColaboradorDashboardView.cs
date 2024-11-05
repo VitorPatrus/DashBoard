@@ -23,6 +23,7 @@ namespace BI.Sistemas.API.View
         public EvolucaoEngajamentoView[] EvolucaoEngajamento { get; set; }
         public ParentItemView[] Parents { get; set; }
         public string Menssagem { get; set; }
+        public bool Desenvolvedor { get; private set; } = true;
 
         public double TotalApropriado
         {

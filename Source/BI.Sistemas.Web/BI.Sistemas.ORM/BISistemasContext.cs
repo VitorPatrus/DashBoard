@@ -364,10 +364,10 @@ namespace BI.Sistemas.Context
                     .HasColumnName("DATAABERTURA")
                     .IsRequired();
 
-                entity.Property(e => e.DataFechamento)
+                entity.Property(e => e.DataVencimento)
                     .HasColumnName("DATAFECHAMENTO");
 
-                entity.Property(e => e.DataVencimento)
+                entity.Property(e => e.DataFechamento)
                     .HasColumnName("DATAVENCIMENTO");
 
                 entity.Property(e => e.Assunto)

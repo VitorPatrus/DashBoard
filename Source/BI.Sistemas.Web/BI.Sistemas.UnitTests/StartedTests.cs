@@ -187,7 +187,7 @@ namespace BI.Sistemas.UnitTests
                 }
             }
 
-            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesAbertas (2).csv")
+            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesAbertas (1).csv")
               .Skip(1)
               .Where(x => !string.IsNullOrWhiteSpace(x))
               .ToList()
@@ -212,7 +212,7 @@ namespace BI.Sistemas.UnitTests
                   }
               });
 
-            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesSemanaAnterior (2).csv")
+            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesSemanaAnterior (1).csv")
                 .Skip(1)
                 .Where(x => !string.IsNullOrWhiteSpace(x))
                 .ToList()
@@ -350,6 +350,7 @@ namespace BI.Sistemas.UnitTests
                 }
             }
         }
+
         static decimal ConverterParaDecimalHoras(string planilha)
         {
             bool ehNegativo = planilha.Contains("-");

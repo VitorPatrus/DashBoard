@@ -2,10 +2,8 @@
 using BI.Sistemas.API.View;
 using BI.Sistemas.Context;
 using BI.Sistemas.Domain;
-using BI.Sistemas.Domain.Extensions;
 using BI.Sistemas.Domain.Novo;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.WebEncoders.Testing;
 using Microsoft.IdentityModel.Tokens;
 using static BI.Sistemas.API.View.ColaboradorSLADashboardView;
 
@@ -61,7 +59,7 @@ public class ColaboradorSLAService : IColaboradorSLAService
                     Numero = x.Numero,
                     Assunto = x.Assunto,
                     DataAbertura = x.DataAbertura?.ToString("dd/MM/yyyy"),
-                    DataFechamento = x.DataFechamento?.ToString("dd/MM/yyyy"),
+                    DataFechamento = x.DataVencimento?.ToString("dd/MM/yyyy"),
                     Servico = x.Servico,
                     Solicitante = x.Pessoa
 
@@ -124,18 +122,23 @@ public class ColaboradorSLAService : IColaboradorSLAService
             colaborador.SLA_Time = porcentagemTime;
 
             var listaColaboradoresOrdenados = chamados
-            .Where(x => colaboradoresSuporte.Any(c => c.Id.EqualsGuid(x.ResponsavelId.ToString())))
+            .Where(x => colaboradoresSuporte.Any(c => c.Nome.Equals(colaborador.Nome, StringComparison.CurrentCultureIgnoreCase)))
             .GroupBy(c => c.ResponsavelChamado)
             .Select(x => new
             {
                 Nome = x.Key,
-                DentroDoPrazo = x.Count(y => y.IndicadorSLA == "No Prazo"),
-                ForaDoPrazo = x.Count(y => y.IndicadorSLA == "Fora do Prazo")
+                DentroDoPrazo = x.Count(x => x.IndicadorSLA == "No Prazo"),
+                ForaDoPrazo = x.Count(x => x.IndicadorSLA == "Fora do Prazo")
             })
             .OrderByDescending(q => q.DentroDoPrazo / (q.DentroDoPrazo + q.ForaDoPrazo) * 100)
             .ThenByDescending(x => x.DentroDoPrazo)
             .Where(x => x.DentroDoPrazo > 0)
             .ToList();
+
+            var exclude = new List<string> { "", "Amanda Ferreira (TI MTZ)" };
+
+            listaColaboradoresOrdenados.RemoveAll(e =>
+                exclude.Contains(e.Nome, StringComparer.CurrentCultureIgnoreCase));
 
             colaborador.TopSLA = listaColaboradoresOrdenados
              .Select(l => new SLAView
@@ -147,8 +150,7 @@ public class ColaboradorSLAService : IColaboradorSLAService
              .Take(3)
             .ToList();
 
-            var he = _colaboradorRepository.GetHE(pessoa, periodoAtual);
-            colaborador.HE = he;
+            colaborador.HE = _colaboradorRepository.GetHE(pessoa, periodoAtual);
 
             AddEngajamento(id, colaborador);
 
@@ -172,10 +174,10 @@ public class ColaboradorSLAService : IColaboradorSLAService
         {
             if (obj.ResponsavelChamado != "")
             {
-                if (obj.DataFechamento != null)
+                if (obj.DataVencimento != null)
                 {
                     var abertura = obj?.DataAbertura;
-                    var fechamento = obj?.DataFechamento;
+                    var fechamento = obj?.DataVencimento;
                     var diferenca = fechamento - abertura;
                     var dias = diferenca?.TotalDays;
                     soma += dias ?? 0;
@@ -198,9 +200,7 @@ public class ColaboradorSLAService : IColaboradorSLAService
         var pessoa = _colaboradorRepository.GetPessoa(id.ToUpper());
 
         if (pessoa == null)
-        {
             throw new Exception("Colaborador não encontrado.");
-        }
 
         var periodoAtual = _colaboradorRepository.GetPeriodo();
         var evolucaoSLA = FiltrarEvolucao(id);
@@ -235,11 +235,10 @@ public class ColaboradorSLAService : IColaboradorSLAService
             });
         }
 
-        Teste(id, colaborador, periodoAtual);
+        AtualizarEvolucaoSLA(id, colaborador, periodoAtual);
 
         return lista;
     }
-
 
     public EvolucaoSLA[] FiltrarEvolucao(string id)
     {
@@ -252,7 +251,7 @@ public class ColaboradorSLAService : IColaboradorSLAService
                 return db.EvolucaoSLA
                     .Where(e => e.ColaboradorId == colaborador.Id)
                     .OrderByDescending(e => e.Data)
-                    .Take(3)
+                    .Take(1)
                     .ToArray();
             }
             else
@@ -262,7 +261,7 @@ public class ColaboradorSLAService : IColaboradorSLAService
         }
     }
 
-    public void Teste(string id, ColaboradorSLADashboardView colaboradorView, Periodo periodoAtual)
+    public void AtualizarEvolucaoSLA(string id, ColaboradorSLADashboardView colaboradorView, Periodo periodoAtual)
     {
         var pessoa = _colaboradorRepository.GetPessoa(id);
         var lista = new List<EvolucaoSLA>();
@@ -306,9 +305,9 @@ public class ColaboradorSLAService : IColaboradorSLAService
         }
     }
 
-    private int CalcularPercentual(int valor, int total)
+    private static int CalcularPercentual(int valor, int total)
     {
-        if (total <= 0) return 0;
-        return (int)Math.Round((double)valor / total * 100);
+        var retorno = (total <= 0) ? 0 : (int)Math.Round((double)valor / total * 100);
+        return retorno;
     }
 }

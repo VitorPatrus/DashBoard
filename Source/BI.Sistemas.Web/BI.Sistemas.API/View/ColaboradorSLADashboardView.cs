@@ -41,6 +41,7 @@ namespace BI.Sistemas.API.View
         public string LeadTime { get; set; }
         public string LeadTimeEquipe { get; set; }
         public string LeadTimeSistemas { get; set; }
+        public bool Desenvolvedor { get; private set; } = false;
 
         public class SLAView
         {

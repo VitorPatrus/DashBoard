@@ -57,18 +57,12 @@ namespace BI.Sistemas.API.Service
             var listaColaboradores = _colaboradorRepository.GetListaColaboradores();
 
             var HoraPonto = pontosTodos
-                .Where(he => he.PeriodoId.ToString().ToUpper() == HE.PeriodoId.ToString().ToUpper() && he.ColaboradorId
+                .Where(he => he.PeriodoId.ToString().Equals(HE.PeriodoId.ToString(), StringComparison.CurrentCultureIgnoreCase) && he.ColaboradorId
                 .ToString().Equals(id, StringComparison.OrdinalIgnoreCase) && he.Tipo == TipoPonto.Normal)
                 .Select(C => C.Horas);
 
-            if (HoraPonto != null && HoraPonto.Any())
-            {
-                colaborador.TotalPonto = metricas.GetHoras(HoraPonto);
-            }
-            else
-            {
-                colaborador.TotalPonto = pessoa.CargaHoraria;
-            }
+            colaborador.TotalPonto = HoraPonto != null && HoraPonto.Any() ? metricas.GetHoras(HoraPonto) : pessoa.CargaHoraria;
+
 
             var horas = tmetricTodos
                 .Where(tm => tm.PeriodoId.ToString().ToUpper() == HE.PeriodoId.ToString()
@@ -126,7 +120,7 @@ namespace BI.Sistemas.API.Service
                 })
             .ToArray();
 
-            var peneira = metrics.Where(a => a.ColaboradorId.ToString().Equals(pessoa.Id.ToString(), StringComparison.CurrentCultureIgnoreCase) && !string.IsNullOrEmpty(a.ParentType))
+            var filtro = metrics.Where(a => a.ColaboradorId.ToString().Equals(pessoa.Id.ToString(), StringComparison.CurrentCultureIgnoreCase) && !string.IsNullOrEmpty(a.ParentType))
                 .GroupBy(a => new { a.ParentType, a.ParentTitulo })
                 .Select(a => new ParentItemView()
                 {
@@ -137,16 +131,16 @@ namespace BI.Sistemas.API.Service
                 .OrderByDescending(a => a.Horas)
                 .ToArray();
 
-            if (peneira.Length > 5)
+            if (filtro.Length > 5)
             {
-                var atvdRestantes = peneira.Length - 5;
-                colaborador.Parents = peneira.Take(5).ToArray();
+                var atvdRestantes = filtro.Length - 5;
+                colaborador.Parents = filtro.Take(5).ToArray();
                 colaborador.Menssagem = $"+{atvdRestantes} Atividade(s) Ativas";
             }
             else
             {
-                colaborador.Parents = peneira;
-                colaborador.Menssagem = $"{peneira.Length} Atividade(s) Ativas";
+                colaborador.Parents = filtro;
+                colaborador.Menssagem = $"{filtro.Length} Atividade(s) Ativas";
             }
 
             colaborador.PJ = pessoa.CargaHoraria > 0;
