@@ -1,5 +1,8 @@
-﻿using BI.Sistemas.Domain;
+﻿using BI.Sistemas.Context;
+using BI.Sistemas.Domain;
+using System.Reflection.Metadata.Ecma335;
 using System.Text.RegularExpressions;
+using static BI.Sistemas.API.View.ColaboradorDashboardView;
 
 namespace BI.Sistemas.API.View
 {
@@ -10,30 +13,49 @@ namespace BI.Sistemas.API.View
         public int Pessoal { get; set; }
         public int Setorial { get; set; }
         public int Sistemas { get; set; }
-        public int HE_Compensavel { get; set; }
-        public int HE_NaoCompensavel { get; set; }
-        public int Pendentes { get; set; }
+        public HE? HE { get; set; }
+        public int FechadosPessoal { get; set; }
+        public int FechadosEquipe { get; set; }
+        public int FechadosSistemas { get; set; }
+        public int Aguardando { get; set; }
+
         public string FotoTime { get; set; }
         public string FotoColaborador { get; set; }
         public string Nome { get; set; }
         public string Email { get; set; }
         public string Cargo { get; set; }
         public string Time { get; set; }
+
+        public int Chamados_SLA_Individual { get; set; }
         public double SLA_Individual { get; set; }
         public double SLA_Time { get; set; }
-        public double TotalHoras { get; set; }
-        public ChamadoView[] StatusChamado { get; set; }
+        public double SLA_Sistemas { get; set; }
+
         public List<SLAView> TopSLA { get; set; }
-        //public List<ChamadoView> ForaPrazo { get; set; }
-        //public List<ChamadoView> DentroPrazo { get; set; }
-        //public List<ChamadoView> Pendentes { get; set; }
+        public List<ChamadoView> TabelaForaPrazo { get; set; }
+        public List<ChamadoView> TabelaPendentes { get; set; }
+        public List<ServicoView> Servicos { get; set; }
+        public int[] EvolucaoChamadosAbertos { get; set; }
+        public int[] EvolucaoChamadosFechados { get; set; }
+
+        public string LeadTime { get; set; }
+        public string LeadTimeEquipe { get; set; }
+        public string LeadTimeSistemas { get; set; }
+        public bool Desenvolvedor { get; private set; } = false;
 
         public class SLAView
         {
             public string Nome { get; set; }
             public string Foto { get; set; }
-            public int Percentual { get; set; }
+            public double Percentual { get; set; }
+            public int DentroDoPrazo { get; set; }
 
+        }
+        public class EvolucaoSLAView
+        {
+            public string Data { get; set; }
+            public int Valor { get; set; }
+            public string Tipo { get; set; }
         }
         public class ApropriacaoView
         {
@@ -69,13 +91,18 @@ namespace BI.Sistemas.API.View
         }
         public class ChamadoView
         {
-            public Guid Id { get; set; }
-            public string Ticket { get; set; }
-            public string Atividade { get; set; }
-            public string Tipo { get; set; }
-            public DateTime Data { get; set; }
-            public string Descricao { get; set; }
-            public DateTime Horas { get; set; }
+            public int? Numero { get; set; }
+            public string Solicitante { get; set; }
+            public string Assunto { get; set; }
+            public string? DataAbertura { get; set; }
+            public string? DataFechamento { get; set; }
+            public string Servico { get; set; }
+
+        }
+        public class ServicoView
+        {
+            public string Servico { get; set; }
+            public int Quantidade { get; set; }
 
         }
     }

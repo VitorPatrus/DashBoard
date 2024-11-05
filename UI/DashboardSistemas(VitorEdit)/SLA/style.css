@@ -1,11 +1,30 @@
+.card {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 375px;
+}
 
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0; 
+    margin-top: 0;
 }
+
+element.style {
+    background: green;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.elemento:hover {
+    background-color: #c81238;
+    color: white;
+}
+
 .nav-item.dropdown:hover .nav-link {
     background-color: #c81238;
-    color:#fff;
+    color: #fff;
     border-radius: 10px;
 }
 
@@ -13,19 +32,21 @@
     font-size: 23px;
     font-weight: bolder;
 }
+
 #chartdiv {
     width: 90%;
     height: 325px;
-  }
+}
 
-  .table {
+.table {
     border-collapse: separate;
     border-spacing: 0;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.table th, .table td {
+.table th,
+.table td {
     padding: 10px;
     border: 1px solid #ddd;
 }
@@ -45,6 +66,7 @@
 .table tbody tr:last-child td:last-child {
     border-bottom-right-radius: 10px;
 }
+
 #timeseriesChart .bb-region.discovery {
     fill: blue;
     font-family: Castellar;
@@ -85,14 +107,6 @@
     align-items: center;
 }
 
-/* Ajustando o alinhamento do texto das horas */
-.horas-card .meutexto {
-    display: block;
-    margin-top: 10px;
-    /* Espaço entre os elementos */
-    text-align: center;
-    /* Centraliza o texto */
-}
 
 .sendMailButton {
     background-color: #13aa52;
@@ -164,29 +178,45 @@ body {
 }
 
 span.meutexto {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 650;
-    font-size: 23px !important;
+    color: red;
+    font-family: 'Soccer Scoreboard', sans-serif;
+    font-weight: 700;
+    font-size: 28px !important;
+}
+ /* Estilo geral */
+ .dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.list-unstyled {
-    list-style-type: none;
-    /* Remove os marcadores de lista */
-    padding-left: 0;
-    /* Remove o recuo padrão da lista */
+/* Estilo do menu dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-#piechart {
-    width: 100%;
-    height: 100%;
+/* Estilo dos links dentro do dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+/* Mostrar dropdown ao passar o mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-.card .row {
-    flex-grow: 1;
+/* Estilo para os links do dropdown ao passar o mouse */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.am5-layer-30 {
+ height: 0px !important;
+ width: 0px !important;
 }

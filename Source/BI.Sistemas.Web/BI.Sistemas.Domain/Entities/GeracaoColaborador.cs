@@ -15,7 +15,6 @@ namespace BI.Sistemas.Domain.Novo
         public double Engajamento { get; set; }
         public double TempoTrabalhado { get; set; }
         public double TempoApropriado { get; set; }
-
         public GeracaoColaborador() { }
         public GeracaoColaborador(Colaborador colaborador, Time time)
         {
@@ -27,7 +26,6 @@ namespace BI.Sistemas.Domain.Novo
         {
             return Colaborador?.Nome;
         }
-
         public string GetTime()
         {
             return Time?.Nome;

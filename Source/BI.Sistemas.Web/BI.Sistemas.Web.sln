@@ -9,9 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BI.Sistemas.ORM", "BI.Siste
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BI.Sistemas.UnitTests", "BI.Sistemas.UnitTests\BI.Sistemas.UnitTests.csproj", "{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BI.Sisitemas.API", "BI.Sisitemas.API\BI.Sisitemas.API.csproj", "{7966DBED-AA37-4A00-9F26-5DDEFC9BB6C8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BI.Sistemas.API", "BI.Sistemas.API\BI.Sistemas.API.csproj", "{AC4B83B4-3C61-4A28-9798-82160546AE0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BI.Sistemas.API", "BI.Sistemas.API\BI.Sistemas.API.csproj", "{AC4B83B4-3C61-4A28-9798-82160546AE0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +29,6 @@ Global
 		{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7966DBED-AA37-4A00-9F26-5DDEFC9BB6C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7966DBED-AA37-4A00-9F26-5DDEFC9BB6C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7966DBED-AA37-4A00-9F26-5DDEFC9BB6C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7966DBED-AA37-4A00-9F26-5DDEFC9BB6C8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AC4B83B4-3C61-4A28-9798-82160546AE0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AC4B83B4-3C61-4A28-9798-82160546AE0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC4B83B4-3C61-4A28-9798-82160546AE0F}.Release|Any CPU.ActiveCfg = Release|Any CPU

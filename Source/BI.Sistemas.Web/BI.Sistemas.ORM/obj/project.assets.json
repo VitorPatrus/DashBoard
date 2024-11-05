@@ -46,6 +46,19 @@
           }
         }
       },
+      "CsvHelper/33.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CsvHelper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CsvHelper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -990,6 +1003,9 @@
       "BI.Sistemas.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "CsvHelper": "33.0.1"
+        },
         "compile": {
           "bin/placeholder/BI.Sistemas.Domain.dll": {}
         },
@@ -1040,6 +1056,34 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "CsvHelper/33.0.1": {
+      "sha512": "fev4lynklAU2A9GVMLtwarkwaanjSYB4wUqO2nOJX5hnzObORzUqVLe+bDYCUyIIRQM4o5Bsq3CcyJR89iMmEQ==",
+      "type": "package",
+      "path": "csvhelper/33.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "csvhelper.33.0.1.nupkg.sha512",
+        "csvhelper.nuspec",
+        "lib/net462/CsvHelper.dll",
+        "lib/net462/CsvHelper.xml",
+        "lib/net47/CsvHelper.dll",
+        "lib/net47/CsvHelper.xml",
+        "lib/net48/CsvHelper.dll",
+        "lib/net48/CsvHelper.xml",
+        "lib/net6.0/CsvHelper.dll",
+        "lib/net6.0/CsvHelper.xml",
+        "lib/net7.0/CsvHelper.dll",
+        "lib/net7.0/CsvHelper.xml",
+        "lib/net8.0/CsvHelper.dll",
+        "lib/net8.0/CsvHelper.xml",
+        "lib/netstandard2.0/CsvHelper.dll",
+        "lib/netstandard2.0/CsvHelper.xml",
+        "lib/netstandard2.1/CsvHelper.dll",
+        "lib/netstandard2.1/CsvHelper.xml"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -2770,11 +2814,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj",
+      "projectUniqueName": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj",
       "projectName": "BI.Sistemas.ORM",
-      "projectPath": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj",
+      "projectPath": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj",
       "packagesPath": "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\obj\\",
+      "outputPath": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vitor.fernandessouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2792,8 +2836,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj": {
-              "projectPath": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj"
+            "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj": {
+              "projectPath": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj"
             }
           }
         }
@@ -2838,7 +2882,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

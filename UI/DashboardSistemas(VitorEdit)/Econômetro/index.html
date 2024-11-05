@@ -15,22 +15,32 @@
     <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
 </head>
 
 <body>
     <nav class="navbar navbar-light" style="color: #fff; background-color: #414042 !important; max-height: 70px;">
-        <a class="navbar-brand">
+        <div class="dropdown">
             <a href="/Devs/index.html">
-                <img src="/Content/Images/PatrusTech.png" width="40" height="40" class="d-inline-block align-top" alt=""
-                    style="border-radius: 50%;">
+                <img src="/Content/Images/PatrusTech.png" width="40" height="40"
+                    class="d-inline-block align-top" alt="" style="border-radius: 50%;">
             </a>
-        </a>
+            <div class="dropdown-content">
+                <a href="/Devs/index.html">Dashboard Dev's</a>
+                <a href="/SLA/sla.html">Dashboard SLA</a>
+            </div>
+        </div>
         <div class="mx-auto text-left" style="padding-left: 100px;">
             <h4 class="m-0">Econômetro Patrus Tech 2024</h4>
         </div>
         <div class="clock">
             <time>12:00:00</time>
+            <div id="animate_confetti"></div>
         </div>
     </nav>
 
@@ -140,9 +150,13 @@
                 <div class="card l-bg-blue-dark">
                     <div class="card-statistic-3 p-4">
                         <div class="card-icon card-icon-large" style="padding-right: 20px; ">
-                            <i class="fas fa-sack-dollar fa-fade"></i>
+                            <!-- <i class="fas fa-sack-dollar fa-fade"></i>
                             <i class="fas fa-sack-dollar fa-beat-fade" style="margin-left: -45px;"></i>
-                            <i class="fas fa-sack-dollar fa-fade" style="margin-left: -45px"></i>
+                            <i class="fas fa-sack-dollar fa-fade" style="margin-left: -45px"></i> -->
+                            <lord-icon src="https://cdn.lordicon.com/qnwzeeae.json" trigger="loop" delay="2000"
+                                state="hover-spending" colors="primary:#ffc738,secondary:#e4e4e4"
+                                style="width:300px;height:300px; margin-top: -55px; padding-left: 15px;">
+                            </lord-icon>
                         </div>
                         <div class="mb-4">
                             <h3 class="card-title mb-0">Econômetro 2024</h3>
@@ -178,7 +192,8 @@
                                 <div class="mb-4">
                                     <h5 class="card-title mb-0">Evolução Mensal 2024</h5><br>
                                     <!-- grafico evolução -->
-                                    <div id="barIndices_2" style="margin-left: -30px;"></div>
+                                    <!-- <div id="barIndices_2" style="margin-left: -30px;"></div> -->
+                                    <canvas id="myChart" width="400" height="200"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -187,12 +202,31 @@
                         <!-- Card 1 -->
                         <div class="card mb-4 card-hover">
                             <div class="row g'-0" style="padding-left: 15px !important;">
-                                <a class="col-12 col-md-12 col-xl-3 col-lg-3 bg-cover rounded-start"
-                                    style="background-image: url(/Content/Images/Time_TMS.png); background-size: cover; border-radius: 5%;"></a>
+                                <a class="col-12 col-md-12 col-xl-3 col-lg-3 bg-cover rounded-start" style="position: relative; 
+                                       display: block; 
+                                       overflow: hidden; 
+                                       border-radius: 5%;">
+                                    <div style="position: absolute; 
+                                            top: 0; 
+                                            left: 0; 
+                                            right: 0; 
+                                            bottom: 0; 
+                                            background-image: url('/Content/Images/time-Suporte TMS.png'); 
+                                            background-size: cover; 
+                                            background-position: center; 
+                                            filter: blur(10px);"></div>
+
+                                    <img src="/Content/Images/time-Suporte TMS.png" alt="Imagem TMS" style="position: relative; 
+                                            width: 115%; 
+                                            margin-top: 45px;
+                                            margin-left: 0px;
+                                            height: auto; 
+                                            z-index: 1; 
+                                            border-radius: 5%;">
+                                </a>
                                 <div class="col-lg-9 col-md-12 col-12">
                                     <div class="card-body">
                                         <h5 class="card-title mb-0">Time TMS 2024</h5><br>
-
                                         <div class="row align-items-center g-0">
                                             <div class="col-10">
                                                 <h3 id="valorTotalAcumuladoTMS"></h3>
@@ -213,8 +247,28 @@
                         <!-- Card 2 -->
                         <div class="card mb-4 card-hover">
                             <div class="row g-0" style="padding-left: 15px !important;">
-                                <a class="col-12 col-md-12 col-xl-3 col-lg-3 bg-cover rounded-start"
-                                    style="background-image: url(/Content/Images/image.png); background-size: cover ;  border-radius:5%;"></a>
+                                <a class="col-12 col-md-12 col-xl-3 col-lg-3 bg-cover rounded-start" style="position: relative; 
+                                       display: block; 
+                                       overflow: hidden; 
+                                       border-radius: 5%;">
+                                    <div style="position: absolute; 
+                                            top: 0; 
+                                            left: 0; 
+                                            right: 0; 
+                                            bottom: 0; 
+                                            background-image: url('/Content/Images/time-erp.png'); 
+                                            background-size: cover; 
+                                            background-position: center; 
+                                            filter: blur(10px);"></div>
+
+                                    <img src="/Content/Images/time-erp.png" alt="Imagem TMS" style="position: relative; 
+                                            width: 113%; 
+                                            margin-top: 40px;
+                                            margin-left: 0px;
+                                            height: auto; 
+                                            z-index: 1; 
+                                            border-radius: 5%;">
+                                </a>
                                 <div class="col-lg-9 col-md-12 col-12">
                                     <div class="card-body">
                                         <h5 class="card-title mb-0">Time ERP 2024</h5><br>

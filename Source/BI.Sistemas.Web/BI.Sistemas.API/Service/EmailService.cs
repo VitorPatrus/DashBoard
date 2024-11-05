@@ -16,7 +16,7 @@ namespace BI.Sistemas.API.Service
         }
         public Task SendEmailAsync(EnviarEmailDados dados)
         {
-            EnviarEmailDados email = new EnviarEmailDados();
+            ColaboradorDashboardView colaborador = new ColaboradorDashboardView();
 
             var pessoa = _colaboradorRepository.GetPessoa(dados.Id);
             if (pessoa == null)
@@ -91,11 +91,13 @@ namespace BI.Sistemas.API.Service
                 }
                 mailItem.Subject = $@"[SISTEMAS] APURAÇÃO DE HORAS SEMANAL - {pessoa.Nome.ToUpper()} ";
                 mailItem.BodyFormat = Microsoft.Office.Interop.Outlook.OlBodyFormat.olFormatHTML;
+                string email = DateTime.Now.Hour < 12 ? "Bom dia" : "Boa tarde";
+
                 string msgHTMLBody = $@"
              <html>
                 <head></head>
                 <body>
-                    {email.MensagemInicial()}, {pessoa.Nome},<br><br>
+                    {email}, {pessoa.Nome},<br><br>
                     Segue o dashboard com os lançamentos do período.<b> {dados.Periodo}.</b><br><br>
                     <div style=""min-width:600px!important;margin-left:auto;margin-right:auto; ""></div>
                     <img src=""{gif}"" width=""80"" height=""80""/><br>
@@ -116,7 +118,9 @@ namespace BI.Sistemas.API.Service
                 </body>
             </html>";
 
-                mailItem.HTMLBody = msgHTMLBody;
+                string msgEmailMovidesk = "vitor lindo";
+
+                mailItem.HTMLBody = colaborador.Desenvolvedor ? msgHTMLBody : msgEmailMovidesk;
                 mailItem.Send();
                 return Task.CompletedTask;
             }
