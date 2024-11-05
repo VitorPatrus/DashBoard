@@ -27,9 +27,7 @@ function clickColaboradorFuncao(id) {
     $('#aguardando').text('Aguardando usuário: ' + responseData.aguardando);
     $('#total').text('Total de Chamados: ' + (responseData.pessoal + responseData.fechadosPessoal));
 
-    $('#compensavel').text(responseData.hE_Compensavel + 'h');
-    $('#nao_compensavel').text(responseData.hE_NaoCompensavel + 'h');
-    $('#total_Horas').text(responseData.totalHoras + 'h');
+    $('#he').text(responseData.he.horas + 'h');
 
     $('#primeiroNome').text(responseData.topSLA[0].nome);
     $('#primeiro').text(responseData.topSLA[0].percentual + '%');
