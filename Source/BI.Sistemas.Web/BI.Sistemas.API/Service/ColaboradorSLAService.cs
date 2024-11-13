@@ -21,7 +21,6 @@ public class ColaboradorSLAService : IColaboradorSLAService
     }
     public ColaboradorSLADashboardView GetColaboradorDashboard(string id)
     {
-
         try
         {
             if (id.IsNullOrEmpty())
@@ -32,24 +31,20 @@ public class ColaboradorSLAService : IColaboradorSLAService
             if (pessoa == null)
                 throw new Exception($"Colaborador não encontrado (ID: {id})");
 
-            var periodo = _colaboradorRepository.GetPeriodo();
+            var periodoAtual = _colaboradorRepository.GetPeriodo();
             var colaboradoresSuporte = _colaboradorRepository.GetListaColaboradores().Where(x => x.Suporte).ToList();
-            var chamados = _colaboradorRepository.GetChamados(periodo);
+            var chamados = _colaboradorRepository.GetChamados(periodoAtual);
             var chamadosDaPessoa = chamados.Where(x => pessoa.UserTMetric.Trim().Equals(x.ResponsavelChamado.Trim(), StringComparison.CurrentCultureIgnoreCase)).ToList();
             var chamadosEquipe = chamados.Where(x => x.Time.Equals(pessoa.Time, StringComparison.CurrentCultureIgnoreCase)).ToList();
             var colaborador = new ColaboradorSLADashboardView();
 
-            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            DirectoryInfo projectDirectory = null;
-            if (baseDirectory != null)
-                projectDirectory = Directory.GetParent(baseDirectory).Parent.Parent.Parent.Parent.Parent.Parent;
+            string projectDirectory = _colaboradorRepository.ObterDiretorioProjeto();
 
             colaborador.Nome = pessoa.Nome;
             colaborador.Email = pessoa.Email;
             colaborador.FotoColaborador = Convert.ToBase64String(pessoa.Foto);
             colaborador.Cargo = pessoa.Cargo;
             colaborador.Time = $"Time {pessoa.Time}";
-            var periodoAtual = _colaboradorRepository.GetPeriodo();
             colaborador.FotoTime = Convert.ToBase64String(System.IO.File
                .ReadAllBytes($@"{projectDirectory}\UI\Content\Images\time-{pessoa.Time}.png"));
 
@@ -87,7 +82,9 @@ public class ColaboradorSLAService : IColaboradorSLAService
 
             var servicos = chamadosDaPessoa.GroupBy(x => x.Servico)
                 .OrderByDescending(x => x.Count())
-                .Take(3).ToList();
+                .Take(3)
+                .ToList();
+
             colaborador.Servicos = servicos
                 .Select(x => new ServicoView
                 {
@@ -152,7 +149,7 @@ public class ColaboradorSLAService : IColaboradorSLAService
 
             colaborador.HE = _colaboradorRepository.GetHE(pessoa, periodoAtual);
             RegistrarEvolucao(id, colaborador, periodoAtual);
-            AddEngajamento(id, colaborador);
+            AddEngajamento(id, colaborador, periodoAtual);
 
             return colaborador;
         }
@@ -165,6 +162,7 @@ public class ColaboradorSLAService : IColaboradorSLAService
             throw new Exception(ex.Message);
         }
     }
+
     private string CalcularLeadTime(ColaboradorSLADashboardView colaborador, List<Movidesk> chamados)
     {
         double soma = 0;
@@ -195,14 +193,9 @@ public class ColaboradorSLAService : IColaboradorSLAService
         }
         return (soma / conta).ToString("F0");
     }
-    private void AddEngajamento(string id, ColaboradorSLADashboardView colaborador)
+    private void AddEngajamento(string id, ColaboradorSLADashboardView colaborador, Periodo periodoAtual)
     {
-        var pessoa = _colaboradorRepository.GetPessoa(id.ToUpper());
 
-        if (pessoa == null)
-            throw new Exception("Colaborador não encontrado.");
-
-        var periodoAtual = _colaboradorRepository.GetPeriodo();
         var evolucaoSLA = FiltrarEvolucao(id);
 
         colaborador.EvolucaoChamadosAbertos =
@@ -222,12 +215,20 @@ public class ColaboradorSLAService : IColaboradorSLAService
         ];
 
     }
+
+    public Colaborador ReturnColaborador(string id)
+    {
+        using (var db = new BISistemasContext())
+        {
+            return db.Colaboradores.FirstOrDefault(c => c.Id.ToString().ToUpper() == id.ToUpper());
+        }
+    }
     
     public EvolucaoSLA[] FiltrarEvolucao(string id)
     {
         using (var db = new BISistemasContext())
         {
-            var colaborador = db.Colaboradores.FirstOrDefault(c => c.Id.ToString().ToUpper() == id.ToUpper());
+            var colaborador = ReturnColaborador(id);
 
             if (colaborador != null)
             {
@@ -247,7 +248,7 @@ public class ColaboradorSLAService : IColaboradorSLAService
     {
         using (var db = new BISistemasContext())
         {
-            var colaborador = db.Colaboradores.FirstOrDefault(c => c.Id.ToString().ToUpper() == id.ToUpper());
+           var colaborador = ReturnColaborador(id);
 
             if (colaborador != null)
             {

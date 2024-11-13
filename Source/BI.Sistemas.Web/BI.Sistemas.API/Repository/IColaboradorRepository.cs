@@ -15,6 +15,7 @@ namespace BI.Sistemas.API.Repository
         List<Movidesk> GetChamados(Periodo periodo);
         List<Colaborador> GetColaboradoresTestes();
         HE? GetHE(Colaborador colaborador, Periodo periodoAtual);
+        string ObterDiretorioProjeto();
     }
 }
 

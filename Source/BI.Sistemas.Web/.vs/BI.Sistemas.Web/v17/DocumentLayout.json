@@ -3,36 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\documentos\\github\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\view\\colaboradordashboardview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\view\\colaboradordashboardview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\documentos\\github\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\service\\colaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\service\\colaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\documentos\\github\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\documentos\\github\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\service\\econometroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\service\\econometroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\documentos\\github\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\service\\colaboradorslaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\service\\colaboradorslaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\documentos\\github\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\service\\colaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\service\\colaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\documentos\\github\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\repository\\icolaboradorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\repository\\icolaboradorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\documentos\\github\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\repository\\colaboradorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\repository\\colaboradorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\documentos\\github\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\documentos\\github\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\interfaces\\ieconometroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\interfaces\\ieconometroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\documentos\\github\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\interfaces\\icolaboradorslaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,6 +29,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\documentos\\github\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\interfaces\\icolaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\interfaces\\icolaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\documentos\\github\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\service\\econometroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\service\\econometroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\documentos\\github\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\documentos\\github\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\interfaces\\ieconometroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\interfaces\\ieconometroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AD66710B-A799-4E3F-B69E-B722EFC5990F}|BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\documentos\\github\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.domain\\colaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,43 +77,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 312,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "StartedTests.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\StartedTests.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.UnitTests\\StartedTests.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\StartedTests.cs",
-              "RelativeToolTip": "BI.Sistemas.UnitTests\\StartedTests.cs",
-              "ViewState": "AgIAAIIBAAAAAAAAAAAuwIkBAAAtAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IColaboradorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Repository\\IColaboradorRepository.cs",
+              "RelativeDocumentMoniker": "BI.Sistemas.API\\Repository\\IColaboradorRepository.cs",
+              "ToolTip": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Repository\\IColaboradorRepository.cs",
+              "RelativeToolTip": "BI.Sistemas.API\\Repository\\IColaboradorRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAEwBEAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T14:40:14.463Z"
+              "WhenOpened": "2024-11-13T17:20:53.767Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ColaboradorSLAService.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\ColaboradorSLAService.cs",
               "RelativeDocumentMoniker": "BI.Sistemas.API\\Service\\ColaboradorSLAService.cs",
               "ToolTip": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\ColaboradorSLAService.cs",
               "RelativeToolTip": "BI.Sistemas.API\\Service\\ColaboradorSLAService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAN8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAIA6wBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T14:40:14.58Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ColaboradorDashboardView.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\View\\ColaboradorDashboardView.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.API\\View\\ColaboradorDashboardView.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\View\\ColaboradorDashboardView.cs",
-              "RelativeToolTip": "BI.Sistemas.API\\View\\ColaboradorDashboardView.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAqwAoAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T14:40:14.605Z",
+              "WhenOpened": "2024-11-13T14:40:14.58Z",
               "EditorCaption": ""
             },
             {
@@ -124,13 +113,14 @@
               "RelativeDocumentMoniker": "BI.Sistemas.API\\Service\\EmailService.cs",
               "ToolTip": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\EmailService.cs",
               "RelativeToolTip": "BI.Sistemas.API\\Service\\EmailService.cs",
-              "ViewState": "AgIAAP4AAAAAAAAAAAAwwIMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAOwAAAAAAAAAAAAwwIMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T14:40:14.617Z"
+              "WhenOpened": "2024-11-13T14:40:14.617Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "EconometroService.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\EconometroService.cs",
               "RelativeDocumentMoniker": "BI.Sistemas.API\\Service\\EconometroService.cs",
@@ -138,35 +128,38 @@
               "RelativeToolTip": "BI.Sistemas.API\\Service\\EconometroService.cs",
               "ViewState": "AgIAAHQAAAAAAAAAAAAwwGAAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T14:40:14.629Z"
+              "WhenOpened": "2024-11-13T14:40:14.629Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "ColaboradorService.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\ColaboradorService.cs",
               "RelativeDocumentMoniker": "BI.Sistemas.API\\Service\\ColaboradorService.cs",
               "ToolTip": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\ColaboradorService.cs",
               "RelativeToolTip": "BI.Sistemas.API\\Service\\ColaboradorService.cs",
-              "ViewState": "AgIAAJ4AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAjwCQAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T14:40:14.655Z"
+              "WhenOpened": "2024-11-13T14:40:14.655Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "ColaboradorRepository.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Repository\\ColaboradorRepository.cs",
               "RelativeDocumentMoniker": "BI.Sistemas.API\\Repository\\ColaboradorRepository.cs",
               "ToolTip": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Repository\\ColaboradorRepository.cs",
               "RelativeToolTip": "BI.Sistemas.API\\Repository\\ColaboradorRepository.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAA8wDAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAIAywDUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T14:40:14.681Z"
+              "WhenOpened": "2024-11-13T14:40:14.681Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Interfaces\\IEmailService.cs",
               "RelativeDocumentMoniker": "BI.Sistemas.API\\Interfaces\\IEmailService.cs",
@@ -178,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "IEconometroService.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Interfaces\\IEconometroService.cs",
               "RelativeDocumentMoniker": "BI.Sistemas.API\\Interfaces\\IEconometroService.cs",
@@ -190,15 +183,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "IColaboradorService.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Interfaces\\IColaboradorService.cs",
               "RelativeDocumentMoniker": "BI.Sistemas.API\\Interfaces\\IColaboradorService.cs",
               "ToolTip": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Interfaces\\IColaboradorService.cs",
               "RelativeToolTip": "BI.Sistemas.API\\Interfaces\\IColaboradorService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T14:40:14.711Z"
+              "WhenOpened": "2024-11-13T14:40:14.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IColaboradorSLAService.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Interfaces\\IColaboradorSLAService.cs",
+              "RelativeDocumentMoniker": "BI.Sistemas.API\\Interfaces\\IColaboradorSLAService.cs",
+              "ToolTip": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Interfaces\\IColaboradorSLAService.cs",
+              "RelativeToolTip": "BI.Sistemas.API\\Interfaces\\IColaboradorSLAService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T14:40:14.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StartedTests.cs",
+              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\StartedTests.cs",
+              "RelativeDocumentMoniker": "BI.Sistemas.UnitTests\\StartedTests.cs",
+              "ToolTip": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\StartedTests.cs",
+              "RelativeToolTip": "BI.Sistemas.UnitTests\\StartedTests.cs",
+              "ViewState": "AgIAAIIBAAAAAAAAAAAuwIkBAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T14:40:14.463Z"
             },
             {
               "$type": "Document",
@@ -226,18 +245,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IColaboradorSLAService.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Interfaces\\IColaboradorSLAService.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.API\\Interfaces\\IColaboradorSLAService.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Interfaces\\IColaboradorSLAService.cs",
-              "RelativeToolTip": "BI.Sistemas.API\\Interfaces\\IColaboradorSLAService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T14:40:14.744Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 13,
               "Title": "ColaboradorSLAController.cs",
               "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\GitHub\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorSLAController.cs",
@@ -246,7 +253,8 @@
               "RelativeToolTip": "BI.Sistemas.API\\Controllers\\ColaboradorSLAController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAACsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T14:40:14.762Z"
+              "WhenOpened": "2024-11-13T14:40:14.762Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

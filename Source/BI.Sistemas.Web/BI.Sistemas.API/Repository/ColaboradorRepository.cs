@@ -51,5 +51,10 @@ namespace BI.Sistemas.API.Repository
         {
             return _dbcontext.HorasExtras.FirstOrDefault(x => x.Colaborador == colaborador && x.Periodo == periodo);
         }
+        public string ObterDiretorioProjeto()
+        {
+            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            return Directory.GetParent(baseDirectory)?.Parent?.Parent?.Parent?.Parent?.Parent?.Parent?.FullName;
+        }
     }
 }

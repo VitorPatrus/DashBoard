@@ -34,11 +34,7 @@ namespace BI.Sistemas.API.Service
 
             var colaborador = new ColaboradorDashboardView();
 
-            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            DirectoryInfo projectDirectory = null;
-            if (baseDirectory != null)
-                projectDirectory = Directory.GetParent(baseDirectory).Parent.Parent.Parent.Parent.Parent.Parent;
-
+            string projectDirectory = _colaboradorRepository.ObterDiretorioProjeto();
 
             colaborador.Nome = pessoa.Nome;
             colaborador.Email = pessoa.Email;
@@ -144,30 +140,11 @@ namespace BI.Sistemas.API.Service
 
             colaborador.PJ = pessoa.CargaHoraria > 0;
             var he = _colaboradorRepository.GetHE(pessoa, periodoAtual);
-            AddEngajamento(id, colaborador, he);
+
+            colaborador.HE_Individual = !colaborador.PJ && he != null ? he.Horas : (decimal)colaborador.TotalPonto;
 
             return colaborador;
 
-        }
-        private List<EvolucaoEngajamentoView> AddEngajamento(string id, ColaboradorDashboardView colaborador, HE? he)
-        {
-            
-            if (!colaborador.PJ && he != null)
-            {
-                _colaboradorRepository.GetPessoa(id);
-                colaborador.HE_Individual = he.Horas;
-            }
-            else
-            {
-                _colaboradorRepository.GetPessoa(id);
-                colaborador.HE_Individual = (decimal)colaborador.TotalPonto;
-            }
-
-            var lista = new List<EvolucaoEngajamentoView>();
-
-            colaborador.EvolucaoEngajamento = lista.ToArray();
-
-            return lista;
         }
     }
 }
