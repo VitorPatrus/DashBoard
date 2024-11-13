@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BI.Sistemas.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ee8e9dd9fadd56ad9f107333960bb7cf979bd21")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+998669156f7a08ccdbb2daa9d5e785eca4f5d5b7")]
 [assembly: System.Reflection.AssemblyProductAttribute("BI.Sistemas.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BI.Sistemas.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

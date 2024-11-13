@@ -20,6 +20,7 @@ namespace BI.Sistemas.Context
         {
             _connectionString = connectionString;
         }
+
         public DbSet<Colaborador> Colaboradores { get; set; }
         public DbSet<Periodo> Periodos { get; set; }
         public DbSet<Movidesk> Movidesks { get; set; }

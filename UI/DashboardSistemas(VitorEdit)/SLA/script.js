@@ -4,13 +4,9 @@ let idColaborador;
 let slaColaborador;
 let listaForaPrazo;
 
-function truncarTexto(texto, limite) {
-  return texto.length > limite ? texto.substring(0, limite) + '...' : texto;
-}
-
 function clickColaboradorFuncao(id) {
   var apiUrl = 'https://localhost:7052/ColaboradorSLA/ColaboradorSLADashboard?id=' + id;
-  idColaborador = id;
+    idColaborador = id;
 
   $.get(apiUrl, function (responseData) {
     // Atualização de informações do colaborador
@@ -39,7 +35,7 @@ function clickColaboradorFuncao(id) {
       return `${horas.toString().padStart(2, '0')}:${minutos.toString().padStart(2, '0')}`;
     }
 
-    const decimalHoras = responseData.he ? responseData.he.horas : 0.0;
+    const decimalHoras = responseData.he ? responseData.he.horas : 0.0; 
     const horasFormatadas = decimalParaHoras(decimalHoras);
     const s = decimalHoras < 0
       ? `-${horasFormatadas}h`
@@ -63,13 +59,12 @@ function clickColaboradorFuncao(id) {
     $('#nao_compensavel').text(responseData.hE_NaoCompensavel + 'h');
     $('#total_Horas').text(responseData.totalHoras + 'h');
 
-    $('#primeiroNome').text(truncarTexto(responseData.topSLA[0].nome, 20));
+    $('#primeiroNome').text(responseData.topSLA[0].nome);
     $('#primeiro').text(responseData.topSLA[0].percentual + '%');
-    $('#segundoNome').text(truncarTexto(responseData.topSLA[1].nome, 20));
+    $('#segundoNome').text(responseData.topSLA[1].nome);
     $('#segundo').text(responseData.topSLA[1].percentual + '%');
-    $('#terceiroNome').text(truncarTexto(responseData.topSLA[2].nome, 20));
+    $('#terceiroNome').text(responseData.topSLA[2].nome);
     $('#terceiro').text(responseData.topSLA[2].percentual + '%');
-
 
     $('#leadTimePessoal').text(responseData.leadTime + ' dias');
     $('#leadTimeSistemas').text(responseData.leadTimeSistemas + ' dias');
@@ -397,40 +392,40 @@ function preencherTabelaServicos(servicos) {
 }
 
 function preencherTabela(tabelaForaPrazo) {
+
   var tbody = document.getElementById('atividades');
   tbody.innerHTML = '';
 
   tabelaForaPrazo.forEach(function (chamado) {
-      var tr = document.createElement('tr');
+    var tr = document.createElement('tr');
 
-      var tdTicket = document.createElement('td');
-      tdTicket.textContent = chamado.numero;
-      tr.appendChild(tdTicket);
+    var tdTicket = document.createElement('td');
+    tdTicket.textContent = '#' + chamado.numero;
+    tr.appendChild(tdTicket);
 
-      var solicitante = document.createElement('td');
-      solicitante.textContent = truncarTexto(chamado.solicitante, 8);
-      tr.appendChild(solicitante);
+    var solicitante = document.createElement('td');
+    solicitante.textContent = chamado.solicitante;
+    tr.appendChild(solicitante);
 
-      var tdAtividade = document.createElement('td');
-      tdAtividade.textContent = truncarTexto(chamado.assunto, 15);
-      tr.appendChild(tdAtividade);
+    var tdAtividade = document.createElement('td');
+    tdAtividade.textContent = chamado.assunto;
+    tr.appendChild(tdAtividade);
 
-      var tdTipo = document.createElement('td');
-      tdTipo.textContent = truncarTexto(chamado.servico, 13);
-      tr.appendChild(tdTipo);
+    var tdTipo = document.createElement('td');
+    tdTipo.textContent = chamado.servico;
+    tr.appendChild(tdTipo);
 
-      var tdData = document.createElement('td');
-      tdData.textContent = chamado.dataAbertura;
-      tr.appendChild(tdData);
+    var tdData = document.createElement('td');
+    tdData.textContent = chamado.dataAbertura;
+    tr.appendChild(tdData);
 
-      var tdHoras = document.createElement('td');
-      tdHoras.textContent = chamado.dataFechamento;
-      tr.appendChild(tdHoras);
+    var tdHoras = document.createElement('td');
+    tdHoras.textContent = chamado.dataFechamento;
+    tr.appendChild(tdHoras);
 
-      tbody.appendChild(tr);
+    tbody.appendChild(tr);
   });
 }
-
 
 function preencherTabela2(tabelaPendentes) {
 
@@ -441,19 +436,19 @@ function preencherTabela2(tabelaPendentes) {
     var tr = document.createElement('tr');
 
     var tdTicket = document.createElement('td');
-    tdTicket.textContent = chamado.numero;
+    tdTicket.textContent = '#' + chamado.numero;
     tr.appendChild(tdTicket);
 
     var solicitante = document.createElement('td');
-    solicitante.textContent = truncarTexto(chamado.solicitante, 8);
+    solicitante.textContent = chamado.solicitante;
     tr.appendChild(solicitante);
 
     var tdAtividade = document.createElement('td');
-    tdAtividade.textContent = truncarTexto(chamado.assunto, 15);
+    tdAtividade.textContent = chamado.assunto;
     tr.appendChild(tdAtividade);
 
     var tdTipo = document.createElement('td');
-    tdTipo.textContent = truncarTexto(chamado.servico, 15);
+    tdTipo.textContent = chamado.servico;
     tr.appendChild(tdTipo);
 
     var tdData = document.createElement('td');
@@ -575,30 +570,30 @@ function getLastMondays(count) {
 const lastMondays = getLastMondays(5);
 
 function sendMail(oficial) {
-  const content = document.querySelector("#capture");
-  const id = document.idColaborador;
+	const content = document.querySelector("#capture");
+	const id = document.idColaborador;
 
-  html2canvas(content, {
-    scale: 2,
-    logging: false
-  }).then(canvas => {
-    const jpgDataUrl = canvas.toDataURL("image/jpeg");
-    const apiUrl = 'https://localhost:7052/ColaboradorSLA/SendSLAEmail';
+	html2canvas(content, {
+		scale: 2,
+		logging: false
+	}).then(canvas => {
+		const jpgDataUrl = canvas.toDataURL("image/jpeg");
+		const apiUrl = 'https://localhost:7052/ColaboradorSLA/SendSLAEmail';
 
-    $.ajax({
-      type: 'POST',
-      url: apiUrl,
-      contentType: 'application/json',
-      data: JSON.stringify({
+		$.ajax({
+			type: 'POST',
+			url: apiUrl,
+			contentType: 'application/json',
+			data: JSON.stringify({
         foto: jpgDataUrl,
         id: idColaborador,
         sla: slaColaborador,
         ListaForaPrazo: listaForaPrazo,
         oficial: oficial
-      }),
-      dataType: 'json',
-    });
-  });
+    }),
+			dataType: 'json',
+		});
+	});
 }
 
 
@@ -606,11 +601,11 @@ function sendMail(oficial) {
 async function sendMail(oficial) {
   try {    
   const content = document.querySelector("#capture");
-  html2canvas(content, {
-    scale: 2,
-    logging: false
-  }).then(canvas => {
-    const jpgDataUrl = canvas.toDataURL("image/jpeg");
+	html2canvas(content, {
+		scale: 2,
+		logging: false
+	}).then(canvas => {
+		const jpgDataUrl = canvas.toDataURL("image/jpeg");
 
       const jpgDataUrl = getJpgDataUrl();
 
@@ -641,7 +636,7 @@ async function sendMail(oficial) {
       alert('E-mail enviado com sucesso!');
       return true; // Sucesso
       
-  });
+	});
   } catch (error) {
       console.error('Erro ao enviar e-mail:', error);
       alert('Falha ao enviar o e-mail. Por favor, tente novamente.');

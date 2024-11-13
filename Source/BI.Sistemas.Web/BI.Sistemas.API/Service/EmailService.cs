@@ -188,6 +188,7 @@ namespace BI.Sistemas.API.Service
 
                     MailItem mailItem = (MailItem)outlookApp.CreateItem(OlItemType.olMailItem);
                     mailItem.Subject = $@"[SUPORTE] APURAÇÃO DE HORAS SEMANAL - {pessoa.Nome.ToUpper()} ";
+
                     string msgHTMLBody = @$"
                     <html>
                         <head></head>

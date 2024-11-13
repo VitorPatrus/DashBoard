@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BI.Sistemas.ORM
-build_property.ProjectDir = C:\Users\vitor.fernandessouza\OneDrive - Patrus Transportes Urgentes Ltda\Documentos\DashBoard\Source\BI.Sistemas.Web\BI.Sistemas.ORM\
+build_property.ProjectDir = C:\Users\vitor.fernandessouza\OneDrive - Patrus Transportes Urgentes Ltda\Documentos\GitHub\DashBoard\Source\BI.Sistemas.Web\BI.Sistemas.ORM\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
