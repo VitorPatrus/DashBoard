@@ -14,7 +14,7 @@ namespace BI.Sistemas.API.View
         public string Time { get; set; }
         public int Engajamento { get; set; }
         public int EngajamentoTime { get; set; }
-        public decimal HE_Individual { get; set; }
+        public decimal? HE_Individual { get; set; }
         public string HE_Equipe { get; set; }
         public bool PJ { get; set; }
         public double TotalPonto { get; set; }
@@ -80,43 +80,6 @@ namespace BI.Sistemas.API.View
             public double Valor { get; set; }
             public double Horas { get; set; }
 
-            public string Color
-            {
-                get
-                {
-                    string cor;
-
-                    switch (Tipo)
-                    {
-                        case "Delivery":
-                            cor = "#00b050"; // Verde
-                            break;
-                        case "Bug":
-                            cor = "#ff0000"; // Vermelho
-                            break;
-                        case "Ceremony":
-                            cor = "#e49edd"; // Rosa
-                            break;
-                        case "Discovery":
-                            cor = "#00b0f0"; // Azul
-                            break;
-                        case "Coaching":
-                            cor = "#782170"; // Roxo
-                            break;
-                        case "Out Of Office":
-                            cor = "#ffc000"; // Laranja
-                            break;
-                        case "Management":
-                            cor = "#f6a700"; // Amarelo
-                            break;
-                        default:
-                            cor = string.Empty;
-                            break;
-                    }
-
-                    return cor;
-                }
-            }
         }
         public class AtividadeView
         {

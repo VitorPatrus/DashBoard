@@ -47,7 +47,6 @@ namespace BI.Sistemas.API.Repository
         {
             return _dbcontext.Colaboradores.AsQueryable().ToList();
         }
-
         public HE? GetHE(Colaborador colaborador, Periodo periodo)
         {
             return _dbcontext.HorasExtras.FirstOrDefault(x => x.Colaborador == colaborador && x.Periodo == periodo);

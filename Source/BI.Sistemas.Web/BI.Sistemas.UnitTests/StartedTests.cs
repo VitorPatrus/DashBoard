@@ -4,17 +4,8 @@ using BI.Sistemas.Domain.Entities.Enums;
 using BI.Sistemas.Domain.Novo;
 using CsvHelper.Configuration;
 using CsvHelper;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Client;
-using Microsoft.VisualBasic;
 using System.Globalization;
-using System.Linq.Expressions;
-using System.Security.Cryptography;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using BI.Sistemas.API.View;
+
 
 namespace BI.Sistemas.UnitTests
 {
@@ -68,6 +59,14 @@ namespace BI.Sistemas.UnitTests
             _dbcontext.SaveChanges();
         }
 
+        [TestMethod]
+        public void FazerTudo()
+        {
+            CargaTMetric();
+            InserirBancoDeDados();
+            CargaPonto(TipoPonto.Normal);
+        }
+
         private void AddColaborador(
            IEnumerable<Colaborador> colaboradores,
            string nome, string cargo, string time,
@@ -95,7 +94,6 @@ namespace BI.Sistemas.UnitTests
             }
         }
 
-        [TestMethod]
         public void CargaTMetric()
         {
             using (var db = new BISistemasContext())
@@ -112,7 +110,7 @@ namespace BI.Sistemas.UnitTests
                 }
             }
             var dataCarga = DateTime.Now;
-            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\detailed_report_20240415_20240421 (5).csv")
+            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\TMETRIC.csv")
                 .Skip(1)
                 .ToList()
                 .ForEach(v =>
@@ -128,12 +126,6 @@ namespace BI.Sistemas.UnitTests
                         db.SaveChanges();
                     }
                 });
-        }
-
-        [TestMethod]
-        public void CargaPontoNormal()
-        {
-            CargaPonto(TipoPonto.Normal);
         }
 
         private static void CargaPonto(TipoPonto tipo)
@@ -189,7 +181,7 @@ namespace BI.Sistemas.UnitTests
                 }
             }
 
-            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesAbertas (9).csv")
+            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesAbertas (1).csv")
               .Skip(1)
               .Where(x => !string.IsNullOrWhiteSpace(x))
               .ToList()
@@ -199,7 +191,7 @@ namespace BI.Sistemas.UnitTests
                   {
                       var periodo = db.Periodos.FirstOrDefault(c => c.Data == data1);
                       var movidesk = Movidesk.FromCsv(v);
-                      
+
                       if (movidesk.Time != "STI" && db.Movidesks.Any(c => c.Numero == movidesk.Numero && c.PeriodoId.ToString().ToUpper() == periodo.ToString().ToUpper()))
                           return;
                       movidesk.Periodo = periodo;
@@ -214,7 +206,7 @@ namespace BI.Sistemas.UnitTests
                   }
               });
 
-            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesSemanaAnterior (9).csv")
+            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesSemanaAnterior (1).csv")
                 .Skip(1)
                 .Where(x => !string.IsNullOrWhiteSpace(x))
                 .ToList()
@@ -225,7 +217,7 @@ namespace BI.Sistemas.UnitTests
                         var periodo = db.Periodos.FirstOrDefault(c => c.Data == data1);
 
                         var movidesk = Movidesk.FromCsv(v);
-                        
+
                         if (movidesk.Time != "STI" && db.Movidesks.Any(c => c.Numero == movidesk.Numero && c.PeriodoId.ToString().ToUpper() == periodo.ToString().ToUpper()))
                             return;
                         movidesk.Periodo = periodo;
@@ -309,14 +301,10 @@ namespace BI.Sistemas.UnitTests
             }
         }
 
-        [TestMethod]
-        public void CargaHE()
+        static void InserirBancoDeDados()
         {
             string csvFilePath = @"C:\Users\vitor.fernandessouza\Downloads\HE.csv";
-            InserirBancoDeDados(csvFilePath);
-        }
-        static void InserirBancoDeDados(string csvFilePath)
-        {
+
             var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
                 Delimiter = ";",
@@ -337,13 +325,15 @@ namespace BI.Sistemas.UnitTests
                 {
                     foreach (var record in records)
                     {
-                        var colaborador = db.Colaboradores.FirstOrDefault(c => c.UserTMetric == record.Colaborador);
+                        var colaborador = db.Colaboradores.FirstOrDefault(c => c.Matricula.ToString() == record.Colaborador);
                         if (colaborador != null)
                         {
+                            decimal horas = ConverterParaDecimalHoras(record.Banco.ToString());
+
                             var he = new HE
                             {
                                 ColaboradorId = colaborador.Id,
-                                Horas = (decimal)record.Banco.TotalHours,
+                                Horas = horas,
                                 Data = DateTime.Today,
                                 PeriodoId = ObterOuCriarPeriodo()
                             };
@@ -354,6 +344,40 @@ namespace BI.Sistemas.UnitTests
                 }
             }
         }
+
+        static decimal ConverterParaDecimalHoras(string planilha)
+        {
+            bool ehNegativo = planilha.Contains("-");
+            planilha = planilha.Replace("-", "").Trim();
+
+            string[] horaMinuto = planilha.Split(':');
+
+            if (horaMinuto.Length != 3)
+            {
+                throw new FormatException("O formato deve ser hh:mm:ss");
+            }
+
+            if (!decimal.TryParse(horaMinuto[0], CultureInfo.InvariantCulture, out decimal horas) ||
+                horas < 0 || horas > 99.99m)
+            {
+                throw new FormatException("O valor de horas não está no formato esperado. A parte das horas deve ser numérica e ter no máximo duas casas decimais.");
+            }
+
+            if (!int.TryParse(horaMinuto[1], out int minutos) ||
+                !int.TryParse(horaMinuto[2], out int segundos))
+            {
+                throw new FormatException("O valor de horas não está no formato correto");
+            }
+
+            if (minutos < 0 || minutos >= 60 || segundos < 0 || segundos >= 60)
+            {
+                throw new FormatException("Os minutos e segundos, maiores que 60 ou menores que 0.");
+            }
+
+            decimal totalHoras = horas + (minutos / 60m) + (segundos / 3600m);
+            return ehNegativo ? -totalHoras : totalHoras;
+        }
+
         private static Guid ObterOuCriarPeriodo()
         {
             using (var db = new BISistemasContext())

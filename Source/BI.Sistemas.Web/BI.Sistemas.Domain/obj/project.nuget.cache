@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9Kh6S5/EbrY=",
+  "dgSpecHash": "lUQpojkXidw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj",
+  "projectFilePath": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512"
   ],

@@ -96,10 +96,6 @@ namespace BI.Sistemas.API.Service
             while (model.Atualizacoes.Count() < 12)
                 model.Atualizacoes.Add(model.Atualizacoes.Last());
 
-            // não ficar atualizando a cada 5 segundos
-            //model.Atualizacoes.Clear();
-            //model.Atualizacoes.Add(new EconometroAtualizacaoViewModel());
-
             while (model.Atualizacoes.Count() < 12)
                 model.Atualizacoes.Add(model.Atualizacoes.Last());
 

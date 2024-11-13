@@ -2,15 +2,13 @@
 <html lang="en">
 
 <head>
+	
 	<!-- jQuery -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- D3.js -->
 	<script src="https://d3js.org/d3.v6.min.js"></script>
 	<!-- Moment.js -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-	<!-- Billboard.js -->
-	<script src="billboard.min.js"></script>
-	<link rel="stylesheet" href="billboard.min.css">
 	<!-- Google Charts -->
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<!-- Bootstrap -->
@@ -44,14 +42,16 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
 		rel="stylesheet">
-		<link href="https://fonts.cdnfonts.com/css/soccer-scoreboard" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/soccer-scoreboard" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
-	<script src="/Min/billboard.min.js"></script>
-	<link rel="stylesheet" href="/Min/billboard.min.css">
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="/min/billboard.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js"></script>
+
 </head>
 
-<body style="background-color:#f4f2f0">
-	<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #0076d4 !important;">
+<body style="background-color:#EAE8E2">
+	<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #008C8C !important;">
 		<div class="container-fluid">
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -140,10 +140,9 @@
 					</ul>
 					</li>
 				</ul>
-				<button id="sendMailButton" class="sendMailButton" role="button" style="float: right; ">Enviar Ofical
-				</button>
-				<button id="sendMailTeste" class="sendMailButton" role="button"
-					style="float: right; margin-left:10px; background-color: orange !important; ">Enviar Teste </button>
+				<button id="sendMailButton" class="sendMailButton" role="button">Enviar Oficial</button>
+				<button id="sendMailTeste" class="sendMailButton" role="button" style="background-color: orange;">Enviar
+					Teste</button>
 			</div>
 		</div>
 	</nav>
@@ -151,7 +150,7 @@
 		<div class="col-md-12" style="padding-left: 15px; padding-right: 25px; padding-top: 10px;">
 			<div class="row" id="capture">
 				<div class="col-md-2">
-					<div class="card text-center" style="min-height: 362px;">
+					<div class="card text-center" style="min-height: 362px; background-color: #FFFAFA;">
 						<img src="/Content/Images/time-tms.jpg" id="time_colaborador" height="145px"
 							class="card-img-top" alt="...">
 						<div class="d-flex justify-content-center" style="margin-top: -30px">
@@ -165,17 +164,13 @@
 							<span class="card-text">
 								<hr>
 								<span style="font-size: medium;" id="lbl_horas_individuais">Horas Extras</span><br>
-								<span class="meutexto" id="txt_horas_individuais" style="font-family: 'Soccer Scoreboard', sans-serif;">ERRO</span>
+								<span class="meutexto" id="txt_horas_individuais"
+									style="font-family: 'Soccer Scoreboard', sans-serif;">ERRO</span>
 						</div>
-						<!-- <div class="card-footer text-body-secondary">
-							<center><small><i class="fa-solid fa-business-time"></i><span id="totalIndividual">
-										Engajamento</span></small>
-							</center>
-						</div> -->
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="card" style="max-height: 362px;">
+					<div class="card" style="max-height: 362px; background-color: #FFFAFA;">
 						<div class="card-body col-md-12">
 							<div class="col-md-12">
 								<div class="row">
@@ -236,18 +231,20 @@
 				<div class="col-md-6">
 					<div class="row">
 						<div class=" col-md-7">
-							<div class="card" style="padding: 0; margin: 0; min-height: 364px;">
+							<div class="card"
+								style="padding: 0; margin: 0; min-height: 364px; background-color: #FFFAFA;">
 								<table class="table table-purple">
 									<thead>
 										<tr>
-											<th scope="col" style="color: #f4f2f0;">#</th>
-											<th scope="col" style="color: #f4f2f0;">Titulo</th>
-											<th scope="col" style="color: #f4f2f0;">Horas</th>
+											<th scope="col" style="color: #FFFAFA;">#</th>
+											<th scope="col" style="color: #FFFAFA;">Titulo</th>
+											<th scope="col" style="color: #FFFAFA;">Horas</th>
 										</tr>
 									</thead>
-									<tbody id="parents">
+									<tbody id="parents" style="background-color: #FFFAFA;">
 										<tr>
-											<th scope="row" <i class="fas fa-trophy" style="color: #800080;"></i>
+											<th scope="row">
+												<i class="fas fa-trophy" style="color: #800080;"></i>
 											</th>
 											<td>Inclusão de Informações em Medidas Dimensionador de Cargas </td>
 											<td>28h</td>
@@ -281,58 +278,16 @@
 											<td>30</td>
 										</tr>
 									</tbody>
-								</div>
+							</div>
 							</table>
 							<div class="card-footer text-body-secondary">
 								<small id='menssage'></small>
 							</div>
 						</div>
-						<!-- HORAS CLT  -->
-						<!-- <div class="card" id="clt">
-								<div class="row">
-									<div class="col-md-4" style="margin-left: 15px; margin-top: 7px; ">
-										
-									</div> -->
-						<!-- <div class="col-md-7" style="margin-left: -50px; margin-top: -10px;">
-										<span id="curve_chart1"></span>
-									</div> -->
-						<!-- </div> -->
-						<!-- <div class="card-footer text-body-secondary">
-									<center>
-										<small><i class="fa-regular fa-clock"></i> Gestão de Horas Extras</small>
-									</center>
-								</div> -->
-						<!-- </div> -->
-						<!-- HORAS PJ -->
-						<!-- <div class="card" id="pj">
-								<div class="row">
-									<div class="col-md-4" style="margin-left: 15px; margin-top: 40px; ">
-										<div class="horas-card">
-											<div>
-												<span class="card-text">
-													<span style="font-size: large;">Colaborador</span>
-													<span class="meutexto" id="horasPJ"
-														style=" color: green; margin-top: 0;">ERRO</span>
-												</span>
-											</div>
-										</div>
-									</div> -->
-						<!-- <div class="col-md-7" style="margin-left: -50px; margin-top: -10px;">
-										<span id="curve_chart2"></span>
-									</div> -->
-						<!-- </div> -->
-
-						<!-- <div class="card-footer text-body-secondary">
-									<center>
-										<small><i class="fa-regular fa-clock"></i> Gestão de Horas Extras</small>
-									</center>
-								</div>
-							</div> -->
-						<!-- RESUMO APROPRIAÇÃO -->
 					</div>
 					<div class="col-md-5">
 						<div class="row">
-							<div class="card" style="min-height: 364px;">
+							<div class="card" style="min-height: 364px; background-color: #FFFAFA;">
 								<div class="row">
 									<div class="col-md-12">
 										<div class="row">
@@ -357,7 +312,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+	</div>
 	<div class="row" style="padding-top: 10px; margin-left: 5px;">
 		<h4>Atividades trabalhadas</h4>
 		<h5 id="message"> Error!! </h5>

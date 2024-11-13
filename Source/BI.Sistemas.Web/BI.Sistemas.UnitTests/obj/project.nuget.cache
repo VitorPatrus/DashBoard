@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MuNd4lUHU3Q=",
+  "dgSpecHash": "LDpwcgDrddI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj",
+  "projectFilePath": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
@@ -147,7 +147,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'MicrosoftOfficeCore 15.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "message": "O pacote 'MicrosoftOfficeCore 15.0.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net8.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
       "libraryId": "MicrosoftOfficeCore",
       "targetGraphs": [
         "net8.0"

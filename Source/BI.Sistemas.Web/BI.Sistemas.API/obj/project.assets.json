@@ -3991,19 +3991,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\": {}
+    "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\BI.Sistemas.API.csproj",
+      "projectUniqueName": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\BI.Sistemas.API.csproj",
       "projectName": "BI.Sistemas.API",
-      "projectPath": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\BI.Sistemas.API.csproj",
+      "projectPath": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\BI.Sistemas.API.csproj",
       "packagesPath": "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\obj\\",
+      "outputPath": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\vitor.fernandessouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4018,8 +4023,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj": {
-              "projectPath": "C:\\Users\\vitor.fernandessouza\\Documents\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj"
+            "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj": {
+              "projectPath": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Documentos\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj"
             }
           }
         }
@@ -4075,7 +4080,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
@@ -4084,7 +4089,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'MicrosoftOfficeCore 15.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "message": "O pacote 'MicrosoftOfficeCore 15.0.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net8.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
       "libraryId": "MicrosoftOfficeCore",
       "targetGraphs": [
         "net8.0"

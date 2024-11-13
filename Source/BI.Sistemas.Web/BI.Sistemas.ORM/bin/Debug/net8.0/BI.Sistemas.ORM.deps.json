@@ -574,7 +574,10 @@
           "CsvHelper": "33.0.1"
         },
         "runtime": {
-          "BI.Sistemas.Domain.dll": {}
+          "BI.Sistemas.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

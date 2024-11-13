@@ -4,18 +4,18 @@ function clickColaboradorFuncao(id) {
 	const apiUrl = `https://localhost:7052/Colaborador/ColaboradorDashboard?id=${id}`;
 
 	$.get(apiUrl, function (data) {
-		
-		
+
+
 		function formatarHora(str) {
-			const negativo = str < 0; 
+			const negativo = str < 0;
 			str = Math.abs(str);
-		
+
 			const horas = String(Math.trunc(str)).padStart(2, '0');
 			const minutos = String(Math.trunc(60 * (str - Math.trunc(str)))).padStart(2, '0');
-		
+
 			return (negativo ? '-' : '') + `${horas}:${minutos}`;
 		}
-		
+
 		function trocaCor() {
 			const elemento = $('#valorEngajamento');
 			const valor = parseInt(elemento.text().replace('%', ''));
@@ -35,7 +35,24 @@ function clickColaboradorFuncao(id) {
 			}
 		}
 
-		function renderChart(columns, colors) {
+		function renderChart(columns) {
+			const colors = columns.reduce((acc, column) => {
+				const tipo = column[0].split(" ")[0]; 
+				acc[column[0]] = (() => {
+					switch (tipo) {
+						case "Delivery": return "#00b050";   // Verde
+						case "Bug": return "#f60000";        // Vermelho
+						case "Ceremony": return "#e49edd";   // Rosa
+						case "Discovery": return "#00b0f0";  // Azul
+						case "Coaching": return "#782170";   // Roxo
+						case "Out": return "#FF4500";        // Laranja
+						case "Management": return "#FFDD44"; // Amarelo
+						default: return "#CCCCCC";           
+					}
+				})();
+				return acc;
+			}, {});
+		
 			return bb.generate({
 				size: { width: $('#piechart').width(), height: 310 },
 				data: {
@@ -46,6 +63,7 @@ function clickColaboradorFuncao(id) {
 				bindto: "#piechart"
 			});
 		}
+		
 
 		function gerarGraficoDevOps(bindtoId, devOps) {
 			bb.generate({
@@ -70,18 +88,21 @@ function clickColaboradorFuncao(id) {
 			});
 		}
 
-		function renderTabelaParents(parents, teto = 10) {
+		function renderTabelaParents(parents, teto = 30) {
 			const $parents = $('#parents');
 			$parents.empty();
 
 			let count = 0;
 			parents.forEach(chapter => {
+				const tituloExibido = chapter.titulo && chapter.titulo.length > 30 ? chapter.titulo.substring(0, 30) + '...' : chapter.titulo;
+
 				if (count < teto) {
-					$parents.append(`<tr><th scope="row">${getIcone(chapter.tipo)}</th><td>${chapter.titulo}</td><td>${formatarHora(chapter.horas)}</td></tr>`);
+					$parents.append(`<tr><th scope="row">${getIcone(chapter.tipo)}</th><td>${tituloExibido}</td><td>${formatarHora(chapter.horas)}</td></tr>`);
 					count++;
 				}
 			});
 		}
+
 
 		// Atualiza informações do colaborador
 		$('#nome_colaborador').text(data.nome);
@@ -162,8 +183,6 @@ function clickColaboradorFuncao(id) {
 function sendMail(oficial) {
 	const content = document.querySelector("#capture");
 	const id = document.idColaborador;
-	debugger;
-	console.log(document);
 
 	html2canvas(content, {
 		scale: 2,
@@ -191,9 +210,11 @@ function sendMail(oficial) {
 }
 
 
-// Event listeners para envio de email
-$("#sendMailButton").click(() => sendMail(true));
-$("#sendMailTeste").click(() => sendMail(false));
+$(document).ready(function () {
+	$("#sendMailButton").click(() => sendMail(true));
+	$("#sendMailTeste").click(() => sendMail(false));
+});
+
 
 // Gerar Data Automática
 function getLastWeekDays() {

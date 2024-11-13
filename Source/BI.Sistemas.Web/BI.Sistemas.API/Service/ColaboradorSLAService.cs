@@ -1,4 +1,5 @@
-﻿using BI.Sistemas.API.Repository;
+﻿using BI.Sistemas.API.Interfaces;
+using BI.Sistemas.API.Repository;
 using BI.Sistemas.API.View;
 using BI.Sistemas.Context;
 using BI.Sistemas.Domain;
@@ -12,9 +13,11 @@ using static BI.Sistemas.API.View.ColaboradorSLADashboardView;
 public class ColaboradorSLAService : IColaboradorSLAService
 {
     private readonly IColaboradorRepository _colaboradorRepository;
+
     public ColaboradorSLAService(IColaboradorRepository colaboradorRepository)
     {
         _colaboradorRepository = colaboradorRepository;
+
     }
     public ColaboradorSLADashboardView GetColaboradorDashboard(string id)
     {
@@ -114,7 +117,7 @@ public class ColaboradorSLAService : IColaboradorSLAService
             int equipeNoPrazo = chamadosEquipe.Count(x => x.IndicadorSLA == "No Prazo");
             int equipeForaPrazo = chamadosEquipe.Count(x => x.IndicadorSLA == "Fora do Prazo");
 
-            int sistemasForaPrazo = chamados.Count(x => x.IndicadorSLA == "Fora do Prazo"); 
+            int sistemasForaPrazo = chamados.Count(x => x.IndicadorSLA == "Fora do Prazo");
             int sistemasNoPrazo = chamados.Count(x => x.IndicadorSLA == "No Prazo");
 
             double porcentagemSistems = chamados.Count() > 0 ? CalcularPercentual(sistemasNoPrazo, sistemasNoPrazo + sistemasForaPrazo) : 0;
@@ -147,6 +150,8 @@ public class ColaboradorSLAService : IColaboradorSLAService
              .Take(3)
             .ToList();
 
+            colaborador.HE = _colaboradorRepository.GetHE(pessoa, periodoAtual);
+            RegistrarEvolucao(id, colaborador, periodoAtual);
             AddEngajamento(id, colaborador);
 
             return colaborador;
@@ -190,54 +195,33 @@ public class ColaboradorSLAService : IColaboradorSLAService
         }
         return (soma / conta).ToString("F0");
     }
-    private List<EvolucaoSLAView> AddEngajamento(string id, ColaboradorSLADashboardView colaborador)
+    private void AddEngajamento(string id, ColaboradorSLADashboardView colaborador)
     {
         var pessoa = _colaboradorRepository.GetPessoa(id.ToUpper());
 
         if (pessoa == null)
-        {
             throw new Exception("Colaborador não encontrado.");
-        }
 
         var periodoAtual = _colaboradorRepository.GetPeriodo();
         var evolucaoSLA = FiltrarEvolucao(id);
 
-        colaborador.EvolucaoChamadosAbertos = new int[]
-        {
-        evolucaoSLA.Length > 3 ? evolucaoSLA[2].DentroDoPrazo : 0,
-        evolucaoSLA.Length > 2 ? evolucaoSLA[1].DentroDoPrazo : 0,
-        evolucaoSLA.Length > 1 ? evolucaoSLA[0].DentroDoPrazo : 0,
-        colaborador.Pessoal 
-        };
+        colaborador.EvolucaoChamadosAbertos =
+        [
+        evolucaoSLA.Length > 3 ? evolucaoSLA[3].DentroDoPrazo : 0,
+        evolucaoSLA.Length > 2 ? evolucaoSLA[2].DentroDoPrazo : 0,
+        evolucaoSLA.Length > 1 ? evolucaoSLA[1].DentroDoPrazo : 0,
+        evolucaoSLA.Length > 0 ? evolucaoSLA[0].DentroDoPrazo : 0,
+        ];
 
-        colaborador.EvolucaoChamadosFechados = new int[]
-        {
+        colaborador.EvolucaoChamadosFechados =
+        [
+        evolucaoSLA.Length > 3 ? evolucaoSLA[3].ForaDoPrazo : 0,
         evolucaoSLA.Length > 2 ? evolucaoSLA[2].ForaDoPrazo : 0,
         evolucaoSLA.Length > 1 ? evolucaoSLA[1].ForaDoPrazo : 0,
-        evolucaoSLA.Length > 0 ? evolucaoSLA[0].ForaDoPrazo : 0,
-        colaborador.FechadosPessoal
-        };
+        evolucaoSLA.Length > 0 ? evolucaoSLA[0].ForaDoPrazo : 0
+        ];
 
-        var lista = new List<EvolucaoSLAView>();
-
-        for (int i = 0; i < colaborador.EvolucaoChamadosAbertos.Length; i++)
-        {
-            lista.Add(new EvolucaoSLAView()
-            {
-                Valor = colaborador.EvolucaoChamadosAbertos[i]
-            });
-            lista.Add(new EvolucaoSLAView()
-            {
-                Valor = colaborador.EvolucaoChamadosFechados[i]
-            });
-        }
-
-        Teste(id, colaborador, periodoAtual);
-
-        return lista;
     }
-
-
     public EvolucaoSLA[] FiltrarEvolucao(string id)
     {
         using (var db = new BISistemasContext())
@@ -249,7 +233,7 @@ public class ColaboradorSLAService : IColaboradorSLAService
                 return db.EvolucaoSLA
                     .Where(e => e.ColaboradorId == colaborador.Id)
                     .OrderByDescending(e => e.Data)
-                    .Take(3)
+                    .Take(4)
                     .ToArray();
             }
             else
@@ -258,12 +242,8 @@ public class ColaboradorSLAService : IColaboradorSLAService
             }
         }
     }
-
-    public void Teste(string id, ColaboradorSLADashboardView colaboradorView, Periodo periodoAtual)
+    public void RegistrarEvolucao(string id, ColaboradorSLADashboardView colaboradorView, Periodo periodoAtual)
     {
-        var pessoa = _colaboradorRepository.GetPessoa(id);
-        var lista = new List<EvolucaoSLA>();
-
         using (var db = new BISistemasContext())
         {
             var colaborador = db.Colaboradores.FirstOrDefault(c => c.Id.ToString().ToUpper() == id.ToUpper());

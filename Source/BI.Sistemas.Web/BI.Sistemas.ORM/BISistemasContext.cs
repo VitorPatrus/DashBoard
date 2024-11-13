@@ -9,7 +9,7 @@ namespace BI.Sistemas.Context
 {
     public class BISistemasContext : DbContext
     {
-        private readonly string _connectionString = @"Server=con-snote725;Database=BI_SISTEMASDEVS;Trusted_Connection=True;TrustServerCertificate=True;";
+        private readonly string _connectionString = @"Server=CON-BRJ223YXGQ;Database=BI_SISTEMASDEVS;Trusted_Connection=True;TrustServerCertificate=True;";
 
         public BISistemasContext(DbContextOptions<BISistemasContext> options)
         : base(options) { }
@@ -20,7 +20,6 @@ namespace BI.Sistemas.Context
         {
             _connectionString = connectionString;
         }
-        
         public DbSet<Colaborador> Colaboradores { get; set; }
         public DbSet<Periodo> Periodos { get; set; }
         public DbSet<Movidesk> Movidesks { get; set; }
@@ -77,6 +76,14 @@ namespace BI.Sistemas.Context
                 entity.Property(e => e.UserTMetric)
                     .HasColumnName("USER_TMETRIC")
                     .HasMaxLength(255);
+
+                entity.Property(e => e.Matricula)
+                    .HasColumnName("MATRICULA")
+                    .IsRequired()
+                    .HasMaxLength(7);
+
+                entity.HasIndex(e => e.Matricula)
+                    .IsUnique();
             });
 
             modelBuilder.Entity<TMetric>(entity =>
@@ -356,10 +363,10 @@ namespace BI.Sistemas.Context
                     .HasColumnName("DATAABERTURA")
                     .IsRequired();
 
-                entity.Property(e => e.DataFechamento)
+                entity.Property(e => e.DataVencimento)
                     .HasColumnName("DATAFECHAMENTO");
 
-                entity.Property(e => e.DataVencimento)
+                entity.Property(e => e.DataFechamento)
                     .HasColumnName("DATAVENCIMENTO");
 
                 entity.Property(e => e.Assunto)

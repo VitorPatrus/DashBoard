@@ -5,5 +5,6 @@ namespace BI.Sistemas.API.Interfaces
     public interface IEmailService
     {
         Task SendEmailAsync(EnviarEmailDados dados);
+        Task SendSLAEmail(EnviarDadosSLA dados);
     }
 }
