@@ -8,6 +8,7 @@ namespace BI.Sistemas.Domain
         public string Cargo { get; set; }
         public string Email { get; set; }
         public int CargaHoraria { get; set; }
+        public int Matricula { get; set; }
         public DateTime? Inicio { get; set; }
         public DateTime? Termino { get; set; }
         public string Time { get; set; }

@@ -14,7 +14,7 @@ namespace BI.Sistemas.API.View
         public string Time { get; set; }
         public int Engajamento { get; set; }
         public int EngajamentoTime { get; set; }
-        public decimal HE_Individual { get; set; }
+        public decimal? HE_Individual { get; set; }
         public string HE_Equipe { get; set; }
         public bool PJ { get; set; }
         public double TotalPonto { get; set; }

@@ -4,6 +4,9 @@ using BI.Sistemas.API.View;
 using BI.Sistemas.Context;
 using BI.Sistemas.Domain;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Office.Interop.Outlook;
+using System.Net.Mail;
+using System.Net;
 
 namespace BI.Sistemas.API.Service
 {
@@ -20,7 +23,7 @@ namespace BI.Sistemas.API.Service
 
             var pessoa = _colaboradorRepository.GetPessoa(dados.Id);
             if (pessoa == null)
-                throw new Exception("Arquivo não localizado ou duplicado");
+                throw new System.Exception("Arquivo não localizado ou duplicado");
 
             try
             {
@@ -91,11 +94,12 @@ namespace BI.Sistemas.API.Service
                 }
                 mailItem.Subject = $@"[SISTEMAS] APURAÇÃO DE HORAS SEMANAL - {pessoa.Nome.ToUpper()} ";
                 mailItem.BodyFormat = Microsoft.Office.Interop.Outlook.OlBodyFormat.olFormatHTML;
+
                 string msgHTMLBody = $@"
              <html>
                 <head></head>
                 <body>
-                    {email.MensagemInicial()}, {pessoa.Nome},<br><br>
+                    {email.Apresentacao()}, {pessoa.Nome},<br><br>
                     Segue o dashboard com os lançamentos do período.<b> {dados.Periodo}.</b><br><br>
                     <div style=""min-width:600px!important;margin-left:auto;margin-right:auto; ""></div>
                     <img src=""{gif}"" width=""80"" height=""80""/><br>
@@ -120,10 +124,139 @@ namespace BI.Sistemas.API.Service
                 mailItem.Send();
                 return Task.CompletedTask;
             }
-            catch (Exception ex)
+            catch (System.Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new System.Exception(ex.Message);
             }
+        }
+
+        public Task SendSLAEmail(EnviarDadosSLA dados)
+        {
+            return Task.Run(() =>
+            {
+                var pessoa = _colaboradorRepository.GetPessoa(dados.Id);
+                if (pessoa == null)
+                    throw new System.Exception("Arquivo não localizado ou duplicado");
+
+                try
+                {
+                    Application outlookApp = new Application();
+                    EnviarEmailDados email = new EnviarEmailDados();
+                    NameSpace outlookNamespace = outlookApp.GetNamespace("MAPI");
+
+                    var tabelaAtividade = @"
+            <table style='border-collapse: collapse; width: 100%;'>
+                <thead>
+                    <tr>
+                        <th style='border: 1px solid #000; padding: 8px;'>Número</th>
+                        <th style='border: 1px solid #000; padding: 8px;'>Solicitante</th>
+                        <th style='border: 1px solid #000; padding: 8px;'>Assunto</th>
+                        <th style='border: 1px solid #000; padding: 8px;'>Serviço</th>
+                        <th style='border: 1px solid #000; padding: 8px;'>Abertura</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    " + string.Join("", dados.ListaForaPrazo.Select(c => $@"
+                    <tr>
+                        <td style='border: 1px solid #000; padding: 8px;'></td>
+                        <td style='border: 1px solid #000; padding: 8px;'></td>
+                        <td style='border: 1px solid #000; padding: 8px;'></td>
+                        <td style='border: 1px solid #000; padding: 8px;'></td>
+                        <td style='border: 1px solid #000; padding: 8px;'></td>
+                    </tr>")) + @"
+                </tbody>
+            </table>";
+
+                    string gif = string.Empty;
+                    string mensagem = string.Empty;
+
+                    if (dados.SLA >= 95)
+                    {
+                        mensagem = $"Seus SLA´s estão excelentes, <b>parabéns</b>✅. Seu SLA foi de <b>{dados.SLA}%</b> .";
+                        gif = Gifs.ListasGifs(NivelGif.Noventa);
+                    }
+                    else if (dados.SLA >= 90)
+                    {
+                        mensagem = $"<b>Atenção com os SLA´s</b>⚠️. Seu SLA foi de <b>{dados.SLA}%</b> .";
+                        gif = Gifs.ListasGifs(NivelGif.Cinquenta);
+                    }
+                    else if (dados.SLA < 90)
+                    {
+                        mensagem = $"<b>Seus SLA´s não estão legais</b>, mais atenção com eles ❌. Seu SLA foi de <b>{dados.SLA}%</b> .";
+                        gif = Gifs.ListasGifs(NivelGif.VinteCinco);
+                    }
+
+                    MailItem mailItem = (MailItem)outlookApp.CreateItem(OlItemType.olMailItem);
+                    mailItem.Subject = $@"[SUPORTE] APURAÇÃO DE HORAS SEMANAL - {pessoa.Nome.ToUpper()} ";
+                    string msgHTMLBody =  @$"
+                    <html>
+                        <head></head>
+                        <body>
+                            {email.Apresentacao()}, {pessoa.Nome},<br><br>
+                            Segue o dashboard com os lançamentos do período.<b> dados.Periodo.</b><br><br>
+                            <div style=""min-width:600px!important;margin-left:auto;margin-right:auto;""></div>
+                            <img src=""{gif}"" width=""80"" height=""80""/><br>
+                            {mensagem}<br><br>
+                            <img align=""baseline"" border=""1"" hspace=""0"" src=""{dados.Foto}"" width=""900"" height=""230"" /><br>
+                            <i>
+                            <br><br>
+                            Segue abaixo a tabela com os Chamados Pendentes:
+                            <br><br><hr /><br>
+                            <b>Atividades Pendentes</b><br>
+                            <i>Dados referentes aos dias dados.Periodo</i>
+                            <br><br>
+                            {tabelaAtividade}
+                            <br><br>
+                            Caso encontre alguma inconsistência em relação às informações contidas neste e-mail, favor nos contatar.<br><br>
+                            Atenciosamente,<br>
+                            Vitor Fernandes.
+                        </body>
+                    </html>";
+
+                    mailItem.HTMLBody = msgHTMLBody;
+                    string coordenador = "";
+                    string coordenador2 = "";
+
+                    if (dados.Oficial && false)
+                    {
+
+                        if (pessoa.Time == "Suporte TMS")
+                        {
+                            coordenador = "tulio@patrus.com.br";
+                            coordenador2 = "paulosouza@patrus.com.br";
+                        }
+                        else if (pessoa.Time == "Suporte ERP")
+                        {
+                            coordenador = "marcusethur@patrus.com.br";
+                            coordenador2 = "marco.barros@patrus.com.br";
+                        }
+                        else if (pessoa.Time == "EDI")
+                        {
+                            coordenador = "natalia@patrus.com.br";
+                            coordenador2 = "tulio@patrus.com.br";
+                        }
+                        else if (pessoa.Time == "CRM")
+                        {
+                            coordenador = "tulio@patrus.com.br";
+                            coordenador2 = "ricardosantos@patrus.com.br";
+                        }
+                    }
+                    else
+                    {
+                        mailItem.To = "vitor.fernandessouza@patrus.com.br";
+                    }
+
+                    //mailItem.CC = $"rogerio.simoes@patrus.com.br;{coordenador}{coordenador2}";
+                    //mailItem.To = pessoa.Email;
+                    mailItem.Send();
+
+                    return true;
+                }
+                catch (System.Exception e)
+                {
+                    throw new System.Exception();
+                }
+            });
         }
     }
 }

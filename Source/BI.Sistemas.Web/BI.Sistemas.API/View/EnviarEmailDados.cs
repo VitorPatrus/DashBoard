@@ -12,9 +12,9 @@ namespace BI.Sistemas.API.View
         public bool Oficial { get; set; }
         public AtividadeView[] Lista { get; set; }
 
-        public string MensagemInicial()
+        public string Apresentacao()
         {
-            return DateTime.Now.Hour < 12 ? "Bom dia" : "Boa tarde";
+            return DateTime.Now.Hour < 12 ? "Bom dia" : "Boa tarde"; 
         }
     }
 }

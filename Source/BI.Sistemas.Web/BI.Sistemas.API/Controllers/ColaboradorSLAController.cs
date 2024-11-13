@@ -18,6 +18,9 @@ using System.ComponentModel;
 using OfficeOpenXml;
 using Microsoft.Data.SqlClient;
 using LicenseContext = System.ComponentModel.LicenseContext;
+using BI.Sistemas.API.Interfaces;
+using BI.Sistemas.API.Service;
+
 
 
 namespace BI.Sistemas.API.Controllers
@@ -27,9 +30,12 @@ namespace BI.Sistemas.API.Controllers
     public class ColaboradorSLAController : ControllerBase
     {
         private IColaboradorSLAService _colaboradorSLAService;
-        public ColaboradorSLAController(IColaboradorSLAService colaboradorSLAService)
+        private readonly IEmailService _emailService;
+        public ColaboradorSLAController(IColaboradorSLAService colaboradorSLAService, IEmailService emailService)
         {
             _colaboradorSLAService = colaboradorSLAService;
+            _emailService = emailService;
+
         }
 
         [HttpGet()]
@@ -39,6 +45,21 @@ namespace BI.Sistemas.API.Controllers
             return Ok(_colaboradorSLAService.GetColaboradorDashboard(id));
         }
 
+        [HttpPost]
+        [Route("SendSLAEmail")]
+        public async Task<IActionResult> SendEmail(EnviarDadosSLA dados)
+        {
+            try
+            {
+                await _emailService.SendSLAEmail(dados);
+
+                return Ok(new { mensagem = "E-mail enviado com sucesso" });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { erro = $"Falha ao enviar o e-mail: {ex.Message}" });
+            }
+        }
 
         [HttpGet]
         [Route("GetColaboradores")]
