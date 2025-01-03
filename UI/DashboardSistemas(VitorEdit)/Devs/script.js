@@ -4,18 +4,18 @@ function clickColaboradorFuncao(id) {
 	const apiUrl = `https://localhost:7052/Colaborador/ColaboradorDashboard?id=${id}`;
 
 	$.get(apiUrl, function (data) {
-		
-		
+
+
 		function formatarHora(str) {
-			const negativo = str < 0; 
+			const negativo = str < 0;
 			str = Math.abs(str);
-		
+
 			const horas = String(Math.trunc(str)).padStart(2, '0');
 			const minutos = String(Math.trunc(60 * (str - Math.trunc(str)))).padStart(2, '0');
-		
+
 			return (negativo ? '-' : '') + `${horas}:${minutos}`;
 		}
-		
+
 		function trocaCor() {
 			const elemento = $('#valorEngajamento');
 			const valor = parseInt(elemento.text().replace('%', ''));
@@ -37,13 +37,13 @@ function clickColaboradorFuncao(id) {
 
 		function renderChart(columns, colors) {
 			return bb.generate({
-				size: { width: $('#piechart').width(), height: 310 },
+				size: { width: $('#resumoApropriacao').width(), height: 310 },
 				data: {
 					columns: columns,
 					type: "pie",
 					colors: colors,
 				},
-				bindto: "#piechart"
+				bindto: "#resumoApropriacao"
 			});
 		}
 
@@ -108,25 +108,38 @@ function clickColaboradorFuncao(id) {
 		const valorHorasIndividuaisString = $('#txt_horas_individuais').text();
 		const corHorasIndividuais = valorHorasIndividuaisString.startsWith('-') ? 'red' : 'green';
 		$('#txt_horas_individuais').css('color', corHorasIndividuais);
+		console.log(data.resumoApropriacao);
 
+		// Paleta de cores fixa
+		const colorPalette = {
+			"Discovery": "#ffa500",   // Laranja amarelado intenso.
+			"Ceremony": "#006600",   // Verde musgo profundo.
+			"Management": "#0046B8", // Azul cobalto forte.
+			"Delivery": "#6A00B9",   // Roxo vibrante.
+			"Out of Office": "#e60aaf", // Rosa avermelhado intenso.
+			"Bug": "#ff0000",        // Vermelho escuro vibrante.
+			"Coaching": "#5C9A00"    // Verde oliva vivo.
+		};
+		
 		// Colunas e cores para o gráfico
 		const columns = data.resumoApropriacao.map(apropriacao => [`${apropriacao.tipo} (${apropriacao.horas}h)`, apropriacao.valor]);
 
 		// Gráfico Pizza
 		const colors = data.resumoApropriacao.reduce((acc, apropriacao) => {
-			acc[`${apropriacao.tipo} (${apropriacao.horas})`] = apropriacao.color;
+			const label = `${apropriacao.tipo} (${apropriacao.horas}h)`;
+			acc[label] = colorPalette[apropriacao.tipo] || "#CCCCCC"; // Cor padrão caso o tipo não esteja na paleta
 			return acc;
 		}, {});
 
-		renderChart(columns, colors);
-
 		const chart = renderChart(columns, colors);
+
 		gerarGraficoDevOps("#gaugeChart1", data.devOps);
 
 		window.addEventListener("resize", () => chart.resize({
-			width: $('#piechart').width(),
+			width: $('#resumoApropriacao').width(),
 			height: 310
 		}));
+
 		renderTabelaAtividades(data.atividades);
 		renderTabelaParents(data.parents);
 

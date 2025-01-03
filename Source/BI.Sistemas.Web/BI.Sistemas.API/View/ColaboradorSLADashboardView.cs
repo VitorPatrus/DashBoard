@@ -1,8 +1,4 @@
 ﻿using BI.Sistemas.Context;
-using BI.Sistemas.Domain;
-using System.Reflection.Metadata.Ecma335;
-using System.Text.RegularExpressions;
-using static BI.Sistemas.API.View.ColaboradorDashboardView;
 
 namespace BI.Sistemas.API.View
 {

@@ -2,11 +2,9 @@
 using BI.Sistemas.Context;
 using BI.Sistemas.Domain.Entities.Enums;
 using BI.Sistemas.Domain;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using static BI.Sistemas.API.View.ColaboradorDashboardView;
 using BI.Sistemas.Domain.Extensions;
-using System.Runtime.CompilerServices;
 using BI.Sistemas.API.Interfaces;
 using BI.Sistemas.API.Repository;
 
@@ -119,9 +117,10 @@ namespace BI.Sistemas.API.Service
                     Tipo = a.Tipo
                 })
             .ToArray();
+            
 
             var filtro = metrics.Where(a => a.ColaboradorId.ToString().Equals(pessoa.Id.ToString(), StringComparison.CurrentCultureIgnoreCase) && !string.IsNullOrEmpty(a.ParentType))
-                .GroupBy(a => new { a.ParentType, a.ParentTitulo })
+                .GroupBy(a => new { a.ParentType, a.ParentTitulo})
                 .Select(a => new ParentItemView()
                 {
                     Tipo = a.Key.ParentType,

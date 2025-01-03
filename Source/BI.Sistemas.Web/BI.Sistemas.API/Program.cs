@@ -2,10 +2,7 @@ using BI.Sistemas.API.Interfaces;
 using BI.Sistemas.API.Repository;
 using BI.Sistemas.API.Service;
 using BI.Sistemas.Context;
-using Microsoft.EntityFrameworkCore;
-using System.Diagnostics;
-using Microsoft.Data.SqlClient;
-using OfficeOpenXml;
+
 
 var builder = WebApplication.CreateBuilder(args);
 

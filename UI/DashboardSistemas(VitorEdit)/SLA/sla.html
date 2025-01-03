@@ -164,9 +164,9 @@
 													</div>
 												</div>
 												<hr>
-												<div class="align-items"
-													style="margin-left: 10px; margin-top: -15px; margin-bottom: 10px; margin-left:115px; font-style: italic; font-size: small;">
-													Porcentagem SLA</div>
+												<div class="align-items" style="display: flex; justify-content: center; align-items: center; height: 100px; margin-top: -3rem; margin-bottom: -2rem; ">
+													Porcentagem SLA
+												  </div>												  
 											</div>
 										</div>
 										<div class="row">
@@ -175,12 +175,12 @@
 													<div class="col-md-7" style="font-weight: bolder;">
 														<div class="d-flex justify-content-start" id="time_SLA"
 															style="margin-left: 20px;">
-															Time
+															<i class=" fa-solid fa-people-line"></i>
 														</div>
 													</div>
 													<div class="col-md-5" id="sistemas_SLA"
 														style="font-weight: bolder; text-align: right; margin-left: -25px;">
-														Erro
+														<i class=" fa-solid fa-globe"></i>
 													</div>
 												</div>
 												<hr>
@@ -188,28 +188,28 @@
 													<div class="col-md-1"
 														style="font-weight: bolder; margin-left: 10px;">
 														🥇</div>
-													<div class="col-md-8" id="primeiroNome"
-														style="font-size: 13.5px; font-weight: bold;">Erro</div>
-													<div class="col-md-2" id="primeiro"
-														style="font-size: 13.5px; font-weight: bold;">Erro</div>
+													<div class="col-md-7" id="primeiroNome"
+														style="font-size: 13px; font-weight: bold;">Erro</div>
+													<div class="col-md-3" id="primeiro"
+														style="font-size: 13.5px; font-weight: bold;">%</div>
 												</div>
 												<div class="row" style="margin-bottom: 3px;">
 													<div class="col-md-1"
 														style="font-weight: bolder; margin-left: 10px;">
 														🥈</div>
-													<div class="col-md-8" id="segundoNome"
+													<div class="col-md-7" id="segundoNome"
 														style="font-size: 13.5px; font-weight: bold;">Erro</div>
-													<div class="col-md-2" id="segundo"
-														style="font-size: 13.5px; font-weight: bold;">Erro</div>
+													<div class="col-md-3" id="segundo"
+														style="font-size: 13.5px; font-weight: bold;">%</div>
 												</div>
 												<div class="row" style="margin-bottom: 3px;">
 													<div class="col-md-1"
 														style="font-weight: bolder; margin-left: 10px;">
 														🥉</div>
-													<div class="col-md-8" id="terceiroNome"
+													<div class="col-md-7" id="terceiroNome"
 														style="font-size: 13.5px; font-weight: bold;">Erro</div>
-													<div class="col-md-2" id="terceiro"
-														style="font-size: 13.5px; font-weight: bold;">Erro</div>
+													<div class="col-md-3" id="terceiro"
+														style="font-size: 13.5px; font-weight: bold;">%</div>
 												</div>
 											</div>
 										</div>
@@ -245,15 +245,15 @@
 								<hr>
 								<div class="row">
 									<div class="col-md-6" style="border-right: 1.6px solid #d2d2d2;">
-										<div style="padding-left: 20px;">
+										<div style="padding-left: 3.5px;">
 											<div class="row text-center">
 												<span style="font-weight: bolder;">Chamados Abertos <i
 														class="fa-regular fa-folder-open"></i></span>
 											</div>
 											<br>
 											<div class="row" style="margin-top: -8px;">
-												<div class="col-md-2 text-center"">
-												<i class=" fa-solid fa-person-rays"></i>
+												<div class="col-md-2 text-center">
+													<i class=" fa-solid fa-person-rays"></i>
 												</div>
 												<div class="col-md-6">
 													Pessoal
@@ -289,28 +289,30 @@
 									<!-- FECHADOS -->
 									<div class="col-md-6">
 										<div class="text-center">
-											<span style="font-weight: bolder;">Chamados Fechados
+											<span style="font-weight: bolder; margin-left: -1rem;">Chamados Fechados
 												<i class="fa-solid fa-folder-closed"></i>
+											</span>
 										</div>
 										<div class="row" style="margin-top: 17px;">
-											<div class="col-md-8 text-left"
-												style="font-size: 15px; padding-right: 43px;">
+											<div class="col-md-2">
 												<i class=" fa-solid fa-person-rays"></i>
-												<span style="margin-left: 13px;">
+											</div>
+											<div class="col-md-6">
+												<span>
 													Pessoal
 												</span>
 											</div>
-											<div class="col-md-4 text-align" id="fechadosPessoal"
+											<div class="col-md-4 text-left" id="fechadosPessoal"
 												style="text-align: right; padding-right: 25px;">
 												Erro
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-md-8 text-left"
-												style="font-size: 15px; padding-right: 43px;">
+											<div class="col-md-2">
 												<i class=" fa-solid fa-people-line"></i>
-												<span style="margin-left: 10px;">Equipe
-												</span>
+											</div>
+											<div class="col-md-6">
+												<span>Equipe</span>
 											</div>
 											<div class="col-md-4 text-left" id="fechadosEquipe"
 												style="text-align: right; padding-right: 25px;">
@@ -318,10 +320,11 @@
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-md-8 text-left"
-												style="font-size: 15px; padding-right: 43px;">
+											<div class="col-md-2">
 												<i class=" fa-solid fa-globe"></i>
-												<span style="margin-left: 13px;">
+											</div>
+											<div class="col-md-6">
+												<span>
 													Sistemas
 												</span>
 											</div>
@@ -332,26 +335,6 @@
 										</div>
 									</div>
 								</div>
-								<!-- <hr style="margin: 0.5rem;">
-								<div class="row">
-									<div class="text-center" style="font-weight: bolder;">
-										Horas Extras
-										<i class="fa-solid fa-clock"></i>
-									</div>
-								</div>
-								<div class="card-header text-muted"
-									style="border-radius: 4px; margin-top: 10px; background-color: #ffffff;">
-									<div class="col-md-12">
-										<div class="row">
-											<div class="col-md-6 text-start" style="color: green;font-size: 16px;">
-												Compensáveis: Erro
-											</div>
-											<div class="col-md-6 text-end" style="color: red; font-size: 16px;">
-												Não Compensáveis: Erro
-											</div>
-										</div>
-									</div>
-								</div> -->
 							</div>
 						</div>
 						<div class="col-md-6">
@@ -362,7 +345,7 @@
 										Evolução Pessoal - Total de Chamados
 									</div>
 									<!-- <div id="dataLabelColors_2" style="width: 95%; height: 170px;"></div> -->
-									<div id="chartdiv"style="width: 110%; height: 180px; margin-left:-20px;" ></div>
+									<div id="chartdiv" style="width: 110%; height: 180px; margin-left:-20px;"></div>
 									<img src="/SLA/image.png" alt="Smiley face" style="margin-top: -20px;">
 								</div>
 								<div class="row flex-grow-1">
@@ -386,7 +369,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+	</div>
 	<div class="row">
 		<div class="row" style="padding-top: 10px; padding-left: 30px;">
 			<div class="col-md-6">

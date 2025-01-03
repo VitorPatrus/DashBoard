@@ -9,7 +9,7 @@ namespace BI.Sistemas.Context
 {
     public class BISistemasContext : DbContext
     {
-        private readonly string _connectionString = @"Server=con-brm425c24y;Database=BI_SISTEMASDEVS;Trusted_Connection=True;TrustServerCertificate=True;";
+        private readonly string _connectionString = @"Server=con-brj223yxgq;Database=BI_SISTEMASDEVS;Trusted_Connection=True;TrustServerCertificate=True;";
 
         public BISistemasContext(DbContextOptions<BISistemasContext> options)
         : base(options) { }

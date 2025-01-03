@@ -1,5 +1,4 @@
-﻿using BI.Sistemas.Domain.Entities.Enums;
-
+﻿
 namespace BI.Sistemas.API.View
 {
     public class ParentItemView

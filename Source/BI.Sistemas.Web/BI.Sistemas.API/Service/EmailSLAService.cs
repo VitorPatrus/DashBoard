@@ -14,11 +14,11 @@ namespace BI.Sistemas.API.Service
 
         public Task SendEmailAsync(EnviarEmailDados dados)
         {
-            ColaboradorDashboardView colaborador = new ColaboradorDashboardView();
+            EnviarEmailDados email = new EnviarEmailDados();
 
             var pessoa = _colaboradorRepository.GetPessoa(dados.Id);
             if (pessoa == null)
-                throw new Exception("Arquivo não localizado ou duplicado");
+                throw new System.Exception("Arquivo não localizado ou duplicado");
 
             try
             {
@@ -36,7 +36,29 @@ namespace BI.Sistemas.API.Service
                     mailItem.To = "vitor.fernandessouza@patrus.com.br";
                 }
 
-                var tabelaAtividade = @"vitor";
+                var tabelaAtividade = @"
+            <table style='border-collapse: collapse; width: 100%;'>
+                <thead>
+                    <tr>
+                        <th style='border: 1px solid #000; padding: 8px;'>Atividade</th>
+                        <th style='border: 1px solid #000; padding: 8px;'>Ticket</th>
+                        <th style='border: 1px solid #000; padding: 8px;'>Tipo</th>
+                        <th style='border: 1px solid #000; padding: 8px;'>Data</th>
+                        <th style='border: 1px solid #000; padding: 8px;'>Horas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    " + string.Join("", dados.Lista.Select(c => $@"
+                    <tr>
+                        <td style='border: 1px solid #000; padding: 8px;'>{c.Atividade}</td>
+                        <td style='border: 1px solid #000; padding: 8px;'>{c.Ticket}</td>
+                        <td style='border: 1px solid #000; padding: 8px;'>{c.Tipo}</td>
+                        <td style='border: 1px solid #000; padding: 8px;'>{c.Data.Substring(0, 10)}</td>
+                        <td style='border: 1px solid #000; padding: 8px;'>{c.Horas.ToString("HH:mm")}</td>
+                    </tr>")) + @"
+                </tbody>
+            </table>";
+
                 string gif = string.Empty;
                 string mensagem = string.Empty;
                 var engajamentoDevOps = dados.DevOps == 0 ? "0,0" : string.Format("{0:#.#,##}", Math.Round(dados.DevOps, 1));
@@ -65,21 +87,41 @@ namespace BI.Sistemas.API.Service
                     mensagem = $"<b>Seus lançamentos não estão legais</b>, mais atenção com os lançamentos do dia à dia e dentro das atividades do Devops ❌. <br> Seu engajamento foi de <b>{dados.Engajamento}%</b> e seu lançamento pelo Devops <b>{engajamentoDevOps}%</b>.";
                     gif = Gifs.ListasGifs(NivelGif.VinteCinco);
                 }
-
                 mailItem.Subject = $@"[SISTEMAS] APURAÇÃO DE HORAS SEMANAL - {pessoa.Nome.ToUpper()} ";
                 mailItem.BodyFormat = Microsoft.Office.Interop.Outlook.OlBodyFormat.olFormatHTML;
-                string email = DateTime.Now.Hour < 12 ? "Bom dia" : "Boa tarde";
 
                 string msgHTMLBody = $@"
-             <html>vitor";
+             <html>
+                <head></head>
+                <body>
+                    Bom dia!, {pessoa.Nome},<br><br>
+                    Segue o dashboard com os lançamentos do período.<b> {dados.Periodo}.</b><br><br>
+                    <div style=""min-width:600px!important;margin-left:auto;margin-right:auto; ""></div>
+                    <img src=""{gif}"" width=""80"" height=""80""/><br>
+                    {mensagem}<br><br>
+                    <img align=""baseline"" border=""1"" hspace=""0"" src=""{dados.Foto}"" width=""900"" height=""230"" hold="" /> ""></img><br>
+                    <i>
+                    <br><br>
+                    Segue abaixo a tabela com os lançamentos individuais do TMETRIC:
+                    <br><br><hr /><br>
+                    <b>Atividades trabalhadas</b><br>
+                    <i>Atividades realizadas durante o período {dados.Periodo}</i>
+                    <br><br>
+                    {tabelaAtividade}
+                    <br><br>
+                    Caso encontre alguma inconsistência em relação às informações contidas neste e-mail, favor nos contatar.<br><br>
+                    Atenciosamente,<br>
+                    Vitor Fernandes.
+                </body>
+            </html>";
+
                 mailItem.HTMLBody = msgHTMLBody;
                 mailItem.Send();
                 return Task.CompletedTask;
             }
-            catch (Exception ex)
+            catch (System.Exception ex)
             {
-                throw new Exception(ex.Message);
-
+                throw new System.Exception(ex.Message);
             }
         }
     }

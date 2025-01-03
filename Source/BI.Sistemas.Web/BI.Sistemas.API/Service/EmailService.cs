@@ -1,9 +1,7 @@
 ﻿using BI.Sistemas.API.Interfaces;
 using BI.Sistemas.API.Repository;
 using BI.Sistemas.API.View;
-using BI.Sistemas.Context;
 using BI.Sistemas.Domain;
-using Microsoft.AspNetCore.Mvc;
 
 namespace BI.Sistemas.API.Service
 {

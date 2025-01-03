@@ -1,5 +1,4 @@
-﻿using static BI.Sistemas.API.View.ColaboradorDashboardView;
-
+﻿
 namespace BI.Sistemas.API.View
 {
     public class EnviarEmailDados

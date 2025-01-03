@@ -1,25 +1,7 @@
 ﻿using BI.Sistemas.API.View;
 using BI.Sistemas.Context;
-using BI.Sistemas.Domain;
-using BI.Sistemas.Domain.Novo;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Identity.Client;
-using Microsoft.IdentityModel.Tokens;
-using Outlook = Microsoft.Office.Interop.Outlook;
-using static BI.Sistemas.API.View.ColaboradorDashboardView;
-using static BI.Sistemas.API.View.ColaboradorSLADashboardView;
-using Microsoft.EntityFrameworkCore;
-using BI.Sistemas.Domain.Extensions;
-using BI.Sistemas.Domain.Entities;
-using BI.Sistemas.Domain.Entities.Enums;
-using System.Diagnostics;
-using System;
-using System.ComponentModel;
-using OfficeOpenXml;
-using Microsoft.Data.SqlClient;
-using LicenseContext = System.ComponentModel.LicenseContext;
 using BI.Sistemas.API.Interfaces;
-using BI.Sistemas.API.Service;
 
 
 namespace BI.Sistemas.API.Controllers
@@ -77,10 +59,7 @@ namespace BI.Sistemas.API.Controllers
                     .OrderBy(x => x.NomeColab)
                     .ToList();
 
-                return Ok(new
-                {
-                    SUP
-                });
+                return Ok(new{SUP});
             }
         }
     }

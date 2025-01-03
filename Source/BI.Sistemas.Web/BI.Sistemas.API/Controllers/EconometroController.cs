@@ -1,10 +1,6 @@
 ﻿using BI.Sistemas.API.Interfaces;
-using BI.Sistemas.API.Service;
 using BI.Sistemas.API.View;
 using Microsoft.AspNetCore.Mvc;
-using System.Globalization;
-using System.Net.Http.Headers;
-
 namespace BI.Sistemas.API.Controllers
 {
 

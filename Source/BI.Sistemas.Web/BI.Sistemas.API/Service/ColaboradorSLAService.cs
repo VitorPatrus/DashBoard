@@ -83,6 +83,7 @@ public class ColaboradorSLAService : IColaboradorSLAService
             var servicos = chamadosDaPessoa.GroupBy(x => x.Servico)
                 .OrderByDescending(x => x.Count())
                 .Take(3).ToList();
+
             colaborador.Servicos = servicos
                 .Select(x => new ServicoView
                 {
@@ -103,8 +104,7 @@ public class ColaboradorSLAService : IColaboradorSLAService
             colaborador.Chamados_SLA_Individual = colaborador.ForaPrazo + colaborador.DentroPrazo;
             colaborador.Setorial = chamadosEquipe.Count(x => !x.EstaFechado);
 
-            var sistemas = chamados.Where(x => !x.EstaFechado).ToList();
-            colaborador.Sistemas = sistemas.Count();
+            colaborador.Sistemas = chamados.Where(x => !x.EstaFechado).ToList().Count();
 
             var chamadosIndividual = chamadosDaPessoa.Count();
 
@@ -115,11 +115,8 @@ public class ColaboradorSLAService : IColaboradorSLAService
             int sistemasForaPrazo = chamados.Count(x => x.IndicadorSLA == "Fora do Prazo");
             int sistemasNoPrazo = chamados.Count(x => x.IndicadorSLA == "No Prazo");
 
-            double porcentagemSistems = chamados.Count() > 0 ? CalcularPercentual(sistemasNoPrazo, sistemasNoPrazo + sistemasForaPrazo) : 0;
-            colaborador.SLA_Sistemas = porcentagemSistems;
-
-            double porcentagemTime = totalChamadosEquipe > 0 ? CalcularPercentual(equipeNoPrazo, equipeNoPrazo + equipeForaPrazo) : 0;
-            colaborador.SLA_Time = porcentagemTime;
+            colaborador.SLA_Sistemas = chamados.Count() > 0 ? CalcularPercentual(sistemasNoPrazo, sistemasNoPrazo + sistemasForaPrazo) : 0;
+            colaborador.SLA_Time = totalChamadosEquipe > 0 ? CalcularPercentual(equipeNoPrazo, equipeNoPrazo + equipeForaPrazo) : 0;
 
             var listaColaboradoresOrdenados = chamados
             .Where(x => colaboradoresSuporte.Any(c => c.Nome.Equals(colaborador.Nome, StringComparison.CurrentCultureIgnoreCase)))
@@ -251,7 +248,8 @@ public class ColaboradorSLAService : IColaboradorSLAService
                 return db.EvolucaoSLA
                     .Where(e => e.ColaboradorId == colaborador.Id)
                     .OrderByDescending(e => e.Data)
-                    .Take(1)
+                    .Skip(2)
+                    .Take(3)
                     .ToArray();
             }
             else

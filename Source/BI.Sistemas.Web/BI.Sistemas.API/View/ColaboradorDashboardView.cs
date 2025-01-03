@@ -1,7 +1,4 @@
-﻿using BI.Sistemas.Domain;
-using BI.Sistemas.Domain.Entities.Enums;
-using System.Text.RegularExpressions;
-
+﻿
 namespace BI.Sistemas.API.View
 {
     public class ColaboradorDashboardView

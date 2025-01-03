@@ -1,8 +1,6 @@
-﻿using BI.Sistemas.API.View;
-using BI.Sistemas.Context;
+﻿using BI.Sistemas.Context;
 using BI.Sistemas.Domain;
 using BI.Sistemas.Domain.Novo;
-using Microsoft.EntityFrameworkCore;
 
 namespace BI.Sistemas.API.Repository
 {
@@ -50,7 +48,7 @@ namespace BI.Sistemas.API.Repository
 
         public HE? GetHE(Colaborador colaborador, Periodo periodo)
         {
-            return _dbcontext.HorasExtras.First(x => x.Colaborador == colaborador && x.Periodo == periodo);
+            return _dbcontext.HorasExtras.FirstOrDefault(x => x.Colaborador == colaborador && x.Periodo == periodo);
         }
     }
 }

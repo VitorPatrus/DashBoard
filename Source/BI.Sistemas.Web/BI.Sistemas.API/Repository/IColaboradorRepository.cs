@@ -1,5 +1,4 @@
-﻿using BI.Sistemas.API.View;
-using BI.Sistemas.Context;
+﻿using BI.Sistemas.Context;
 using BI.Sistemas.Domain;
 using BI.Sistemas.Domain.Novo;
 

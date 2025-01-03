@@ -3,5 +3,4 @@
 public interface IColaboradorSLAService 
 {
     ColaboradorSLADashboardView GetColaboradorDashboard(string id);
-
 }

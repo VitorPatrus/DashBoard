@@ -5,7 +5,7 @@ using BI.Sistemas.Domain.Novo;
 using CsvHelper.Configuration;
 using CsvHelper;
 using System.Globalization;
-
+// Projeto Correto!
 
 namespace BI.Sistemas.UnitTests
 {
@@ -62,8 +62,8 @@ namespace BI.Sistemas.UnitTests
         [TestMethod]
         public void FazerTudo()
         {
-            CargaTMetric();
             InserirBancoDeDados();
+            CargaTMetric();
             CargaPonto(TipoPonto.Normal);
         }
 
@@ -93,7 +93,7 @@ namespace BI.Sistemas.UnitTests
                 _dbcontext.Colaboradores.Add(colaborador);
             }
         }
-
+        [TestMethod]
         public void CargaTMetric()
         {
             using (var db = new BISistemasContext())
@@ -127,12 +127,6 @@ namespace BI.Sistemas.UnitTests
                     }
                 });
         }
-
-        //[TestMethod]
-        //public void CargaPontoNormal()
-        //{
-        //    CargaPonto(TipoPonto.Normal);
-        //}
 
         private static void CargaPonto(TipoPonto tipo)
         {
@@ -187,7 +181,7 @@ namespace BI.Sistemas.UnitTests
                 }
             }
 
-            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesAbertas (1).csv")
+            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesAbertas (3).csv")
               .Skip(1)
               .Where(x => !string.IsNullOrWhiteSpace(x))
               .ToList()
@@ -212,7 +206,7 @@ namespace BI.Sistemas.UnitTests
                   }
               });
 
-            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesSemanaAnterior (1).csv")
+            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesSemanaAnterior (3).csv")
                 .Skip(1)
                 .Where(x => !string.IsNullOrWhiteSpace(x))
                 .ToList()
@@ -307,7 +301,8 @@ namespace BI.Sistemas.UnitTests
             }
         }
 
-        static void InserirBancoDeDados()
+        [TestMethod]
+        private void InserirBancoDeDados()
         {
             string csvFilePath = @"C:\Users\vitor.fernandessouza\Downloads\HE.csv";
 
