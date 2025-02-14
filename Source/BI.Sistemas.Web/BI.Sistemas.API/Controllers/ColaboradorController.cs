@@ -19,7 +19,7 @@ namespace BI.Sistemas.API.Controllers
 
         [HttpGet()]
         [Route("ColaboradorDashboard")]
-        public  async Task<ActionResult<ColaboradorDashboardView>> GetColaboradorDashboard(string id)
+        public async Task<ActionResult<ColaboradorDashboardView>> GetColaboradorDashboard(string id)
         {
             return Ok(_colaboradorService.GetColaboradorDashboard(id));
         }
@@ -27,6 +27,7 @@ namespace BI.Sistemas.API.Controllers
         [HttpPost]
         [Route("SendEmail")]
         public async Task<IActionResult> SendEmail(EnviarEmailDados dados)
+
         {
             try
             {

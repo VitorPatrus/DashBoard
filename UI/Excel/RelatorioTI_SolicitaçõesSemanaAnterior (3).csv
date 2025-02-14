@@ -1,0 +1,944 @@
+﻿NumeroTicket,Data_Criacao,Data_Solucacao_SLA,Data_Resolucao,SLADentroFora,Assunto,Solicitante,EquipeResponsavelM,Responsavel,Servico,NomeStatus
+7708429,12/17/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,(SA) - Documentação - Permissã,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Lançamentos financeiros,Resolvido
+7714077,12/18/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,(SA) - Revisão de acessos sist,Suporte ERP/Sênior (Solicitante),ERP,Giovanni Campos (TI MTZ),Requisições,Resolvido
+7697503,12/13/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Ajuste divergencia esto,Suporte ERP/Sênior (Solicitante),ERP,Joselito Almeida (TI MTZ),Itens,Fechado
+7722803,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,7722803 - ASSINATURA MOVIDESK ,Raissa Pereira (Customer Care RIO),CRM,Ricardo Santos (TI MTZ),Incluir assinatura no cadastro,Resolvido
+7716597,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,Realização de Scan do Trend na, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Manual Scan Trend,Resolvido
+7708863,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Follow Up de Coleta -  PATRUS ,GKO Frete,EDI,Julia Andrade (APRENDIZ TI MTZ),Ocorrências(OCORREN),Fechado
+7700140,12/16/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Liberação YouTube,Leandro Silva (PREVPERDAS CORP),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Youtube,Resolvido
+7698802,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,FATURAMENTO SEMANAL DASS NORDE,Marcus Costa (Aprendiz MTZ),EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7698839,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Security ScoreCard - 7011764 -,Raphael Cruz (TI MTZ),STI,Vinicius Barreto (TI MTZ),Security Score Card,Resolvido
+7697509,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Documentação - Tipo de ,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Recebimento físico,Fechado
+7708430,12/17/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,(SA) - Gerar SPED de Campinas,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),SPED – ICMS,Resolvido
+7697514,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Documentação - Exclusão,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Fechamento contábil/Fiscal,Fechado
+7697507,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Documentação - OC do Fo,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Ordens de compras,Fechado
+7697508,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Documentação - Refazer ,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Recebimento físico,Fechado
+7714079,12/18/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,(SA) - Alterar Posto de Trabal,Suporte ERP/Sênior (Solicitante),ERP,Giovanni Campos (TI MTZ),Alteração de posto de trabalho admissões recentes c/ problemas,Resolvido
+7720489,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,REISNTALAÇÃO RELOGIO DE PONTO,leticia ,ERP,Giovanni Campos (TI MTZ),Cadastros,Resolvido
+7700318,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Estorno de ocorrência -      C,Marcos Mariano (OPE JDF),TMS,Anna Silva (TI MTZ),Erro Conclusão de ocorrência,Fechado
+7704245,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,RESETAR SENHA WAAPI,Maria Emanoela Cordeiro da Costa,ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Configurações Gerais,Resolvido
+7710691,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Ler volume GV NF 130560 ct-e 4,Roveni Rochenbach (CQO QHV),TMS,Anna Silva (TI MTZ),Erro efetivar pré-ocorrência,Fechado
+7720029,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Cancelamento,Rafael Guimaraes (CEDOC ITN),TMS,João Santos (TI MTZ),Duvida na Emissão de Documento,Fechado
+7702691,12/16/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,7702691 - INCLUSÃO CLIENTE CAR,Andrea Voges (CUSTOMER CARE QHV),CRM,Ricardo Santos (TI MTZ),Cadastro/Alteração de Cliente,Resolvido
+7700425,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,7700425 - CONFIGURAÇÕES - CUST,Aline Pereira (CUSTOMER CARE MTZ),CRM,Ricardo Santos (TI MTZ),Criar/Alterar Fila de atendimento ,Fechado
+7699372,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,7699372 - CONFIGURAÇÕES - CUST,RENATA  MEZETTI,CRM,Ricardo Santos (TI MTZ),Criar/Alterar assunto do ticket,Fechado
+7709148,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,7709148 - CONFIGURAÇÕES - CUST,RENATA  MEZETTI,CRM,Ricardo Santos (TI MTZ),Criar/Alterar assunto do ticket,Resolvido
+7703490,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,SENHA DO BENNER NÃO ESTA ENTRA,Leticia santos de Albuquerque ,TMS,João Santos (TI MTZ),Benner,Fechado
+7698338,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Alterar linha de viagem,Caio Romero (EXP CPQ),TMS,João Santos (TI MTZ),Erro ao Trocar Linha de viagem,Fechado
+7714451,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,FINALIZAR RPS DE SERCIÇO - RPS,Joao Caitano (OPE CTN),TMS,João Santos (TI MTZ),Consulta Ocorrências,Fechado
+7711263,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Etiqueta esta com problema ,Gerson Junior (OPE CWB),TMS,João Santos (TI MTZ),Problema na etiqueta,Fechado
+7712159,12/18/2024,12/23/2024,12/18/2024 12:00:00 AM,No Prazo,Inclusão de Funcionário Memóri,Keila da Silva Cruz,ERP,Giovanni Campos (TI MTZ),Relógios de Ponto,Resolvido
+7697499,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - AJuste contabilização C,Suporte ERP/Sênior (Solicitante),ERP,Joselito Almeida (TI MTZ),Fechamento contábil/Fiscal,Fechado
+7698311,12/16/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,7698311 - INSTABILIDADE NO 55P,Alan Henrique Ferreira,CRM,Ricardo Santos (TI MTZ),Alterar configurações do WebPhone,Resolvido
+7700519,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,7700519 - CONFIGURAÇÕES - CUST,RENATA  MEZETTI,CRM,Ricardo Santos (TI MTZ),Criar/Alterar assunto do ticket,Fechado
+7709334,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Security ScoreCard - 7011764 -,Raphael Cruz (TI MTZ),STI,Vinicius Barreto (TI MTZ),Security Score Card,Resolvido
+7718206,12/19/2024,12/24/2024,12/20/2024 12:00:00 AM,No Prazo,Whatsapp bloqueado,CAMILLY CAMPOS DA SILVA,STI,Vinicius Barreto (TI MTZ),Sites Bloqueados,Resolvido
+7703031,12/16/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,(SA) - Recontabilização de mat,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Itens,Resolvido
+7697510,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Suporte Gestão de viage,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Portal Gestão de Viagens,Fechado
+7707792,12/17/2024,1/6/2025,12/19/2024 12:00:00 AM,No Prazo,Acesso ao relatorio ,Marcos Rodrigues (LIDEROPE SAO),TMS,João Santos (TI MTZ),Permissão de acesso,Fechado
+7712643,12/18/2024,1/7/2025,12/19/2024 12:00:00 AM,No Prazo,Acesso a tabela de clientes do,Julia Pereira ,TMS,João Santos (TI MTZ),Permissão de acesso,Fechado
+7705303,12/17/2024,,12/19/2024 12:00:00 AM,Fora do Prazo,Liberação Viagem,Douglas Melo (OPE PSW),TMS,João Santos (TI MTZ),Problema com Alerta e Bloqueio,Fechado
+7698312,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Erro ao alterar linha da viage,Wires Rocha do Nascimento,TMS,João Santos (TI MTZ),Plano/Processo GV,Fechado
+7698811,12/16/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,7698811 - Incluir Assinatura n,Rayssa carvalho  (CUSTOMER CARE SAO),CRM,Ricardo Santos (TI MTZ),Incluir assinatura no cadastro,Resolvido
+7704319,12/17/2024,12/23/2024,12/17/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (CO, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7711461,12/18/2024,12/24/2024,12/18/2024 12:00:00 AM,No Prazo,Atualização de Windows 11(SSAB, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Atualização de Windows,Resolvido
+7710043,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,solicitação de EDI DOCCOB - 77,Lucielle Fagundes Negretti,EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7694876,12/13/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,7694876 - bloqueio de dominio ,Talita  Araujo (Faturamento MTZ),CRM,Ricardo Santos (TI MTZ),Bloquear endereço de e-mail,Resolvido
+7718092,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,7718092 - Desativar usuário - ,Daniel Oliveira de Almeida (PREVPERDAS CORP),CRM,Ricardo Santos (TI MTZ),Reativação/Desativação de usuário,Resolvido
+7720667,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,7720667 - CADASTRO DE CLIENTE ,NATURA COSMETICOS S.A. (71.673.990/0019-04),CRM,Ricardo Santos (TI MTZ),Cadastro/Alteração de Cliente,Resolvido
+7715631,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Fatura 24-12-904175 - 7715631,Gabriel Dantas Menocci,EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7703034,12/16/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,(SA) - Geração de relatorio de,Suporte ERP/Sênior (Solicitante),ERP,Giovanni Campos (TI MTZ),Banco de Horas,Resolvido
+7721859,12/20/2024,12/24/2024,12/20/2024 12:00:00 AM,No Prazo,LIBERAÇÃO DE OS - SISTEMA BENN,Dario Santiago,ERP,Giovanni Campos (TI MTZ),Itens,Resolvido
+7711615,12/18/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,7711615 - CONFIGURAÇÕES - CUST,Não se Aplica,CRM,Ricardo Santos (TI MTZ),Criar/Alterar regra gatilho,Resolvido
+7702855,12/16/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,7702855 - NÃO PERMITIR NOVA IN,Lane Rabello (COORD CUSTOMER SERVICE NE),CRM,Ricardo Santos (TI MTZ),Criar/Alterar assunto do ticket,Resolvido
+7698348,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,filial atual,Carlos Fortunato (EXP RIO),TMS,João Santos (TI MTZ),Erro ao Iniciar Viagem,Fechado
+7710567,12/18/2024,1/7/2025,12/19/2024 12:00:00 AM,No Prazo,,Sandra Mara Matos Dos Santos,EDI,Euller Vieira (TI MTZ),Envio EDI/Comprovante  grandes quantidades,Fechado
+7697852,12/14/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Horas extras 50% não puxa para,Helena Freitas (RB MTZ),ERP,Kleverson Salles (TI MTZ),Banco de Horas,Resolvido
+7714484,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Data de entrega URGENTE - 7714,EDI Garibaldi,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7719339,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,Documento(s) cancelado(s) da B,Euller Vieira (TI MTZ),EDI,Euller Vieira (TI MTZ),Ajuste manual de arquivo de retorno,Resolvido
+7698306,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,24-12-902781 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7709501,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,RES: CT-es liberados PREFAT - ,Talita  Araujo (Faturamento MTZ),EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7714614,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Exclusão de CT-e na viagem.,Bruno Oliveira da Silva (EXP RIO),TMS,Anna Silva (TI MTZ),Analise de Rejeição,Fechado
+7717882,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Documentos Ag Analise,Heitor Castro Daer,TMS,Anna Silva (TI MTZ),Gerenciador de Consultas,Fechado
+7709409,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Realização de Scan do Trend na, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Manual Scan Trend,Resolvido
+7699947,12/16/2024,12/18/2024,12/16/2024 12:00:00 AM,No Prazo,Desbloqueio de crachá ,Gabriela Lima (ADM SAO),ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Integração de marcações que não foram migradas,Resolvido
+7705534,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,CANCELAMENTO DE PROCESSO DE LE,Otavio Alves (SIC VAG),TMS,Anna Silva (TI MTZ),Cancelamento de Processo GV,Fechado
+7702546,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,7702546 - Liberação de acesso ,Marcos Rodrigues (LIDEROPE SAO),TMS,Anna Silva (TI MTZ),Permissão OPEX,Fechado
+7695554,12/13/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Solicitação de Teste de Emissã,Silvana Delatorre,EDI,Euller Vieira (TI MTZ),Analise de Informação do Arquivo,Fechado
+7701494,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,RES: 24-12-900137 - Fatura de ,Audria,EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7700854,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,- 7700854,Manoel Marques da Silva Neto - Jequiti,EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7711366,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Atualizar Intelipost DOTERRA,Tatiane Viana (CUSTOMER CARE SAO),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7702817,12/16/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,7702817 - INCLUSÃO CLIENTE CAR,Andrea Voges (CUSTOMER CARE QHV),CRM,Ricardo Santos (TI MTZ),Criar/Alterar Fila de atendimento ,Resolvido
+7710124,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,7710124 - FINALIZAÇÃO TICKTES ,Silvanneide Batista (OPE FEC),CRM,Ricardo Santos (TI MTZ),Alterar SLA de solução,Resolvido
+7704153,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Realização de Scan do Trend na, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Manual Scan Trend,Resolvido
+7705562,12/17/2024,12/23/2024,12/17/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (QH, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7713780,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,24-12-905437 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7720006,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,não veio - Arquivo de document,Nfe - Confecções Dila,EDI,Natalia Caroline (TI MTZ),Envio E-mail/EDI sem Anexo,Resolvido
+7705467,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Reprocessamento - CT-e ,Samuel de oliveira santos,TMS,Mateus Menezes (TI MTZ),Demora na autorização,Fechado
+7700608,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Estornar a o ocorrencia de con,RUAN.RABELO,TMS,Mateus Menezes (TI MTZ),Consulta Ocorrências,Fechado
+7703369,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,finalizado com restricao 5140 ,Flaviane Pereira (CEDOC FEC),TMS,João Santos (TI MTZ),Arquivamento,Fechado
+7698164,12/15/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,LOG DE COMUNICAÇÃO PERDIDO,Lucas Rodrigo de Almeida de Sa ,TMS,João Santos (TI MTZ),Sorter/Automatic,Fechado
+7716856,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Frete zerado devolução,Marcus Araujo (EXP CORP),TMS,João Santos (TI MTZ),Calculo do frete,Fechado
+7698322,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Sistema Instável ,Wires Rocha do Nascimento,TMS,João Santos (TI MTZ),Benner,Fechado
+7716824,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,divergência de leitura,Almir Mariano (OPE VIX),TMS,João Santos (TI MTZ),Controle de Processos,Fechado
+7705701,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,XML DE CANCELAMENTO TRAVADO CT,Sharleny Moreira da Silva,TMS,João Santos (TI MTZ),Processamento NOTFIS/XML,Fechado
+7713420,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Gerar SMP  viagem  543326,Irismar Mendonça (OPE VDC),TMS,João Santos (TI MTZ),SMP,Fechado
+7722203,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Estorno de arquivamento por de,Marcus Araujo (EXP CORP),TMS,João Santos (TI MTZ),Arquivamento,Fechado
+7720688,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Check list ,Tiago Tomaz (EXP JDF),TMS,Mateus Menezes (TI MTZ),Integração CheckList,Fechado
+7698626,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Novo acesso colaborador GV,Samuel de Paula Martins,TMS,Mateus Menezes (TI MTZ),Desbloquear login Benner/Gestão de Volumes,Fechado
+7700920,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Frete zerado devolução,Marcus Araujo (EXP CORP),TMS,Mateus Menezes (TI MTZ),Calculo do frete,Fechado
+7720810,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,INSTABILIDADE NO GV,Marina Alves Pereira de Freitas,TMS,Mateus Menezes (TI MTZ),Erro ao Iniciar Viagem,Fechado
+7704221,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (SA, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Manual Scan Trend,Resolvido
+7716122,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,Ponto Web ,Victoria Sena De Jesus,ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Habilitar/Desabilitar/Incluir de Expiração do Acesso,Resolvido
+7708209,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Nota fiscal,Maria Barbosa (EXP PPY),TMS,Anna Silva (TI MTZ),Agendamento,Fechado
+7716990,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,PERMISSÃO ESTORNO DE ENCERRAME,Leandra Roccio (CUSTOMER CARE CPQ),TMS,Anna Silva (TI MTZ),Outros,Fechado
+7698357,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,CHECK LIST ,Andre Filipe Medeiros,TMS,João Santos (TI MTZ),Falta de CheckList,Fechado
+7722125,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,gentileza cancelar SMP abaixo ,Cassia Reis (OPE QHV),TMS,João Santos (TI MTZ),SMP,Fechado
+7702125,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Erro ao dar início na viagem 5,Paulo Ricardo (COORDUND VDC),TMS,João Santos (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7723174,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,RE: Pendências de ocorrências , Samantha Cunha (CML DIQ),EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Resolvido
+7719069,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Retirar CIOT da RCF,Ludmilla Ferreira (COT MTZ),TMS,João Santos (TI MTZ),RCF,Fechado
+7698243,12/15/2024,12/16/2024,12/15/2024 12:00:00 AM,No Prazo,Autorizar documento CT-e,Wires Rocha do Nascimento,TMS,João Santos (TI MTZ),Demora na autorização,Fechado
+7716721,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,Verificar importação de NF's -,Gabriel Santos (OPE VIX VIX),EDI,Euller Vieira (TI MTZ),Recepção de NOTFIS/XML,Fechado
+7700609,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Verificar importação EDI UDI 1,Janio Miranda (OPE UDI),EDI,Euller Vieira (TI MTZ),Recepção de NOTFIS/XML,Fechado
+7709216,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,NFs em atraso de entrega-BSB-4,com@denvertecnologia.com.br,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7701305,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Data de entrega - 7701305,Helen Rohr Seitenfus,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7721734,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,RES: Casas Decimais Mary Kay -,Flavia Velasco (CML CON),EDI,Euller Vieira (TI MTZ),Analise de Informação do Arquivo,Resolvido
+7714645,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Re: Arquivo de ocorrências - E,Transportadora Sudeste SP,EDI,Euller Vieira (TI MTZ),Envio E-mail/EDI sem Anexo,Fechado
+7717562,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,Follow Up de Coleta -  PATRUS ,GKO Frete,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7709450,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Finalizar viagem,VALTER LUAN,TMS,Mateus Menezes (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7715207,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,AJUSTAR STATUS SMP,Andre william V martins da silva ,TMS,Mateus Menezes (TI MTZ),SMP,Fechado
+7716479,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,problema ao Cancela o CT-e,Rafael Guimaraes (CEDOC ITN),TMS,Mateus Menezes (TI MTZ),Duvida na Emissão de Documento,Fechado
+7698227,12/15/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Erro ao gerar MDF-e,Diogo Ferreira,TMS,Mateus Menezes (TI MTZ),MDFe,Fechado
+7709518,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,UNITIZADOR ,Monique Peçanha (LIDEROPE QXD),TMS,Anna Silva (TI MTZ),Unitizador,Fechado
+7715818,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,NF 42206 - liberar reentrega s,Ayeska Souza (SIC DIQ),TMS,Anna Silva (TI MTZ),Erro Conclusão de ocorrência,Fechado
+7703601,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Problema com EDI,Leonardo Correa (OPE CPQ),TMS,Anna Silva (TI MTZ),Divergencia na leitura,Fechado
+7699463,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,CTe parado no XML,Haroldo Martins (EXP JDF),TMS,Anna Silva (TI MTZ),Problema com Sefaz CT-e,Fechado
+7720341,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Fatura 24-12-903781 - 7720341,Simone Anselmini Deitos,EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Resolvido
+7702476,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,24-12-904171 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7716278,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,EDI de fatura / 24-12-904427 -,Leandro Carvalho,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7698304,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,24-12-902770 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7703077,12/16/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,sem arquivo para emissão,Leandro Ribeiro (OPE JDF),EDI,Euller Vieira (TI MTZ),Nota não importada,Fechado
+7723221,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,DOCUMENTOS. - 7723221,Talita  Araujo (Faturamento MTZ),EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Resolvido
+7703856,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,[Atividade: #261292] ProEletro,lia@lupeon.com.br,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7706705,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,ARQUIVOS EDI - 7706705,Anna Wille,EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7701393,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,24-11-908073 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7699471,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Erro ao finalizar a viagem,Pa.eunapolis,TMS,Mateus Menezes (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7711156,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Documentos não averbados ,Samuel de oliveira santos,TMS,Mateus Menezes (TI MTZ),Averbação Eletrônica,Fechado
+7711201,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Desbloquear benner,Elaine Pereira (LIDER OPE CON),TMS,Mateus Menezes (TI MTZ),Benner,Fechado
+7713391,12/18/2024,,12/18/2024 12:00:00 AM,Fora do Prazo,CRIAR USUARIO PARA ACESSO AO B,Helena Pelizaro (SIC/CQO FRC),TMS,Mateus Menezes (TI MTZ),Criar Usuário Benner,Fechado
+7700177,12/16/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Erro ao realizar leitura do un,Rodrigo Rocha (ENCOPE CAW),TMS,Anna Silva (TI MTZ),Unitizador,Fechado
+7700073,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Agente de vendas Marcelo Leão ,Lucas Rodrigues (OPE CON),TMS,Anna Silva (TI MTZ),Comissão,Fechado
+7714423,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,VIAGEM NÃO GERA O MANIFESTO EL,Marcos,TMS,João Santos (TI MTZ),Documento Cliente Divergente,Fechado
+7710654,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,ERRO AO FINALIZAR VIAGEM ,Wilton Delgado de Araujo,TMS,João Santos (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7704014,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,ENC: Formulário Faltante | Ped,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Analise de Informação do Arquivo de retorno,Fechado
+7698410,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Reprocessamento - CT-e ,Samuel de oliveira santos,TMS,Mateus Menezes (TI MTZ),Demora na autorização,Fechado
+7720155,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Lib. Autorização de viagem,Luis Pitta (COORDOPE FEC),TMS,Mateus Menezes (TI MTZ),Permissão OPEX,Fechado
+7716857,12/19/2024,,12/19/2024 12:00:00 AM,Fora do Prazo,criação de usuario para auxili,Lucas de Oliveira Sousa,TMS,Mateus Menezes (TI MTZ),Criar Usuário Benner,Fechado
+7700830,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Notas em laboração ,Tatiana Cardoso (DISTRIB RIB CON),TMS,Mateus Menezes (TI MTZ),Processamento NOTFIS/XML,Fechado
+7716210,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Erro ao finalizar a viagem,Joao Pedro Mendes Machado,TMS,Mateus Menezes (TI MTZ),Erro ao Trocar Linha de viagem,Fechado
+7724804,12/21/2024,12/23/2024,12/21/2024 12:00:00 AM,No Prazo,CHECK LIST ,Andre Filipe Medeiros,TMS,Mateus Menezes (TI MTZ),Falta de CheckList,Resolvido
+7698751,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,NF 3490897 - BOTICÁRIO PRODUTO,Wemerson Teixeira (OPE TOT),TMS,Mateus Menezes (TI MTZ),Consulta Ocorrências,Fechado
+7723246,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,Notas sem ocorrências e confir,naoresponda@simfrete.com.br,EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Resolvido
+7719680,12/19/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,24-12-905493 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Resolvido
+7706913,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,ENC: Faturamento e Faturas PEN,Nayane Abreu (CAR MTZ),EDI,Natalia Caroline (TI MTZ),XML CTe(Grandes Quantidades),Fechado
+7713407,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,CRIAR USUARIO PARA ACESSO AO B,Helena Pelizaro (SIC/CQO FRC),TMS,Mateus Menezes (TI MTZ),Criar Login Benner,Fechado
+7711504,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,DEVOLVER A NF 23804409,Ayeska Souza (SIC DIQ),TMS,Mateus Menezes (TI MTZ),Geração/Emissão documento,Fechado
+7705291,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,ALTERAR DATAS DOS CFS - 01QDEZ,Breno Luiz (COT MTZ),TMS,Mateus Menezes (TI MTZ),Contrato/Negociação,Fechado
+7724995,12/21/2024,12/23/2024,12/21/2024 12:00:00 AM,No Prazo,Finalizar Processo com sobra N,Pa.eunapolis,TMS,Vitor Gomes (TI MTZ),Erro efetivar pré-ocorrência,Resolvido
+7714206,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Viagem 2024/543729-59 - cancel,Thiago Bispo dos Santos,TMS,Vitor Gomes (TI MTZ),SMP,Fechado
+7698218,12/15/2024,12/16/2024,12/15/2024 12:00:00 AM,No Prazo,SMP,Deyve ,TMS,João Santos (TI MTZ),SMP,Fechado
+7698006,12/14/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Portal MDFe fora,Thiago Bispo dos Santos,TMS,João Santos (TI MTZ),MDFe,Fechado
+7708887,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Estorno de ocorrencia NF:58081,Rangel Silva,TMS,João Santos (TI MTZ),Estorno Ocorrência,Fechado
+7698298,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,status do documento,Carlos Fortunato (EXP RIO),TMS,João Santos (TI MTZ),Controle de Processos,Fechado
+7700421,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Inclusão UND SAJ,Luis Pitta (COORDOPE FEC),TMS,Mateus Menezes (TI MTZ),Desbloquear login Benner/Gestão de Volumes,Fechado
+7701472,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,ERRO AO AR CHEGADA NA  VIAGEM ,lidiane,TMS,Mateus Menezes (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7702898,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Checklist Benner,Luis,TMS,Vitor Gomes (TI MTZ),Login Checklist,Fechado
+7701069,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,ajuste na etiqueta.,Everaldo Edson dos Santos,TMS,Vitor Gomes (TI MTZ),Controle de Processos,Fechado
+7698223,12/15/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,GESTÃO LOGISTICA ,Sarah Aparecida (OPE CPQ),TMS,Mateus Menezes (TI MTZ),Permissão GRIS,Fechado
+7700743,12/16/2024,12/17/2024,12/17/2024 12:00:00 AM,Fora do Prazo,SOLICITAÇÃO DE LIBERAÇÃO DE US,Ismael Souza (GER FLN),TMS,Mateus Menezes (TI MTZ),Permissão COT,Fechado
+7704364,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,erro ao cancelar a viagem 5405,Isabela Silva (EXP DIQ),TMS,Mateus Menezes (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7697767,12/14/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Liberação de acesso a gestão l,Arisson Matheus Silva de Freitas,TMS,Mateus Menezes (TI MTZ),Permissão DAC,Fechado
+7704881,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,KM NÃO MIGRANDO/DEMORANDO A MI,Murilo Henrique Santos,TMS,Mateus Menezes (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7710333,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Finalizar viagem 2024/538018-4,Ubiratan Santos (ENCOPE SSA),TMS,Mateus Menezes (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7716229,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,CTe parado no XML,Haroldo Martins (EXP JDF),TMS,Mateus Menezes (TI MTZ),Problema com Sefaz CT-e,Fechado
+7709515,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,CTe parado no XML,Haroldo Martins (EXP JDF),TMS,Mateus Menezes (TI MTZ),Problema com Sefaz CT-e,Fechado
+7714662,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Acesso Impressão de Etiqueta e,Douglas Melo (OPE PSW),TMS,Mateus Menezes (TI MTZ),Emissão de Etiquetas,Fechado
+7720905,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Documento cliente,Camilla Costa (POR PALLETS CON CON),TMS,Mateus Menezes (TI MTZ),Documento Cliente Bloqueado,Fechado
+7709112,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Erro na leitura,Giovani Oliveira (OPE CPQ),TMS,Mateus Menezes (TI MTZ),Divergência na leitura,Fechado
+7709371,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,AJUSTAR UNITIZADOR 678990,Silverio Correia (PrevPerdas CON),TMS,Mateus Menezes (TI MTZ),Unitizador,Fechado
+7714003,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Status de documento está incor,Flávio Augusto Rodrigues de Souza,TMS,Vitor Gomes (TI MTZ),Repasse,Fechado
+7714110,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Finalização de viagem,Adriano Santos (OPE SAO),TMS,Vitor Gomes (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7719753,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,troca de linha de viagem ,Weliton Souza,TMS,Vitor Gomes (TI MTZ),Erro ao Trocar Linha de viagem,Fechado
+7714048,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,LENTIÃO BENNER - ERRO AO INICI,jobson odilon oliveira,TMS,Vitor Gomes (TI MTZ),Benner,Fechado
+7724872,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,Integração NP (Remessa Pedido),Jordy Rodrigues (FISCAL FOR),TMS,Mateus Menezes (TI MTZ),Controle de Processos,Resolvido
+7721269,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Alterar filial RCF - 2024/0537,Henrique Evangelista (COT MTZ),TMS,Mateus Menezes (TI MTZ),RCF,Fechado
+7724942,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,Imprimir Maifestos - Erro ,Marina Pereira,TMS,Mateus Menezes (TI MTZ),Erro ao Iniciar Viagem,Resolvido
+7719787,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,documentos travado no XML,Renato Castro (EXP MTZ),TMS,Vitor Gomes (TI MTZ),Processamento NOTFIS/XML,Fechado
+7714246,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,Fora do Prazo,Finalizar Viagem Mista 543193,Mario Halmata  (EXP CWB),TMS,Vitor Gomes (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7708638,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,Fora do Prazo,DIVERGÊNCIA DE LEITURA,Matheus Monteiro Nascimento,TMS,Vitor Gomes (TI MTZ),Divergência na leitura,Fechado
+7703307,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Documentos com  status ag auto,Arisson Matheus Silva de Freitas,TMS,Isaias Oliveira (TI MTZ),Processamento NOTFIS/XML,Fechado
+7703267,12/17/2024,12/19/2024,12/19/2024 12:00:00 AM,Fora do Prazo,Liberar senha de acesso  Guilh,Hoto Junio Effgem Miranda (OPE VIX),TMS,Isaias Oliveira (TI MTZ),Desbloquear login Benner/Gestão de Volumes,Fechado
+7724707,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,Encerramento de MDF-e 148108 d,Carlos Júnio (EXP RIO),TMS,Isaias Oliveira (TI MTZ),MDFe,Resolvido
+7714308,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Documento aguardando autorizaç,Alana Silva (EXP CPQ),TMS,Isaias Oliveira (TI MTZ),Duvida na Emissão de Documento,Fechado
+7708432,12/17/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,(SA) - Atendimento dos avisos ,Suporte ERP/Sênior (Solicitante),ERP,Arthur Abreu (EST-TECH TI MTZ),Requisições,Resolvido
+7703254,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,ERRO AO FINALIZAR VIAGEM DE CO,EDSON STOFEL RODRIGUES ,TMS,Isaias Oliveira (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7703084,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Devolução de Natura confirmada,Felipe Panicio (EXP CORP),TMS,Vitor Gomes (TI MTZ),Documento Cliente Divergente,Fechado
+7703046,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,PROBLEMA NO SEFAZ VIAGEM 53994,Josue Lopes (OPE MOC),TMS,Vitor Gomes (TI MTZ),MDFe,Fechado
+7714200,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,ajustar a smp  da viagem 54478,douglas martins do carmo,TMS,Vitor Gomes (TI MTZ),SMP,Fechado
+7719740,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,viagem   545164,PA Teixeira de Freitas,TMS,Vitor Gomes (TI MTZ),Erro ao Iniciar Viagem,Fechado
+7714407,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,DIFICULDADE AO FINALIZAR VIAGE,Danilo Garcia (OPE SJK),TMS,Isaias Oliveira (TI MTZ),Benner,Fechado
+7703033,12/16/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,(SA) - Erro no calculo ponto f,Suporte ERP/Sênior (Solicitante),ERP,Giovanni Campos (TI MTZ),Cálculos,Resolvido
+7703372,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,DESLIGAMENTO COLABORADOR  2251,Maria Emanoela Cordeiro da Costa,ERP,Giovanni Campos (TI MTZ),Rescisão,Resolvido
+7720887,12/20/2024,12/26/2024,12/20/2024 12:00:00 AM,No Prazo,Parametrização de relogio fili,leticia ,ERP,Giovanni Campos (TI MTZ),Relógios de Ponto,Resolvido
+7702970,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,ajuste na etiqueta.,Everaldo Edson dos Santos,TMS,Vitor Gomes (TI MTZ),Emissão de Etiquetas,Fechado
+7712525,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,E-mail não localizado ( Portal,Bruna Caroline (Supervisora Regional NCC),TMS,Vitor Gomes (TI MTZ),Assistente DAC,Fechado
+7708722,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,Fora do Prazo,Viagem 538956 com erro na hora,Paulo Ricardo (COORDUND VDC),TMS,Isaias Oliveira (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7703223,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,Fora do Prazo,lentidão do sistema ,eike,TMS,Isaias Oliveira (TI MTZ),Benner,Fechado
+7717886,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,SOLICITAÇÃO DE ALTERAÇÃO DE SM,Ismael Souza (GER FLN),TMS,Vitor Gomes (TI MTZ),Alterar Motorista de Viagem,Fechado
+7724554,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,CT-e pendente no SEFAZ,Heitor Castro Daer,TMS,Vitor Gomes (TI MTZ),Problema com Sefaz CT-e,Resolvido
+7703213,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,VIAGEM TRAVADA EM AGUARDANDO S,Sharleny Moreira da Silva,TMS,Isaias Oliveira (TI MTZ),MDFe,Fechado
+7721952,12/20/2024,12/24/2024,12/20/2024 12:00:00 AM,No Prazo,AJUSTE NO LANÇAMENTO ,Edilene Oliveira (FISCAL MTZ),ERP,Arthur Abreu (EST-TECH TI MTZ),Recebimento fiscal,Resolvido
+7720210,12/20/2024,12/24/2024,12/20/2024 12:00:00 AM,No Prazo,Acesso ao BI,Edson Duque (OPE PPY),ERP e Senior,Giovanni Campos (TI MTZ),Permissão de acesso,Resolvido
+7699753,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,7699753 - CADASTRO FORNECEDOR ,Mariana Almeida (CUSTOMER CARE FEC),CRM,Ricardo Santos (TI MTZ),Cadastro/Alteração  Fornecedor,Fechado
+7701979,12/16/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,7701979 - CADASTRO FORNECEDOR ,Mariana Almeida (CUSTOMER CARE FEC),CRM,Ricardo Santos (TI MTZ),Cadastro/Alteração  Fornecedor,Resolvido
+7720204,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,7720204 - bloqueio de email ,Talita  Araujo (Faturamento MTZ),CRM,Ricardo Santos (TI MTZ),Bloquear endereço de e-mail,Resolvido
+7698320,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,erro ao colocar a viagem em tr,eike,TMS,João Santos (TI MTZ),Benner,Fechado
+7698257,12/15/2024,12/16/2024,12/15/2024 12:00:00 AM,No Prazo,sistema BENNER apresentando os,JOSELISSON OLIVEIRA DE  SANTANA,TMS,João Santos (TI MTZ),Benner,Fechado
+7697949,12/14/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,LENTIDAO SISTEMA BENNER,Silvério Gomes (EXP JDF),TMS,João Santos (TI MTZ),Benner,Fechado
+7703349,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,VOLUME AGUARDANDO TRANSFERENCI,Gilberto Junior (OPE QXD QXD),TMS,João Santos (TI MTZ),Divergência na leitura,Fechado
+7704009,12/17/2024,12/23/2024,12/17/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (VI, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7715744,12/19/2024,12/26/2024,12/19/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (SA, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7698910,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Realização de Scan do Trend na, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Manual Scan Trend,Resolvido
+7704546,12/17/2024,12/23/2024,12/17/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (CO, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7719906,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Viajem 2024/544804-62 aguardan,Jose Roberto Cardoso (EXP BNU),TMS,Isaias Oliveira (TI MTZ),Problema com Sefaz MDF-e,Fechado
+7697495,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Ajustar lançamento fina,Suporte ERP/Sênior (Solicitante),ERP,Arthur Abreu (EST-TECH TI MTZ),Lançamentos financeiros,Fechado
+7699588,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,INC0124283 Multi-Factor Authen,Vinicius Barreto,STI,Vinicius Barreto (TI MTZ),XDR Taegis,Resolvido
+7707929,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,CON: ENVIO DE COMANDO RELOGIOS,Pollyana Camargos (OPE CON),ERP,Giovanni Campos (TI MTZ),TopData,Resolvido
+7696245,12/13/2024,12/18/2024,12/16/2024 12:00:00 AM,No Prazo,7696245 - Tickets estão aparec,Gleiciane Parreiras (COORD CS REG MG),CRM,Ricardo Santos (TI MTZ),Erro em relatório,Fechado
+7703703,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,NFs em atraso de entrega-BSB-4,com@denvertecnologia.com.br,EDI,Julia Andrade (APRENDIZ TI MTZ),Ocorrências(OCORREN),Fechado
+7699262,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,ENC: Notas Sem Conhecimento de,Gabriela Albrecht (GERUND QHV),EDI,Julia Andrade (APRENDIZ TI MTZ),XML CTe(Grandes Quantidades),Fechado
+7697864,12/14/2024,12/16/2024,12/16/2024 12:00:00 AM,Fora do Prazo,Integrar pedido Boticário nos ,Jordy Rodrigues (FISCAL FOR),TMS,Anna Silva (TI MTZ),Etiquetas EDI,Fechado
+7710506,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,RESETAR A SENHA APLICATIVO WAP,ANA CORREIA,ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Configurações Gerais,Resolvido
+7705174,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Documentos não associados ,Thiago Silva (EXP CPQ),TMS,João Santos (TI MTZ),Erro ao Iniciar Viagem,Fechado
+7708879,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Erro ao Finalizar Viagem 2024/,Douglas Cruz (OPE VIX),TMS,João Santos (TI MTZ),Controle de Processos,Fechado
+7720049,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Cancelar CF - ITN,Ludmilla Ferreira (COT MTZ),TMS,João Santos (TI MTZ),MDFe,Fechado
+7715532,12/19/2024,12/26/2024,12/19/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (CO, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7704344,12/17/2024,12/23/2024,12/17/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (CO, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7698981,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,24-11-905155 - Fatura de Cobra,Nayane Abreu (CAR MTZ),EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7715817,12/19/2024,12/26/2024,12/19/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (SA, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7715614,12/19/2024,12/26/2024,12/19/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (CO, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7704266,12/17/2024,12/23/2024,12/17/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (SA, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7709820,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,FATURA VOLKS DO BRASIL - 77098,Talita  Araujo (Faturamento MTZ),EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7696078,12/13/2024,12/18/2024,12/16/2024 12:00:00 AM,No Prazo,redefinir senha,Maria Isabel (ADM FLN),ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Diversos,Resolvido
+7710184,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,NÃO ESTOU CONSEGUINDO FINALIZA,jobert Franthiesco ,TMS,Anna Silva (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7713538,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,DOCUMENTOS COM STATUS DIVERGEN,Lowrrayne,TMS,Anna Silva (TI MTZ),Divergencia na leitura,Fechado
+7699500,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Modificar beneficiário da RCF ,Matheus Ribeiro (COT MTZ),TMS,Anna Silva (TI MTZ),Cadastro de Beneficiários,Fechado
+7713624,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Limitador de frete viagem x ta,Maycon Douglas (EXP GVR),TMS,Anna Silva (TI MTZ),Limitador de Frete,Fechado
+7712496,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,ajuste na quantidade de etique,Everaldo Edson dos Santos,TMS,João Santos (TI MTZ),Emissão de Etiquetas,Fechado
+7706858,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Ocorrencia de falta ,Pa.eunapolis,TMS,João Santos (TI MTZ),Consulta Ocorrências,Fechado
+7713467,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,PROBLEMA DOCUMENTAÇÃO ,Maria Julia Vasconcellos,TMS,João Santos (TI MTZ),Erro Conclusão de ocorrência,Fechado
+7710700,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,ENVIO DE COMPROVANTE DE ENTREG,"Silva, Janaina",EDI,Euller Vieira (TI MTZ),Suporte Portal Patrus,Fechado
+7716246,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,AJUSTE,Mateus Rodrigues,TMS,João Santos (TI MTZ),Etiquetas EDI,Fechado
+7720058,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Sefaz travado viagem 546718-9,Rosiely Franca (EXP VIX VIX),TMS,João Santos (TI MTZ),Problema com Sefaz CT-e,Fechado
+7698251,12/15/2024,12/16/2024,12/15/2024 12:00:00 AM,No Prazo,SEM ACESSO AO BENNER,Heitor Castro Daer,TMS,João Santos (TI MTZ),Benner,Fechado
+7705856,12/17/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,CT-E COMPL. DE IMPOSTO FILIAL ,Cloves Borges (FISCAL MTZ),TMS,João Santos (TI MTZ),Documento Cliente Divergente,Fechado
+7701391,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,24-11-908059 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7699919,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,RE: RELATÓRIO 1° QUINZENA DE N,Marcus Costa (Aprendiz MTZ),EDI,Euller Vieira (TI MTZ),XML CTe(Grandes Quantidades),Fechado
+7719249,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,NIKE SEM EDI - 7719249,GABRIEL TORRES,EDI,Euller Vieira (TI MTZ),Recepção de NOTFIS/XML,Resolvido
+7717832,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Configurar o XML do cliente  W,Moises Silva,EDI,Euller Vieira (TI MTZ),Parametrização importação XML/NOTFIS,Fechado
+7701419,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,24-11-908047 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7720301,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,NFs em atraso de entrega-BSB-4,com@denvertecnologia.com.br,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Resolvido
+7712508,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Follow Up de Coleta -  PATRUS ,GKO Frete,EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7712749,12/18/2024,1/8/2025,12/19/2024 12:00:00 AM,No Prazo,COMPROVANTES DOTERRA NA INTELI,Tatiane Viana (CUSTOMER CARE SAO),EDI,Natalia Caroline (TI MTZ),Envio EDI/Comprovante  grandes quantidades,Fechado
+7721888,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,RES: faturas Burigotto - 77218,Amanda Batistela,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Resolvido
+7698314,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,24-12-903446 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7721945,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,LIBERAÇÃO PARA ACESSO A LEITUR,Bruno Henrique,TMS,Mateus Menezes (TI MTZ),Liberação de acesso GV,Fechado
+7714563,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Erro ao Finalizar Viagem 2024/,Douglas Cruz (OPE VIX),TMS,Mateus Menezes (TI MTZ),Controle de Processos,Fechado
+7698742,12/16/2024,,12/16/2024 12:00:00 AM,Fora do Prazo,Incluir data de emissão no Cte,Victor Okubo (DAC MTZ),TMS,João Santos (TI MTZ),Alteração ,Fechado
+7717390,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,CT-e aguardando autorização,Everaldo Edson dos Santos,TMS,João Santos (TI MTZ),Controle de Processos,Fechado
+7698211,12/15/2024,12/16/2024,12/15/2024 12:00:00 AM,No Prazo,PROBLEMA NA LEITURA CARREGAMEN,Sarah Aparecida (OPE CPQ),TMS,João Santos (TI MTZ),Erro ao Iniciar Viagem,Fechado
+7703522,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,leitura de volumes ,Marcelo Everton,TMS,João Santos (TI MTZ),Problema na etiqueta,Fechado
+7719849,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,FATURAS SEM EDI - PATRUS - 771,Marcos J. Pereira,EDI,Euller Vieira (TI MTZ),Postagem de arquivos no Portal do cliente,Resolvido
+7710523,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Sem EDI ,Ludimila Rocha (OPE UDI),EDI,Euller Vieira (TI MTZ),Recepção de NOTFIS/XML,Fechado
+7701706,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Follow Up de Coleta -  PATRUS ,GKO Frete,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7690969,12/12/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Pedido nao importado ,Yara Bento Da Cruz,EDI,Euller Vieira (TI MTZ),Nota não importada,Fechado
+7710456,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,RES: 24-12-904121 - Fatura de ,Talita  Araujo (Faturamento MTZ),EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7700229,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Solicitação de EDI Alpargatas,ALPARGATAS S.A. (Principal),EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7700791,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,ENC: ocorrencia 24 - 7700791,Manoel Marques da Silva Neto - Jequiti,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7709900,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,ENTREGAS PENDENTES - PATRUS - ,ACCUMED PRODUTOS MEDICO HOSPITALARES LTDA,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7700614,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,RES: PRAZO PARA PAGAMENTO SAO ,Ana Paula (CAR MTZ),EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7719180,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,COLETA  INBOUND 3M - VIAGEM 28,3M DO BRASIL LT,EDI,Euller Vieira (TI MTZ),Recepção de NOTFIS/XML,Fechado
+7703788,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Re: OCOREN SETEMBRO E OUTUBRO ,EDI Garibaldi,EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7697636,12/14/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,RE: COLETA MANDAE DE HOJE 13/1,Wedson Silva (EXP CON),EDI,Natalia Caroline (TI MTZ),Recepção de NOTFIS/XML,Fechado
+7698949,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,ENC: PATRUS - Acompanhamento d,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7697911,12/14/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,NOTAS SEM DATA DE ENTREGA 14/1,gestao3@lorenzetti.com.br,EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7721750,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Desativar GV Viagem 547131-3,Mario Halmata  (EXP CWB),TMS,Mateus Menezes (TI MTZ),Desativação de Gestão de Volumes,Fechado
+7711592,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,RETIRAR STATUS DE AG. DESCARRE,Vandson Oliveira (OPE AJU),TMS,Mateus Menezes (TI MTZ),Gestão de Pendências,Fechado
+7703644,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Erro ao iniciar viagem (CT-e d,Guilherme Pena (EXP IPN),TMS,Mateus Menezes (TI MTZ),Erro ao Iniciar Viagem,Fechado
+7724967,12/21/2024,12/23/2024,12/21/2024 12:00:00 AM,No Prazo,Finalizar Processo com sobra N,Pa.eunapolis,TMS,Vitor Gomes (TI MTZ),Erro efetivar pré-ocorrência,Resolvido
+7676121,12/9/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Cliente Espaço Banho com probl,Eduardo Oliveira (EXP CPQ),EDI,Natalia Caroline (TI MTZ),Analise de agrupamento,Fechado
+7716410,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,App Patrus Tech,Jessica Cunha,TMS,Mateus Menezes (TI MTZ),Configuração BL Mobile,Fechado
+7710490,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Finalização da Viagem 2024/532,Ubiratan Santos (ENCOPE SSA),TMS,Mateus Menezes (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7724916,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,Processamento Notifis ,Samuel de oliveira santos,TMS,Mateus Menezes (TI MTZ),Processamento NOTFIS/XML,Resolvido
+7722041,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,RES: Fat 24-12-902948 Venc 10/,Danusa Xavier (CML RIO),EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Resolvido
+7705714,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,Arquivo EDI - fatura:  24-12-9,ADM - Grupo Texpa,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7712493,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,RES: 24-12-904208 (24904208) -,Carolina Juliano,EDI,Natalia Caroline (TI MTZ),Conhecimentos(CONEMB),Fechado
+7700468,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,EDI,Tatiana Cardoso (DISTRIB RIB CON),EDI,Natalia Caroline (TI MTZ),Nota não importada,Fechado
+7699763,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Sem  emissão ,Marciel Pires (OPE UDI),EDI,Natalia Caroline (TI MTZ),Nota não importada,Fechado
+7722007,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,RES: faturas Burigotto - 77220,Amanda Batistela,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Resolvido
+7714576,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,RES: JCE CHILE S/A - [ALERTA A,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7708955,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Re: Ocorrên de entrega pendent,Mauricio Mathias Canal,EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7721832,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,ATUALIZAÇÃO // NF 828795 //  A,FRIOVIX COMERCIO DE REFRIGERACAO LTDA,EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Resolvido
+7703142,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Viagem 2024/540589-59 - Carga ,Thiago Bispo dos Santos,TMS,Vitor Gomes (TI MTZ),Divergência na leitura,Fechado
+7725015,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,CTe parado no XML,Haroldo Martins (EXP JDF),TMS,Vitor Gomes (TI MTZ),Problema com Sefaz CT-e,Resolvido
+7708587,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,Fora do Prazo,CT-E AGUARDANDO AUTORIZAÇÃO DE,Bruno de Oliveira (EXP CXJ),TMS,Vitor Gomes (TI MTZ),Documento Cliente Divergente,Fechado
+7719834,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,QUANTIDADE  DE  CT-e  diferent,Jose Roberto (EXP SAO),TMS,Vitor Gomes (TI MTZ),Benner,Fechado
+7712538,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,ERRO AO FINALIZAR VIAGEM,Cleydson Vinicius,TMS,Mateus Menezes (TI MTZ),Erro ao Iniciar Viagem,Fechado
+7698700,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,ALTERAR LINHA VIAGEM,kelvin,TMS,Mateus Menezes (TI MTZ),Erro ao Trocar Linha de viagem,Fechado
+7714964,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Liberação de acesso ,Rodrigo Rocha (ENCOPE CAW),TMS,Mateus Menezes (TI MTZ),Problema na etiqueta,Fechado
+7723847,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Liberação de acesso ,Rodrigo Rocha (ENCOPE CAW),TMS,Mateus Menezes (TI MTZ),Outros,Fechado
+7719900,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Doterra aguardando autorização,Leandro Alves,TMS,Isaias Oliveira (TI MTZ),Problema com Sefaz CT-e,Fechado
+7703215,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,Fora do Prazo,ERRO AO EFETIVAR OCORRENCIA,GABRIEL SANTOS,TMS,Isaias Oliveira (TI MTZ),Ocorrência,Fechado
+7697475,12/13/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,7697475 - Ticket filho 7697351,Bruno Jesus (PREVPERDAS CORP),CRM,Ricardo Santos (TI MTZ),Ticket não Localizado,Fechado
+7701593,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,7701593 - Ticket não localizad,Fernanda Suelen (CUSTOMER CARE SAO),CRM,Ricardo Santos (TI MTZ), Delay na importação de e-mails,Fechado
+7714630,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Ajuste na etiqueta ,Arlene Cerqueira,TMS,Mateus Menezes (TI MTZ),Problema na etiqueta,Fechado
+7720524,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Erro solicitação Mão de Obra t,Guilherme Simon,TMS,Mateus Menezes (TI MTZ),Atendimentos,Fechado
+7698282,12/15/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Re: Nova Solicitação: estornar,Emerson Loose (GER REG NE),TMS,Mateus Menezes (TI MTZ),Erro ao Iniciar Viagem,Fechado
+7714021,12/18/2024,12/19/2024,12/20/2024 12:00:00 AM,Fora do Prazo,gvs não imprimem manifesto,Paulo  Henrique dos Santos Cruz,TMS,Vitor Gomes (TI MTZ),Controle de Processos,Fechado
+7698947,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Realização de Scan do Trend na, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Manual Scan Trend,Resolvido
+7709752,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,Fora do Prazo,Acesso a vídeos no Google Driv,Rubiane Barboza (Comunicação e Marketing),STI, Gustavo Silva (EST-TECH SEGTI MTZ),"Liberação, Alteração e Remoção de Acesso de Usuário",Fechado
+7704127,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Não estou conseguindo ler essa,Leonardo Correa (OPE CPQ),TMS,Anna Silva (TI MTZ),Divergência na leitura,Fechado
+7702786,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,MULTICTE SAO - CTES INTEGRADOS,Steffani Rodrigues (FISCAL MTZ),TMS,Anna Silva (TI MTZ),Documento Cliente Divergente,Fechado
+7724568,12/20/2024,12/21/2024,12/20/2024 12:00:00 AM,No Prazo,Falha na Transmissão dos Arqui,Wanderlei Castro (OPE CPQ),TMS,Vitor Gomes (TI MTZ),Arquivo de envio Roteirizador,Resolvido
+7702801,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Finalização de Viagem ,Roniere Borges da Silva,TMS,Vitor Gomes (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7708520,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,ARQUIVAR CTE 1345358 DEVOLVIDO,PA Juazeiro Do Norte,TMS,Vitor Gomes (TI MTZ),Consulta Ocorrências,Fechado
+7713428,12/18/2024,,12/18/2024 12:00:00 AM,Fora do Prazo,CRIAR E-MAIL PARA ACESSO AO BE,Helena Pelizaro (SIC/CQO FRC),TMS,Vitor Gomes (TI MTZ),Criar Usuário Benner,Fechado
+7696467,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,PROBLEMA NO UNITIZADOR 674564,Ruslana Moreira (CUSTOMER CARE CTN),TMS,Anna Silva (TI MTZ),Unitizador,Fechado
+7716342,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,Acesso ao relógio T.I.,Marcelo Silva (CEDOC MTZ),ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Cadastros,Resolvido
+7700060,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Desbloqueio do APP - Wappi,Gabriela Lima (ADM SAO),ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Configurações Gerais,Resolvido
+7702407,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo, Solicitação de desbloqueio de,Vitor de Andrade,TMS,Anna Silva (TI MTZ),Desbloquear login Benner/Gestão de Volumes,Fechado
+7721067,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,PROCESSAMENTO BOTICARIO,Mateus Rodrigues,TMS,Mateus Menezes (TI MTZ),Processamento NOTFIS/XML,Fechado
+7699313,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,ERRO AO FINALIZAR VIAGEM 2024/,Paulo Victor  (OPE JDF),TMS,Mateus Menezes (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7724937,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,ERRO AO TROCAR LINHA VIAGEM;,kelvin,TMS,Mateus Menezes (TI MTZ),Erro ao Trocar Linha de viagem,Resolvido
+7705387,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Estorno de arquivamento por de,Marcus Araujo (EXP CORP),TMS,Mateus Menezes (TI MTZ),Arquivamento,Fechado
+7719268,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,19/12 - Desativação GV,Cristhian Baldini (OPE PPY),TMS,Mateus Menezes (TI MTZ),Desativação de Gestão de Volumes,Fechado
+7702530,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Desbloquear usuario - alberto.,Alberto,TMS,Mateus Menezes (TI MTZ),Desbloquear login Benner/Gestão de Volumes,Fechado
+7698059,12/14/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,documento ag autorizaçao,Weliton Souza,TMS,Mateus Menezes (TI MTZ),Demora na autorização,Fechado
+7713548,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,ERRO AO FINALIZAR VIAGEM DE TR,Simone Demétrio Ferreira,TMS,Mateus Menezes (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7698744,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,estorno de ocorrencia,Alessandra Ferreira (OPE PPY),TMS,João Santos (TI MTZ),Estorno Ocorrência,Fechado
+7698275,12/15/2024,12/16/2024,12/15/2024 12:00:00 AM,No Prazo,Erro na viagem transbordo,Matheus Silva (TRAFEGO MTZ),TMS,João Santos (TI MTZ),Erro ao Trocar Linha de viagem,Fechado
+7056383,6/11/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,Ativação de assinatura digital,Sandra Simões (RB MTZ),ERP,Kleverson Salles (TI MTZ),Férias,Resolvido
+7724331,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,Documento(s) cancelado(s) da B,Euller Vieira (TI MTZ),EDI,Euller Vieira (TI MTZ),Ajuste manual de arquivo de retorno,Resolvido
+7708563,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,Não conseguindo acessar o Benn,Ronaldo João da Silva Filho,TMS,Vitor Gomes (TI MTZ),Benner,Fechado
+7719860,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,Fora do Prazo,Arquivos não estão transmitind,Ygor,TMS,Vitor Gomes (TI MTZ),Arquivo de envio Roteirizador,Fechado
+7719928,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,TROCA ,Paulo Barbosa (FILIAL -  SAO),TMS,Isaias Oliveira (TI MTZ),Alterar SubTipo Viagem,Fechado
+7703294,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Retirar ocorrência ,Lucas Santos (OPE FEC),TMS,Isaias Oliveira (TI MTZ),Divergência na leitura,Fechado
+7721327,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,RES: Pendências de ocorrências, Samantha Cunha (CML DIQ),EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Resolvido
+7709288,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Comprovante de entrega - 77092,Helen Rohr Seitenfus,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7631940,11/27/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,COMPROVANTE   NF 5005,ROCHA COMERCIO LTDA,EDI,Euller Vieira (TI MTZ),Analise de Informação do Arquivo de retorno,Fechado
+7703827,12/17/2024,1/6/2025,12/17/2024 12:00:00 AM,No Prazo,PENDÊNCIAS CF EUROFARMA – PATR,Mateus Rosa,EDI,Natalia Caroline (TI MTZ),Envio EDI/Comprovante  grandes quantidades,Fechado
+7711055,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,EDI DE OCORRENCIA DIARIA 18/12,gestao3@lorenzetti.com.br,EDI,Natalia Caroline (TI MTZ),Postagem de arquivos no Portal do cliente,Fechado
+7709119,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Remessa arquivo EDI - 7709119,administracao@merpa.com.br,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7702612,12/16/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,RES: Fat 24-11-912418 Venc 27/,Danusa Xavier (CML RIO),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7698749,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,ENC: Falta de arquivo EDI Mani,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Recepção de NOTFIS/XML,Fechado
+7707851,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,INSTABILIDADE TOUT BOX / ANTIL,Antilhas,EDI,Natalia Caroline (TI MTZ),Analise de Informação do Arquivo de retorno,Fechado
+7711148,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,ARQUIVO EDI BLUKIT ,BLUKIT METALURGICA. (81.604.803/0001-57),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7724827,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,Finalização de CT-e,Kelly Zuqui (EXP VIX),TMS,Mateus Menezes (TI MTZ),Consulta Ocorrências,Resolvido
+7721069,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,7721069 - MOVIDESK - FILA DE T,Ana Carolina (CUSTOMER CARE MTZ),CRM,Mateus Menezes (TI MTZ), Sistema indisponível,Resolvido
+7709360,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Liberar para entrega.,Joslaine Felizardo,TMS,Mateus Menezes (TI MTZ),Consulta Ocorrências,Fechado
+7697492,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Mudar status do itens d,Suporte ERP/Sênior (Solicitante),ERP,Arthur Abreu (EST-TECH TI MTZ),Requisições,Fechado
+7719879,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,erro ao iniciar viagem ,Matheus Monteiro Nascimento,TMS,Isaias Oliveira (TI MTZ),Erro ao Iniciar Viagem,Fechado
+7721685,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Retirar CPA da RCF 2024/052664,Caio Almeida (COT MTZ),ERP,Marcus Ethur (TI MTZ),RCF,Resolvido
+7697490,12/13/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Marcações do colaborado,Suporte ERP/Sênior (Solicitante),ERP,Giovanni Campos (TI MTZ),Ajuste de Cadastros não integrados,Resolvido
+7719827,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Cancelar CTE ,Gabriel Coutinho (EXP PPY),TMS,Vitor Gomes (TI MTZ),Gestão de Pendências,Fechado
+7714065,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Estornar occ de devolução,Felipe Panicio (EXP CORP),TMS,Vitor Gomes (TI MTZ),Geração/Emissão documento,Fechado
+7708527,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,Impressora etiquetas BL,Tiago Carvalho (ENCOPE RAO),TMS,Vitor Gomes (TI MTZ),Indisponibilidade de Impressoras,Fechado
+7714166,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,documentos travado no XML,Renato Castro (EXP MTZ),TMS,Vitor Gomes (TI MTZ),Processamento NOTFIS/XML,Fechado
+7724474,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,UNITIZADOR EM ABERTO AO GERAR ,Leandra Roccio (CUSTOMER CARE CPQ),TMS,Vitor Gomes (TI MTZ),Unitizador,Resolvido
+7708828,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Erro ao finalizar a viagem,Lucas Rodrigo de Almeida de Sa ,TMS,Isaias Oliveira (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7714272,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,Fora do Prazo,erro ao colocar a vagem em tra,RAMON MUNDURUCA DE vASCONCELOS,TMS,Isaias Oliveira (TI MTZ),Benner,Fechado
+7703212,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,Fora do Prazo,desbloquear doc,Lucas Calil (EXP CXJ),TMS,Isaias Oliveira (TI MTZ),Documento Cliente Divergente,Fechado
+7710972,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Finalização de Viagen,Ubiratan Santos (ENCOPE SSA),TMS,Mateus Menezes (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7705397,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Frete zerado devolução,Marcus Araujo (EXP CORP),TMS,Mateus Menezes (TI MTZ),Calculo do frete,Fechado
+7716305,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Frete zerado devolução,Marcus Araujo (EXP CORP),TMS,Mateus Menezes (TI MTZ),Calculo do frete,Fechado
+7720425,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Problema com ocorrencia,Joabe Santos (OPE VDC),TMS,Mateus Menezes (TI MTZ),Consulta Ocorrências,Fechado
+7703158,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,BENNER NÃO ACESSA,Guilherme Avelar Silva,TMS,Isaias Oliveira (TI MTZ),Indisponibilidade AVD,Fechado
+7711179,12/18/2024,12/20/2024,12/18/2024 12:00:00 AM,No Prazo,Liberação de acesso,Crislaine Dua Santos,ERP,Arthur Abreu (EST-TECH TI MTZ),RH - Workflow Benner,Resolvido
+7717004,12/19/2024,12/24/2024,12/20/2024 12:00:00 AM,No Prazo,Liberação de Acesso para Funci,Wanderson Izaias Dos Reis,STI,Vinicius Barreto (TI MTZ),Sites Bloqueados,Resolvido
+7703849,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,Security ScoreCard - 7011764 -,Raphael Cruz (TI MTZ),STI,Vinicius Barreto (TI MTZ),Security Score Card,Resolvido
+7699786,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,repasse lido na descarga ,Cleydson Vinicius,TMS,Mateus Menezes (TI MTZ),Ocorrência,Fechado
+7714153,12/18/2024,,12/19/2024 12:00:00 AM,Fora do Prazo,Criação de usuario para auxili,Lucas de Oliveira Sousa,TMS,Vitor Gomes (TI MTZ),Criar Usuário Benner,Fechado
+7714215,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,Fora do Prazo,DIVERGÊNCIA NO CT-E 71200,Luis Guilherme ,TMS,Vitor Gomes (TI MTZ),Documento Cliente Divergente,Fechado
+7703088,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,MDF-e rejeitada,GABRIEL TORRES,TMS,Vitor Gomes (TI MTZ),MDFe,Fechado
+7724960,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,AJUSTE EUDORA,Mateus Rodrigues,TMS,Vitor Gomes (TI MTZ),Etiquetas EDI,Resolvido
+7714223,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,Fora do Prazo,Ajustar ocôrrencia,Fabio Nunes Santos,TMS,Vitor Gomes (TI MTZ),Erro efetivar pré-ocorrência,Fechado
+7714309,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Finalizar viagem,Vitor Fernandes (EXP VAG),TMS,Isaias Oliveira (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7719980,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Cancelamento,Rafael Guimaraes (CEDOC ITN),TMS,Isaias Oliveira (TI MTZ),Duvida na Emissão de Documento,Fechado
+7706760,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,Erro ao registrar ponto no apl,Lucas Agustinho (RH MTZ),ERP,Giovanni Campos (TI MTZ),Configurações Gerais,Resolvido
+7697502,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Erro confirmação OC - D,Suporte ERP/Sênior (Solicitante),ERP,Joselito Almeida (TI MTZ),Ordens de compras,Fechado
+7721354,12/20/2024,12/26/2024,12/20/2024 12:00:00 AM,No Prazo,Site do CRM não esta funcionad,Carla Santos (CAR MTZ),CRM,Ricardo Santos (TI MTZ),Outros,Resolvido
+7720243,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,Nova Assinatura Movidesk,Edson Casimiro (CUSTOMER CARE RIO),CRM,Ricardo Santos (TI MTZ),Incluir assinatura no cadastro,Resolvido
+7697488,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Verificação de CPFs de ,Suporte ERP/Sênior (Solicitante),ERP,Giovanni Campos (TI MTZ),Configurações Gerais,Resolvido
+7707806,12/17/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,7707806 - Alterar fila de aten,Luana Machado (CUS SERVICE QHV),CRM,Ricardo Santos (TI MTZ),Criar/Alterar Fila de atendimento ,Resolvido
+7580031,11/11/2024,12/23/2024,12/18/2024 12:00:00 AM,No Prazo,7580031 - Dados do formulário ,Victor Okubo (DAC MTZ),CRM,Ricardo Santos (TI MTZ),Power Apps,Resolvido
+7705593,12/17/2024,12/23/2024,12/17/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (CO, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7704429,12/17/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,RESETAR SENHA WAAPI,Maria Emanoela Cordeiro da Costa,ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Configurações Gerais,Resolvido
+7699233,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,ESTORNO DE OCORRÊNCIA COLETA 1,Caroline Bispo (SSA),TMS,Anna Silva (TI MTZ),Estorno Ocorrência,Fechado
+7700809,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,MULTICTE SAO - CTES INCORRETOS,Steffani Rodrigues (FISCAL MTZ),TMS,Anna Silva (TI MTZ),Documento Cliente Divergente,Fechado
+7702964,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Estorno de baixa de entrega ,Valeria Araújo (CQO RIO),TMS,Anna Silva (TI MTZ),Estorno ,Fechado
+7710137,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,E-mail não localizado ( Portal,Bruna Caroline (Supervisora Regional NCC),TMS,Anna Silva (TI MTZ),Assistente DAC,Fechado
+7704589,12/17/2024,12/17/2024,12/18/2024 12:00:00 AM,Fora do Prazo,desbloqueio de usuário,Lozânia Azevedo (FISCAL MTZ),TMS,João Santos (TI MTZ),Desbloquear login Benner/Gestão de Volumes,Fechado
+7703366,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,finalizado com restricao 4780 ,Flaviane Pereira (CEDOC FEC),TMS,João Santos (TI MTZ),Arquivamento,Fechado
+7700570,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,MULTICTE SAO - CTES INTEGRADOS,Steffani Rodrigues (FISCAL MTZ),TMS,João Santos (TI MTZ),Documento Cliente Divergente,Fechado
+7720459,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Realização de Scan do Trend na, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Manual Scan Trend,Resolvido
+7712397,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,wappi ,ANA MARIA DO NASCIMENTO SANTOS ,ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Configurações Gerais,Resolvido
+7710878,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Erro ao abri carregamento Viag,Luciano Gomes (LÍDEROPE GVR),TMS,Anna Silva (TI MTZ),Controle de Processos,Fechado
+7719479,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Divergência na leitura do docu,felipe goncalves,TMS,Anna Silva (TI MTZ),Divergência na leitura,Fechado
+7707838,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo, FINALIZAR CTE 9058571,Elioenai Sena,TMS,João Santos (TI MTZ),Erro Conclusão de ocorrência,Fechado
+7708937,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,habilitar acesso,Fernanda Melo dos Santos,TMS,João Santos (TI MTZ),Desbloquear login Benner/Gestão de Volumes,Fechado
+7710712,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Integrar carga direta,Thiago Silva (EXP CPQ),TMS,João Santos (TI MTZ),Documento Cliente Divergente,Fechado
+7698297,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,resetar senha,Carlos Fortunato (EXP RIO),TMS,João Santos (TI MTZ),Desbloquear login Benner/Gestão de Volumes,Fechado
+7716258,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,PROCESSAMENTO BOTICARIO,Mateus Rodrigues,TMS,João Santos (TI MTZ),Processamento NOTFIS/XML,Fechado
+7722789,12/20/2024,12/21/2024,12/20/2024 12:00:00 AM,No Prazo,Cancelar o ponto de parada de ,Jhonatan Lima (MTZ),TMS,João Santos (TI MTZ),Ponto de Parada Doc incorreto,Fechado
+7716025,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,CTE 333446,aparecida de paula de oliveira silva ,TMS,João Santos (TI MTZ),Geração/Emissão documento,Fechado
+7698898,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,PROBLEMA NO SEFAZ - VIAGEM -  ,PEDRO RAFAEL MESCENA,TMS,João Santos (TI MTZ),Problema com Sefaz MDF-e,Fechado
+7714440,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,LENTIDÃO NO PROCESSAMENTO AUTO,Felipe Valadao,TMS,João Santos (TI MTZ),Gestão de Volumes,Fechado
+7716559,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,ESTORNO DE ARQUIVAMENTO- CTE: ,Debora Araujo (OPE RIO RIO),TMS,João Santos (TI MTZ),Arquivamento,Fechado
+7701965,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,ERRO DE FINALIZAÇÃO,Vinicius Queiroz (OPE VDC),TMS,João Santos (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7721551,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,impressão de CT-e ,mateus,TMS,João Santos (TI MTZ),Impressão de CT-e,Fechado
+7714418,12/19/2024,,12/19/2024 12:00:00 AM,Fora do Prazo,Lentidão no portal do P&D,Anderson Muriel,TMS,João Santos (TI MTZ),Portal Prevenção de Perdas,Fechado
+7719218,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,não conseguindo extornar ocorr,Ronaldo João da Silva Filho,TMS,João Santos (TI MTZ),Efetivar Ocorrência (Gestão de Volumes),Fechado
+7698321,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,erro ao colocar a viagem em tr,eike,TMS,João Santos (TI MTZ),Benner,Fechado
+7719950,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,alterar filial documento CT-E ,Wilian Santana (OPE RIO),TMS,João Santos (TI MTZ),Alterar Filial documento,Fechado
+7716503,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Solicitação de EDI Alpargatas,ALPARGATAS S.A. (Principal),EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7720385,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,ENVIO DE ARQUIVOS EDI NÃO PERT,COMERCIAL MOTOCICLO S.A.,EDI,Euller Vieira (TI MTZ),Alterações parâmetros EDI,Resolvido
+7700703,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,RES: PRAZO PARA PAGAMENTO SAO ,Ana Paula (CAR MTZ),EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7711342,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,RES: faturas Burigotto - 77113,Amanda Batistela,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7689988,12/12/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,sem arquivo para emissão,Leandro Ribeiro (OPE JDF),EDI,Natalia Caroline (TI MTZ),Nota não importada,Fechado
+7704978,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,MANDAE SEM EDI - 7704978,Maria Sanzia (SUPERV. FIRST CALL SP) ,EDI,Euller Vieira (TI MTZ),Nota não importada,Fechado
+7703030,12/16/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,(SA) - Ajustar importador de l,Suporte ERP/Sênior (Solicitante),ERP,Kleverson Salles (TI MTZ),Configurações Gerais,Resolvido
+7719976,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Follow Up de Coleta -  PATRUS ,GKO Frete,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Resolvido
+7714619,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,RES: Notas Fiscais em Atraso -,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7704190,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,RES: Notas Fiscais em Atraso -,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7715000,12/19/2024,1/8/2025,12/19/2024 12:00:00 AM,No Prazo,PENDÊNCIAS CF EUROFARMA – PATR,Mateus Rosa,EDI,Natalia Caroline (TI MTZ),Envio EDI/Comprovante  grandes quantidades,Fechado
+7713779,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,24-12-905436 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7708485,12/17/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Nota sem EDI,Jayne Pereira (EXP CPQ),EDI,Natalia Caroline (TI MTZ),Nota não importada,Fechado
+7704380,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,ENC: Pedido em aberto - 17/12/,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7709025,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,RES: Notas Fiscais em Atraso -,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7712453,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,NOTA NÃO IMPORTADA,marcia conceicao,EDI,Natalia Caroline (TI MTZ),Nota não importada,Fechado
+7700545,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,24-12-903777 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7703690,12/17/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,"Conemb, CTES - 7703690","Gutiérrez, José Alejandro",EDI,Natalia Caroline (TI MTZ),Analise de Informação do Arquivo,Fechado
+7720072,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Gentileza liberar acesso encer,Gilson Rodrigues (GERUND JMV),TMS,Mateus Menezes (TI MTZ),Encerrar,Fechado
+7722002,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,SEFAZ,Samuel Oliveira (EXP ITN),TMS,Mateus Menezes (TI MTZ),Problema com Sefaz MDF-e,Fechado
+7703836,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,acesso ,Tatiana Cardoso (DISTRIB RIB CON),TMS,Mateus Menezes (TI MTZ),Outros,Fechado
+7714667,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,cancelar a SMP,Giovani Oliveira (OPE CPQ),TMS,Mateus Menezes (TI MTZ),SMP,Fechado
+7723872,12/20/2024,12/21/2024,12/20/2024 12:00:00 AM,No Prazo,NF AGUARDANDO AUTORIZAÇÃO,marcia conceicao,TMS,Mateus Menezes (TI MTZ),Geração/Emissão documento,Fechado
+7698930,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Status dos documentos 6349833/,Flávio Augusto Rodrigues de Souza,TMS,Mateus Menezes (TI MTZ),Problema com Sefaz CT-e,Fechado
+7700297,12/16/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,baixa viagem 530455,Marcelo Araujo (COORD EXA),TMS,Mateus Menezes (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7701536,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,MANIFESTAR DOCUMENTO - 1057399,Maria Barbosa (EXP PPY),TMS,Mateus Menezes (TI MTZ),Alterar Filial documento,Fechado
+7718192,12/19/2024,,12/19/2024 12:00:00 AM,Fora do Prazo,bloqueio de login ,Guilherme Sakoda Fonseca ,TMS,Mateus Menezes (TI MTZ),Problema com Alerta e Bloqueio,Fechado
+7711170,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Erro para efetuar checklist.,VALTER LUAN,TMS,Mateus Menezes (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7705109,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,verificar xml,Caio Francisco (EXP FLN),TMS,Mateus Menezes (TI MTZ),Processamento NOTFIS/XML,Fechado
+7715237,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,ERRO AO ACESSAR GV,Bruno Henrique,TMS,Mateus Menezes (TI MTZ),Liberação de acesso GV,Fechado
+7724820,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,CIOT,Rafael Guimaraes (CEDOC ITN),TMS,Mateus Menezes (TI MTZ),CIOT,Resolvido
+7724841,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,cancelamento de SMP VEICULO RM,Thiago Martins (LIDER OPE RIO),TMS,Mateus Menezes (TI MTZ),SMP,Resolvido
+7715431,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,CTe parado no XML,Haroldo Martins (EXP JDF),TMS,Mateus Menezes (TI MTZ),Problema com Sefaz CT-e,Fechado
+7725001,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,FATURAMENTO BOTICARIO,Mateus Rodrigues,TMS,Vitor Gomes (TI MTZ),Processamento NOTFIS/XML,Resolvido
+7700648,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Usuario ou senha incorreta,Supervisão LKC,TMS,Mateus Menezes (TI MTZ),Desbloquear login Benner/Gestão de Volumes,Fechado
+7724579,12/20/2024,12/21/2024,12/20/2024 12:00:00 AM,No Prazo,DESTRAVAR NOTA XML,Sharleny Moreira da Silva,TMS,Vitor Gomes (TI MTZ),Processamento NOTFIS/XML,Resolvido
+7724979,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,ERRO AO TROCAR LINHA VIAGEM;,kelvin,TMS,Vitor Gomes (TI MTZ),Erro ao Trocar Linha de viagem,Resolvido
+7724961,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,CTe parado no XML,Haroldo Martins (EXP JDF),TMS,Vitor Gomes (TI MTZ),Problema com Sefaz CT-e,Resolvido
+7703125,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,MDF-e rejeitada,GABRIEL TORRES,TMS,Vitor Gomes (TI MTZ),MDFe,Fechado
+7714132,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Erro ao gerar SMP,Luis,TMS,Vitor Gomes (TI MTZ),SMP,Fechado
+7703093,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Retirar leitura parcial,Fabio Nunes Santos,TMS,Vitor Gomes (TI MTZ),Divergência na leitura,Fechado
+7708610,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,Fora do Prazo,NATURA  BLOQUEADA,Jose Roberto (EXP SAO),TMS,Vitor Gomes (TI MTZ),Benner,Fechado
+7713452,12/18/2024,,12/18/2024 12:00:00 AM,Fora do Prazo,CRIAR E-MAIL PARA ACESSO AO BE,Helena Pelizaro (SIC/CQO FRC),TMS,Vitor Gomes (TI MTZ),Criar Usuário Benner,Fechado
+7703185,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Desativar GV viagem 507327 ,Gabriel Coutinho (EXP PPY),TMS,Vitor Gomes (TI MTZ),Desativação de Gestão de Volumes,Fechado
+7714172,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Devolução com o frete zerado,Everaldo Edson dos Santos,TMS,Vitor Gomes (TI MTZ),Controle de Processos,Fechado
+7708745,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,Fora do Prazo,Erro no momento da leitura,Rafael de Assis ,TMS,Isaias Oliveira (TI MTZ),Documento Cliente Divergente,Fechado
+7724692,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,Fora do Prazo,ERRO AO FINALIZAR A VIAGEM,Guilherme ,TMS,Isaias Oliveira (TI MTZ),Consulta Ocorrências,Resolvido
+7703217,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,Fora do Prazo,Reset de senha para colaborado,Albert Cunha (OPE SSA),TMS,Isaias Oliveira (TI MTZ),Alteração de Senha,Fechado
+7703285,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Aguardando Autorização,Rodrigo Barros (OPE JDF),TMS,Isaias Oliveira (TI MTZ),Dificuldade Acesso Benner/Roadnet/Sênior,Fechado
+7703249,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Ajuste de leituras,Arisson Matheus Silva de Freitas,TMS,Isaias Oliveira (TI MTZ),Divergência na leitura,Fechado
+7719941,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Linha de viagem,Thiago Pereira,TMS,Isaias Oliveira (TI MTZ),Erro ao Trocar Linha de viagem,Fechado
+7719586,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Viagem 2024/546534-59 - Carga ,Thiago Bispo dos Santos,TMS,Vitor Gomes (TI MTZ),Divergência na leitura,Fechado
+7714236,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,Fora do Prazo,Doc confirmado para calcular,Felipe Panicio (EXP CORP),TMS,Vitor Gomes (TI MTZ),Documento Cliente Divergente,Fechado
+7703082,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Sincronizar Leituras IPN 16/12,Talis Ronald de almeida Silva,TMS,Vitor Gomes (TI MTZ),Divergência na leitura,Fechado
+7703247,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,O SISTEMA ESTA MUITO LENTO,Weliton Souza,TMS,Isaias Oliveira (TI MTZ),Benner,Fechado
+7697496,12/13/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Corrigir erro de contab,Suporte ERP/Sênior (Solicitante),ERP,Arthur Abreu (EST-TECH TI MTZ),Recebimento fiscal,Fechado
+7714075,12/18/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,(SA) -  Dar acesso a empresa M,Suporte ERP/Sênior (Solicitante),ERP,Arthur Abreu (EST-TECH TI MTZ),Requisições,Resolvido
+7714400,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,outlook não abre no navegador ,Murilo Henrique Santos,STI,Vinicius Barreto (TI MTZ),Incidentes de Segurança,Resolvido
+7697506,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) -Sistema não entrava,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Requisições,Fechado
+7708759,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Demora na Autorização CTe,Thiago Bispo dos Santos,TMS,Isaias Oliveira (TI MTZ),Demora na autorização,Fechado
+7708690,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Viagem 2024/543318-59 - Carga ,Thiago Bispo dos Santos,TMS,Isaias Oliveira (TI MTZ),Divergência na leitura,Fechado
+7714074,12/18/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,(SA) -  Resolver avisos do pai,Suporte ERP/Sênior (Solicitante),ERP,Arthur Abreu (EST-TECH TI MTZ),Lançamentos financeiros,Resolvido
+7708870,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Liberar acesso a Aba Supriment,Jonas Alves (OPE VIX),ERP,Arthur Abreu (EST-TECH TI MTZ),Ordens de compras,Resolvido
+7714275,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,Fora do Prazo,Não foi possível calcular cont,Ygor,TMS,Isaias Oliveira (TI MTZ),Cancelar Contrato de Frete,Fechado
+7703248,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,cancelamento de CT-e ,Renato Castro (EXP MTZ),TMS,Isaias Oliveira (TI MTZ),Cancelar Contrato de Frete,Fechado
+7708866,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,erro ao trocar linha de viagem,Thiago Pereira,TMS,Isaias Oliveira (TI MTZ),Erro ao Trocar Linha de viagem,Fechado
+7708869,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Erro ao Finalizar Viagem 2024/,Douglas Cruz (OPE VIX),TMS,Isaias Oliveira (TI MTZ),Controle de Processos,Fechado
+7719710,12/19/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,(SA) - Recontabilização de mat,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Itens,Resolvido
+7710546,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Alteração de assinatura e usua,Cassia Ellen (P&D FOR),CRM,Ricardo Santos (TI MTZ),Criação/Alteração de perfil de acesso,Resolvido
+7716860,12/19/2024,12/26/2024,12/19/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (CO, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7660774,12/5/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,BAIXA NF 114930 - IND DE PLÁST,INDUSTRIA DE PLASTICOS HERC (92.751.858/0003-78),EDI,Julia Andrade (APRENDIZ TI MTZ),Ocorrências(OCORREN),Resolvido
+7703311,12/17/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,7703311 - Alterar fila de aten,Tamara Rodrigues (CUSTOMER CARE QHV),CRM,Tulio Rodrigues (TI MTZ),Criar/Alterar Fila de atendimento ,Resolvido
+7699117,12/16/2024,12/20/2024,12/16/2024 12:00:00 AM,No Prazo,Não consigo acessar Benner,Ingrid Santos (CAR MTZ),STI,Vinicius Barreto (TI MTZ),Outros,Resolvido
+7707919,12/17/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,Cliente bloqueando após o paga,Ana Paula (CAR MTZ),ERP,Marcus Ethur (TI MTZ),Lançamentos financeiros,Resolvido
+7693882,12/13/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Liberar acesso ao portal EAD,Andrea de Matos (CAR MTZ),ERP,Marcus Ethur (TI MTZ),AED,Resolvido
+7714821,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Realização de Scan do Trend na, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Manual Scan Trend,Resolvido
+7703860,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Realização de Scan do Trend na, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Manual Scan Trend,Resolvido
+7698310,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,24-12-903039 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7699485,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,RES: Fat 24-12-900355 Venc 03/,Danusa Xavier (CML RIO),EDI,Julia Andrade (APRENDIZ TI MTZ),Ocorrências(OCORREN),Fechado
+7710511,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,E-mail não localizado ( Portal,Bruna Caroline (Supervisora Regional NCC),TMS,Anna Silva (TI MTZ),Assistente DAC,Fechado
+7715616,12/19/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Desvincular contrato de frete ,Gabriel,TMS,Anna Silva (TI MTZ),Cancelar Contrato de Frete,Fechado
+7699420,12/16/2024,12/18/2024,12/16/2024 12:00:00 AM,No Prazo,SENHA DO WAAPI - 22415 - DEMAS,Thaina Regina Silva Melo,ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Diversos,Resolvido
+7704044,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,VIAGEM 540234-61,Joao Amorim (OPE PNZ),TMS,Anna Silva (TI MTZ),Divergência na leitura,Fechado
+7697512,12/13/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Analise no caso da Andr,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Recebimento fiscal,Fechado
+7697505,12/13/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Remessa bancaria,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Correção/manutenção layouts bancários,Fechado
+7719711,12/19/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,(SA) - Documentação - Relatóri,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Geração de NFSe,Resolvido
+7719709,12/19/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,(SA) - Painel de Monitoramento,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Requisições,Resolvido
+7708270,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,BAU OZC9607 com trava na abert,Paulo Ricardo (COORDUND VDC),TMS,Anna Silva (TI MTZ),Controle de Processos,Fechado
+7720760,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Frete zerado devolução,Marcus Araujo (EXP CORP),TMS,João Santos (TI MTZ),Calculo do frete,Fechado
+7703419,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Estorno de ocorrência - CTE 63,Patricia Santos (OCOR SINIST RIO RIO),TMS,João Santos (TI MTZ),Estorno Ocorrência,Fechado
+7720463,12/20/2024,12/24/2024,12/20/2024 12:00:00 AM,No Prazo,E-mail: ALERTA Documentos - CT,Gabriela Albrecht (GERUND QHV),TMS,João Santos (TI MTZ),Erro no Relatório,Resolvido
+7705622,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,Erro no Registro de Ponto - Fi,GABRIELA ALVES LIMA,ERP,Giovanni Campos (TI MTZ),TopData,Resolvido
+7699659,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,7699659 - CONFIGURAÇÕES - CUST,RENATA  MEZETTI,CRM,Ricardo Santos (TI MTZ),Criar/Alterar assunto do ticket,Fechado
+7722801,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,7722801 - Movidesk - CRM - Fal,Marcely Ignacio (CUSTOMER CARE RIO),CRM,Ricardo Santos (TI MTZ),Incluir assinatura no cadastro,Resolvido
+7704974,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,RE: Fatura 2411914213 - 770497,Marcus Costa (Aprendiz MTZ),EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7715662,12/19/2024,12/26/2024,12/19/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (CO, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7702312,12/16/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Resete de senha - JORGE HENRIQ,Aline Silva,ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Autenticação,Resolvido
+7710964,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Cte-s trancados no sefaz,Lucas Ismael Brito,TMS,Anna Silva (TI MTZ),Problema com Sefaz CT-e,Fechado
+7708943,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,RETIRAR LEITURA ,Fernanda Melo dos Santos,TMS,Anna Silva (TI MTZ),Divergencia na leitura,Fechado
+7703475,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Finalização de Viagem ,Roniere Borges da Silva,TMS,João Santos (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7698353,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Erro ao finalizar viagem 53677,Michel Moschen (EXP CTN),TMS,João Santos (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7702278,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,erro ao finalizar viagem,Dalvan ,TMS,João Santos (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7698256,12/15/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,sistema BENNER apresentando os,JOSELISSON OLIVEIRA DE  SANTANA,TMS,João Santos (TI MTZ),Benner,Fechado
+7699375,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Replicar CIOT -VDC,Ludmilla Ferreira (COT MTZ),TMS,Anna Silva (TI MTZ),CIOT,Fechado
+7714711,12/19/2024,12/23/2024,12/19/2024 12:00:00 AM,No Prazo,exluir batidas duplicadas,Tatiane Fiorini (ADM BNU BNU),ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Diversos,Resolvido
+7713618,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,18/12 - Starret - Desativação ,Cristhian Baldini (OPE PPY),TMS,Anna Silva (TI MTZ),Desativação de Gestão de Volumes,Fechado
+7708881,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Linha de viagem,Thiago Pereira,TMS,João Santos (TI MTZ),Erro ao Trocar Linha de viagem,Fechado
+7702122,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Notas sem ocorrências e confir,Euller Vieira (TI MTZ),EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7698356,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Follow Up de Coleta -  PATRUS ,GKO Frete,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7702401,12/16/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,RE: RE: FATURAS TIPI - SOPRANO,Greicieli Corassa,EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB),Fechado
+7698653,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,OCOREN SETEMBRO E OUTUBRO E NO,EDI Garibaldi,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7718309,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,Notas sem ocorrências e confir,naoresponda@simfrete.com.br,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7698177,12/15/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,FILIAL SEM CONECTIVIDADE (WIFI,Ademari Junior (EXP FEC),TMS,João Santos (TI MTZ),Erro / Intermitência de Wifi,Fechado
+7709497,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,NF 2651964 - LORENZZETI ( ERRO,Wemerson Teixeira (OPE TOT),TMS,João Santos (TI MTZ),Erro Conclusão de ocorrência,Fechado
+7720249,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,AJUSTE DE VOLUME ,Monique Peçanha (LIDEROPE QXD),TMS,João Santos (TI MTZ),Divergência na leitura,Fechado
+7721622,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,20/12 - Desativação GV,Cristhian Baldini (OPE PPY),TMS,João Santos (TI MTZ),Desativação de Gestão de Volumes,Fechado
+7710644,12/18/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,BARRAR ENTREGA PATRUS 17-12 - ,FRIOVIX COMERCIO DE REFRIGERACAO LTDA,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7698599,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,PROBLEMA COM MDFE  - VIAEGEM 5,Monique Peçanha (LIDEROPE QXD),TMS,,Problema com Sefaz MDF-e,Fechado
+7710598,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,FAT 2412903962 - EMISSÃO ERRON,Lucielle Fagundes Negretti,EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB),Fechado
+7676459,12/10/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Política de férias Painel de G,Viviane Oliveira (PREVPERDAS CORP),ERP,Kleverson Salles (TI MTZ),Férias,Resolvido
+7724202,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,EDI de ocorrência - 7724202,Leandro Carvalho,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Resolvido
+7701414,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,24-11-908063 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7698032,12/14/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Notas sem ocorrências e confir,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7715659,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,ENC: Pedido em aberto - 19/12/,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7716466,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Pedidos sem EDI de entrega -Na,NATURA COSMETICOS S/A (71.673.990/0053-06),EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Resolvido
+7698361,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Follow Up de Entrega -  PATRUS,GKO Frete,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7711478,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Arquivo Ocoren Patrus,TRAMONTINA ELETRIK S A,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7714883,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,SEM COLETA - Coleta Snac - 19/,NATURA COSMETICOS S.A. (71.673.990/0019-04),EDI,Euller Vieira (TI MTZ),Analise de Informação do Arquivo,Fechado
+7714857,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,RES: Arquivo de ocorrências - ,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Envio E-mail/EDI sem Anexo,Fechado
+7700994,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,EDI -Natura,NATURA COSMETICOS S/A (71.673.990/0053-06),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7703830,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,STATUS NOTAS URGENTES EUROFARM,Mateus Rosa,EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7701967,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Re: 24-12-903780 - Fatura de C,Marcelo Deitos Lazzari,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7702336,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,XML ,Tatiana Cardoso (DISTRIB RIB CON),TMS,Mateus Menezes (TI MTZ),Processamento NOTFIS/XML,Fechado
+7724830,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,carga lotação ,Daniel Solano (Trafego),TMS,Mateus Menezes (TI MTZ),Desativação de Gestão de Volumes,Resolvido
+7721968,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,RECALCULO DE PRAZO DE ENTREGA,Tais de Oliveira (DAC MTZ),TMS,Mateus Menezes (TI MTZ),Prazo de Entrega,Fechado
+7714085,12/18/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Criar usuário e senha Para nov,Rodrigo Rocha (ENCOPE CAW),TMS,Mateus Menezes (TI MTZ),Liberação de acesso GV,Fechado
+7714966,12/19/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,ARQUIVAMENTE EM SISTEMA  NF 15,Rayssa carvalho  (CUSTOMER CARE SAO),TMS,Mateus Menezes (TI MTZ),Arquivamento,Fechado
+7713864,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Documento preso no Sefaz ,Irismar Mendonça (OPE VDC),TMS,Vitor Gomes (TI MTZ),Problema com Sefaz CT-e,Fechado
+7720976,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,ENC: Pedido em aberto - 20/12/,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Resolvido
+7713965,12/18/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,Re: [Simfrete#2370867] URGENTE,suporte@simfrete.com.br,EDI,Natalia Caroline (TI MTZ),XML CTe(Grandes Quantidades),Fechado
+7700548,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,24-12-903778 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7702479,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,24-12-904174 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7703099,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Desativação do Gestão de vols ,Luciano Gomes (LÍDEROPE GVR),TMS,Vitor Gomes (TI MTZ),Desativação de Gestão de Volumes,Fechado
+7724488,12/20/2024,12/21/2024,12/20/2024 12:00:00 AM,No Prazo,processos com divergência ,Diego (EXP UDI),TMS,Vitor Gomes (TI MTZ),Erro ao Finalizar Viagem,Resolvido
+7703181,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Sistema Benner muito lento,Luiz Bonotto (OPE CPQ),TMS,Vitor Gomes (TI MTZ),Benner,Fechado
+7711293,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,RELAÇÃO DE CLIENTES AGENDADOS ,Marcos Henrique (OPE QDF),TMS,Vitor Gomes (TI MTZ),Contrato Comercial,Fechado
+7703478,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,RES: Arquivo de documentos de ,Maicon Petry,EDI,Natalia Caroline (TI MTZ),Envio E-mail/EDI sem Anexo,Fechado
+7721997,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,RES: JCE CHILE S/A - [ALERTA A,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Resolvido
+7704749,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,RELATÓRIO DE PENDÊNCIAS CLIENT,Logistica de Distribuição,EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7699732,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Erro ao inserir o serviço de a,Jonathan Silveira (CEDOC MTZ),TMS,Mateus Menezes (TI MTZ),Agendamento,Fechado
+7704455,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Espelhar Usuário IPN 17/12,Talis Ronald de almeida Silva,TMS,Mateus Menezes (TI MTZ),Liberação de acesso GV,Fechado
+7698222,12/15/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,LIBERAR ACESSO AO GV,Sarah Aparecida (OPE CPQ),TMS,Mateus Menezes (TI MTZ),Auditoria de Praça,Fechado
+7712744,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,ERRO AO FINALIZAR VIAGEM,Cleydson Vinicius,TMS,Mateus Menezes (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7718995,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Liberação login app BL Mobile ,Emerson Luis Moreira,TMS,Mateus Menezes (TI MTZ),Login Checklist,Fechado
+7708834,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,ENCERRAMENTO CARREGAMENTO,Rafael de Assis ,TMS,Isaias Oliveira (TI MTZ),Documento Cliente Bloqueado,Fechado
+7705336,12/17/2024,12/24/2024,12/19/2024 12:00:00 AM,No Prazo,7705336 - Gentileza conceder a,Gilson Rodrigues (GERUND JMV),CRM,Tulio Rodrigues (TI MTZ),Power Apps,Resolvido
+7703306,12/17/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,7703306 - Alterar fila de aten,Tamara Rodrigues (CUSTOMER CARE QHV),CRM,Tulio Rodrigues (TI MTZ),Criação/Alteração responsável pelo ticket,Resolvido
+7716395,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Trocar senha,Rosilene Silva (CQO CON),ERP,Marcelo Augusto (TI MTZ),Senha bloqueada,Resolvido
+7700009,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,NF 191231 - ALPARGATAS S.A. ( ,Wemerson Teixeira (OPE TOT),TMS,Mateus Menezes (TI MTZ),Consulta Ocorrências,Fechado
+7711343,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,ERRO AO FINALIZAR VIAGEM,Cleydson Vinicius,TMS,Mateus Menezes (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7724895,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,Aguardando Sefaz,Rafael Erick da Silva,TMS,Mateus Menezes (TI MTZ),Problema com Sefaz MDF-e,Resolvido
+7724526,12/20/2024,12/21/2024,12/20/2024 12:00:00 AM,No Prazo,cancelar GV,Fabio Nunes Santos,TMS,Vitor Gomes (TI MTZ),Cancelamento de Processo GV,Resolvido
+7719706,12/19/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,(SA) - Frequente reset de senh,Suporte ERP/Sênior (Solicitante),ERP,Giovanni Campos (TI MTZ),Diversos,Resolvido
+7701755,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Erro no Registro de Ponto - Fi,GABRIELA ALVES LIMA,ERP,Giovanni Campos (TI MTZ),TopData,Resolvido
+7711476,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Excluir admissão - RODRIGO APA,Carla Silva,ERP,Giovanni Campos (TI MTZ),"Exclusão de Admissão, candidato desistente",Resolvido
+7697504,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Erro confirmação OC 538,Suporte ERP/Sênior (Solicitante),ERP,Joselito Almeida (TI MTZ),Ordens de compras,Fechado
+7714220,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,EFETIVAÇÃO DE OCORRENCIA DEFAL,Ivan Seixas (EXP AJU),TMS,Vitor Gomes (TI MTZ),Ocorrência,Fechado
+7703111,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,documentos travado no XML,Renato Castro (EXP MTZ),TMS,Vitor Gomes (TI MTZ),Processamento NOTFIS/XML,Fechado
+7724658,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,DESTRAVAR DOCUMENTO NO XML,Sharleny Moreira da Silva,TMS,Vitor Gomes (TI MTZ),Processamento NOTFIS/XML,Resolvido
+7708502,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Viagem 2024/542595-59 - Carga ,Thiago Bispo dos Santos,TMS,Vitor Gomes (TI MTZ),Divergência na leitura,Fechado
+7724769,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,Linha de viagem,Thiago Pereira,TMS,Isaias Oliveira (TI MTZ),Erro ao Trocar Linha de viagem,Resolvido
+7703284,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Desbloqueio de NF.,Breno Gomes dos Santos,TMS,Isaias Oliveira (TI MTZ),Documento Cliente Bloqueado,Fechado
+7708433,12/17/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,(SA) - Ajustar alçada de aprov,Suporte ERP/Sênior (Solicitante),ERP,Arthur Abreu (EST-TECH TI MTZ),Alteração no Plano de Alçada de Requisições,Resolvido
+7719953,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,ERRO DAR INICIO DE VIAGEM ,Weliton Souza,TMS,Isaias Oliveira (TI MTZ),Erro ao Iniciar Viagem,Fechado
+7710656,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,7710656 - CONFIGURAÇÕES - CUST,RENATA  MEZETTI,CRM,Ricardo Santos (TI MTZ),Criar/Alterar regra gatilho,Resolvido
+7698841,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,7698841 - Fila - Deborah Rezen,Deborah Rezende (CUSTOMER CARE MTZ),CRM,Ricardo Santos (TI MTZ),Criar/Alterar Fila de atendimento ,Fechado
+7703315,12/17/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,7703315 - Alterar fila de aten,Tamara Rodrigues (CUSTOMER CARE QHV),CRM,Ricardo Santos (TI MTZ),Criar/Alterar Fila de atendimento ,Resolvido
+7715403,12/19/2024,12/26/2024,12/19/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (CO, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7719909,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,LINHA DE VIAGEM ERRADA,Leandro Alves,TMS,Isaias Oliveira (TI MTZ),Erro ao Trocar Linha de viagem,Fechado
+7699325,12/16/2024,12/19/2024,12/17/2024 12:00:00 AM,No Prazo,PROBLEMA NA CONFIRMAÇÃO ,Edilene Oliveira (FISCAL MTZ),ERP,Arthur Abreu (EST-TECH TI MTZ),Recebimento fiscal,Resolvido
+7697494,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Ajustar status da RQ 28,Suporte ERP/Sênior (Solicitante),ERP,Arthur Abreu (EST-TECH TI MTZ),Requisições,Fechado
+7698966,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Assunto: Solicitação de ajuste,Dener Tavares [Gris MTZ],ERP,Marcelo Augusto (TI MTZ),Requisições,Fechado
+7716020,12/19/2024,12/26/2024,12/19/2024 12:00:00 AM,No Prazo,Desinstalação do Firefox (CON-, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7716060,12/19/2024,12/26/2024,12/19/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (CO, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7699482,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,RES: Fat 24-12-900382 Venc 03/,Danusa Xavier (CML RIO),EDI,Julia Andrade (APRENDIZ TI MTZ),Ocorrências(OCORREN),Fechado
+7699184,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,faturamento semanal dancor. - ,Talita  Araujo (Faturamento MTZ),EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7714678,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,NFs em atraso de entrega-BSB-4,com@denvertecnologia.com.br,EDI,Julia Andrade (APRENDIZ TI MTZ),Ocorrências(OCORREN),Fechado
+7705142,12/17/2024,12/19/2024,12/17/2024 12:00:00 AM,No Prazo,PROBLEMAS A ACESSAR APLICATIVO,Isabela Cristina Falcão de Sá,ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),RH - Senior,Resolvido
+7705129,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,Divergência entre documento e ,Thalita Grim,TMS,Anna Silva (TI MTZ),Documento Cliente Divergente,Fechado
+7710197,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,E-mail não localizado ( Portal,Bruna Caroline (Supervisora Regional NCC),TMS,Anna Silva (TI MTZ),Assistente DAC,Fechado
+7697500,12/13/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Ajuste arquivo de remes,Suporte ERP/Sênior (Solicitante),ERP,Joselito Almeida (TI MTZ),Correção/manutenção layouts bancários,Fechado
+7713342,12/18/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,7713342 - Criar Serviços.,Gabriela Freitas (JURIDICO),CRM,Ricardo Santos (TI MTZ),Criação/Alteração de item catalogo de serviço,Resolvido
+7704234,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,7704234 - CONFIGURAÇÕES - CUST,RENATA  MEZETTI,CRM,Ricardo Santos (TI MTZ),Criar/Alterar assunto do ticket,Resolvido
+7704356,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,7704356 - Erro sistema. ,Patrícia Garcia(Customer Service CPQ),CRM,Ricardo Santos (TI MTZ), Erro de acesso ao sistema,Resolvido
+7705483,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Ajuste de leituras,Samuel de oliveira santos,TMS,Anna Silva (TI MTZ),Divergência na leitura,Fechado
+7701501,12/16/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,ATUALIZAÇÃO DO GV,Fernando,TMS,Anna Silva (TI MTZ),Gestão de Volumes,Fechado
+7705001,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Erro ao Realizar Baixa Manual ,Marlon Alves (EXP DIQ),TMS,Anna Silva (TI MTZ),Conclusão ,Fechado
+7715032,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,ERRO AO FINALIZAR VIAGEM ,Wilton Delgado de Araujo,TMS,João Santos (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7702484,12/16/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,7702484 - Atualizar assinatura,Luzia Gomes,CRM,Ricardo Santos (TI MTZ),Incluir assinatura no cadastro,Resolvido
+7717920,12/19/2024,12/26/2024,12/19/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (SA, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7698887,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,24-11-904015 - Fatura de Cobra,Nayane Abreu (CAR MTZ),EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7705057,12/17/2024,12/23/2024,12/17/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (SA, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7703875,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,ARQUIVO EDI BLUKIT ,BLUKIT METALURGICA. (81.604.803/0001-57),EDI,Julia Andrade (APRENDIZ TI MTZ),Ocorrências(OCORREN),Fechado
+7698315,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,24-12-903461 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7709729,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,FATURAS  VOLKS TRUCK - 7709729,Talita  Araujo (Faturamento MTZ),EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7721155,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,Liberar marcação waapi,Audria,ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Configurações Gerais,Resolvido
+7701980,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,NF 43097234 não processa no ED,Haroldo Martins (EXP JDF),TMS,João Santos (TI MTZ),Geração/Emissão documento,Fechado
+7703370,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Erro dar inicio viagem ,Douglas Melo (OPE PSW),TMS,João Santos (TI MTZ),Erro ao Iniciar Viagem,Fechado
+7702451,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,AGUARDANDO ANALISE,Heitor Castro Daer,TMS,João Santos (TI MTZ),Gerenciador de Consultas,Fechado
+7711126,12/18/2024,,12/20/2024 12:00:00 AM,Fora do Prazo,Relatório CT-es Aguardando Emi,Gabriela Albrecht (GERUND QHV),TMS,João Santos (TI MTZ),Alteração ,Resolvido
+7713670,12/18/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Erro ao efetivar ocorrência - ,Thalita Grim,TMS,Anna Silva (TI MTZ),Erro Conclusão de ocorrência,Fechado
+7709062,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,CONCLUSÃO DE OCORRENCIA / VIAG,Ilidia Apolinario (OPE QDF),TMS,Anna Silva (TI MTZ),Erro Conclusão de ocorrência,Fechado
+7719451,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,"Não conseguindo inserir, concl",Ronaldo João da Silva Filho,TMS,Anna Silva (TI MTZ),Efetivar Ocorrência (Gestão de Volumes),Fechado
+7709516,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Divergências de leituras na vi,Hudson Roger Silva e Sousa,TMS,Anna Silva (TI MTZ),Divergência na leitura,Fechado
+7708886,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Erro ao gerar MDF e,Thiago costa,TMS,João Santos (TI MTZ),MDFe,Fechado
+7710370,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,AJUSTE DE TEXTO LEGAL NAS OBSE,Steffani Rodrigues (FISCAL MTZ),TMS,João Santos (TI MTZ),Documento Cliente Divergente,Fechado
+7703230,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,Fora do Prazo,alteraçao de filial CT-E 19168,Wilian Santana (OPE RIO),TMS,João Santos (TI MTZ),Alterar Filial documento,Fechado
+7720753,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,PENDENCIAS DE AUDITORIA FORA D,"da Silva, Marcielly Alves",EDI,Euller Vieira (TI MTZ),Analise de Informação do Arquivo de retorno,Resolvido
+7701754,12/16/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,SEM EDI ,Ludimila Rocha (OPE UDI),EDI,Euller Vieira (TI MTZ),Recepção de NOTFIS/XML,Fechado
+7698767,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Sem EDI ,Ludimila Rocha (OPE UDI),EDI,Euller Vieira (TI MTZ),Recepção de NOTFIS/XML,Fechado
+7714248,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,LIBERAR PEDIDO - 7714248,Aparecido Carvalho,EDI,Euller Vieira (TI MTZ),Nota não importada,Fechado
+7722963,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,Follow Up de Entrega -  PATRUS,GKO Frete,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Resolvido
+7700175,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Pedido não consta no sistema,Elaine Pereira (LIDER OPE CON),EDI,Euller Vieira (TI MTZ),Recepção de NOTFIS/XML,Fechado
+7709753,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Finalizar viagem,VALTER LUAN,TMS,Anna Silva (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7713615,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,erro ocorrencia RPS ,Marilene Andrade (SIC IPN),TMS,Anna Silva (TI MTZ),Consulta Ocorrências,Fechado
+7708076,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Problema na hora de bipar a et,Gerson Junior (OPE CWB),TMS,Anna Silva (TI MTZ),Problema na etiqueta,Fechado
+7710097,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,E-mail não localizado ( Portal,Bruna Caroline (Supervisora Regional NCC),TMS,Anna Silva (TI MTZ),Assistente DAC,Fechado
+7705274,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Solicitação de EDI Alpargatas,ALPARGATAS S.A. (Principal),EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7717662,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,Follow Up de Entrega -  PATRUS,GKO Frete,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7661301,12/5/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Pedidos não importado ,Haroldo Martins (EXP JDF),EDI,Euller Vieira (TI MTZ),Nota não importada,Fechado
+7702488,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,ENC: 24-12-904136 - Fatura de ,Rogerio Luiz Ferreira,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7697868,12/14/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,EDI Indisponível no site - 769,Welington Aparecido Da Silva,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7700052,12/16/2024,,12/16/2024 12:00:00 AM,Fora do Prazo,Criação de novo usuário GV,Elizeu Oliveira (OPE ITN),TMS,João Santos (TI MTZ),Criar Usuário Benner,Fechado
+7720056,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,CHECK LIST ,Andre Filipe Medeiros,TMS,João Santos (TI MTZ),Falta de CheckList,Fechado
+7716626,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,Pedido sem EDI 19/12/2024,Janio Miranda (OPE UDI),EDI,Euller Vieira (TI MTZ),Recepção de NOTFIS/XML,Fechado
+7704628,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,PENDENCIAS DE AUDITORIA FORA D,"da Silva, Marcielly Alves",EDI,Euller Vieira (TI MTZ),Analise de Informação do Arquivo de retorno,Fechado
+7719696,12/19/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,PROCESSAR EDI AGEX - 19/12 - 7,PA Londrina,EDI,Natalia Caroline (TI MTZ),Dúvidas/Suporte no processo de EDI,Resolvido
+7701954,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Re: 24-12-903780 - Fatura de C,Marcelo Deitos Lazzari,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7705492,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,NFS 427588 e 427971 - Ocorênci,LUIZA BARCELOS CALCADOS S/A (25.915.190/0002-89),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7696088,12/13/2024,,12/17/2024 12:00:00 AM,Fora do Prazo,Criar usuario,CAMILLY CAMPOS DA SILVA,TMS,Mateus Menezes (TI MTZ),Criar Usuário Benner,Fechado
+7698241,12/15/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,cancelamento de SMP veiculo hf,Thiago Martins (LIDER OPE RIO),TMS,Mateus Menezes (TI MTZ),SMP,Fechado
+7700908,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Estornar a ocorrência de conlu,BRUNO RODRIGUES,TMS,Mateus Menezes (TI MTZ),Consulta Ocorrências,Fechado
+7712481,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,E-mail não localizado ( Portal,Bruna Caroline (Supervisora Regional NCC),TMS,Mateus Menezes (TI MTZ),Assistente DAC,Fechado
+7711165,12/18/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,ESTORNAMENTO OU CANCELAMENTO D,Aleson Batista De Sousa,TMS,Mateus Menezes (TI MTZ),Unitizador,Fechado
+7714820,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,Notas sem DT - PATRUS 18/12/20,"Souza, Vitor",EDI,Euller Vieira (TI MTZ),XML CTe(Grandes Quantidades),Fechado
+7703334,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Follow Up de Coleta -  PATRUS ,GKO Frete,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7719978,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Follow Up de Entrega -  PATRUS,GKO Frete,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Resolvido
+7699957,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,RE: RELATÓRIO 2° QUINZENA DE N,Marcus Costa (Aprendiz MTZ),EDI,Euller Vieira (TI MTZ),XML CTe(Grandes Quantidades),Fechado
+7715016,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Cancelamento de SMP,Glauco Coelho Pereira Vieira de Souza,TMS,Mateus Menezes (TI MTZ),SMP,Fechado
+7698853,12/16/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Liberar função para retirar fa,Luiz Reis (EPP CON),TMS,Mateus Menezes (TI MTZ),Desbloquear login Benner/Gestão de Volumes,Fechado
+7699090,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,MANIFESTO REJEITADO - VIAGEM 5,Juan Santos (OPE CON),TMS,Mateus Menezes (TI MTZ),Problema com Sefaz MDF-e,Fechado
+7724615,12/20/2024,12/21/2024,12/20/2024 12:00:00 AM,No Prazo,DESATIVAR GV PARA VIAGEM DE VE,Sharleny Moreira da Silva,TMS,Vitor Gomes (TI MTZ),Desativação de Gestão de Volumes,Resolvido
+7716644,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,RE: 24-12-905479 - Fatura de C,Vinicius Oliveira,EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7693095,12/13/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,SEM COLETA - Coleta Snac - 13/,NATURA COSMETICOS S.A. (71.673.990/0019-04),EDI,Euller Vieira (TI MTZ),Analise de Informação do Arquivo,Fechado
+7698627,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,RES: JCE CHILE S/A - [ALERTA A,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7698603,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,RES: Notas Fiscais em Atraso -,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7701953,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Re: 24-12-903778 - Fatura de C,Marcelo Deitos Lazzari,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7714184,12/18/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,falta de informações no arquiv,Eduardo Oliveira (EXP CPQ),EDI,Natalia Caroline (TI MTZ),Alterações parâmetros EDI,Fechado
+7701938,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Re: 24-12-903780 - Fatura de C,Marcelo Deitos Lazzari,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7702099,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Re: 24-12-903778 - Fatura de C,Marcelo Deitos Lazzari,EDI,Natalia Caroline (TI MTZ),Dúvidas/Suporte no processo de EDI,Fechado
+7711613,12/18/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Pedido nao importado ,Yara Bento Da Cruz,EDI,Natalia Caroline (TI MTZ),Nota não importada,Fechado
+7711573,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,linha de viagem,Edmar Pereira (OPE SAO),TMS,Mateus Menezes (TI MTZ),Outros,Fechado
+7716249,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Reprocessamento - CT-e ,Samuel de oliveira santos,TMS,Mateus Menezes (TI MTZ),Demora na autorização,Fechado
+7704259,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,CTe parado no XML,Haroldo Martins (EXP JDF),TMS,Mateus Menezes (TI MTZ),Problema com Sefaz CT-e,Fechado
+7724509,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,PROCESSAMENTO CALAMO - TRANSPO,Sharleny Moreira da Silva,TMS,Vitor Gomes (TI MTZ),Processamento NOTFIS/XML,Resolvido
+7724619,12/20/2024,12/21/2024,12/20/2024 12:00:00 AM,No Prazo,Documentos  ag autorização,Jose Roberto (EXP SAO),TMS,Vitor Gomes (TI MTZ),Benner,Resolvido
+7708437,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,PROCESSO CANCELADO INCORRETAME,lucas gomes miguel,TMS,Vitor Gomes (TI MTZ),Controle de Processos,Fechado
+7724594,12/20/2024,12/21/2024,12/20/2024 12:00:00 AM,No Prazo,AGUARDANDO ANALISE,Heitor Castro Daer,TMS,Vitor Gomes (TI MTZ),Processamento NOTFIS/XML,Resolvido
+7699182,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,CTe parado no XML,Haroldo Martins (EXP JDF),TMS,Mateus Menezes (TI MTZ),Problema com Sefaz CT-e,Fechado
+7718255,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,ERRO AO GERAR MDFE,Alex Júnior (OPE SAO),TMS,Mateus Menezes (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7714199,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Viagem 2024/545275-59 - Carga ,Thiago Bispo dos Santos,TMS,Vitor Gomes (TI MTZ),Divergência na leitura,Fechado
+7708629,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,Fora do Prazo,Desativar GV viagem 543392 e 5,Gabriel Coutinho (EXP PPY),TMS,Vitor Gomes (TI MTZ),Desativação de Gestão de Volumes,Fechado
+7724968,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,ERRO AO TENTAR LER ETIQUETA ,Paulo  Henrique dos Santos Cruz,TMS,Vitor Gomes (TI MTZ),Divergência na leitura,Resolvido
+7703041,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Erro ao estornar documento 150,Vitor Fernandes (Torre de Controle),TMS,Vitor Gomes (TI MTZ),Track & Trace,Fechado
+7724641,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,encerrar auditoria,ruan moraes,TMS,Vitor Gomes (TI MTZ),Auditoria de Praça,Resolvido
+7714335,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Cancelamento de ponto de parad,José Gilvan (GES FROTAS MTZ),TMS,Isaias Oliveira (TI MTZ),Dificuldade Acesso Benner/Roadnet/Sênior,Fechado
+7708592,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,Fora do Prazo,UNITIZADOR 678924,Ivan Seixas (EXP AJU),TMS,Vitor Gomes (TI MTZ),Unitizador,Fechado
+7713831,12/18/2024,,12/18/2024 12:00:00 AM,Fora do Prazo,solicito o desbloqueio de usuá,Caroline Silva (OPE SEI),TMS,Vitor Gomes (TI MTZ),Criar Usuário Benner,Fechado
+7703188,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,Fora do Prazo,efetivar ocorrencia ,Flávio Gomes (ENCOPEDIS MTZ),TMS,Vitor Gomes (TI MTZ),Controle de Processos,Fechado
+7703098,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Problema ao gerar manifesto vi,Luciano Gomes (LÍDEROPE GVR),TMS,Vitor Gomes (TI MTZ),Controle de Processos,Fechado
+7703300,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Erro nO CIOT ao tentar finaliz,Ambrozio Lima (PREST CONTAS FEC),TMS,Isaias Oliveira (TI MTZ),CIOT,Fechado
+7703224,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,Fora do Prazo,sistema lento,Lucas Santos (OPE FEC),TMS,Isaias Oliveira (TI MTZ),Benner,Fechado
+7724784,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,Linha de viagem,Thiago Pereira,TMS,Isaias Oliveira (TI MTZ),Erro ao Trocar Linha de viagem,Resolvido
+7714313,12/19/2024,,12/19/2024 12:00:00 AM,Fora do Prazo,Criar novo usuário,rodrigo da silva fischer,TMS,Isaias Oliveira (TI MTZ),Criar Usuário Benner,Fechado
+7703056,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,"Viagem 2024/538476-2, document",Vitor Fernandes (Torre de Controle),TMS,Vitor Gomes (TI MTZ),Track & Trace,Fechado
+7702987,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Alteração de Série CT-e,Lucas Rosa (EXP CPQ),TMS,Vitor Gomes (TI MTZ),Duvida na Emissão de Documento,Fechado
+7714196,12/18/2024,12/19/2024,12/19/2024 12:00:00 AM,Fora do Prazo,Sistema Benner muito lento,Luiz Bonotto (OPE CPQ),TMS,Isaias Oliveira (TI MTZ),Indisponibilidade AVD,Fechado
+7719904,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Viagem aguardando SEFAZ - 7719,Jose Roberto Cardoso (EXP BNU),TMS,Isaias Oliveira (TI MTZ),Liberar documento pendente em viagem,Resolvido
+7724675,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,Fora do Prazo,Erro ao lançar ocorrencia nota,JAIME ALVES DOS SANTOS NETO,TMS,Isaias Oliveira (TI MTZ),Controle de Processos,Resolvido
+7708570,12/17/2024,12/18/2024,12/18/2024 12:00:00 AM,Fora do Prazo,senha,Marcia Silveira (EXP PSW),TMS,Isaias Oliveira (TI MTZ),"Liberação, Alteração e Remoção de Acesso de Usuário",Fechado
+7713503,12/18/2024,12/23/2024,12/19/2024 12:00:00 AM,No Prazo,Liberação de Acesso - Senior -,Keila da Silva Cruz,ERP,Arthur Abreu (EST-TECH TI MTZ),Ressuprimentos,Resolvido
+7714406,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Finalizar Viagem 530727-3,Renato,TMS,Isaias Oliveira (TI MTZ),Consulta Ocorrências,Fechado
+7708701,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,Fora do Prazo,Viagem 534677 com erro na hora,Paulo Ricardo (COORDUND VDC),TMS,Isaias Oliveira (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7697493,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Excluir faturas duplica,Suporte ERP/Sênior (Solicitante),ERP,Arthur Abreu (EST-TECH TI MTZ),Geração de faturas,Fechado
+7703310,12/17/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,7703310 - Alterar fila de aten,Tamara Rodrigues (CUSTOMER CARE QHV),CRM,Tulio Rodrigues (TI MTZ),Criação/Alteração responsável pelo ticket,Resolvido
+7698950,12/16/2024,12/19/2024,12/17/2024 12:00:00 AM,No Prazo,SPED CPQ e SAO,Steffani Rodrigues (FISCAL MTZ),ERP,Marcus Ethur (TI MTZ),Apuração de tributos,Resolvido
+7714071,12/18/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,(SA) - Recontabilização de mat,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Itens,Resolvido
+7719707,12/19/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,(SA) - Erro de apuração do pon,Suporte ERP/Sênior (Solicitante),ERP,Giovanni Campos (TI MTZ),Ajuste de Cadastros não integrados,Resolvido
+7699038,12/16/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,GPO,Helena Freitas (RB MTZ),ERP,Giovanni Campos (TI MTZ),Alterar parâmetros de performance e Load Balancer,Resolvido
+7697501,12/13/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Recebimento fiscal - DI,Suporte ERP/Sênior (Solicitante),ERP,Joselito Almeida (TI MTZ),Recebimento fiscal,Fechado
+7715280,12/19/2024,12/26/2024,12/19/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (CO, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7721506,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Realização de Scan do Trend na, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Manual Scan Trend,Resolvido
+7721457,12/20/2024,12/27/2024,12/20/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (SS, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7716563,12/19/2024,,12/19/2024 12:00:00 AM,Fora do Prazo,Atualização de Navegador (NSE-, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Liberação/Bloqueio de Sites,Resolvido
+7721569,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Realização de Scan do Trend na, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Manual Scan Trend,Resolvido
+7698309,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,24-12-903030 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7704883,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Reprocessamento - CT-e ,Samuel de oliveira santos,TMS,Anna Silva (TI MTZ),Demora na autorização,Fechado
+7710684,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Finalização de viagens,Ubiratan Santos (ENCOPE SSA),TMS,Anna Silva (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7715563,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Estorno de arquivamento por de,Marcus Araujo (EXP CORP),TMS,Anna Silva (TI MTZ),Arquivamento,Fechado
+7710444,12/18/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,PROBLEMA NO ACESSO DO BENNER,Josuel Nascimento De Souza,TMS,Anna Silva (TI MTZ),Desbloquear login Benner/Gestão de Volumes,Fechado
+7710271,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Frete zerado devolução,Marcus Araujo (EXP CORP),TMS,Anna Silva (TI MTZ),Calculo do frete,Fechado
+7706285,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,alterar filial atual documento,welington ,TMS,Anna Silva (TI MTZ),Alterar Filial documento,Fechado
+7701932,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,VOLUME EM DESCARREGAMENTO DENT,Guilherme Avelar Silva,TMS,João Santos (TI MTZ),Efetivar Ocorrência (Gestão de Volumes),Fechado
+7652867,12/3/2024,12/3/2024,12/16/2024 12:00:00 AM,Fora do Prazo,TICAGEM DE NOTAS CALAMO - VIA ,Sharleny Moreira da Silva,TMS,João Santos (TI MTZ),Gerenciador de Consultas,Fechado
+7698335,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Viagen apresenta CIOT,Willian Araujo (OPE FEC),TMS,João Santos (TI MTZ),CIOT,Fechado
+7703355,12/17/2024,12/18/2024,12/18/2024 12:00:00 AM,Fora do Prazo,Unitizador,rodrigo da silva fischer,TMS,João Santos (TI MTZ),Unitizador,Fechado
+7714453,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Verificar liberação de acesso ,Maria Taliuli (OPEX),TMS,João Santos (TI MTZ),Porta Palete,Fechado
+7699614,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,DANFES  DA  EUDORA  NAO  IMPOR,Walquires Neves (EXP MTZ),TMS,João Santos (TI MTZ),Processamento NOTFIS/XML,Fechado
+7702527,12/16/2024,12/19/2024,12/16/2024 12:00:00 AM,No Prazo,cadastro unitização etiqueta,Matheus Monteiro Nascimento,TMS,João Santos (TI MTZ),Analise Etiqueta de Cliente,Fechado
+7703816,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Não consigo gerar smp,Mateus Santos,TMS,João Santos (TI MTZ),SMP,Fechado
+7718194,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,EDI de fatura - 7718194,Leandro Carvalho,EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7698718,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,NFs em atraso de entrega-BSB-4,com@denvertecnologia.com.br,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7363217,9/10/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Benner caindo,Juliane Cardoso (Customer Care MTZ),TMS,,Indisponibilidade AVD,Fechado
+7703338,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Follow Up de Entrega -  PATRUS,GKO Frete,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7703965,12/17/2024,1/6/2025,12/17/2024 12:00:00 AM,No Prazo,ENC: PENDÊNCIAS CF EUROFARMA –,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Envio EDI/Comprovante  grandes quantidades,Fechado
+7709422,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Arquivo EDI 18/12 - 7709422,Mel Fernandes,EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7704846,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,ENC: - 7704846,Manoel Marques da Silva Neto - Jequiti,EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7704191,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,RES: JCE CHILE S/A - [ALERTA A,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7708865,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Follow Up de Entrega -  PATRUS,GKO Frete,EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7704054,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Liberar acesso ,Marcos Rodrigues (LIDEROPE SAO),TMS,Mateus Menezes (TI MTZ),Desbloquear login Benner/Gestão de Volumes,Fechado
+7699421,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Corrigir status RPS 9114,Andrei Santos (COORD SAJ),TMS,Mateus Menezes (TI MTZ),Divergencia na leitura,Fechado
+7638925,11/29/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Solicitação de Criação de Novo,CAMILLY CAMPOS DA SILVA,TMS,Mateus Menezes (TI MTZ),Criar Login Benner,Resolvido
+7705785,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Criar usuário BL mobile,Ronaldo João da Silva Filho,TMS,Mateus Menezes (TI MTZ),Login Checklist,Fechado
+7705357,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Estorno de ocorrência indevida,Ruan Malaquias de Lima,TMS,Mateus Menezes (TI MTZ),Estorno Ocorrência,Fechado
+7721151,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Retirar CIOT RCF - 2024/053735,Henrique Evangelista (COT MTZ),TMS,Mateus Menezes (TI MTZ),RCF,Fechado
+7719865,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,Fora do Prazo,DESTRAVAR DOCUMENTOS NO XML,Sharleny Moreira da Silva,TMS,Vitor Gomes (TI MTZ),Processamento NOTFIS/XML,Fechado
+7719809,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,Viagem 2024/547282-59 - Carga ,Thiago Bispo dos Santos,TMS,Vitor Gomes (TI MTZ),Divergência na leitura,Fechado
+7703106,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Nao consigo dar chegada na via,marcia conceicao,TMS,Vitor Gomes (TI MTZ),Outros,Fechado
+7703183,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,BENNER NÃO ABRE,Cassia Ellen (P&D FOR),TMS,Vitor Gomes (TI MTZ),Benner,Fechado
+7719762,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,MDFe,Gabriel Coutinho (EXP PPY),TMS,Vitor Gomes (TI MTZ),MDFe,Fechado
+7719728,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,AUTORIZAÇÃO PARA REIMPRESSÃO D,Matheus Monteiro Nascimento,TMS,Vitor Gomes (TI MTZ),Reimpressão de Etiquetas,Fechado
+7724759,12/21/2024,12/23/2024,12/21/2024 12:00:00 AM,No Prazo,Ajustes de leituras,Arisson Matheus Silva de Freitas,TMS,Isaias Oliveira (TI MTZ),Documento Cliente Divergente,Resolvido
+7703237,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,SISTEMA LENTO,Joao Paulo Severino,TMS,Isaias Oliveira (TI MTZ),Benner,Fechado
+7703256,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Status de RPS RIO 489721 diver,Carlos Júnio (EXP RIO),TMS,Isaias Oliveira (TI MTZ),Erro Conclusão de ocorrência,Fechado
+7703314,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,ERRO DE LEITURA,Rafael de Assis ,TMS,Isaias Oliveira (TI MTZ),Controle de Processos,Fechado
+7703235,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Viagem 2024/540924-59 - Carga ,Thiago Bispo dos Santos,TMS,Isaias Oliveira (TI MTZ),Divergência na leitura,Fechado
+7724751,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,Liberação de ocorrência ,Erlande Gomes Nascimento,TMS,Isaias Oliveira (TI MTZ),Consulta Ocorrências,Resolvido
+7719891,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,Fora do Prazo,Doc's emitidos na filial errad,Felipe Panicio (EXP CORP),TMS,Isaias Oliveira (TI MTZ),Alterar Filial documento,Fechado
+7708691,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,Fora do Prazo,Usuário ,rodrigo da silva fischer,TMS,Isaias Oliveira (TI MTZ),Benner,Fechado
+7647670,12/2/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,FORM 424-Vendor Risk para o TI,Camilly Vitoria Amorim,STI,Leonardo Freitas (TI MTZ),Instalação / Atualização de Aplicações e Sistemas (Ambientes Não produtivos),Fechado
+7721927,12/20/2024,12/24/2024,12/20/2024 12:00:00 AM,No Prazo,LIBERAÇÃO - SUPRIMENTOS,Gabriel Luan Fidelix,ERP,Marcelo Augusto (TI MTZ),Materiais - Estoque,Resolvido
+7708431,12/17/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,(SA) - Recontabilização de mat,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Itens,Resolvido
+7715782,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Preventiva SAJ ,Fabiana Nogueira (SIC SAJ),ERP,Marcelo Augusto (TI MTZ),Alteração no Plano de Alçada de Requisições,Resolvido
+7714939,12/19/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Inclusão de Regra em OAI tabel,Leandro Santos (ESTOQUE MTZ),ERP,Giovanni Campos (TI MTZ),Ajustes em ordem de serviço,Resolvido
+7709980,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Alterar perfil de permissões d,Aline Ferreira,ERP,Giovanni Campos (TI MTZ),Alteração de perfil de acesso,Resolvido
+7697498,12/13/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,(SA)  - AJuste arquivo de reme,Suporte ERP/Sênior (Solicitante),ERP,Joselito Almeida (TI MTZ),Correção/manutenção layouts bancários,Fechado
+7700568,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,7700568 - Criação de Ticket - ,Daniel Oliveira de Almeida (PREVPERDAS CORP),CRM,Ricardo Santos (TI MTZ),Dúvidas,Fechado
+7704575,12/17/2024,12/23/2024,12/17/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (CO, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7700137,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,RES: PREFATS ENVIADAS 16/12 DA,Nayara Almeida (FAT MTZ),EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB),Fechado
+7721484,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Realização de Scan do Trend na, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Manual Scan Trend,Resolvido
+7699690,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,"Viagem 2024/537787-2, document",Vitor Fernandes (Torre de Controle),TMS,Anna Silva (TI MTZ),Track & Trace,Fechado
+7702705,12/16/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Reiniciar senha do aplicativo ,Ravi Lima (ADM VDC),ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Autenticação,Resolvido
+7700215,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Estornar arquivamento,Amanda Pinheiro (OPE UDI),TMS,Anna Silva (TI MTZ),Arquivamento,Fechado
+7716176,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Frete zerado devolução,Marcus Araujo (EXP CORP),TMS,Anna Silva (TI MTZ),Calculo do frete,Fechado
+7714455,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Erro ao Finalizar Viagem 2024/,Douglas Cruz (OPE VIX),TMS,Anna Silva (TI MTZ),Controle de Processos,Fechado
+7705029,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,FINALIZAR VIAGEM 538341,Maria Sanzia (SUPERV. FIRST CALL SP) ,TMS,Anna Silva (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7704480,12/17/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Excluir leitura de volumes fal,Lucas Eduardo Honório (EXP JDF),TMS,João Santos (TI MTZ),Controle de Processos,Fechado
+7720869,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,Fora do Prazo,Solicitação de Suporte – Erro ,Wanderson Izaias Dos Reis,TMS,João Santos (TI MTZ),CIOT,Fechado
+7720902,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,PROCESSAR OCORRENCIA,Igor Silva ( Torre de Controle ),TMS,João Santos (TI MTZ),Track & Trace,Fechado
+7705517,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,concluir ocorrencia / nf 19224,Ilidia Apolinario (OPE QDF),TMS,João Santos (TI MTZ),Conclusão ,Fechado
+7721515,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Problema pra Efetivar,tais.fialho@patrus.com.br,TMS,João Santos (TI MTZ),Controle de Processos,Fechado
+7719712,12/19/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,(SA) - Ajuste na regra de polí,Suporte ERP/Sênior (Solicitante),ERP,Kleverson Salles (TI MTZ),Férias,Resolvido
+7708128,12/17/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Arquivo EDI,Renato Castro (EXP MTZ),EDI,Euller Vieira (TI MTZ),Recepção de NOTFIS/XML,Fechado
+7720405,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,EDI - 7720405,Tramontina Farroupilha Fiscal,EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Resolvido
+7720450,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,EDI - NATURA,NATURA COSMETICOS S.A. (71.673.990/0019-04),EDI,Euller Vieira (TI MTZ),Analise de Informação do Arquivo de retorno,Resolvido
+7709857,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,RE: FATURA 24-12-902811 - CANC,Hugo Silva (FAT MTZ),EDI,Euller Vieira (TI MTZ),Analise de agrupamento,Fechado
+7708564,12/17/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Falta de arquivo EDI cliente H,Breno Gomes dos Santos,EDI,Euller Vieira (TI MTZ),Recepção de NOTFIS/XML,Fechado
+7713321,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,RE: SOBRA SEM EMISSÃO MANDAE C,GABRIEL TORRES,EDI,Natalia Caroline (TI MTZ),Recepção de NOTFIS/XML,Fechado
+7705542,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,RE: ,Hugo Silva (FAT MTZ),EDI,Natalia Caroline (TI MTZ),Analise de Informação do Arquivo de retorno,Fechado
+7719899,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,PARAMETRIZAÇAO PARA GESTAO DE ,EDSON STOFEL RODRIGUES ,EDI,Natalia Caroline (TI MTZ),Parametrização importação XML/NOTFIS,Resolvido
+7700546,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,24-12-903780 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7701966,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Re: 24-12-903778 - Fatura de C,Marcelo Deitos Lazzari,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7719708,12/19/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,EDI Herbalife - Coleta 19/12/2,Everaldo Santos (EXP SSA),EDI,Natalia Caroline (TI MTZ),Recepção de NOTFIS/XML,Resolvido
+7703480,12/17/2024,12/17/2024,12/18/2024 12:00:00 AM,Fora do Prazo,ERRO AO COLOCAR VEICULO EM TRA,Vanderlei Elias (ADM RIO),TMS,Mateus Menezes (TI MTZ),MDFe,Fechado
+7698246,12/15/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,DOCUMENTOS PRESOS NO PROCESSAM,JOSELISSON OLIVEIRA DE  SANTANA,TMS,Mateus Menezes (TI MTZ),Processamento NOTFIS/XML,Fechado
+7705436,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Mudar a linha de viajem da car,Rafael Cordeiro (OPE CPQ),TMS,Mateus Menezes (TI MTZ),Alterar SubTipo Viagem,Fechado
+7724243,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,cancelamento de SMP veiculo da,Thiago Martins (LIDER OPE RIO),TMS,Mateus Menezes (TI MTZ),SMP,Resolvido
+7706979,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Estorno de Chegada na Filial p,Lucimara Rodrigues de Oliveira,TMS,Mateus Menezes (TI MTZ),Estorno ,Fechado
+7702918,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,login check list,richel bruno,TMS,Vitor Gomes (TI MTZ),Login Checklist,Fechado
+7724502,12/20/2024,12/21/2024,12/20/2024 12:00:00 AM,No Prazo,CT-e nao emitido,GABRIEL TORRES,TMS,Vitor Gomes (TI MTZ),Geração/Emissão documento,Resolvido
+7708445,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Aguardando autorização udi 17/,Janio Miranda (OPE UDI),TMS,Vitor Gomes (TI MTZ),Processamento NOTFIS/XML,Fechado
+7703239,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,LENTIDAO SISTEMA BENNER,Leandro Alves,TMS,Isaias Oliveira (TI MTZ),Benner,Fechado
+7724768,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,CTE´S PRESOS NO XML - 21/12,Kawan Lucca ,TMS,Isaias Oliveira (TI MTZ),Processamento NOTFIS/XML,Resolvido
+7724758,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,Linha de viagem,Thiago Pereira,TMS,Isaias Oliveira (TI MTZ),Erro ao Trocar Linha de viagem,Resolvido
+7714789,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,Security ScoreCard - 7011764 -,Raphael Cruz (TI MTZ),STI,Vinicius Barreto (TI MTZ),Security Score Card,Resolvido
+7714073,12/18/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,(SA) - Documentação - Analise ,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Fechamento contábil/Fiscal,Resolvido
+7705227,12/17/2024,12/19/2024,12/17/2024 12:00:00 AM,No Prazo,Liberação de acesso ao portal ,MAX WYLIAN ALMEIDA SANTOS,ERP,Marcelo Augusto (TI MTZ),Gestão de Viagens,Resolvido
+7697491,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Erro ao liberar RQ de c,Suporte ERP/Sênior (Solicitante),ERP,Giovanni Campos (TI MTZ),Requisições,Fechado
+7703049,12/16/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,Erro de acesso ao APP marcação,aline.aparecida,ERP,Giovanni Campos (TI MTZ),Configurações Gerais,Resolvido
+7713707,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,LIberação de acesso ,Júlia Assis,ERP,Giovanni Campos (TI MTZ),Cadastro de Pessoas de Manutenção,Resolvido
+7707842,12/17/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,7707842 - Alterar fila de aten,Luana Machado (CUS SERVICE QHV),CRM,Ricardo Santos (TI MTZ),Criar/Alterar Fila de atendimento ,Resolvido
+7713801,12/18/2024,12/23/2024,12/19/2024 12:00:00 AM,No Prazo,7713801 - Ajustes Movidesk,Steffani Rodrigues (FISCAL MTZ),CRM,Ricardo Santos (TI MTZ),Erro em relatório,Resolvido
+7700122,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,7700122 - Liberação de usuário,Helena Freitas (RB MTZ),CRM,Ricardo Santos (TI MTZ),Criação/Alteração de perfil de acesso,Fechado
+7705748,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,7705748 - CONFIGURAÇÕES - CUST,RENATA  MEZETTI,CRM,Ricardo Santos (TI MTZ),Criar/Alterar regra gatilho,Resolvido
+7705016,12/17/2024,12/23/2024,12/17/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (CO, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7704777,12/17/2024,12/23/2024,12/17/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (CO, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7703833,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Realização de Scan do Trend na, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Manual Scan Trend,Resolvido
+7704591,12/17/2024,12/23/2024,12/17/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (CO, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7698313,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,24-12-903463 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7699534,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,24-11-905804 - Fatura de Cobra,Nayane Abreu (CAR MTZ),EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7698308,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,24-12-903016 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7698305,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,24-12-902776 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7713705,12/18/2024,12/23/2024,12/19/2024 12:00:00 AM,No Prazo,PROBLEMAS A ACESSAR APLICATIVO,Isabela Cristina Falcão de Sá,ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),RH - Senior,Resolvido
+7714240,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Resetar senha do WPP Waapi ,GLOBAL ESPACO GENTE,ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Configurações Gerais,Resolvido
+7699316,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,AJUSTAR LEITURA DO MOTORISTA J,Luiz Fernando Machado,TMS,Anna Silva (TI MTZ),Divergência na leitura,Fechado
+7702015,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,AJUSTE CTE 4645674 CCE NATURA,George Teixeira (CQO ITN),TMS,Anna Silva (TI MTZ),Ajuste DOC - Carta de Correção,Fechado
+7712716,12/18/2024,12/20/2024,12/18/2024 12:00:00 AM,No Prazo,RESETAR A SENHA APLICATIVO WAP,ANA CORREIA,ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Diversos,Resolvido
+7713099,12/18/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,CADASTRO NOVO COLABORADOR - RE,Sarah Nunes Martins,ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Cadastros,Resolvido
+7716174,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,USUÁRIOS INATIVOS,Tuany Marques (SUPERV. CUS. SERVICE SAO),TMS,Anna Silva (TI MTZ),Tracking,Fechado
+7715225,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,ALTERAR FILIAL DOC,Thiago Candido,TMS,Anna Silva (TI MTZ),Alterar Filial documento,Fechado
+7710760,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Dificuldade para excluir docum,Marcus Araujo (EXP CORP),TMS,Anna Silva (TI MTZ),Documento Cliente Divergente,Fechado
+7710359,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,A OCORRÊNCIA - AGENDAMENTO NÃO,Maria Clara Oliveira Fagundes,TMS,Anna Silva (TI MTZ),Agendamento,Fechado
+7720433,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Erro na conclusao de ocorrenci,Michel Moschen (EXP CTN),TMS,João Santos (TI MTZ),Erro Conclusão de ocorrência,Fechado
+7689722,12/12/2024,,12/16/2024 12:00:00 AM,Fora do Prazo,Inclusão de infomrações em Rel,Victor Okubo (DAC MTZ),TMS,João Santos (TI MTZ),Alteração ,Fechado
+7702106,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,DOCUMENTO COM STATUS DIVERGENT,Lowrrayne,TMS,João Santos (TI MTZ),Controle de Processos,Fechado
+7699971,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Rodnet - kms - viagens de Frac,Marcos Bispo (EXP CON),TMS,João Santos (TI MTZ),Roteirizador,Fechado
+7698416,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,SMP FINALIZADA,Ingred Santana (OPE SSA),TMS,João Santos (TI MTZ),SMP,Fechado
+7703388,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,liberar pendencia,VALTER LUAN,TMS,João Santos (TI MTZ),Estorno Ocorrência,Fechado
+7709636,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,RES: CARGA PARADA PATRUS 17/12,Carlos Eduardo Bello Mendonca,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7706752,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,Follow Up de Coleta -  PATRUS ,GKO Frete,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7722068,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,RES: Fat 24-12-901970 Venc 03/,Danusa Xavier (CML RIO),EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Resolvido
+7702748,12/16/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,BOTICARIO SEM EDI - 7702748,GABRIEL TORRES,EDI,Euller Vieira (TI MTZ),Recepção de NOTFIS/XML,Fechado
+7703733,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,AJUSTES ENTREGOU AREZZO  |  17,AREZZO - Sul,EDI,Euller Vieira (TI MTZ),Analise de Informação do Arquivo de retorno,Fechado
+7706872,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,Follow Up de Entrega -  PATRUS,GKO Frete,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7711361,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,RE: Retorno dos CTE's via Proc,Vanessa Eurich,EDI,Euller Vieira (TI MTZ),Layout Padrão,Fechado
+7699140,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,XML de CTEs em lote - Julio An,Gustavo Collussi,EDI,Euller Vieira (TI MTZ),XML CTe(Grandes Quantidades),Fechado
+7715523,12/19/2024,12/24/2024,12/19/2024 12:00:00 AM,No Prazo,ENC: MUDANÇA SISTEMA TMS. 1912,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Mudança de Processo/Layout,Fechado
+7699461,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Arquivo EDI - Fatura 24-11-915,ADM - Grupo Texpa,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7722089,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,RES: Notas Fiscais em Atraso -,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Resolvido
+7702102,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Re: 24-12-903780 - Fatura de C,Marcelo Deitos Lazzari,EDI,Natalia Caroline (TI MTZ),Dúvidas/Suporte no processo de EDI,Fechado
+7701927,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Re: 24-12-903778 - Fatura de C,Marcelo Deitos Lazzari,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7698696,12/16/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Patrus - Atrasados - 7683563,doTERRA,EDI,Natalia Caroline (TI MTZ),Analise de Informação do Arquivo de retorno,Fechado
+7703612,12/17/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,"ENC: Coletas, Emissões e Cobra",Caroline Tonello (ADM CXJ),EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Resolvido
+7701698,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,ALTERAR FILIAL DOS DOC,Tatiana Disner (EXP FLN),TMS,Mateus Menezes (TI MTZ),Alterar Filial documento,Fechado
+7721497,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,ACESSO PARA PESQUISAS APSUL,Paulo  Henrique dos Santos Cruz,TMS,Mateus Menezes (TI MTZ),Permissão GRIS,Fechado
+7702630,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Ctes aguardando autorização,Thiago Bispo dos Santos,TMS,Mateus Menezes (TI MTZ),Demora na autorização,Fechado
+7702811,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,"Demora no Sefaz, não consigo l",Felipe Rosa (OPE CON),TMS,Mateus Menezes (TI MTZ),Consulta Ocorrências,Fechado
+7703044,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Viagem ,Thiago Bispo dos Santos,TMS,Vitor Gomes (TI MTZ),Erro ao Iniciar Viagem,Fechado
+7703040,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Alterar Tabela de preço - Rio ,Caio Almeida (COT MTZ),TMS,Vitor Gomes (TI MTZ),Tabela de Preço,Fechado
+7703202,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,ERRO AO INICIAR VIAGE MSAJ,Paulo  Henrique dos Santos Cruz,TMS,Vitor Gomes (TI MTZ),Erro ao Iniciar Viagem,Fechado
+7713786,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Contratro de Frete,Thiago Novaes (EXP CPQ),TMS,Vitor Gomes (TI MTZ),Duvida na Emissão de Documento,Fechado
+7702985,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Criação de login/Espelhamento,Luis,TMS,Vitor Gomes (TI MTZ),Criar Login Benner,Fechado
+7714222,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,demora na autorização de cance,ALISSON RODRIGUES ,TMS,Vitor Gomes (TI MTZ),Demora na autorização,Fechado
+7708511,12/17/2024,12/18/2024,12/18/2024 12:00:00 AM,Fora do Prazo,USUARIO BLOQUEADO NA MAQUINA A,Guilherme Avelar Silva,TMS,Isaias Oliveira (TI MTZ),Desbloqueio de Usuário,Fechado
+7708670,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,Fora do Prazo,Viagem está dando erro no ato ,Wellington de Sousa Leonardo,TMS,Isaias Oliveira (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7724772,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,problema ao inserir ocorrência,Neilson Silva (EXP SSA),TMS,Isaias Oliveira (TI MTZ),Efetivar Ocorrência (Gestão de Volumes),Resolvido
+7724781,12/21/2024,12/23/2024,12/21/2024 12:00:00 AM,No Prazo,DIVERGENCIA NA VIAGEM 2024/548,Vitor Oliveira (OPE JDF),TMS,Isaias Oliveira (TI MTZ),Dificuldade Acesso Benner/Roadnet/Sênior,Resolvido
+7708775,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,CTE´S PRESOS NO XML - 18/12,Kawan Lucca ,TMS,Isaias Oliveira (TI MTZ),Processamento NOTFIS/XML,Fechado
+7714293,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,DESBLOQUEIO DE VIAGEM,Stefa Ferreira Gonzaga,TMS,Isaias Oliveira (TI MTZ),Demora na autorização,Fechado
+7697088,12/13/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Erro ao tentar lançar NF,Everton Bispo da Silva,ERP,Arthur Abreu (EST-TECH TI MTZ),Outros,Fechado
+7720395,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,Security ScoreCard - 7011764 -,Raphael Cruz (TI MTZ),STI,Vinicius Barreto (TI MTZ),Security Score Card,Resolvido
+7697513,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Analise do caso de Requ,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Requisições,Fechado
+7707874,12/17/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,7707874 - Alterar fila de aten,Luana Machado (CUS SERVICE QHV),CRM,Ricardo Santos (TI MTZ),Criar/Alterar Fila de atendimento ,Resolvido
+7711449,12/18/2024,12/24/2024,12/18/2024 12:00:00 AM,No Prazo,Atualização de Windows 11(IPN-, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Atualização de Windows,Resolvido
+7715903,12/19/2024,12/26/2024,12/19/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (CO, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7704729,12/17/2024,12/23/2024,12/17/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (SS, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7698814,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,24-11-903982 - Fatura de Cobra,Nayane Abreu (CAR MTZ),EDI,Julia Andrade (APRENDIZ TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7703916,12/17/2024,12/23/2024,12/17/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (SA, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7720458,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Realização de Scan do Trend na, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Manual Scan Trend,Resolvido
+7721630,12/20/2024,12/27/2024,12/20/2024 12:00:00 AM,No Prazo,Desinstalação do Red Cloak (CO, Gustavo Silva (EST-TECH SEGTI MTZ),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Outros,Resolvido
+7699483,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Liberacao de porta USB,Vinicius Machado (ADM VIX),STI, Gustavo Silva (EST-TECH SEGTI MTZ),Liberação,Resolvido
+7689819,12/12/2024,12/18/2024,12/16/2024 12:00:00 AM,No Prazo,Desbloqueio de crachá ,Gabriela Lima (ADM SAO),ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Ajuste de Cadastros não integrados,Resolvido
+7700098,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Ajustar data do documento CT-e,Felipe Brito,TMS,Anna Silva (TI MTZ),Documento Cliente Divergente,Fechado
+7710631,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,ERRO AO FINALIZAR VIAGEM,Josuel Nascimento De Souza,TMS,Anna Silva (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7710536,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,E-mail não localizado ( Portal,Bruna Caroline (Supervisora Regional NCC),TMS,Anna Silva (TI MTZ),Assistente DAC,Fechado
+7709775,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,E-mail não localizado ( Portal,Bruna Caroline (Supervisora Regional NCC),TMS,Anna Silva (TI MTZ),Assistente DAC,Fechado
+7707639,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,CTE 1903056 Alterar Status par,PA Juazeiro Do Norte,TMS,Anna Silva (TI MTZ),Consulta Ocorrências,Fechado
+7698332,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Bloqueio de documento durante ,Wires Rocha do Nascimento,TMS,Anna Silva (TI MTZ),Documento Cliente Bloqueado,Fechado
+7716319,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Benner,vitor bento,TMS,João Santos (TI MTZ),Auditoria de Praça,Fechado
+7708884,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Erro ao finalizar viagem 2024/,Michel Moschen (EXP CTN),TMS,João Santos (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7721545,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,impressão de CT-e ,mateus,TMS,João Santos (TI MTZ),Impressão de CT-e,Fechado
+7699311,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,Viagem consta bloqueio mesmo a,Vivian Araujo (OPE FEC),TMS,João Santos (TI MTZ),Documento Cliente Divergente,Fechado
+7716532,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,PROBLEMA PARA FINALIZAR VIAGEM,Josue Lopes (OPE MOC),TMS,João Santos (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7720677,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Mudar a linha de viajem da car,Rafael Cordeiro (OPE CPQ),TMS,João Santos (TI MTZ),Alterar SubTipo Viagem,Fechado
+7711486,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Divergência entre volumes e si,Thalita Grim,TMS,João Santos (TI MTZ),Documento Cliente Divergente,Fechado
+7704133,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,CTE 400388 Status Aguardando T,PA Juazeiro Do Norte,TMS,João Santos (TI MTZ),Erro Conclusão de ocorrência,Fechado
+7695712,12/13/2024,12/18/2024,12/16/2024 12:00:00 AM,No Prazo,Levantar Clientes que lemos et,Felipe Brito,TMS,João Santos (TI MTZ),Analise Etiqueta de Cliente,Fechado
+7698280,12/15/2024,12/18/2024,12/16/2024 12:00:00 AM,No Prazo,Reset de senha app Patrus Tech,Rafael Tavares,TMS,João Santos (TI MTZ),Resgate de Comprovante de Entrega,Fechado
+7698052,12/14/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,Mudar a linha de viajem da car,Rafael Cordeiro (OPE CPQ),TMS,João Santos (TI MTZ),Alterar SubTipo Viagem,Fechado
+7714424,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Finalizar viagem,VALTER LUAN,TMS,João Santos (TI MTZ),Erro ao Finalizar Viagem,Fechado
+7596368,11/18/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Hora extra não está computando,Helena Freitas (RB MTZ),ERP,Kleverson Salles (TI MTZ),Banco de Horas,Resolvido
+7716591,12/19/2024,12/20/2024,12/19/2024 12:00:00 AM,No Prazo,- 7716591,Manoel Marques da Silva Neto - Jequiti,EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Fechado
+7698733,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,FATURAMENTO SEMANAL FILA BRASI,Marcus Costa (Aprendiz MTZ),EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7709566,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,falta de EDI cliente NIKE,Marcelo Araujo (COORD EXA),EDI,Euller Vieira (TI MTZ),Recepção de NOTFIS/XML,Fechado
+7699392,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,PENDENCIAS DE AUDITORIA FORA D,"da Silva, Marcielly Alves",EDI,Euller Vieira (TI MTZ),Analise de Informação do Arquivo de retorno,Fechado
+7701394,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,24-11-908045 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7723926,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,os ctes tfl 82253 e tfl-82252 ,Aldinei Jesus (EXP TFL),TMS,,Controle de Processos,Fechado
+7699407,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,ENC: EDI PATRUS  1612 - 769940,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7702804,12/16/2024,12/17/2024,12/16/2024 12:00:00 AM,No Prazo,ENC: FATURAMENTO EUROFARMA - 7,Ana Flávia Algarte (CML/SIC RAO),EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7698798,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,ENC: Pedido em aberto - 16/12/,Natalia Caroline (TI MTZ),EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7712476,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Envio EDI 910908,GKO Frete,EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7722029,12/20/2024,12/23/2024,12/20/2024 12:00:00 AM,No Prazo,Arquivo  Avon FURA FILA,Lucas Rosa (EXP CPQ),EDI,Natalia Caroline (TI MTZ),Nota não importada,Resolvido
+7712925,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Notas sem ocorrências e confir,naoresponda@simfrete.com.br,EDI,Natalia Caroline (TI MTZ),Ocorrências(OCORREN),Fechado
+7698316,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,24-12-903455 - Fatura de Cobra,Fatura Envio de Faturas,EDI,Natalia Caroline (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Fechado
+7697429,12/13/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,EDI Herbalife - Coleta 13/12/2,joedy brasileiro,EDI,Natalia Caroline (TI MTZ),Recepção de NOTFIS/XML,Fechado
+7705342,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Documentos não averbados ,Samuel de oliveira santos,TMS,Mateus Menezes (TI MTZ),Averbação Eletrônica,Fechado
+7710205,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,ALTERAR FILIAL ATUAL CT-E 1900,Leandra Roccio (CUSTOMER CARE CPQ),TMS,Mateus Menezes (TI MTZ),Alterar Filial documento,Fechado
+7700974,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,AJUSTE,Mateus Rodrigues,TMS,Mateus Menezes (TI MTZ),Etiquetas EDI,Fechado
+7703987,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,SOLUÇÃO ROTEIRIZADA - SINCRONI,jobson odilon oliveira,TMS,Mateus Menezes (TI MTZ),Roteirizador,Fechado
+7710982,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,DOCUMENTOS NÃO AVERBADOS - via,joao baroni,TMS,Mateus Menezes (TI MTZ),MDFe,Fechado
+7700794,12/16/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,liberar a SMP 38229653 da viag,JOSELISSON OLIVEIRA DE  SANTANA,TMS,Mateus Menezes (TI MTZ),SMP,Fechado
+7724814,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,ERRO AO TROCAR LINHA VIAGEM;,kelvin,TMS,Mateus Menezes (TI MTZ),Erro ao Trocar Linha de viagem,Resolvido
+7698106,12/14/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,documentos agarrados XML ,Guilherme Pereira (EXP VIX),TMS,Mateus Menezes (TI MTZ),Processamento NOTFIS/XML,Fechado
+7724957,12/21/2024,12/23/2024,12/21/2024 12:00:00 AM,No Prazo,EDI CONEMB FATURA 24-12-905733,Cleberson Noronha (EXP CXJ),TMS,Vitor Gomes (TI MTZ),Ajuste manual de arquivo de retorno,Resolvido
+7714147,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Finalizar RPS com restrição.,Felipe Panicio (EXP CORP),TMS,Vitor Gomes (TI MTZ),Documento Cliente Bloqueado,Fechado
+7708554,12/17/2024,12/18/2024,12/17/2024 12:00:00 AM,No Prazo,Falta de arquivo EDI cliente H,Breno Gomes dos Santos,TMS,Vitor Gomes (TI MTZ),Processamento NOTFIS/XML,Fechado
+7714042,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,estorno documento 1919782,Vitor Fernandes (Torre de Controle),TMS,Vitor Gomes (TI MTZ),Track & Trace,Fechado
+7719810,12/19/2024,12/20/2024,12/20/2024 12:00:00 AM,No Prazo,Cte cancelado -aguardando auto,Bruno de Oliveira (EXP CXJ),TMS,Vitor Gomes (TI MTZ),Impressão de CT-e,Fechado
+7701197,12/16/2024,12/18/2024,12/18/2024 12:00:00 AM,No Prazo,Alterar filial atual de docume,Felipe Brito,TMS,Vitor Gomes (TI MTZ),Alterar Filial documento,Fechado
+7724643,12/21/2024,12/21/2024,12/21/2024 12:00:00 AM,No Prazo,Não estou conseguindo efetivar,MARIA SONIA DE SANTANA,TMS,Vitor Gomes (TI MTZ),Ocorrência,Resolvido
+7697478,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,CANCELAR RQ 2896817 COM O VALO,Rafael Martins (ENCOPE SJK),ERP,Arthur Abreu (EST-TECH TI MTZ),Requisições,Fechado
+7703289,12/17/2024,12/17/2024,12/17/2024 12:00:00 AM,No Prazo,Colocar em Trânsito viagem Mis,Aníbal Dorta,TMS,Isaias Oliveira (TI MTZ),Contrato/Negociação,Fechado
+7708688,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,Fora do Prazo,cancelar SMP,Paulo Victor  (OPE JDF),TMS,Isaias Oliveira (TI MTZ),SMP,Fechado
+7719870,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,Fora do Prazo,Cte cancelado -aguardando auto,Bruno de Oliveira (EXP CXJ),TMS,Isaias Oliveira (TI MTZ),Duvida na Emissão de Documento,Fechado
+7697497,12/13/2024,12/16/2024,12/16/2024 12:00:00 AM,No Prazo,(SA) - Ajustar lançamento fina,Suporte ERP/Sênior (Solicitante),ERP,Arthur Abreu (EST-TECH TI MTZ),Lançamentos financeiros,Fechado
+7719883,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,Fora do Prazo,Finalização de Pedido de Colet,Ygor,TMS,Isaias Oliveira (TI MTZ),Pedido de Coleta,Fechado
+7708741,12/18/2024,12/18/2024,12/18/2024 12:00:00 AM,Fora do Prazo,Conecta no benner,Anderson Silva (OPE SSA),TMS,Isaias Oliveira (TI MTZ),Erro / Intermitência de Wifi,Fechado
+7714265,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,Fora do Prazo,ERRO NA EFETIVAÇÃO DA PRÉ OCOR,Ana Barral (ANALISTA REGBA),TMS,Isaias Oliveira (TI MTZ),Erro efetivar pré-ocorrência,Fechado
+7708726,12/18/2024,12/19/2024,12/18/2024 12:00:00 AM,No Prazo,Criar usuário,Carlos Fortunato (EXP RIO),TMS,Isaias Oliveira (TI MTZ),Novo Usuário,Fechado
+7719876,12/20/2024,12/20/2024,12/20/2024 12:00:00 AM,Fora do Prazo,Preciso que exclua a leitura d,Tainan Souza (OPE CPQ),TMS,Isaias Oliveira (TI MTZ),Controle de Processos,Fechado
+7714351,12/19/2024,12/19/2024,12/19/2024 12:00:00 AM,No Prazo,Aguardando Autorização,Rodrigo Barros (OPE JDF),TMS,Isaias Oliveira (TI MTZ),Dificuldade Acesso Benner/Roadnet/Sênior,Fechado
+

@@ -1,0 +1,422 @@
+﻿NumeroTicket,Data_Criacao,Data_Solucacao_SLA,Data_Resolucao,SLADentroFora,Assunto,Solicitante,EquipeResponsavelM,Responsavel,Servico,NomeStatus
+7618385,11/25/2024,,,No Prazo,7618385 - NOTIFICAÇÃO NÃO ATUA,Kelly Freitas (CUSTOMER CARE MTZ) ,CRM,Ricardo Santos (TI MTZ), Falha no serviço de e-mail,Aguardando Retorno Fornecedor
+6959117,5/14/2024,,,No Prazo,AJUSTE DE USUÁRIO,Jucielio Santos (LIDER OPE JUNIOR FEC),TMS,Anna Silva (TI MTZ),Unitizador,Aguardando Correção
+7569351,11/7/2024,11/8/2024,,No Prazo,ERRO CONCLUSÃO DE OCC APREENSÃ,Ana Pessoa (OPE FEC),TMS,João Santos (TI MTZ),Documento Cliente Divergente,Em Analise
+5683090,3/10/2023,,,No Prazo,[GOPE] Criar parâmetro para fi,Andrea Rocha (TRACK & TRACE),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Aguardando Analise
+1557841,4/8/2021,12/5/2024,,No Prazo,Gerar e-mail automático,Ester Aguilar (ESTOQUE MTZ),Desenvolvedores,Marco Aurélio (TI MTZ),Almoxarifado,Aguardando Analise
+7709531,12/18/2024,,,No Prazo,"7709531 - Serviço ""Inventário ",Daniel Oliveira de Almeida (PREVPERDAS CORP),CRM,Ricardo Santos (TI MTZ),Criação/Alteração de item catalogo de serviço,Em Analise
+7199971,7/24/2024,,,No Prazo,Erro leitura,Samuel Oliveira (EXP ITN),TMS,Anna Silva (TI MTZ),Ocorrência,Aguardando Analise
+6139398,9/1/2023,,,No Prazo,[GOPE] - Incluir automaticamen,Caio Botelho (COORD LEAN),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Aguardando Analise
+7281068,8/16/2024,8/20/2024,,No Prazo,[MALOTE] - Portal do Malote es,Matheus Henrique Gandra Da Costa,Analistas de Sistemas,Joel Martins(TI MTZ),Gestão Operacional,Aguardando Analise
+6604660,1/26/2024,,,No Prazo,GLOP - Impedir baixa de docume,Maria Taliuli (OPEX),Analistas de Sistemas,Joel Martins(TI MTZ),Gestão Operacional,Homologando
+7711327,12/18/2024,,,No Prazo,RETIRAR LEITURA ,Fernanda Melo dos Santos,TMS,Mateus Menezes (TI MTZ),Criação/Alteração Alerta e Bloqueio,Aguardando Retorno
+7690774,12/12/2024,,,No Prazo,Erro ao tentar lançar NF - 769,Everton Bispo da Silva,ERP,Marcus Ethur (TI MTZ),Lançamento de notas fiscais,Pendente
+7492194,10/16/2024,,,No Prazo,[GOPE] Criar forma de controla,Andrea Rocha (TRACK & TRACE),Analistas de Sistemas,Joao Paulo (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Validação Inicial
+7449933,10/3/2024,,,No Prazo,[GOPE]Track&trace - Identifica,Andrea Rocha (TRACK & TRACE),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Aguardando Analise
+6140331,9/1/2023,,,No Prazo,[GOPE] - Incluir informações d,Caio Botelho (COORD LEAN),Analistas de Sistemas,Joao Paulo (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Informações do Solicitante
+7683482,12/11/2024,,,No Prazo,7683482 - Anexos Movidesk,Melissa Silva (CUSTOMER SERVICE QHV),CRM,Barbara Barros (EST-TECH TI MTZ), Erro de acesso ao sistema,Em Analise
+6829943,4/8/2024,,,No Prazo,[GEDI] INTEGRAÇAÕ XML CTE API ,Natalia Caroline (TI MTZ),Analistas de Sistemas,Joao Paulo (TI MTZ),Api Cliente,Homologando
+7109117,6/27/2024,,,No Prazo,[GEDI] Inclusão de Informações,Victor Okubo (DAC MTZ),Analistas de Sistemas,Paulo Silva (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Analise
+6560222,1/12/2024,,,No Prazo,GLOP - Geração de coleta de lo,Naiara Santos,Analistas de Sistemas,Paulo Silva (TI MTZ),Gestão Operacional,Aguardando Analise
+7448288,10/3/2024,,,No Prazo,Quando  tento sair da sessão d,Mateus Santos,TMS,Tulio Rodrigues (TI MTZ),Computador/Notebook Lento,Em espera
+7724800,12/21/2024,,,No Prazo,APARELHO COM DIFICULDADE LANÇA,Raissa Cardoso (OPE FEC),TMS,Mateus Menezes (TI MTZ),Problema com Alerta e Bloqueio,Aberto
+7192583,7/23/2024,,,No Prazo,DIVINOPOLIS - Erro no Benner n,RENATO NASCIMENTO,ERP,Marcus Ethur (TI MTZ),Geração de NFSe,Pendente
+7680621,12/10/2024,,,No Prazo,Automatizar a pasta VAM ,Lana Carneiro (TESOURARIA MATRIZ),ERP,Marcus Ethur (TI MTZ),Lançamentos financeiros,Pendente
+7685647,12/11/2024,,,No Prazo,ERRO AO IMPRIMIR PICKING LIST ,Fabiano Jorge (ESTOQUE MTZ),ERP,Marcus Ethur (TI MTZ),Almoxarifado,Pendente
+7105447,6/26/2024,,,No Prazo,Formulario sem preenchimento d,Viviane Oliveira (PREVPERDAS CORP),CRM,Barbara Barros (EST-TECH TI MTZ),Outros (Movidesk),Aguardando Retorno Fornecedor
+7276392,8/15/2024,,,No Prazo,[GOPE] I Baixa de ocorrências ,Matheus Henrique (CEDOC MTZ),Analistas de Sistemas,Tulio Rodrigues (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Analise
+7482185,10/14/2024,,,No Prazo,RES: DOCUMENTAÇÃO DE INTEGRAÇÃ,Solimar Nonato Vailante,EDI,Natalia Caroline (TI MTZ),Migração para API Especifica,Aguardando Retorno
+6997231,5/23/2024,,,No Prazo,WORKFLOW DE DESCONTO/CANCELAME,Tais de Oliveira (DAC MTZ),Analistas de Sistemas,Joel Martins(TI MTZ),Assistente DAC,Pendente
+7254822,8/8/2024,8/9/2024,,No Prazo,7254822 - Falha na aba oportun,Patrícia Ramos (CML RIO),Analistas de Sistemas,Tulio Rodrigues (TI MTZ), Falha no funil de vendas,Aberto
+7195722,7/23/2024,,,No Prazo,Reset de Senha - Qulture Rocks,Edjane Porto (RH FEC),TMS,Tulio Rodrigues (TI MTZ),Origem Infra,Pendente
+7343668,9/4/2024,,,No Prazo,[GOPE] - Inclusão de um proces,Márcio Henrique Ferreira,Analistas de Sistemas,Joel Martins(TI MTZ),Gestão Operacional,Aguardando Analise
+7513200,10/22/2024,,,No Prazo,[GEDI] - INTEGRAÇÃO EDI SAS SI,Natalia Caroline (TI MTZ),Analistas de Sistemas,Joel Martins(TI MTZ),Api Cliente,Testes Internos
+6696082,2/27/2024,,,No Prazo,[GLOP] Mudanças em processo de,Caio Botelho (COORD LEAN),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Aguardando Analise
+5640514,2/23/2023,,,No Prazo,[ADM] Assinatura de recebiment,Joyce Dias (TES MTZ),Analistas de Sistemas,Paulo Silva (TI MTZ),Malote Online,Aguardando Validação Inicial
+6778427,3/22/2024,3/22/2024,,No Prazo,ERRO DE SISTEMA GRAVE!!!!!!!!!,PA Catanduva,TMS,Tulio Rodrigues (TI MTZ),Pedido de Coleta,Aberto
+6740142,3/12/2024,,,No Prazo,[API] Criar API para expor com,Andrea Rocha (TRACK & TRACE),Analistas de Sistemas,Tulio Rodrigues (TI MTZ),Api Fornecedor,Aguardando Analise
+7691525,12/12/2024,,,No Prazo,Permissão de acesso,Crislaine Dua Santos,TMS,Mateus Menezes (TI MTZ),Permissão GRIS,Aguardando Aprovação
+6881497,4/22/2024,,,No Prazo,Calculo ICMS desonerado,Steffani Rodrigues (FISCAL MTZ),ERP,Marcus Ethur (TI MTZ),Apuração de tributos,Pendente
+7280181,8/16/2024,,,No Prazo,Integração de lotes via contab,Diogo Silva (CONTABILIDADE MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Fechamento contábil/Fiscal,Pendente
+7075085,6/17/2024,,,No Prazo,[ADGV] Adição de duas novas et,Joyce Dias (TES MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Gestão de Viagens,Aguardando Analise
+7660443,12/5/2024,,,No Prazo,Cliente Dakota não recebe fatu,Gabriela Albrecht (GERUND QHV),ERP,Marcus Ethur (TI MTZ),Alteração ,Pendente
+7674287,12/9/2024,12/9/2024,,No Prazo,ETIQUETAS COM ERRO DE INTEGRAÇ,Silverio Correia (PrevPerdas CON),TMS,Vitor Gomes (TI MTZ),Etiquetas EDI,Novo
+7300015,8/22/2024,,,No Prazo,Atualização de fluxo do workfl,Caroline Loize (RB MTZ),ERP,Amanda Ferreira (TI MTZ),RH Workflow de Desligamento,Pendente
+6648866,2/12/2024,,,No Prazo,[ADGV] Relatório por tipo de d,Natanael Vitor Borges,Analistas de Sistemas,Amanda Ferreira (TI MTZ),Gestão de Viagens,Em Analise
+7706720,12/17/2024,,,No Prazo,Acesso Power Apps ,Leonardo Correa (OPE CPQ),CRM,Tulio Rodrigues (TI MTZ),Power Apps,Em Analise
+6857257,4/15/2024,,,No Prazo,[GLOP] Agrupador de entregas p,Andrea Rocha (TRACK & TRACE),Analistas de Sistemas,Tulio Rodrigues (TI MTZ),Portal Track & Trace,Aguardando Analise
+5803386,4/28/2023,,,No Prazo,[EST] Bloquear entrada de mate,Jose Parreiras (COMPRAS MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Materiais,Aguardando Analise
+7543291,10/31/2024,,,No Prazo,[RH] Projeto Admissão Digital ,Erika Vieira (GER RH MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),RH - Workflow Benner,Em Desenvolvimento
+7575798,11/11/2024,,,No Prazo,[RH] Desligamento - Ocultar ca,Cléria Centa (ADM QHV),Analistas de Sistemas,Amanda Ferreira (TI MTZ),RH - Workflow Benner,Aguardando Analise
+6954923,5/13/2024,,,No Prazo,[COTMP] Agreg. Represados - Al,Clayton Cezar da Silva,Analistas de Sistemas,Amanda Ferreira (TI MTZ),Financeiro,Testes Internos
+7395694,9/18/2024,,,No Prazo,SPED não está levando a inform,Steffani Rodrigues (FISCAL MTZ),ERP,Joselito Almeida (TI MTZ),SPED – ICMS,Pendente
+7533372,10/29/2024,,,No Prazo, Escrituração do Registro 1400,Lozânia Azevedo (FISCAL MTZ),ERP,Joselito Almeida (TI MTZ),Apuração de tributos,Pendente
+7724537,12/20/2024,1/2/2025,,No Prazo,(SA) - Rever status da OS MPI.,Suporte ERP/Sênior (Solicitante),ERP,Giovanni Campos (TI MTZ),Sem abertura via Solicitante - ERP,Aberto
+7363834,9/10/2024,,,No Prazo,Benner exclui documentos de re,Simone Fernandes (CAP MTZ),ERP,Joselito Almeida (TI MTZ),Correção/manutenção layouts bancários,Pendente
+7014664,5/29/2024,,,No Prazo,Ocorrência de baixa de alguns ,Camille Martins (CAR MTZ),ERP,Joselito Almeida (TI MTZ),Remessa Bancária,Pendente
+5886806,5/31/2023,,,No Prazo,[FAT] Automatizar processo de ,Richard Aguiar (FAT MTZ),ERP,Fernanda Cassiano (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Pendente
+5801841,4/28/2023,,,No Prazo,[CUSTOS] Incluir nos layout de,Gleison Costa (CUSTOS MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Custos,Aguardando Analise
+7501659,10/18/2024,,,No Prazo,Divergências no relatório  BL_,Wilson Barbosa (Orçamentos MTZ),ERP,Joselito Almeida (TI MTZ),Fechamento contábil/Fiscal,Pendente
+7699319,12/16/2024,,,No Prazo,PERMISSÃO PARA FINALIZAR DOC C,Ayeska Souza (SIC DIQ),TMS,,Permissão Perdas e Danos,Aguardando Aprovação
+7724757,12/21/2024,12/23/2024,,No Prazo,Sem arquivo EDi,Jayne Pereira (EXP CPQ),EDI,,Nota não importada,Novo
+7212406,7/29/2024,,,No Prazo,[GOPE] - Reconferencia aleatór,Henrique Souza,Analistas de Sistemas,,Gestão Operacional,Aguardando Analise
+7139268,7/8/2024,,,No Prazo,Erro no Unitizador N° 631974 -,Matheus Souza de Almeida,TMS,,Liberar documento pendente em viagem,Aguardando Aprovação
+6747035,3/13/2024,,,No Prazo,[GOPE] - Duas Melhorias para o,Luan Vinicius (CEDOC MTZ),Analistas de Sistemas,,Malote Online,Aguardando Analise
+6304775,10/25/2023,,,No Prazo,RES: Ajuste dos relatórios: Co,Steffani Rodrigues (FISCAL MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Financeiro,Aguardando Analise
+6366455,11/14/2023,,,No Prazo,Lançamento de Despesa de Energ,Diogo Silva (CONTABILIDADE MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Contábil,Aguardando Analise
+5900253,6/6/2023,,,No Prazo,Fluxo de cancelamentos - Abas ,Renato Nascimento (FISCAL MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Comercial,Aguardando Desenvolvimento
+7272303,8/14/2024,,,No Prazo,[GOPE] - Validação dos limitad,Thiago Pereira,Analistas de Sistemas,,Patrus Tech,Aguardando Analise
+7694718,12/13/2024,,,No Prazo,Liberação das permissões de ac,Joslaine Felizardo,TMS,,Permissão Perdas e Danos,Aguardando Aprovação
+7459429,10/7/2024,,,No Prazo,[Patrus Tech] - Criar forma de,Caio Botelho (COORD LEAN),Analistas de Sistemas,,Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Analise
+7723611,12/20/2024,12/23/2024,,No Prazo,7723611 -  Dificuldade de Uso ,Vitor de Andrade,CRM,Ricardo Santos (TI MTZ),Outros (Movidesk),Aberto
+7590600,11/14/2024,,,No Prazo,[PatrusTech] - Bloquear a incl,Henrique Souza,Analistas de Sistemas,,Patrus Tech,Aguardando Analise
+7619152,11/25/2024,,,No Prazo,[GOPE] Inclusão de informações,Maria Taliuli (OPEX),Analistas de Sistemas,,Gestão de Volumes,Aguardando Analise
+7702912,12/16/2024,,,No Prazo,CARRO EXTRA FLN-VIX,Tatiana Disner (EXP FLN),TMS,,Autorização Checklist,Aguardando Aprovação
+7284648,8/19/2024,,,No Prazo,Carregador estragado ,Gustavo Marques Souza,Aprovadores,,Solicitação Notebook,Aguardando Aprovação
+6702552,2/29/2024,,,No Prazo,Gerar e-mail automático - 6702,Ester Aguilar (ESTOQUE MTZ),Analistas de Sistemas,,Materiais,Pendente
+7692866,12/13/2024,,,No Prazo,DIVERGÊNCIA EM LEITURA / CARGA,Alef Willian (EXP FEC),TMS,,Permissão para emissão de RPS,Aguardando Aprovação
+7062816,6/13/2024,,,No Prazo,[WES] - Inclusão de descontos ,Carolina Guimaraes (OPEX - PO),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Outros,Aguardando Analise
+6199220,9/22/2023,,,No Prazo,[FAT] JUROS DE CONTRATOS DE CL,Carla Santos (CAR MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Financeiro,Aguardando Analise
+6177210,9/15/2023,,,No Prazo,[GOPE] Identificação de notas ,Fernanda Cassiano (TI MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Outros,Aguardando Analise
+7212537,7/29/2024,7/29/2024,,No Prazo,Envio de EDI sem anexo,Natalia Caroline (TI MTZ),TMS,João Santos (TI MTZ),Cadastro de Cliente,Aguardando Analise
+7534488,10/29/2024,10/29/2024,,No Prazo,Numero de telefone disponivel ,Andrea Rocha (TRACK & TRACE),TMS,João Santos (TI MTZ),Track & Trace,Novo
+7446926,10/3/2024,,,No Prazo,Enterprise BackLog I Nova Soli,Andrea Rocha (TRACK & TRACE),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Aguardando Analise
+7550290,11/1/2024,,,No Prazo,Enterprise BackLog I Nova Soli,Ana Júlia,Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão de Volumes,Aguardando Informações do Solicitante
+7367631,9/11/2024,,,No Prazo,LIBERAR PESQUISA,Roger Silva (EXP QHV),TMS,,Demanda de outro setor,Aguardando Aprovação
+7675264,12/9/2024,,,No Prazo,RES: Fat 24-11-914450 Venc 27/,Renata Magalhaes,EDI,Euller Vieira (TI MTZ),Analise de Informação do Arquivo de retorno,Aguardando Retorno
+7661645,12/5/2024,,,No Prazo,Liberação de acesso ,Júlia Assis,ERP,Marcelo Augusto (TI MTZ),Geração de faturas,Pendente
+7147450,7/9/2024,7/9/2024,,No Prazo,[GCOM] - Alteração de Vigência,Andrey Prado (GER GESTAO MTZ),TMS,Marcus Vinícius (TI MTZ),Contrato Comercial,Aguardando Validação Inicial
+6548394,1/9/2024,,,No Prazo,GCOM - Reajuste de tabela de p,Andrey Prado (GER GESTAO MTZ),Analistas de Sistemas,,Gestão Comercial,Aguardando Analise
+7476932,10/11/2024,,,No Prazo,CADASTRO DE PRAZO DE ENTREGA P,Tais de Oliveira (DAC MTZ),TMS,Paulo Souza  (TI MTZ),Assistente DAC,Aguardando Correção
+7150687,7/10/2024,7/10/2024,,No Prazo,[GLOG] - Cadastro de multiplos,Flavia Velasco (CML CON),TMS,Marcus Vinícius (TI MTZ),Criar Usuário,Aguardando Validação Inicial
+7322243,8/28/2024,8/28/2024,,No Prazo,ALTERAÇÃO DE STATUS DO CONTRAT,Giovanna Correia (COT MTZ),TMS,João Santos (TI MTZ),CIOT,Em Analise
+6851926,4/12/2024,4/16/2024,,No Prazo,[GLGL] Consulta de leitura Nat,Alisson Jesus (OPE SSA),Analistas de Sistemas,Joao Paulo (TI MTZ),Ajuste Relatorio CRM,Aguardando Informações do Solicitante
+6139302,9/1/2023,,,No Prazo,[MOBILE]Criar um APP para cont,Caio Botelho (COORD LEAN),Analistas de Sistemas,Paulo Silva (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Retorno
+7569676,11/7/2024,,,No Prazo,Enterprise BackLog I Nova Soli,Andrea Rocha (TRACK & TRACE),Analistas de Sistemas,Paulo Silva (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Validação Inicial
+7327880,8/30/2024,,,No Prazo,7327880 - Interação Serviços M,Bener Paulo (TRAFEGO),CRM,Barbara Barros (EST-TECH TI MTZ),Criação/Alteração de filtro,Aguardando Retorno Fornecedor
+7155444,7/11/2024,,,No Prazo,7155444 - Email não entrou no ,Wanessa Gomes (CUSTOMER CARE QHV),CRM,Ricardo Santos (TI MTZ), Falha no serviço de e-mail,Aguardando Retorno Fornecedor
+5550210,1/18/2023,,,No Prazo,[GOPE] I Controle de pallets -,Alex dos Santos (EXP MTZ),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Em Analise
+6134870,8/31/2023,,,No Prazo,[GOPE] Fluxo de desconto de ag,Fernanda Cassiano (TI MTZ),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Em Analise
+7091441,6/21/2024,,,No Prazo,Teste: Integração de notas Bec,Steffani Rodrigues (FISCAL MTZ),TMS,Tulio Rodrigues (TI MTZ),Homologação Benner 5.0,Aberto
+7459935,10/7/2024,,,No Prazo,[GOPE] Alerta sonoro na ticage,Caio Botelho (COORD LEAN),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Aguardando Analise
+6157865,9/9/2023,,,No Prazo,[Porta Palete] - Melhoria na r,Camila Pascucci (ENCOPE CPQ),Analistas de Sistemas,Paulo Silva (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Retorno
+7622751,11/25/2024,,,No Prazo,[API] Novo Roteirizador - Melh,Paulo Silva (TI MTZ),Analistas de Sistemas,Paulo Silva (TI MTZ),Api Fornecedor,Em Desenvolvimento
+6672115,2/20/2024,,,No Prazo,GOPE - Evolução na liberação d,Victor Okubo (DAC MTZ),Analistas de Sistemas,Tulio Rodrigues (TI MTZ),Gestão Operacional,Aguardando Analise
+7074894,6/17/2024,,,No Prazo,TESTE - CTE SUBSTITUTO - EXEMP,Steffani Rodrigues (FISCAL MTZ),TMS,Tulio Rodrigues (TI MTZ),Homologação Benner 5.0,Aguardando Desenvolvimento
+7242305,8/6/2024,8/6/2024,,No Prazo,Erro instalação de Driver - Al,PEDRO RAFAEL MESCENA,TMS,Tulio Rodrigues (TI MTZ),Erro de Impressão,Novo
+5908424,6/9/2023,,,No Prazo,Bloqueio de recebimento fiscal,Steffani Rodrigues (FISCAL MTZ),ERP,Marcus Ethur (TI MTZ),Apuração de tributos,Pendente
+6900547,4/25/2024,,,No Prazo,Ajuste fluxo de recusa de RQs,JOAO VICTOR LEMOS RODRIGUES,ERP e Senior,Marcus Ethur (TI MTZ),Alteração ,Pendente
+6140255,9/1/2023,,,No Prazo,[GOPE] Ajustar sistema para qu,Caio Botelho (COORD LEAN),Analistas de Sistemas,Tulio Rodrigues (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Retorno
+7621111,11/25/2024,,,No Prazo,[CEDOC] Processo para arquivam,Luan Vinicius (CEDOC MTZ),Analistas de Sistemas,Tulio Rodrigues (TI MTZ),Gestão Operacional,Suspenso
+7007154,5/28/2024,,,No Prazo,[GOPE] Registro de quebra do p,Andrea Rocha (TRACK & TRACE),Analistas de Sistemas,Tulio Rodrigues (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Analise
+7548538,11/1/2024,,,No Prazo,ATUALIZAÇÃO NO FORMATO DO EDI ,gestao3@lorenzetti.com.br,EDI,Natalia Caroline (TI MTZ),Mudança de Processo/Layout,Aguardando Retorno
+7695985,12/13/2024,,,No Prazo,Sem  emissão ,Marciel Pires (OPE UDI),EDI,Natalia Caroline (TI MTZ),Nota não importada,Aguardando Retorno
+7713874,12/18/2024,,,No Prazo,ENC: Tabela de Frete - Aprovad,Kellin Daiane (CML QHV),EDI,Natalia Caroline (TI MTZ),Layout Padrão,Aguardando Retorno
+7441355,10/1/2024,,,No Prazo,[COT] Ajuste no campo de Respo,Jhonatan Lima (MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Outros,Aguardando Analise
+7591237,11/14/2024,,,No Prazo,erro relatório comparado ao Ra,Joyce Dias (TES MTZ),ERP,Amanda Ferreira (TI MTZ),Portal Gestão de Viagens,Pendente
+7341247,9/3/2024,,,No Prazo,Parâmetro Prazo de Cancelament,RENATO NASCIMENTO,ERP,Marcus Ethur (TI MTZ),Geração de NFSe,Pendente
+7574398,11/8/2024,,,No Prazo,API Brudam  - INOVAMED HOSPITA,Natalia Caroline (TI MTZ),Analistas de Sistemas,Joel Martins(TI MTZ),Api Cliente,Homologando
+7305012,8/23/2024,,,No Prazo,[COT] Refatoração Agregados Re,Caio Almeida (COT MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Outros,Aguardando Analise
+7722188,12/20/2024,,,No Prazo,REINSTALAÇÃO/PARAMETRIZAÇÃO DE,Bárbara Marques,ERP,Giovanni Campos (TI MTZ),Relógios de Ponto,Pendente
+7337296,9/2/2024,,,No Prazo,[COMPRAS] Possibilitar informa,Marco Aurélio (TI MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Suprimentos,Aguardando Analise
+7280705,8/16/2024,,,No Prazo,Ajuste lançamentos combustívei,Frederico Bruno (FISCAL MTZ),ERP,Joselito Almeida (TI MTZ),Recebimento fiscal,Pendente
+6836299,4/9/2024,,,No Prazo,[GOPE] Sincronizar informações,Josianne,Analistas de Sistemas,,Gestão Operacional,Aguardando Analise
+6225594,10/2/2023,,,No Prazo,[GOPE] Alçada de aprovação par,Viviane Oliveira (PREVPERDAS CORP),Analistas de Sistemas,,Gestão Operacional,Aguardando Analise
+7482206,10/14/2024,,,No Prazo,API  FRIOVIX COMERCIO - 748220,Natalia Caroline (TI MTZ),Analistas de Sistemas,Joel Martins(TI MTZ),Api Cliente,Aguardando Desenvolvimento
+7088976,6/20/2024,,,No Prazo,Preenchimento automático de Ap,Aline Silva (CUSTOS MTZ),ERP,Marcus Ethur (TI MTZ),Contratos / apontamentos,Pendente
+7547594,11/1/2024,,,No Prazo,[GCOM] Classificação de client,Andrey Prado (GER GESTAO MTZ),Analistas de Sistemas,Joel Martins(TI MTZ),Gestão Comercial,Aguardando Analise
+7359259,9/9/2024,,,No Prazo,[PatrusTech] - Inclusão de Ins,Tulio Rodrigues (TI MTZ),Analistas de Sistemas,Joel Martins(TI MTZ),Patrus Tech,Aguardando Desenvolvimento
+7714848,12/19/2024,,,No Prazo,Liberação de acesso ,Rodrigo Rocha (ENCOPE CAW),TMS,,Autorização Checklist,Aguardando Aprovação
+7724523,12/20/2024,12/23/2024,,No Prazo,DT nao importada,RUAN.RABELO,EDI,,Nota não importada,Novo
+7723968,12/20/2024,12/24/2024,,No Prazo,Reset senha Wappi,Audria,ERP,,Origem Infra,Novo
+2616686,6/7/2022,6/8/2022,,No Prazo,Divergência no processamento A,Euller Vieira (TI MTZ),TMS,,Processamento NOTFIS/XML,Aberto
+7722039,12/20/2024,,,No Prazo,RES: Fat 24-12-902930 Venc 10/,Danusa Xavier (CML RIO),EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Aguardando Retorno
+6983138,5/21/2024,,,No Prazo,Mensagem de alerta,Diogo Silva (CONTABILIDADE MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),REINF,Pendente
+6529132,1/3/2024,,,No Prazo,[RHDES] Envio de e-mail ao apr,Caroline Loize (RB MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),RH - Workflow Benner,Aguardando Analise
+7724539,12/20/2024,1/2/2025,,No Prazo,(SA) - Recadastramento de Algu,Suporte ERP/Sênior (Solicitante),ERP,Giovanni Campos (TI MTZ),Sem abertura via Solicitante - Sênior,Aberto
+7436606,9/30/2024,,,No Prazo,Escrituração CTe substituto,Steffani Rodrigues (FISCAL MTZ),ERP,Joselito Almeida (TI MTZ),Apuração de tributos,Pendente
+6992204,5/22/2024,,,No Prazo,[GOPE] Criar um codigo de barr,Matheus Henrique (CEDOC MTZ),Analistas de Sistemas,,Gestão Operacional,Aguardando Analise
+7047642,6/10/2024,,,No Prazo,[GOPE] Arquivamento automático,Andrea Rocha (TRACK & TRACE),Analistas de Sistemas,,Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Informações do Solicitante
+7568672,11/7/2024,,,No Prazo,Solicitação de Automatização d,Edinéia Ferreira (RB MTZ),ERP,Kleverson Salles (TI MTZ),Criação de Telas,Pendente
+6942869,5/8/2024,,,No Prazo,[GPP] Melhorias no controle do,Maria Taliuli (OPEX),Analistas de Sistemas,,Outros,Aguardando Analise
+6067145,8/8/2023,,,No Prazo,[GOPE] Criação de um campo no ,Fernanda Cassiano (TI MTZ),Analistas de Sistemas,,Gestão Operacional,Aguardando Analise
+7720426,12/20/2024,,,No Prazo,Permissão de liberação da senh,Geraldo Deusdedet De Sa,TMS,,Permissão Perdas e Danos,Aguardando Aprovação
+7284177,8/17/2024,,,No Prazo,MAQUINA COM MUITA LENTIDÃO,Sérgio Silva (EXP RIO),Aprovadores,,Solicitação Outros Equipamentos,Aguardando Aprovação
+7540230,10/30/2024,,,No Prazo,[GOPE]Informação de cliente bl,Alex dos Santos (EXP MTZ),Analistas de Sistemas,,Gestão de Volumes,Aguardando Analise
+7639602,11/29/2024,,,No Prazo,RES: Fat 24-11-906861 Venc 20/,Danusa Xavier (CML RIO),EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Aguardando Retorno
+7665915,12/6/2024,,,No Prazo,Criação de relatório para conf,Aline Ferreira,ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Criação de Relatórios,Pendente
+7256046,8/9/2024,,,No Prazo,Sem acesso ao Site Boticário,Luana Almeida (Customer Care RIO),TMS,, Permissão de acesso,Aguardando Aprovação
+7721851,12/20/2024,,,No Prazo,CIRURGICA FERNANDES C.MAT.CIR.,Natalia Caroline (TI MTZ),Analistas de Sistemas,,Api Cliente,Aguardando Validação Inicial
+7061442,6/12/2024,,,No Prazo,Criar filtros no cadastro para,Aline Ferreira,ERP,Kleverson Salles (TI MTZ),Criação de Relatórios,Pendente
+7490509,10/16/2024,,,No Prazo,EDI,Kelly Cristina (CUSTOMER CARE QCF),EDI,Euller Vieira (TI MTZ),Analise de Informação do Arquivo de retorno,Aguardando Retorno
+6862468,4/16/2024,6/12/2024,,No Prazo,Enterprise BackLog I Nova Soli,Alef Willian (EXP FEC),Analistas de Sistemas,,Criação Relatório - Alta,Aguardando Validação Inicial
+7724540,12/20/2024,1/2/2025,,No Prazo,(SA) - Recontabilização de mat,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Sem abertura via Solicitante - ERP,Aberto
+7370985,9/11/2024,9/16/2024,,No Prazo,Emissão de etiqueta para o des,Lucas Rosa (EXP CPQ),TMS,Marcus Vinícius (TI MTZ),Analise Etiqueta de Cliente,Novo
+7704552,12/17/2024,,,No Prazo,Liberar mesmos acessos para Jo,Daiane Ladevig (OPE BNU),TMS,Anna Silva (TI MTZ),Permissão Não Liberar mais Documento,Aguardando Aprovação
+6470560,12/14/2023,,,No Prazo,[GEDI] API integração multisof,Steffani Rodrigues (FISCAL MTZ),Analistas de Sistemas,Joao Paulo (TI MTZ),Api Cliente,Aguardando Analise
+7485438,10/14/2024,,,No Prazo,[COT] IMPORTAÇÃO XML DO CTE E ,Caio Almeida (COT MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Controladoria,Homologando
+7257132,8/9/2024,,,No Prazo,Inclusão do contato no relatór,PEDRO RAFAEL MESCENA,Analistas de Sistemas,,Criação ,Aberto
+7458675,10/7/2024,,,No Prazo,[GOPE] - Validar solução de re,Andrea Rocha (TRACK & TRACE),Analistas de Sistemas,,Api Fornecedor,Aguardando Analise
+7661611,12/5/2024,,,No Prazo,Modelo - troca de arquivos API,Unknown,EDI,Euller Vieira (TI MTZ),Layout Padrão,Aguardando Retorno
+7019217,5/31/2024,,,No Prazo,[FISCAL] Mostrar opção se é op,Dulcineide Chagas (FISCAL MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Fiscal,Aguardando Analise
+6108282,8/22/2023,,,No Prazo,Geração Automática Faturas - B,Hugo Silva (FAT MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Financeiro,Aguardando Analise
+7150046,7/10/2024,,,No Prazo,Criar uma forma de evitar que ,Andrea Rocha (TRACK & TRACE),TMS,,Criação/Alteração Alerta e Bloqueio,Novo
+7168269,7/16/2024,,,No Prazo,[GOPE] - Ajuste na regra de in,Gabriel Santos (OPE VIX VIX),Analistas de Sistemas,,Gestão Operacional,Aguardando Analise
+7482364,10/14/2024,,,No Prazo,Erro impressão Senior,Camilly Silva (EST-TI CPQ),ERP,Kleverson Salles (TI MTZ),Erro no Relatório,Pendente
+7542747,10/31/2024,,,No Prazo,CRIAR RELATORIO - RELAÇÃO DE B,Edinéia Ferreira (RB MTZ),ERP,Kleverson Salles (TI MTZ),Criação de Relatórios,Pendente
+6937127,5/7/2024,5/7/2024,,No Prazo,Não é possível inserir a pré-o,Gabriel Santos (OPE VIX VIX),TMS,Paulo Souza  (TI MTZ),Ocorrência,Em Analise
+7534294,10/29/2024,10/29/2024,,No Prazo,ERRO - Usuário de agencia gera,Andrea Rocha (TRACK & TRACE),TMS,Paulo Souza  (TI MTZ),Track & Trace,Novo
+7724542,12/20/2024,1/2/2025,,No Prazo,(SA) - Atualização Documentaçã,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Sem abertura via Solicitante - ERP,Aberto
+7151680,7/10/2024,,,No Prazo,PARÂMETRO AGRUPAMENTO  ,Breno Luiz (COT MTZ),TMS,Marcus Vinícius (TI MTZ),Homologação Benner 5.0,Aguardando Correção
+7708761,12/18/2024,,,No Prazo,7708761 - Desabilitar Função d,Juliana Gomes (Customer Care QHV),CRM,Ricardo Santos (TI MTZ),Criação/Alteração de perfil de acesso,Aguardando Retorno Usuário
+7628107,11/26/2024,,,No Prazo,7628107 - Email não entrou do ,Wanessa Gomes (CUSTOMER CARE QHV),CRM,Ricardo Santos (TI MTZ), Delay na importação de e-mails,Aguardando Retorno Fornecedor
+7721135,12/20/2024,,,No Prazo,7721135 - ALTERAR ASSINATURA -,Helena Pelizaro (SIC/CQO FRC),CRM,Ricardo Santos (TI MTZ),Incluir assinatura no cadastro,Aguardando Retorno Usuário
+7661518,12/5/2024,12/5/2024,,No Prazo,Informação Campo Observações I,Hugo Silva (FAT MTZ),TMS,João Santos (TI MTZ),Impressão de CT-e,Aberto
+7099596,6/25/2024,,,No Prazo,[JURI] Adequação do campo de d,Mariana Sousa (JUR MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Portal Jurídico,Em Analise
+7716461,12/19/2024,,,No Prazo,BENNER  - ENVIO XML - CTE ,Andrea Voges (CUSTOMER CARE QHV),TMS,João Santos (TI MTZ), Alteração Relatórios/Dashboard - Alta,Aguardando Retorno
+6340358,11/7/2023,,,No Prazo,[GOPE] Inclusão de ocorrências,Andrea Rocha (TRACK & TRACE),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Aguardando Analise
+6274864,10/17/2023,,,No Prazo,[GOPE] Fluxo de recibo de quit,Fernanda Cassiano (TI MTZ),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Aguardando Analise
+7438916,10/1/2024,,,No Prazo,PORTAL - Projeto Coletas - Cri,Rafaela Mathias (CUSTOMER SERVICES MTZ),Analistas de Sistemas,Joao Paulo (TI MTZ),Portal de Clientes,Em Analise
+5683214,3/10/2023,,,No Prazo,[GOPE] Horário de corte para e,Andrea Rocha (TRACK & TRACE),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Aguardando Desenvolvimento
+7460034,10/7/2024,,,No Prazo,[GOPE] Coluna de remessa NATUR,Caio Botelho (COORD LEAN),Analistas de Sistemas,Joao Paulo (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Informações do Solicitante
+6442114,12/6/2023,,,No Prazo,[GOPE] Projeto Novo Roteirizad,Paulo Silva (TI MTZ),Analistas de Sistemas,Paulo Silva (TI MTZ),Api Fornecedor,Aguardando Analise
+7548479,11/1/2024,,,No Prazo,7548479 - Criação de pasta par,Sonia Roberta (SEGPART MTZ),CRM,Barbara Barros (EST-TECH TI MTZ),Criação/Alteração de formulário,Aguardando Retorno Usuário
+7572756,11/8/2024,,,No Prazo,Integração sistema Brudam  - c,Alberto Neto (CML PPY),EDI,Natalia Caroline (TI MTZ),Layout Específico,Aguardando Retorno
+7712680,12/18/2024,,,No Prazo,Ct-e 001909217 - 7712680,Raquel Andrade Matos,EDI,Natalia Caroline (TI MTZ),EDI,Aguardando Retorno
+6471033,12/14/2023,,,No Prazo,[GOPE] Arquivamento automático,Luan Vinicius (CEDOC MTZ),Analistas de Sistemas,Joel Martins(TI MTZ),Gestão Operacional,Em Analise
+6588969,1/23/2024,,,No Prazo,GLOP - Envio de e-mail quando ,Lucas Rosa (EXP CPQ),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Aguardando Analise
+7452980,10/4/2024,,,No Prazo,[GOPE] Track&Trace: Tickets nã,Andrea Rocha (TRACK & TRACE),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Aguardando Analise
+5990767,7/11/2023,,,No Prazo,[GOPE] Motivo para documento r,Andrei Santos (COORD SAJ),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Aguardando Informações do Solicitante
+6052958,8/2/2023,,,No Prazo,[GV] Criar forma de enviar um ,David Costa (OPE MTZ),Analistas de Sistemas,Paulo Silva (TI MTZ),Gestão Operacional,Aguardando Informações do Solicitante
+7631144,11/27/2024,,,No Prazo,7631144 - email nao recebido ,Gleiciane Parreiras (COORD CS REG MG),CRM,Barbara Barros (EST-TECH TI MTZ), Delay na importação de e-mails,Aguardando Retorno Fornecedor
+7150496,7/10/2024,7/12/2024,,No Prazo,Reset de Senha - Qulture Rocks,Edjane Porto (RH FEC),TMS,Tulio Rodrigues (TI MTZ),Origem Infra,Aberto
+7711100,12/18/2024,,,No Prazo,LIBERAR ACESSO AO CONTRATO DE ,Marina Alves Pereira de Freitas,TMS,Mateus Menezes (TI MTZ),Permissão COT,Aguardando Aprovação
+6910719,4/29/2024,,,No Prazo,[API] - Integração - Centauro ,Natalia Caroline (TI MTZ),Analistas de Sistemas,Joel Martins(TI MTZ),Api Cliente,Homologando
+7598072,11/18/2024,,,No Prazo,ALTERAÇÃO DO LAYOUT  - JOINVIL,RENATO NASCIMENTO,ERP,Marcus Ethur (TI MTZ),Alteração Layout,Pendente
+7466557,10/8/2024,,,No Prazo,VAF - DAMEF CONTAGEM - erro na,Lozânia Azevedo (FISCAL MTZ),ERP,Marcus Ethur (TI MTZ),SPED – ICMS,Pendente
+6697770,2/28/2024,,,No Prazo,[TES] Ajustes necessários após,Joyce Dias (TES MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Financeiro,Testes Internos
+7361264,9/9/2024,,,No Prazo,MUDANÇAS NA ABA MANUTENÇÃO PRE,Gabriel Coelho (MAN PREDIAL MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Módulo Manut. Predial,Pendente
+6552564,1/10/2024,,,No Prazo,[Patrus Tech] Alerta sonoro po,Caio Botelho (COORD LEAN),Analistas de Sistemas,Tulio Rodrigues (TI MTZ),Patrus Tech,Aguardando Analise
+6679292,2/22/2024,,,No Prazo,Enterprise BackLog I Nova Soli,Marcus Vinícius (TI MTZ),Analistas de Sistemas,Tulio Rodrigues (TI MTZ),Gestão Operacional,Aguardando Retorno
+7050060,6/10/2024,,,No Prazo,[GOPE] - Controle de filiais a,Henrique Souza,Analistas de Sistemas,Joel Martins(TI MTZ),Gestão de Volumes,Em Analise
+7690757,12/12/2024,,,No Prazo,Liberar contratos - Marum,globalmanutencaopredial,ERP,Marcus Ethur (TI MTZ),Contratos / apontamentos,Pendente
+7451513,10/4/2024,10/9/2024,,No Prazo,Indução carga Estamparia,Welbert Rafael (LIDEROPE MTZ),TMS,Vitor Gomes (TI MTZ),Analise Etiqueta de Cliente,Aberto
+6777190,3/21/2024,,,No Prazo,Enterprise BackLog I Nova Soli,Isabela Rodrigues,Analistas de Sistemas,Daiane Correa (PROJETOS MTZ),Enterprise Backlog,Aguardando Validação Inicial
+7543439,10/31/2024,,,No Prazo,[RH] Projeto Admissão Digital ,Erika Vieira (GER RH MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),RH - Workflow Benner,Aguardando Analise
+7625063,11/26/2024,,,No Prazo,WORKFLOW DE DESCONTO/CANCELAME,Warlison Gomes (DAC MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Outros,Pendente
+7528292,10/28/2024,,,No Prazo,Criação de um relatório Contáb,Clayton Cezar da Silva,ERP,Joselito Almeida (TI MTZ),Fechamento contábil/Fiscal,Pendente
+7722036,12/20/2024,,,No Prazo,RES: Fat 24-12-902955 Venc 10/,Danusa Xavier (CML RIO),EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Aguardando Retorno
+6164022,9/12/2023,,,No Prazo,[COMPRAS] Vínculo da requisiçã,Alcir Dias (COMPRAS),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Suprimentos,Aguardando Analise
+7238506,8/5/2024,,,No Prazo,Enviar observações das pendênc,Helena Freitas (RB MTZ),ERP,Kleverson Salles (TI MTZ),Criação de Regras,Pendente
+7666093,12/6/2024,,,No Prazo,[COMPRAS] Melhorias na rotina ,Matheus Gomes (Compras MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Suprimentos,Aguardando Analise
+7499978,10/18/2024,,,No Prazo,Depreciação pela vida util,Diogo Silva (CONTABILIDADE MTZ),ERP,Joselito Almeida (TI MTZ),Fechamento contábil/Fiscal,Pendente
+7632044,11/27/2024,,,No Prazo,Webservice Sênior - Recrutamen,Amanda Ferreira (TI MTZ),Analistas de Sistemas,,Recrutamento e Seleção,Aguardando Validação Inicial
+7724689,12/21/2024,12/23/2024,,No Prazo,Espaço banho com problemas par,Eduardo Oliveira (EXP CPQ),EDI,,Ajuste POSFRETE,Novo
+7708078,12/17/2024,,,No Prazo,RES: JP DIAGNÓSTICA - Integraç,Elisabete Agostinho,EDI,Euller Vieira (TI MTZ),Layout Padrão,Aguardando Retorno
+7267011,8/13/2024,,,No Prazo,[AED] Filtrar para não aparece,Joselito Valadares (GERCONTAB MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Portal Aprovação Eletrônica de Documentos,Aguardando Desenvolvimento
+6690837,2/26/2024,,,No Prazo,[GOPE] Identificação de pendên,Laisly Fernandes,Analistas de Sistemas,,Gestão Operacional,Aguardando Analise
+7291739,8/20/2024,8/21/2024,,No Prazo,PUIG - PRIORIDADE DE ENTREGA -,PUIG BRASIL COMERCIALIZADORA DE PERFUMES LTDA (04.177.443/0008-80),STI,,Prioridade de Entrega,Aberto
+7518164,10/23/2024,,,No Prazo,[PORTAL] - Workflow de descont,Flavia Velasco (CML CON),Analistas de Sistemas,,Portal de Clientes,Aguardando Analise
+7518643,10/24/2024,,,No Prazo,[COT] IMPORTAÇÃO DA NFSE EMITI,Caio Almeida (COT MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Controladoria,Aguardando Analise
+7373725,9/12/2024,,,No Prazo,Ajuste Tag XML - LABOR - 73737,Hugo Silva (FAT MTZ),EDI,Euller Vieira (TI MTZ),Analise de Informação do Arquivo de retorno,Aguardando Retorno
+7632702,11/27/2024,,,No Prazo,Webservice Sênior - Recrutamen,Amanda Ferreira (TI MTZ),Analistas de Sistemas,,Recrutamento e Seleção,Aguardando Validação Inicial
+7710901,12/18/2024,,,No Prazo,SEM EMISÃO ,Marciel Pires (OPE UDI),EDI,Euller Vieira (TI MTZ),Recepção de NOTFIS/XML,Aguardando Retorno
+1715629,6/23/2021,,,No Prazo,[CONTRATOS] Alerta de contrato,Larissa de Souza (GESTAO TERCEIROS MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Suprimentos,Testes Internos
+7195823,7/23/2024,,,No Prazo,[GFAT] - Inclusão Informações ,Hugo Silva (FAT MTZ),Analistas de Sistemas,,Gestão Faturamento,Aguardando Analise
+7309136,8/26/2024,,,No Prazo,BI - OPEX > Cubagem Tempo Real,Maria Taliuli (OPEX),TMS,, Erro no relatório/Dashboard/KPI - Alta,Aguardando Aprovação
+5909055,6/9/2023,,,No Prazo,[GEOP] Mudança em seleção de d,Marcos Alexandre (TRAFEGO),Analistas de Sistemas,,Gestão Operacional,Aguardando Analise
+7672494,12/9/2024,,,No Prazo,[GOPE] - Sinalizar ao colabora,Andrea Rocha (TRACK & TRACE),Analistas de Sistemas,,Gestão Operacional,Aguardando Analise
+7504316,10/19/2024,,,No Prazo,Devolução AVON - 7504316,Marciel Pires (OPE UDI),TMS,,Dúvidas/Suporte no processo de EDI,Aguardando Aprovação
+7683329,12/11/2024,,,No Prazo,"Pasta VAM Bradesco - Marum, MM",Lana Carneiro (TESOURARIA MATRIZ),ERP,Marcus Ethur (TI MTZ),Retorno Bancário,Pendente
+6605218,1/26/2024,,,No Prazo,Comando de Impressão de CT-e,Eduardo Oliveira (EXP CPQ),TMS,Vitor Gomes (TI MTZ),Impressão de CT-e,Aguardando Correção
+7603659,11/19/2024,,,No Prazo,Criar Alerta para Expedição qu,Flavia Velasco (CML CON),TMS,Vitor Gomes (TI MTZ),Criação/Alteração Alerta e Bloqueio,Novo
+7543409,10/31/2024,,,No Prazo,[RH] Projeto Admissão Digital ,Erika Vieira (GER RH MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),RH - Workflow Benner,Aguardando Analise
+6984105,5/21/2024,,,No Prazo,Cria relatório de Filtros Movi,Ronaldo Barbosa (BENEFICIOS MTZ),ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Criação de Relatórios,Pendente
+7326715,8/29/2024,,,No Prazo,Documento Digitado por filial ,Leandro Santos (ESTOQUE MTZ),ERP,Marco Aurélio (TI MTZ),Ressuprimentos,Pendente
+7391256,9/17/2024,,,No Prazo,Criar forma de visualizar os e,Marcus Vinícius (TI MTZ),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Logística,Homologando
+6174756,9/14/2023,,,No Prazo,[BLMobile] Check list equipame,Caio Botelho (COORD LEAN),Analistas de Sistemas,Joao Paulo (TI MTZ),Outros,Aguardando Analise
+6702268,2/29/2024,,,No Prazo,[SUP] Bloquear/ou não permitir,Jose Parreiras (COMPRAS MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Materiais,Aguardando Analise
+5855234,5/19/2023,,,No Prazo,[FAT] Levantamento Informações,Hugo Silva (FAT MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Financeiro,Testes Internos
+7421666,9/25/2024,,,No Prazo,Criação de um D/ para na integ,Andrea Rocha (TRACK & TRACE),TMS,Paulo Souza  (TI MTZ),Track & Trace,Aguardando Correção
+7406023,9/20/2024,,,No Prazo,Valores em relação de pagament,Matheus Ribeiro (COT MTZ),TMS,Anna Silva (TI MTZ),Geração de financeiro,Aguardando Correção
+7720831,12/20/2024,,,No Prazo,Problema de conectividade com ,Ubiratan Santos (ENCOPE SSA),TMS,João Santos (TI MTZ),Integração CheckList,Aguardando Retorno
+7230295,8/1/2024,8/1/2024,,No Prazo,Mandaé  - Arquivo NOTFIS,Natalia Caroline (TI MTZ),TMS,João Santos (TI MTZ),Processamento NOTFIS/XML,Aguardando Analise
+7459754,10/7/2024,,,No Prazo,[GLGL] - Processo de inventári,Caio Botelho (COORD LEAN),Analistas de Sistemas,Joao Paulo (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Informações do Solicitante
+6849140,4/11/2024,,,No Prazo,[GLOP]  Inclusão de documentos,Lucas Rosa (EXP CPQ),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Aguardando Analise
+7223812,7/31/2024,,,No Prazo,[RHDES] Analise de solicitação,Cléria Centa (ADM QHV),Analistas de Sistemas,Amanda Ferreira (TI MTZ),RH - Workflow Benner,Aguardando Analise
+7280740,8/16/2024,,,No Prazo,Bloqueio para auxiliar na prev,Steffani Rodrigues (FISCAL MTZ),ERP,Joselito Almeida (TI MTZ),Recebimento fiscal,Pendente
+7363746,9/10/2024,,,No Prazo,Implantação DDA,Simone Fernandes (CAP MTZ),ERP,Joselito Almeida (TI MTZ),Correção/manutenção layouts bancários,Pendente
+7579455,11/11/2024,,,No Prazo,Enterprise BackLog I Nova Soli,Andrey Prado (GER GESTAO MTZ),Analistas de Sistemas,,Api Fornecedor,Aguardando Analise
+1544666,3/31/2021,,,No Prazo,[GOPE] Alterar relação de entr,Viviane Oliveira (PREVPERDAS CORP),Analistas de Sistemas,Paulo Silva (TI MTZ),Gestão Operacional,Aguardando Analise
+6761090,3/18/2024,3/18/2024,,No Prazo,Avon Processamento Automatico ,Rodrigo Gurgel (EXP CORP),TMS,Tulio Rodrigues (TI MTZ),Processamento NOTFIS/XML,Novo
+7403145,9/20/2024,9/21/2024,,No Prazo,CTe simplificado - Andamento,Steffani Rodrigues (FISCAL MTZ),TMS,Tulio Rodrigues (TI MTZ),Documento Cliente Divergente,Novo
+7654670,12/4/2024,,,No Prazo,RE: Solicitação Cliente 27.005,Lucas Gomes (CML FLN),EDI,Natalia Caroline (TI MTZ),Layout Padrão,Aguardando Retorno
+6140207,9/1/2023,,,No Prazo,[GOPE] - Criar processo para v,Caio Botelho (COORD LEAN),Analistas de Sistemas,Tulio Rodrigues (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Informações do Solicitante
+7562720,11/6/2024,,,No Prazo,Ticagem Eletrônica - Forma de ,Alisson Jesus (OPE SSA),Analistas de Sistemas,Tulio Rodrigues (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Validação Inicial
+7242973,8/6/2024,,,No Prazo,registro 1400 -  filiais BA,Lozânia Azevedo (FISCAL MTZ),ERP,Marcus Ethur (TI MTZ),SPED – ICMS,Pendente
+7299513,8/22/2024,,,No Prazo,Código de ajuste IPM - BA -  U,Lozânia Azevedo (FISCAL MTZ),ERP,Marcus Ethur (TI MTZ),SPED – ICMS,Pendente
+7172063,7/16/2024,7/18/2024,,No Prazo,"Erro relatório "" Documentos Im",Alexandre Magno (DAC MTZ),TMS,Vitor Gomes (TI MTZ),Ajuste Relatorio CRM,Em Analise
+7359227,9/9/2024,,,No Prazo,[GOPE] - Criar alerta para emi,Tulio Rodrigues (TI MTZ),Analistas de Sistemas,Joel Martins(TI MTZ),Gestão Operacional,Em Analise
+6637541,2/7/2024,,,No Prazo,Reativar Trava ,Leandro Santos (ESTOQUE MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Almoxarifado,Pendente
+7135889,7/5/2024,,,No Prazo,REGISTRO DE E-MAIL DE COBRANÇA,Carla Santos (CAR MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Financeiro,Aguardando Analise
+7450434,10/3/2024,,,No Prazo,Recuperação dos históricos do ,Sandra Simões (RB MTZ),ERP,Kleverson Salles (TI MTZ),Cálculo de Folha,Pendente
+7715448,12/19/2024,,,No Prazo,Faturas PATRUS - 7715448,Kevan Canali,EDI,Euller Vieira (TI MTZ),Analise de Informação do Arquivo de retorno,Aguardando Retorno
+7724821,12/21/2024,12/23/2024,,No Prazo,Verificar importação de NF's -,Gabriel Santos (OPE VIX VIX),EDI,,Recepção de NOTFIS/XML,Novo
+7531805,10/28/2024,,,No Prazo,RES: Fat 24-10-903663 Venc 08/,Ingrid Santos (CAR MTZ),EDI,Euller Vieira (TI MTZ),Ocorrências(OCORREN),Aguardando Retorno
+5639665,2/23/2023,,,No Prazo,FINANCEIRO - LIMITE DE CREDITO,Carla Santos (CAR MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Financeiro,Em Analise
+7545047,10/31/2024,,,No Prazo,PROBLEMA AO EFETIVAR OCC DE NF,Ruslana Moreira (CUSTOMER CARE CTN),TMS,Mateus Menezes (TI MTZ),Erro ocorrência agrupador,Aguardando Atualização Sistema
+7680941,12/10/2024,12/13/2024,,No Prazo,Etiqueta do cliente Estamparia,Alex dos Santos (EXP MTZ),TMS,Vitor Gomes (TI MTZ),Analise Etiqueta de Cliente,Novo
+6860125,4/15/2024,,,No Prazo,[JURI] Utilizar agenda do Port,Mariana Sousa (JUR MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Portal Jurídico,Aguardando Analise
+7478220,10/11/2024,,,No Prazo,Contabil - DIvergência na conc,Nívia Mendes Valentim (CONT MTZ),ERP,Joselito Almeida (TI MTZ),Fechamento contábil/Fiscal,Pendente
+5675698,3/8/2023,,,No Prazo,[FISCAL] Lançamentos no financ,Steffani Rodrigues (FISCAL MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Fiscal,Aguardando Analise
+7337379,9/2/2024,,,No Prazo,[CENTRAL] Rotina para atribuir,Marco Aurélio (TI MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Outros,Em Desenvolvimento
+7514145,10/23/2024,,,No Prazo,Preencher Campo Classificação ,Fernanda Cassiano (TI MTZ),ERP,Joselito Almeida (TI MTZ),Recebimento fiscal,Pendente
+6763173,3/18/2024,,,No Prazo,[GOPE] Criar Alerta para criaç,Rodrigo Gurgel (EXP CORP),Analistas de Sistemas,,Gestão Operacional,Em Analise
+2869513,9/2/2022,,,No Prazo,[MANFROT] Gestão de Lacres - J,Jefferson Oliveira (MANUT FROTAS),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Manutenção de Frotas,Aguardando Analise
+7566342,11/7/2024,,,No Prazo,Enterprise BackLog I Nova Soli,Natalia Caroline (TI MTZ),Analistas de Sistemas,,Gestão EDI,Aguardando Analise
+7694311,12/13/2024,,,No Prazo,[GOPE] Alteração na visualizaç,Luan Rodrigues (GRIS CORP),Analistas de Sistemas,,Gestão Operacional,Aguardando Analise
+7094510,6/24/2024,,,No Prazo,[GOPE] Gerar Arquivamento pela,Luan Vinicius (CEDOC MTZ),Analistas de Sistemas,,Gestão Operacional,Aguardando Analise
+6875552,4/19/2024,,,No Prazo,[Patrus TECH] Horário de class,Paulo Andrade (Gestão Automação),Analistas de Sistemas,,Gestão de Volumes,Aguardando Analise
+6673129,2/20/2024,,,No Prazo,GLGV - Criar forma de armazena,Paulo Andrade (Gestão Automação),Analistas de Sistemas,,Patrus Tech,Aguardando Analise
+7695290,12/13/2024,,,No Prazo,LIberação contrato de frete,Guilherme Simon,TMS,,Permissão COT,Aguardando Aprovação
+7204285,7/25/2024,,,No Prazo,[GOPE] - Inserção de Ocorrênci,Marcus Vinícius (TI MTZ),Analistas de Sistemas,,Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Analise
+7067482,6/14/2024,,,No Prazo,Mensagem de disponibilidade ,Leandro Santos (ESTOQUE MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Itens,Pendente
+7686122,12/11/2024,,,No Prazo,7686122 - Emails não importado,Patrícia Garcia(Customer Service CPQ),CRM,Ricardo Santos (TI MTZ), Falha no serviço de e-mail,Aguardando Retorno Fornecedor
+7228415,8/1/2024,,,No Prazo,Relatório Conciliação CTe entr,Steffani Rodrigues (FISCAL MTZ),ERP,Joselito Almeida (TI MTZ),Apuração de tributos,Pendente
+6119055,8/25/2023,,,No Prazo,Mudança no parâmetro de cálcul,Clayton Cezar da Silva,ERP,Joselito Almeida (TI MTZ),Fechamento contábil/Fiscal,Pendente
+7724580,12/20/2024,12/23/2024,,No Prazo,Fatura 24-12-905733 - 7724580,EDI TEEC,EDI,,EDI,Aberto
+7716309,12/19/2024,,,No Prazo,Enterprise BackLog I Nova Soli,Fernando Paiva (MAN MTZ),Analistas de Sistemas,,Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Validação Inicial
+6970154,5/16/2024,,,No Prazo,GCOM - Melhorias no portal de ,Andrey Prado (GER GESTAO MTZ),Analistas de Sistemas,,Outros,Aguardando Analise
+7204129,7/25/2024,,,No Prazo,Criação de Alerta e bloqueio p,Juliana Gomes (Customer Care QHV),Analistas de Sistemas,,Criação/Alteração Alerta e Bloqueio,Aguardando Validação Inicial
+7408063,9/23/2024,9/23/2024,,No Prazo,RECALCULO DE PRAZO DE ENTREGA,Tais de Oliveira (DAC MTZ),TMS,Paulo Souza  (TI MTZ),Prazo de Entrega,Em Analise
+7724541,12/20/2024,1/2/2025,,No Prazo,(SA) - Verificação de remessa ,Suporte ERP/Sênior (Solicitante),ERP,Marcelo Augusto (TI MTZ),Sem abertura via Solicitante - ERP,Aberto
+7264380,8/12/2024,,,No Prazo,criar relatório de cargas não ,Marcelo Túlio (SUP OPEX),TMS,Marcus Vinícius (TI MTZ),Criação ,Novo
+6033854,7/26/2023,,,No Prazo,[GLOP] Validação de localizaçã,Caio Botelho (COORD LEAN),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Aguardando Analise
+7161662,7/12/2024,7/16/2024,,No Prazo,SEM ACESSO AO APP MATINAL,Ludmila Soares,TMS,Tulio Rodrigues (TI MTZ),Origem Infra,Aberto
+7724680,12/21/2024,,,No Prazo,Arquivos não estão transmitind,Ygor,TMS,Isaias Oliveira (TI MTZ),Arquivo de envio Roteirizador,Aguardando Retorno
+7724885,12/21/2024,12/21/2024,,No Prazo,encerrar viagem,richel bruno,TMS,Mateus Menezes (TI MTZ),Erro ao Finalizar Viagem,Aberto
+7193743,7/23/2024,,,No Prazo,[GOPE] - Alerta ao cancelar um,Paulo Júnior (COORD TRAF MTZ),Analistas de Sistemas,,Gestão Operacional,Aguardando Analise
+7667236,12/6/2024,,,No Prazo,VBLOG - ALTERAÇÂO - 7667236,Natalia Caroline (TI MTZ),Analistas de Sistemas,,Api Cliente,Aguardando Validação Inicial
+7518032,10/23/2024,,,No Prazo,[PORTAL] - Ajuste no workflow ,Flavia Velasco (CML CON),Analistas de Sistemas,,Portal de Clientes,Aguardando Analise
+7720685,12/20/2024,,,No Prazo,SEM COLETA - Coleta Snac - 20/,NATURA COSMETICOS S.A. (71.673.990/0019-04),EDI,Euller Vieira (TI MTZ),Analise de Informação do Arquivo,Aguardando Retorno
+7613110,11/22/2024,,,No Prazo,Enterprise BackLog I Nova Soli,Lilian Junqueira (GER Financeiro),Analistas de Sistemas,,Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Validação Inicial
+7713485,12/18/2024,,,No Prazo,liberação para aprovar recibo ,Maria Brandao (LIDEROPE FEC),TMS,,Autorização de Recibo de Quitação,Aguardando Aprovação
+6668225,2/19/2024,2/21/2024,,No Prazo,Alterar município de retenção ,Frederico Bruno (FISCAL MTZ),ERP,,Recebimento fiscal,Novo
+6486588,12/19/2023,,,No Prazo,[PATRUS TECH] Melhorias Etique,Marcelo Nepomuceno (COORDOPE SSA),Analistas de Sistemas,,Patrus Tech,Aguardando Analise
+7199667,7/24/2024,,,No Prazo,[CAR] Portal de Inadimplências,Carla Santos (CAR MTZ),Analistas de Sistemas,,Outros,Aguardando Analise
+7189860,7/22/2024,,,No Prazo,[JURI] Criação de campos para ,Mariana Sousa (JUR MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Portal Jurídico,Aguardando Desenvolvimento
+7674507,12/9/2024,,,No Prazo,cadastro colaboradores REP JOI,RODRIGO DE CASTRO E SOUSA,ERP,Samuel Rodrigo Ferreira (Auxiliar TI MTZ),Ajuste de Cadastros não integrados,Pendente
+6799944,3/28/2024,,,No Prazo,[GOPE] Incluir campo observaçã,Rodrigo Gurgel (EXP CORP),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Aguardando Analise
+6448245,12/7/2023,,,No Prazo,[GOPE] - Criar processo para g,Steffani Rodrigues (FISCAL MTZ),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Aguardando Analise
+7475755,10/10/2024,,,No Prazo,[GOPE] - Automação do processo,Henrique Souza,Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Operacional,Em Analise
+6552625,1/10/2024,,,No Prazo,GV - Exibir informações do cam,Caio Botelho (COORD LEAN),Analistas de Sistemas,Joel Martins(TI MTZ),Gestão de Volumes,Em Analise
+5859814,5/22/2023,,,No Prazo,[ADGV] Alteração na disposição,Gilson Junior (ADM CORP MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Gestão de Viagens,Em Analise
+7154171,7/11/2024,,,No Prazo,[RHDES] Possibilidade de gesto,Marco Aurélio (TI MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),RH - Workflow Benner,Aguardando Analise
+7298337,8/21/2024,,,No Prazo,[AED] Possibilidade  de filtro,Diego Faria (TI MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Portal Aprovação Eletrônica de Documentos,Aguardando Analise
+7724536,12/20/2024,1/2/2025,,No Prazo,(SA) - Liberação de acesso e a,Suporte ERP/Sênior (Solicitante),ERP,Giovanni Campos (TI MTZ),Sem abertura via Solicitante - ERP,Aberto
+7654536,12/4/2024,,,No Prazo,Plástico para Plastificação ,Leandro Santos (ESTOQUE MTZ),ERP,Joselito Almeida (TI MTZ),Itens,Pendente
+7339897,9/3/2024,,,No Prazo,[GOPE] - Envio de viagens sem ,Andrea Rocha (TRACK & TRACE),Analistas de Sistemas,,Gestão Operacional,Aguardando Analise
+7713077,12/18/2024,,,No Prazo,Espelhamento de Permissões - O,Gabriel Santos (OPE VIX VIX),TMS,,Permissão Perdas e Danos,Aguardando Aprovação
+7714920,12/19/2024,,,No Prazo,RES: Fat 24-11-913608 Venc 27/,Danusa Xavier (CML RIO),EDI,Julia Andrade (APRENDIZ TI MTZ),Ocorrências(OCORREN),Aguardando Retorno
+7401675,9/19/2024,9/23/2024,,No Prazo,Relatório de Averbação Ct-e,Igor Oliveira (GRIS CORP),TMS,João Santos (TI MTZ),Erro no Relatório,Em Analise
+2527684,5/6/2022,,,No Prazo,[GCOM] Notificação de tarifa d,Renata Alves (GER SERV AO CLIENTE),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão Comercial,Aguardando Retorno
+7483115,10/14/2024,,,No Prazo,Ajuste nas ocorrências de Agen,Henrique Souza,TMS,Joao Paulo (TI MTZ),Solicitação da base de Rotas,Aguardando Correção
+6621838,2/1/2024,,,No Prazo,[GV] incluir quantidade de vol,Alisson Jesus (OPE SSA),Analistas de Sistemas,Joao Paulo (TI MTZ),Gestão de Volumes,Aguardando Analise
+6469396,12/14/2023,,,No Prazo,GOPE - Melhoria Processo Tráfe,Brenik Oliveira (TRAFEGO),Analistas de Sistemas,Paulo Silva (TI MTZ),Gestão Operacional,Aguardando Analise
+7097536,6/24/2024,,,No Prazo,Envio Boleto/fatura c/ PDF DAC,Hugo Silva (FAT MTZ),TMS,Tulio Rodrigues (TI MTZ),Gestão Faturamento,Novo
+7007108,5/28/2024,,,No Prazo,[GEDI] Reestruturar integração,Andrea Rocha (TRACK & TRACE),Analistas de Sistemas,Tulio Rodrigues (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Analise
+6101821,8/21/2023,,,No Prazo,[GV] Criar processo para valid,Paulo Silva (TI MTZ),Analistas de Sistemas,Joel Martins(TI MTZ),Gestão de Volumes,Aguardando Analise
+7468336,10/9/2024,,,No Prazo,[GRIS] Melhorias Portal centra,Luan Rodrigues (GRIS CORP),Analistas de Sistemas,Joel Martins(TI MTZ),Outros,Homologando
+7703669,12/17/2024,,,No Prazo,Finalização de documento,Amanda Pinheiro (OPE UDI),TMS,Mateus Menezes (TI MTZ),Permissão Perdas e Danos,Aguardando Aprovação
+7574176,11/8/2024,,,No Prazo,Relatório de Detalhe de Fatura,Ingrid Santos (CAR MTZ),ERP,Marcus Ethur (TI MTZ),Origem ERP,Pendente
+7261648,8/12/2024,,,No Prazo,[GOPE] - Inclusão de código de,Matheus Henrique (CEDOC MTZ),Analistas de Sistemas,Joel Martins(TI MTZ),Gestão Operacional,Em Analise
+7062803,6/13/2024,,,No Prazo,GERAR DES SERVIÇOS TOMADOS DEN,Érica Cristina (FISCAL MTZ),ERP,Marcus Ethur (TI MTZ),Apuração de tributos,Pendente
+7035183,6/5/2024,,,No Prazo,GVR - ALTERAÇÃO DO LAYOUT NFS-,RENATO NASCIMENTO,ERP,Marcus Ethur (TI MTZ),Alteração Layout,Pendente
+7215635,7/29/2024,,,No Prazo,[COMPRAS] Ajuste campo de Tipo,JOAO VICTOR LEMOS RODRIGUES,Analistas de Sistemas,Amanda Ferreira (TI MTZ),Suprimentos,Aguardando Analise
+2839399,8/23/2022,,,No Prazo,[CAR] Atualização de boletos c,Carla Santos (CAR MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Gestão Faturamento,Em Analise
+7566290,11/7/2024,,,No Prazo,[GEDI] - Melhorias geração EDI,Natalia Caroline (TI MTZ),Analistas de Sistemas,,Gestão EDI,Aguardando Analise
+5690969,3/14/2023,,,No Prazo,[CONTRATOS] Campo Auditoria - ,Aline Silva,Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Contratos,Aguardando Analise
+7375268,9/12/2024,,,No Prazo,Tag XML Custo Adicional - 7375,Denise Silvestre Pessoa,EDI,Euller Vieira (TI MTZ),XML CTe(Grandes Quantidades),Aguardando Retorno
+7241584,8/6/2024,,,No Prazo,Lentidão consulta no Benner ,Clarice Martins (CUSTOMER CARE QHV),TMS,,Dificuldade Acesso Benner/Roadnet/Sênior,Aguardando Aprovação
+7724452,12/20/2024,,,No Prazo,Disponibilizar documento no RJ,Aline Peixoto da Silva (AGENDAMENTO RIO),TMS,,Alterar Filial documento,Aguardando Aprovação
+6092827,8/17/2023,,,No Prazo,Inserir QR CODE Boletos,Hugo Silva (FAT MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Lançamentos financeiros,Pendente
+7530486,10/28/2024,10/28/2024,,No Prazo,ERRO FRETE BENNER  - REDEPLAST,Alexandre Magno (DAC MTZ),TMS,Paulo Souza  (TI MTZ),Tabela de Preço,Em Analise
+7701909,12/16/2024,,,No Prazo,liberar acesso,Larissa Emily (Gestão Automação),ERP,Marcelo Augusto (TI MTZ),Contábil,Em Analise
+7096407,6/24/2024,,,No Prazo,Gestão de Serviços - Base Homo,Victor Okubo (DAC MTZ),TMS,Marcus Vinícius (TI MTZ),Homologação Benner 5.0,Aguardando Correção
+7557206,11/5/2024,,,No Prazo,Viagem em transito com documen,Andrei Santos (COORD SAJ),TMS,Anna Silva (TI MTZ),Ocorrência,Aguardando Correção
+7572203,11/8/2024,,,No Prazo,SMP desatualizada  plano de ri,Josivaldo Silva (OPE SJP),TMS,Anna Silva (TI MTZ),Erro ao Iniciar Viagem,Aguardando Correção
+6001604,7/14/2023,,,No Prazo,[GOPE] Banco de imagem de volu,Caio Botelho (COORD LEAN),Analistas de Sistemas,Joao Paulo (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Informações do Solicitante
+7446882,10/3/2024,,,No Prazo,[GOPE] Track&trace melhorias e,Andrea Rocha (TRACK & TRACE),Analistas de Sistemas,Joao Paulo (TI MTZ),Portal Track & Trace,Aguardando Analise
+6051752,8/2/2023,,,No Prazo,[SYNC] Criar processo para evi,Caio Botelho (COORD LEAN),Analistas de Sistemas,Paulo Silva (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Informações do Solicitante
+6783702,3/25/2024,4/2/2024,,No Prazo,6783702 - Rastreio de E-mail,Andrea Pacheco (CUSTOMER CARE QHV),TMS,Tulio Rodrigues (TI MTZ),Outros erros não especificados,Aguardando Desenvolvimento
+6521746,1/2/2024,,,No Prazo,PORTAL PERDAS & DANOS,Daniel Arantes(ADM RAO),TMS,João Santos (TI MTZ),Dificuldade Acesso Benner/Roadnet/Sênior,Aguardando Aprovação
+7459680,10/7/2024,,,No Prazo,Enterprise BackLog I Nova Soli,Caio Botelho (COORD LEAN),Analistas de Sistemas,Joao Paulo (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Informações do Solicitante
+7448410,10/3/2024,,,No Prazo,PROBLEMA DE CONEXÃO DO ROADNET,Guilherme Almeida Lopes,TMS,Tulio Rodrigues (TI MTZ),Outros erros não especificados,Em espera
+7357018,9/6/2024,,,No Prazo,[GEDI] Alteração integração No,Joel Martins(TI MTZ),Analistas de Sistemas,Joel Martins(TI MTZ),Api Cliente,Testes Internos
+7143360,7/8/2024,,,No Prazo,[GOPE]- Executor de tarefas em,Juliana Gomes (Customer Care QHV),Analistas de Sistemas,Joel Martins(TI MTZ),Gestão Operacional,Homologando
+7590393,11/14/2024,,,No Prazo,Atualizar motivos dos desconto,Warlison Gomes (DAC MTZ),ERP,Marcus Ethur (TI MTZ),Erro no Relatório,Pendente
+6045901,8/1/2023,,,No Prazo,[GCOM] Criar nova funcionalida,Andrey Prado (GER GESTAO MTZ),Analistas de Sistemas,Joel Martins(TI MTZ),Gestão Comercial,Em Analise
+6960949,5/14/2024,,,No Prazo,BUG PORTAL - TRATATIVAS DE SOL,Naiara Santos,Analistas de Sistemas,Joel Martins(TI MTZ),Lançamentos financeiros,Pendente
+7688253,12/12/2024,,,No Prazo,LIBERAÇÃO NO USUÁRIO PARA OCOR,Nicole Mairynk de Andrade Alves Dias,TMS,Mateus Menezes (TI MTZ),Permissão Perdas e Danos,Aguardando Aprovação
+7699431,12/16/2024,,,No Prazo,Espelhamento de Perfil de aces,Reginaldo Silva (OPE FEC),TMS,Mateus Menezes (TI MTZ),Permissão CEDOC,Aguardando Aprovação
+6763079,3/18/2024,,,No Prazo,Ajustar relatório de Apontamen,JOAO VICTOR LEMOS RODRIGUES,ERP e Senior,Marcus Ethur (TI MTZ),Origem ERP,Pendente
+7724611,12/20/2024,,,No Prazo,Lentidão Sistema ((Benner)),Leandro da Silva (EXP RIO),TMS,Vitor Gomes (TI MTZ),Benner,Aguardando Retorno
+7386944,9/17/2024,9/17/2024,,No Prazo,CRIAÇÃO DE USUÁRIO,Katiane Oliveira,TMS,Tulio Rodrigues (TI MTZ),Outros,Novo
+7675570,12/9/2024,,,No Prazo,RE: RE: Solicito dados para AP,Rubi Becker Junior,EDI,Natalia Caroline (TI MTZ),EDI,Aguardando Retorno
+7324039,8/29/2024,,,No Prazo,Erro de integração webservice ,RENATO NASCIMENTO,ERP,Marcus Ethur (TI MTZ),Apuração de tributos,Pendente
+7686992,12/11/2024,,,No Prazo,Incluir Quantidade de Recusas ,JOAO VICTOR LEMOS RODRIGUES,Desenvolvedores,Marcus Ethur (TI MTZ),Criação ,Pendente
+7619272,11/25/2024,,,No Prazo,UDI - TRAVADO ,Renato Nascimento (FISCAL MTZ),ERP,Marcus Ethur (TI MTZ),Geração de NFSe,Pendente
+7543387,10/31/2024,,,No Prazo,[RH] Projeto Admissão Digital ,Erika Vieira (GER RH MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),RH - Workflow Benner,Aguardando Analise
+7570294,11/7/2024,,,No Prazo,CÁLCULO DE COMISSÃO,Tais de Oliveira (DAC MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Comissão,Pendente
+3127119,11/25/2022,,,No Prazo,[SUP] Desenvolvimento das APIs,Larissa de Souza Estrada,Analistas de Sistemas,Amanda Ferreira (TI MTZ),Suprimentos,Aguardando Desenvolvimento
+5848484,5/17/2023,,,No Prazo,[SUP] Mesa de Compras - Julian,Juliano Carvalho (GER COMPRAS MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Suprimentos,Aguardando Analise
+7639881,11/29/2024,,,No Prazo,Relatório de bloqueio para o o,Camille Martins (CAR MTZ),ERP e Senior,Marcus Ethur (TI MTZ),Criação ,Pendente
+3172373,12/7/2022,,,No Prazo,[COT] Integração Abastecimento,Victor Okubo (DAC MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Manutenção de Frotas,Em Desenvolvimento
+2319298,2/24/2022,,,No Prazo,[CUSTOS] Parametrizar a rotina,Gleison Costa (CUSTOS MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Custos,Aguardando Analise
+7223002,7/31/2024,,,No Prazo,[RHDES] Incluir um filtro - Nu,Cléria Centa (ADM QHV),Analistas de Sistemas,Amanda Ferreira (TI MTZ),RH - Workflow Benner,Aguardando Analise
+7547536,11/1/2024,,,No Prazo,Analise no fluxo de aprovadore,Cléria Centa (ADM QHV),ERP,Amanda Ferreira (TI MTZ),RH Workflow de Desligamento,Pendente
+7724792,12/21/2024,12/23/2024,,No Prazo,Novo ticket de suporte aberto ,Suporte CAK,EDI,,EDI,Aberto
+7150749,7/10/2024,,,No Prazo,[GLOG] - Envio de e-mail de bo,Flavia Velasco (CML CON),Analistas de Sistemas,,Portal de Clientes,Aguardando Analise
+6867767,4/17/2024,,,No Prazo,[MANPRED] Habilitar abertura d,Gabriel Coelho (MAN PREDIAL MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Manutenção Predial,Aguardando Analise
+7550251,11/1/2024,,,No Prazo,[GOPE] Regras de horário de re,Ana Júlia,Analistas de Sistemas,,Gestão Operacional,Aguardando Analise
+2999064,10/17/2022,,,No Prazo,[MANPRED] Melhoria no sistema ,Gabriel Coelho (MAN PREDIAL MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Manutenção Predial,Aguardando Analise
+7435067,9/30/2024,,,No Prazo,Bloqueio de confirmações sem X,Steffani Rodrigues (FISCAL MTZ),ERP,Joselito Almeida (TI MTZ),Apuração de tributos,Pendente
+7381021,9/13/2024,,,No Prazo,ECF Patrus,Joselito Valadares (GERCONTAB MTZ),ERP,Joselito Almeida (TI MTZ),SPED,Pendente
+7632542,11/27/2024,,,No Prazo,Incluir duas colunas nos razõe,Gleison Costa (CUSTOS MTZ),ERP e Senior,Joselito Almeida (TI MTZ),Alteração ,Pendente
+6104570,8/22/2023,,,No Prazo,[GOPE] - Criar processo para g,Fernanda Cassiano (TI MTZ),Analistas de Sistemas,,Gestão Operacional,Aguardando Analise
+6924488,5/3/2024,,,No Prazo,GOPE - Criar opção de exportar,Alisson Jesus (OPE SSA),Analistas de Sistemas,,Gestão Operacional,Aguardando Analise
+7717431,12/19/2024,,,No Prazo,RES: Faturas Patrus - 24-11-91,Audria,EDI,Euller Vieira (TI MTZ),Faturas(DOCCOB) e Conhecimentos (CONEMB) ,Solicitação Reaberta
+7707885,12/17/2024,,,No Prazo,7707885 - Alterar fila de aten,Luana Machado (CUS SERVICE QHV),CRM,,Criar/Alterar Fila de atendimento ,Em Analise
+6840706,4/10/2024,,,No Prazo,Analisar motivo pelo qual as R,DEBORA WINTER EVANGELISTA,ERP,Kleverson Salles (TI MTZ),Diversos,Pendente
+6902191,4/26/2024,,,No Prazo,GOPE - Impressão de Romaneios ,Vivian Araujo (OPE FEC),Analistas de Sistemas,,Gestão Operacional,Aguardando Analise
+7470872,10/9/2024,,,No Prazo,[GOPE] - Inclusão do número do,Hudson Roger Silva e Sousa,Analistas de Sistemas,,Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Analise
+6747001,3/13/2024,,,No Prazo,[GV] Desabilitar a opção de ex,Atila Coelho,Analistas de Sistemas,,Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Aprovação
+7295820,8/21/2024,,,No Prazo,Analise de lentidão,Alcir Dias (COMPRAS),Aprovadores,,Solicitação Outros Equipamentos,Aguardando Aprovação
+7359455,9/9/2024,,,No Prazo,[PatrusTech] - Usar a interfac,Tulio Rodrigues (TI MTZ),Analistas de Sistemas,,Patrus Tech,Aguardando Analise
+7524440,10/25/2024,10/25/2024,,No Prazo,Contrato de frete 444369 da vi,Matheus Ribeiro (COT MTZ),TMS,Paulo Souza  (TI MTZ),Benner,Em Analise
+7554559,11/4/2024,11/4/2024,,No Prazo,Criação de Projetos SMP,Luan Rodrigues (GRIS CORP),TMS,Paulo Souza  (TI MTZ),SMP,Novo
+7664591,12/5/2024,,,No Prazo,7664591 - Ticket não recebido,Terezinha Goes (Customer Care QHV),CRM,Ricardo Santos (TI MTZ),Verificar e-mail não entregue/recebido,Aguardando Retorno Fornecedor
+7549956,11/1/2024,,,No Prazo,DOCUMENTO NÃO ENTRA EM VIAGEM,Larissa Ramos (OPE PPY PPY),TMS,Anna Silva (TI MTZ),Erro ao Iniciar Viagem,Aguardando Correção
+7724249,12/20/2024,,,No Prazo,RE: COLETA MANDAE DE HOJE 19/1,Alex dos Santos (EXP MTZ),EDI,Euller Vieira (TI MTZ),Nota não importada,Solicitação Reaberta
+2763153,7/28/2022,,,No Prazo,[DAC] Ajustes Workflow Cancela,Érica Cristina (FISCAL MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Analise
+6715363,3/5/2024,3/7/2024,,No Prazo,Incidente Relacionado ao Servi,Marco Túlio Rodrigues,STI,,Incidentes de Segurança,Novo
+6984044,5/21/2024,,,No Prazo,Criação de rotina para control,Ronaldo Barbosa (BENEFICIOS MTZ),ERP,Kleverson Salles (TI MTZ),Criação de Regras,Pendente
+7525177,10/25/2024,,,No Prazo,[GOPE] Baixa de documentos com,Joao Paulo (TI MTZ),Analistas de Sistemas,Joao Paulo (TI MTZ),Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Validação Inicial
+7135797,7/5/2024,7/5/2024,,No Prazo,CORREÇÃO NOTIFICAÇÕES TAKE BLI,Carla Santos (CAR MTZ),TMS,Joel Martins(TI MTZ),Faturas - Cliente,Novo
+7608354,11/21/2024,,,No Prazo,[GCOM] Estruturação do process,Andrey Prado (GER GESTAO MTZ),Analistas de Sistemas,Joel Martins(TI MTZ),Gestão Comercial,Aguardando Analise
+7391162,9/17/2024,,,No Prazo,Portal - Pesquisa de Etiquetas,Marcus Vinícius (TI MTZ),Analistas de Sistemas,Joel Martins(TI MTZ),WES - Outros,Testes Internos
+6944909,5/9/2024,,,No Prazo,Continuidade chamado -  655900,Steffani Rodrigues (FISCAL MTZ),ERP,Marcus Ethur (TI MTZ),Apuração de tributos,Pendente
+7324275,8/29/2024,,,No Prazo,Erro de integração no webervic,RENATO NASCIMENTO,ERP,Marcus Ethur (TI MTZ),Apuração de tributos,Pendente
+7046237,6/7/2024,,,No Prazo,[FAT] Atualização Boletos c/ D,Hugo Silva (FAT MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Financeiro,Aguardando Analise
+7280940,8/16/2024,,,No Prazo,[COT] Arquivo Veloe - Finaliza,Marcelinho Vaz (COORD COT MTZ),Analistas de Sistemas,Amanda Ferreira (TI MTZ),Outros,Em Analise
+6896209,4/25/2024,,,No Prazo,[RHDES] Regra para envio de e-,Cléria Centa (ADM QHV),Analistas de Sistemas,Amanda Ferreira (TI MTZ),RH - Workflow Benner,Aguardando Desenvolvimento
+6742318,3/12/2024,,,No Prazo,configuração Bl  mobile,richel bruno,TMS,,Configuração BL Mobile,Aguardando Aprovação
+6205176,9/26/2023,,,No Prazo,[GOPE] Recebimento Físico da N,Fernanda Cassiano (TI MTZ),Analistas de Sistemas,,Gestão Operacional,Aguardando Analise
+6222575,10/2/2023,,,No Prazo,[GV] Bloqueio do app quando li,Caio Botelho (COORD LEAN),Analistas de Sistemas,,Tecnologia da Informação - Gestão de Desenvolvimentos,Aguardando Informações do Solicitante
+7684535,12/11/2024,,,No Prazo,COMPUTADOR DA OPERAÇÃO MUITO L,Kennia Patricia (ENCOPE MOC),Aprovadores,,Solicitação Outros Equipamentos,Aguardando Aprovação
+7023963,6/3/2024,,,No Prazo,OPERAÇÃO DE BAIXA DE FATURA.,Tais de Oliveira (DAC MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Outros,Aguardando Analise
+7280767,8/16/2024,,,No Prazo,2º Bloqueio para auxiliar na p,Steffani Rodrigues (FISCAL MTZ),Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Recebimento fiscal,Pendente
+7635200,11/28/2024,,,No Prazo,Senha expirada,CAMILLY CAMPOS DA SILVA,TMS,,Redefinir Senha Rede,Aguardando Aprovação
+7719568,12/19/2024,12/24/2024,,No Prazo,BNU I LIBERAÇÃO LOGIN E ACESSO,DEBORA WINTER EVANGELISTA,ERP,,Origem ERP,Aberto
+6085931,8/15/2023,,,No Prazo,[CONTRATOS] Incluir a opção de,Aline Silva,Analistas de Sistemas,Fernanda Cassiano (TI MTZ),Contratos,Pendente
+

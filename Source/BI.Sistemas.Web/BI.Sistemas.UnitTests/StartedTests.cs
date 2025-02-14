@@ -2,8 +2,8 @@
 using BI.Sistemas.Domain;
 using BI.Sistemas.Domain.Entities.Enums;
 using BI.Sistemas.Domain.Novo;
-using CsvHelper.Configuration;
 using CsvHelper;
+using CsvHelper.Configuration;
 using System.Globalization;
 // Projeto Correto!
 
@@ -13,10 +13,16 @@ namespace BI.Sistemas.UnitTests
     public class StartedTests
     {
         BISistemasContext _dbcontext;
+        string _baseDirectory;
 
         [TestInitialize]
         public void Init()
         {
+            _baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            DirectoryInfo projectDirectory = null;
+            if (_baseDirectory != null)
+                projectDirectory = Directory.GetParent(_baseDirectory).Parent.Parent.Parent.Parent.Parent.Parent;
+
             _dbcontext = new BISistemasContext();
         }
 
@@ -93,6 +99,7 @@ namespace BI.Sistemas.UnitTests
                 _dbcontext.Colaboradores.Add(colaborador);
             }
         }
+
         [TestMethod]
         public void CargaTMetric()
         {
@@ -110,7 +117,7 @@ namespace BI.Sistemas.UnitTests
                 }
             }
             var dataCarga = DateTime.Now;
-            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\TMETRIC.csv")
+            File.ReadAllLines($@"{_baseDirectory}\UI\Excel\TMETRIC.csv")
                 .Skip(1)
                 .ToList()
                 .ForEach(v =>
@@ -142,7 +149,8 @@ namespace BI.Sistemas.UnitTests
                     db.Periodos.Add(periodo);
 
                 }
-                File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\PontoCLT.csv")
+
+                File.ReadAllLines($@"C:\Users\petronio.aleixo\Desktop\DashBoard\UI\Excel\PontoCLT.csv")
                     .Skip(1)
                 .ToList()
                 .ForEach(v =>
@@ -177,11 +185,10 @@ namespace BI.Sistemas.UnitTests
                     periodo.Termino = new DateTime(2024, 4, 19);
                     _dbcontext.Periodos.Add(periodo);
                     _dbcontext.SaveChanges();
-
                 }
             }
 
-            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesAbertas (3).csv")
+            File.ReadAllLines($@"{_baseDirectory}\UI\Excel\RelatorioTI_SolicitaçõesAbertas (3).csv")
               .Skip(1)
               .Where(x => !string.IsNullOrWhiteSpace(x))
               .ToList()
@@ -206,7 +213,7 @@ namespace BI.Sistemas.UnitTests
                   }
               });
 
-            File.ReadAllLines(@"C:\Users\vitor.fernandessouza\Downloads\RelatorioTI_SolicitaçõesSemanaAnterior (3).csv")
+            File.ReadAllLines($@"{_baseDirectory}\UI\Excel\RelatorioTI_SolicitaçõesSemanaAnterior (3).csv")
                 .Skip(1)
                 .Where(x => !string.IsNullOrWhiteSpace(x))
                 .ToList()
@@ -304,7 +311,7 @@ namespace BI.Sistemas.UnitTests
         [TestMethod]
         private void InserirBancoDeDados()
         {
-            string csvFilePath = @"C:\Users\vitor.fernandessouza\Downloads\HE.csv";
+            string csvFilePath = $@"{_baseDirectory}\UI\Excel\Downloads\HE.csv";
 
             var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {

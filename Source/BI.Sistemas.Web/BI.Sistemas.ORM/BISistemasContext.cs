@@ -1,15 +1,12 @@
 ﻿using BI.Sistemas.Domain;
 using BI.Sistemas.Domain.Novo;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using System.Reflection.Metadata;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace BI.Sistemas.Context
 {
     public class BISistemasContext : DbContext
     {
-        private readonly string _connectionString = @"Server=con-brj223yxgq;Database=BI_SISTEMASDEVS;Trusted_Connection=True;TrustServerCertificate=True;";
+        private readonly string _connectionString = @"Server=CON-SNOTE093;Database=BI_SISTEMASDEVS;Trusted_Connection=True;TrustServerCertificate=True;";
 
         public BISistemasContext(DbContextOptions<BISistemasContext> options)
         : base(options) { }

@@ -33,7 +33,7 @@ namespace BI.Sistemas.API.Service
                 }
                 else
                 {
-                    mailItem.To = "vitor.fernandessouza@patrus.com.br";
+                    mailItem.To = "petronio.aleixo@patrus.com.br";
                 }
 
                 var tabelaAtividade = @"

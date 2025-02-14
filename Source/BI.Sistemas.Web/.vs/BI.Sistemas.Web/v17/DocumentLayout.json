@@ -1,34 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\\u00C1rea de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\",
+  "WorkspaceRootPath": "C:\\Users\\petronio.aleixo\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\\u00E1rea de trabalho\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}|BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\\u00E1rea de trabalho\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.unittests\\startedtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}|BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj|solutionrelative:bi.sistemas.unittests\\startedtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\\u00E1rea de trabalho\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\service\\colaboradorslaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\service\\colaboradorslaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\\u00E1rea de trabalho\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\petronio.aleixo\\desktop\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\\u00E1rea de trabalho\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\controllers\\colaboradorslacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ED062B93-9D42-4A94-996B-A9A7DC44F7B9}|BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj|c:\\users\\petronio.aleixo\\desktop\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.orm\\bisistemascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED062B93-9D42-4A94-996B-A9A7DC44F7B9}|BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj|solutionrelative:bi.sistemas.orm\\bisistemascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}|BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj|c:\\users\\petronio.aleixo\\desktop\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.unittests\\startedtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18A3FCA0-CFC7-42C1-ACA1-50B8ABC1760A}|BI.Sistemas.UnitTests\\BI.Sistemas.UnitTests.csproj|solutionrelative:bi.sistemas.unittests\\startedtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\petronio.aleixo\\desktop\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\controllers\\colaboradorslacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\controllers\\colaboradorslacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\\u00E1rea de trabalho\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\service\\emailslaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\service\\emailslaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|c:\\users\\vitor.fernandessouza\\onedrive - patrus transportes urgentes ltda\\\u00E1rea de trabalho\\dashboard\\source\\bi.sistemas.web\\bi.sistemas.api\\view\\enviaremaildados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC4B83B4-3C61-4A28-9798-82160546AE0F}|BI.Sistemas.API\\BI.Sistemas.API.csproj|solutionrelative:bi.sistemas.api\\view\\enviaremaildados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,94 +26,157 @@
       "DocumentGroups": [
         {
           "DockedWidth": 312,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 25,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:149:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:148:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ColaboradorSLAController.cs",
+              "DocumentMoniker": "C:\\Users\\petronio.aleixo\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorSLAController.cs",
+              "RelativeDocumentMoniker": "BI.Sistemas.API\\Controllers\\ColaboradorSLAController.cs",
+              "ToolTip": "C:\\Users\\petronio.aleixo\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorSLAController.cs",
+              "RelativeToolTip": "BI.Sistemas.API\\Controllers\\ColaboradorSLAController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAlwCwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T14:00:11.466Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\\u00C1rea de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\EmailService.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.API\\Service\\EmailService.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\\u00C1rea de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\EmailService.cs",
-              "RelativeToolTip": "BI.Sistemas.API\\Service\\EmailService.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAkwHkAAAAQAAAAAAAAAA==",
+              "Title": "ColaboradorController.cs",
+              "DocumentMoniker": "C:\\Users\\petronio.aleixo\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
+              "RelativeDocumentMoniker": "BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
+              "ToolTip": "C:\\Users\\petronio.aleixo\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
+              "RelativeToolTip": "BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAiwBYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T12:18:11.689Z",
+              "WhenOpened": "2025-02-14T13:18:43.76Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StartedTests.cs",
+              "DocumentMoniker": "C:\\Users\\petronio.aleixo\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\StartedTests.cs",
+              "RelativeDocumentMoniker": "BI.Sistemas.UnitTests\\StartedTests.cs",
+              "ToolTip": "C:\\Users\\petronio.aleixo\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\StartedTests.cs",
+              "RelativeToolTip": "BI.Sistemas.UnitTests\\StartedTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T13:43:51.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "StartedTests.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\\u00C1rea de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\StartedTests.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.UnitTests\\StartedTests.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\\u00C1rea de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.UnitTests\\StartedTests.cs",
-              "RelativeToolTip": "BI.Sistemas.UnitTests\\StartedTests.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwEAAAAARAAAAAAAAAA==",
+              "Title": "BISistemasContext.cs",
+              "DocumentMoniker": "C:\\Users\\petronio.aleixo\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BISistemasContext.cs",
+              "RelativeDocumentMoniker": "BI.Sistemas.ORM\\BISistemasContext.cs",
+              "ToolTip": "C:\\Users\\petronio.aleixo\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BISistemasContext.cs",
+              "RelativeToolTip": "BI.Sistemas.ORM\\BISistemasContext.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAawBQAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T11:02:08.344Z",
+              "WhenOpened": "2025-02-14T13:19:00.64Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ColaboradorSLAController.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\\u00C1rea de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorSLAController.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.API\\Controllers\\ColaboradorSLAController.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\\u00C1rea de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorSLAController.cs",
-              "RelativeToolTip": "BI.Sistemas.API\\Controllers\\ColaboradorSLAController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T12:57:29.27Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ColaboradorController.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\\u00C1rea de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\\u00C1rea de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
-              "RelativeToolTip": "BI.Sistemas.API\\Controllers\\ColaboradorController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T12:57:26.212Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ColaboradorSLAService.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\\u00C1rea de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\ColaboradorSLAService.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.API\\Service\\ColaboradorSLAService.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\\u00C1rea de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\ColaboradorSLAService.cs",
-              "RelativeToolTip": "BI.Sistemas.API\\Service\\ColaboradorSLAService.cs",
-              "ViewState": "AgIAAAoBAAAAAAAAAAAUwO4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T12:56:34.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EnviarEmailDados.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\\u00C1rea de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\View\\EnviarEmailDados.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.API\\View\\EnviarEmailDados.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\\u00C1rea de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\View\\EnviarEmailDados.cs",
-              "RelativeToolTip": "BI.Sistemas.API\\View\\EnviarEmailDados.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T12:50:41.645Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EmailSLAService.cs",
-              "DocumentMoniker": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\\u00C1rea de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\EmailSLAService.cs",
-              "RelativeDocumentMoniker": "BI.Sistemas.API\\Service\\EmailSLAService.cs",
-              "ToolTip": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\\u00C1rea de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.API\\Service\\EmailSLAService.cs",
-              "RelativeToolTip": "BI.Sistemas.API\\Service\\EmailSLAService.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAkwHEAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T12:46:46.282Z"
             }
           ]
         }

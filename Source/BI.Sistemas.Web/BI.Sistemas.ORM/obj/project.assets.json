@@ -2809,23 +2809,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\": {},
+    "C:\\Users\\petronio.aleixo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Área de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj",
+      "projectUniqueName": "C:\\Users\\petronio.aleixo\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj",
       "projectName": "BI.Sistemas.ORM",
-      "projectPath": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Área de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj",
-      "packagesPath": "C:\\Users\\vitor.fernandessouza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Área de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\obj\\",
+      "projectPath": "C:\\Users\\petronio.aleixo\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\BI.Sistemas.ORM.csproj",
+      "packagesPath": "C:\\Users\\petronio.aleixo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\petronio.aleixo\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.ORM\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\vitor.fernandessouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\petronio.aleixo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2841,8 +2841,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Área de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj": {
-              "projectPath": "C:\\Users\\vitor.fernandessouza\\OneDrive - Patrus Transportes Urgentes Ltda\\Área de Trabalho\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj"
+            "C:\\Users\\petronio.aleixo\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj": {
+              "projectPath": "C:\\Users\\petronio.aleixo\\Desktop\\DashBoard\\Source\\BI.Sistemas.Web\\BI.Sistemas.Domain\\BI.Sistemas.Domain.csproj"
             }
           }
         }
@@ -2887,7 +2887,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
